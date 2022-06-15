@@ -173,19 +173,11 @@ const update = async () => {
 }
 
 const start = async () => {
-  console.time('start')
-    await urls().then((urls) => {
-        writeJsonFile('docs/index.html', urls)
-    })
-    await save()
-  console.timeEnd('start')
+  console.time('update')
+    const _urls = await urls()
+    await write('docs/index.html', JSON.stringify(_urls))
+    await update()
+  console.timeEnd('update')
 }
 
 start()
-
-module.exports = {
-  urls,
-  updateURLs,
-  save,
-  update
-}

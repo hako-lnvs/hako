@@ -48,7 +48,9 @@ const write = require('write-file-utf8')
 
 const save = async () => {
   const urls = await loadJsonFile('docs/index.html')
+  console.log(urls.length)
   for (let i = 0; i < urls.length; i++) {
+    console.log(i)
     const url = urls[i]
     const qURL = URL.parse(url, true)
     const pathURL = 'docs' + qURL.pathname + '.html'
@@ -172,18 +174,11 @@ const update = async () => {
 }
 
 const start = async () => {
-  console.time('start')
-    const _urls = await urls()
-    await write('docs/index.html', JSON.stringify(_urls))
+  console.time('save')
+    // const _urls = await urls()
+    // await write('docs/index.html', JSON.stringify(_urls))
     await save()
-  console.timeEnd('start')
+  console.timeEnd('save')
 }
 
 start()
-
-module.exports = {
-  urls,
-  updateURLs,
-  save,
-  update
-}
