@@ -2,8 +2,7 @@ name: Update new posts
 
 on:
   schedule:
-#     “At minute 0 past every 2nd hour.”
-    - cron: '0 */1 * * *'
+    - cron: '0/10 * * * *'
   workflow_dispatch:
   
 jobs:
