@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="BKszAQ4tlWINw0kax2aTCYydLZup56RSamGNlCZ2">
+<meta name="csrf-token" content="OJQjrPJ40tbwuG5wd91XMYki9KAOoW7BHyMW2X6R">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/12078-math-girls/c99095-13-khoi-dau-cua-nhung-dang-thuc">
@@ -25,9 +25,10 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=116ca9f1e941e666d030">
+<link rel="stylesheet" href="/css/interface.css?id=82e3b85f754712a81d62">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=1f074cf74da21d296ccb"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -53,7 +54,7 @@
 <a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
 <a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
 <a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
-<a class="rd_sd-button_item rd_top-right disabled"><i class="fas fa-forward"></i></a>
+<a class="rd_sd-button_item rd_top-right" href="/truyen/12078-math-girls/c105351-21-phuong-trinh-va-nhung-la-thu-tinh-hai-cong-mot-bang-ba"><i class="fas fa-forward"></i></a>
 </section>
 <section id="chapters" class="rd_sidebar rdtoggle">
 <main class="rdtoggle_body">
@@ -70,7 +71,7 @@
 <ul class="sub-chap_list unstyled">
 <li>
 <a href="/truyen/12078-math-girls/c95265-dan-nhap">
-Dẫn nhập
+Dẫn nhập.
 </a>
 </li>
 <li>
@@ -80,7 +81,7 @@ Dẫn nhập
 </li>
 <li>
 <a href="/truyen/12078-math-girls/c95267-12-khac-biet">
-1.2 Khác biệt
+1.2 Khác biệt.
 </a>
 </li>
 <li class="current">
@@ -89,7 +90,28 @@ Dẫn nhập
 1.3 Khởi đầu của những dạng thức.
 </a>
 </li>
+<li>
+<a href="/truyen/12078-math-girls/c105351-21-phuong-trinh-va-nhung-la-thu-tinh-hai-cong-mot-bang-ba">
+2.1 Phương trình và những lá thư tình - Hai cộng một bằng ba.
+</a>
+</li>
+<li>
+<a href="/truyen/12078-math-girls/c105352-22-vai-cach-tinh-nham">
+2.2 Vài cách tính nhẩm.
+</a>
+</li>
+<li>
+<a href="/truyen/12078-math-girls/c105353-23-la-thu">
+2.3 Lá thư.
+</a>
+</li>
+<li>
+<a href="/truyen/12078-math-girls/c105354-24-phuc-kich">
+2.4 Phục kích.
+</a>
+</li>
 </ul>
+
 </ul>
 </main>
 <div class="black-click"></div>
@@ -116,6 +138,7 @@ Dẫn nhập
 <span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
 <span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
 <span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+<span data-color="#eae4d3" data-id="6" style="background-color: #eae4d3"></span>
 <span data-color="#f5e9ef" data-id="4" style="background-color: #f5e9ef"></span>
 <span data-color="#222222" data-id="5" style="background-color: #222222"></span>
 </div>
@@ -155,28 +178,29 @@ Dẫn nhập
 <div class="reading-content col-12 col-lg-10 offset-lg-1" style="word-wrap: break-word;">
 <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
 <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
+
 <div class="title-top" style="padding-top: 20px">
 <h2 class="title-item" align="center">Những cô gái của Toán học</h2>
 <h4 class="title-item" align="center">1.3 Khởi đầu của những dạng thức.</h4>
-<h6 class="title-item" align="center">Độ dài: 1,106 từ - Lần cuối:
-<time class="timeago" title="05/07/2022 12:25:06" datetime="2022-07-05T12:25:06+07:00">
-05/07
+<h6 class="title-item" align="center">Độ dài: 1,107 từ - Lần cuối:
+<time class="timeago" title="14/08/2022 20:21:16" datetime="2022-08-14T20:21:16+07:00">
+14/08
 </time>
-- <a href="https://docln.net/truyen/12078-math-girls/c99095-13-khoi-dau-cua-nhung-dang-thuc#chapter-comments" style="text-decoration: underline">Bình luận: 4</a>
+- <a href="https://docln.net/truyen/12078-math-girls/c99095-13-khoi-dau-cua-nhung-dang-thuc#chapter-comments" style="text-decoration: underline">Bình luận: 6</a>
 </h6>
 </div>
 <div style="text-align: center; margin: 20px auto -20px auto;">
 </div>
 <div id="chapter-content" class="long-text no-select">
-<p id="1">Vào tháng 5, những thứ như trường mới, lớp mới và cả bạn mới đều chẳng còn "mới" nữa, thế chỗ nó là những ngày y hệt nhau lặp đi lặp lại cũng vừa chớm bắt đầu.</p><p id="2">Tôi thì không tham gia vào những hoạt động sau giờ học, tốt hơn hết là tránh xa mấy thứ đó cành nhanh càng tốt. Thú thực, tôi không giỏi thể thao, và cũng chỉ đi chơi với đám bạn nếu bọn nó nài nỉ quá mức. Nói thế, cũng không hẳn là tôi sẽ thẳng một mạch về nhà. Khi lớp học kết thúc, tôi thường tới thư viện làm toán, như một thói quen từ thời cấp 2. Tôi không tham gia câu lạc bộ. Tất cả chỉ là đọc, học và lâu lâu nhìn ra ngoài từ cửa sổ thư viện.</p><p id="3">Nhưng thích nhất vẫn là ôn lại cái đã học và tự mày mò cái mới. Thỉnh thoảng tôi sẽ bắt đầu với những khái niệm hoặc định nghĩa thầy cô đưa ra. Rồi nhanh tay viết những ví dụ thật cụ thể, từ đó ngẫm nghĩ về các dạng khác của những định lý và hướng chứng minh chúng. Tôi có thể ngồi hàng giờ như thế với quyển ghi chú.</p><p id="4">Tôi biết, khi cầm bút lên làm toán, không có nghĩa là phải viết thứ gì đó. Có vài luật lệ ở đây. Mà đã có luật thì đó sẽ là một trò chơi – một trò mà tất cả các nhà toán học xưa cũng từng chơi đấy. Để bắt đầu thì chỉ cần một tờ giấy trắng và những dòng suy nghĩ. Tôi thực sự bị nghiện trò này.</p><p id="5">Trước giờ, tôi đã tưởng rằng, đây là một trò chơi đơn, chỉ một mình tôi và</p><p id="6">một trò chơi, ngay cả khi đây là cấp 3 hay cao hơn. Nhưng tôi đã nhầm.</p><p id="7">Miruka cũng đã tham gia trò chơi này, cô cũng thỉnh thoảng tới thư viện. Lần đầu tiên cô ấy đến, là lúc tôi đang ngồi một mình làm toán. Rồi, cô chợt lấy bút chì khỏi tay tôi, xong bắt đầu viết vào cuốn sổ ghi chú trên bàn. Là cuốn sổ của tôi đấy cô gái! Rất ấn tượng, nhưng là xấu hay tốt? Tôi đợi một lúc xem tình hình.</p><p id="8">Cái “Toán” của cô ta rất khó để theo được, nhưng lại rất thú vị. Và kèm chút hào hứng nữa.</p><p id="9">“Thế, mấy cái câu về dãy số bà hỏi hôm bữa là sao vậy?”. Tôi chợt hỏi.</p><p id="10">“Hôm nào cơ?”. Cô ấy ngẩng mặt nhìn, tay đang tính toán nửa chừng cũng dừng lại. Một cơn gió nhẹ thoáng qua từ cánh cửa sổ mở, mang theo hương thơm của hàng sung dâu cùng tiếng bóng rổ vang vảng. “Tôi cũng không rõ lắm.”. Cô nói, tay thì không ngừng gõ bút theo nhịp bóng đập.</p><p id="11">“Cái hôm đầu tôi với bà gặp nhau... dưới tán đào ấy?”</p><p id="12">“À, có! Tôi nhớ, thế vụ gì?”</p><p id="13">“Không, chỉ là hỏi tí thôi...”</p><p id="14">“Vậy cậu thích mấy câu đố đó lắm à?”</p><p id="15">“Hẳn rồi, chắc thế.”</p><p id="16">“Chỉ chắc thôi sao? Cái đống về dãy hôm ấy, cậu trả lời trật lất hết rồi còn gì?”</p><p id="17">“Thật á? Là sao?”</p><p id="18">“Thế, cậu thử nói tôi xem, 1, 2, 3, 4,... Rồi tiếp theo là gì?”</p><p id="19">“Thì, là 5, tất nhiên rồi.”</p><p id="20">“Không hẳn thế, nhỡ mấy số sau tự dưng nhảy lên 10, 20, 30, 40, rồi lại 100, 200, 300, 400 thì sao? Dẫu thế nó vẫn là một dãy hoàn chỉnh đó thôi.”</p><p id="21">“Cũng đúng, nhưng bà không thể đưa ra chỉ 4 số, và bảo nó sẽ nhảy vọt đi đâu được. Không có cách nào để 10 có thể ở ngay sau 4 trong dãy đó được.”</p><p id="22">“Đấy, thế cậu cần đến số mấy để giải?” Cô ấy hỏi tôi, nhướng mày một cái rồi lại hỏi. “Thế nếu dãy nó chạy đến vô cùng thì sao? Đến số thứ bao nhiêu cậu mới đoán được quy luật của đám còn lại?”</p><p id="23">“À rồi, rồi. Tức là luôn có một trường hợp nào đó, để cái quy luật của dãy vượt ra khỏi những số cho trước. Mà dù có thế, thì cho 10 ngay sau 1, 2, 3, 4 nghe nó cứ ngẫu nhiên lắm.”</p><p id="24">“Nhưng đó là cách thế giới hoạt động. Cậu sẽ chẳng bao giờ biết được tiếp theo là gì. Và những dự đoán sai, có thử thì mới biết được.” Xong, Miruka bắt đầy viết lên quyển ghi chú. “Giờ cậu đoán quy luật chung của dãy này thử?”</p><p id="25">1, 2, 3, 4, 6, 9, 8, 12, 18, 27,...</p><p id="26">“Hình như là...”. Tôi ngập ngừng.</p><p id="27">“Nếu cậu chỉ thấy 1, 2, 3, 4, rồi đoán ngay số tiếp theo là 5, thì rõ sai rồi đấy. Luật lệ thứ ấy, không dễ nhìn ra với cái mẫu đơn giản như vậy đâu.”</p><p id="28">“Đúng thật.”</p><p id="29">“Tiếp đó, nếu cậu thấy 1, 2, 3, 4, 6, 9,... Rồi đoán đây là một dãy tăng thì lại nhầm. Số sau 9 giờ là số 8 đấy. Ban đầu cậu nghĩ các số sẽ theo quy luật mà tăng, và “bùm”, nó giảm. Thế giờ cậu nhìn ra quy luật nào chưa?”</p><p id="30">“Ừ thì, ngoài 1 ra, mấy số khác đều là bội số của 2 hoặc 3. Nhưng cũng chưa đủ để giải thích cái số nhỏ hơn ấy.”</p><p id="31">“Thế cậu nhìn thử lời giải đi.” Vừa nói, cô vừa viết:</p><p id="32"><img src="https://i.ibb.co/c6Qk6bL/1.png" alt=""></p><p id="33">“Chú ý vào lũy thừa của các số 2 và 3, như thế dễ nhận ra hơn đấy!”</p><p id="34">“Các số mũ 0 đều bằng 1, vậy là chỉ cần tính hết chỗ này là được dãy vừa nãy đúng không?” Tôi cũng vừa nói, vừa viết ngay ở dưới.</p><p id="35"><img src="https://i.ibb.co/mvrGLQy/3.png" alt=""></p><p id="36">“Nhưng tôi vẫn chưa hiểu lắm”.</p><p id="37">“Mỗi lũy thừa chưa đủ hở? Thế này thì sao?”</p><p id="38"><img src="https://i.ibb.co/JsXntz7/2.png" alt=""></p><p id="39">“Ra, ra là thế”. Tôi thốt lên.</p><p id="40">“Đấy! Nói về các số bội số chỉ có 2 và 3 thì...”. Miruka đang nói, bỗng một câu gọi lớn từ cửa thư viện ngắt lời cô.</p><p id="41">“Bà có đi không? Hay đang bận gì đấy?”</p><p id="42">“À, đúng rồi, nay có buổi tập”. Miruka chợt nhớ.</p><p id="43">Cô trả lại cây bút chì cho tôi và quay đầu về hướng cô gái đang chờ ở cửa. Trong lúc rời đi, cô có ngoảnh đầu và bảo: “Nhớ nhắc tôi kể cậu nghe về thế giới, khi chỉ có hai số nguyên tố nhé”.</p><p id="44">Nói rồi, Miruka rời đi. Để tôi thì lại một mình trong thư viện.</p>
+<p id="1">Vào tháng 5, những thứ như trường mới, lớp mới và cả bạn mới đều chẳng còn "mới" nữa, thế chỗ nó là những ngày y hệt nhau lặp đi lặp lại cũng vừa chớm bắt đầu.</p><p id="2">Tôi thì không tham gia vào những hoạt động sau giờ học, tốt hơn hết là tránh xa mấy thứ đó cành nhanh càng tốt. Thú thực, tôi không giỏi thể thao, và cũng chỉ đi chơi với đám bạn nếu bọn nó nài nỉ quá mức. Nói thế, cũng không hẳn là tôi sẽ thẳng một mạch về nhà. Khi lớp học kết thúc, tôi thường tới thư viện làm toán, như một thói quen từ thời cấp 2. Tôi không tham gia câu lạc bộ. Tất cả chỉ là đọc, học và lâu lâu nhìn ra ngoài từ cửa sổ thư viện.</p><p id="3">Nhưng thích nhất vẫn là ôn lại cái đã học và tự mày mò cái mới. Thỉnh thoảng tôi sẽ bắt đầu với những khái niệm hoặc định nghĩa thầy cô đưa ra. Rồi nhanh tay viết những ví dụ thật cụ thể, từ đó ngẫm nghĩ về các dạng khác của những định lý và hướng chứng minh chúng. Tôi có thể ngồi hàng giờ như thế với quyển ghi chú.</p><p id="4">Tôi biết, khi cầm bút lên làm toán, không có nghĩa là phải viết thứ gì đó. Có vài luật lệ ở đây. Mà đã có luật thì đó sẽ là một trò chơi – một trò mà tất cả các nhà toán học xưa cũng từng chơi đấy. Để bắt đầu thì chỉ cần một tờ giấy trắng và những dòng suy nghĩ. Tôi thực sự bị nghiện trò này.</p><p id="5">Trước giờ, tôi đã tưởng rằng, đây là một trò chơi đơn, chỉ một mình tôi và</p><p id="6">một trò chơi, ngay cả khi đây là cấp 3 hay cao hơn. Nhưng tôi đã nhầm.</p><p id="7">Miruka cũng đã tham gia trò chơi này, cô cũng thỉnh thoảng tới thư viện. Lần đầu tiên cô ấy đến, là lúc tôi đang ngồi một mình làm toán. Rồi, cô chợt lấy bút chì khỏi tay tôi, xong bắt đầu viết vào cuốn sổ ghi chú trên bàn. Là cuốn sổ của tôi đấy cô gái! Rất ấn tượng, nhưng là xấu hay tốt? Tôi đợi một lúc xem tình hình.</p><p id="8">Cái “Toán” của cô ta rất khó để theo được, nhưng lại rất thú vị. Và kèm chút hào hứng nữa.</p><p id="9">“Thế, mấy cái câu về dãy số bà hỏi hôm bữa là sao vậy?”. Tôi chợt hỏi.</p><p id="10">“Hôm nào cơ?”. Cô ấy ngẩng mặt nhìn, tay đang tính toán nửa chừng cũng dừng lại. Một cơn gió nhẹ thoáng qua từ cánh cửa sổ mở, mang theo hương thơm của hàng sung dâu cùng tiếng bóng rổ vang vảng. “Tôi cũng không rõ lắm.”. Cô nói, tay thì không ngừng gõ bút theo nhịp bóng đập.</p><p id="11">“Cái hôm đầu tôi với bà gặp nhau... dưới tán đào ấy?”</p><p id="12">“À, có! Tôi nhớ, thế vụ gì?”</p><p id="13">“Không, chỉ là hỏi tí thôi...”</p><p id="14">“Vậy cậu thích mấy câu đố đó lắm à?”</p><p id="15">“Hẳn rồi, chắc thế.”</p><p id="16">“Chỉ chắc thôi sao? Cái đống về dãy hôm ấy, cậu trả lời trật lất hết rồi còn gì?”</p><p id="17">“Thật á? Là sao?”</p><p id="18">“Thế, cậu thử nói tôi xem, 1, 2, 3, 4,... Rồi tiếp theo là gì?”</p><p id="19">“Thì, là 5, tất nhiên rồi.”</p><p id="20">“Không hẳn thế, nhỡ mấy số sau tự dưng nhảy lên 10, 20, 30, 40, rồi lại 100, 200, 300, 400 thì sao? Dẫu thế nó vẫn là một dãy hoàn chỉnh đó thôi.”</p><p id="21">“Cũng đúng, nhưng bà không thể đưa ra chỉ 4 số, và bảo nó sẽ nhảy vọt đi đâu được. Không có cách nào để 10 có thể ở ngay sau 4 trong dãy đó được.”</p><p id="22">“Đấy, thế cậu cần đến số mấy để giải?” Cô ấy hỏi tôi, nhướng mày một cái rồi lại hỏi. “Thế nếu dãy nó chạy đến vô cùng thì sao? Đến số thứ bao nhiêu cậu mới đoán được quy luật của đám còn lại?”</p><p id="23">“À rồi, rồi. Tức là luôn có một trường hợp nào đó, để cái quy luật của dãy vượt ra khỏi những số cho trước. Mà dù có thế, thì cho 10 ngay sau 1, 2, 3, 4 nghe nó cứ ngẫu nhiên lắm.”</p><p id="24">“Nhưng đó là cách thế giới hoạt động. Cậu sẽ chẳng bao giờ biết được tiếp theo là gì. Và những dự đoán sai, chỉ có thử thì mới biết được.” Xong, Miruka bắt đầy viết lên quyển ghi chú. “Giờ cậu đoán quy luật chung của dãy này thử?”</p><p id="25">1, 2, 3, 4, 6, 9, 8, 12, 18, 27,...</p><p id="26">“Hình như là...”. Tôi ngập ngừng.</p><p id="27">“Nếu cậu chỉ thấy 1, 2, 3, 4, rồi đoán ngay số tiếp theo là 5, thì rõ sai rồi đấy. Luật lệ thứ ấy, không dễ nhìn ra với cái mẫu đơn giản như vậy đâu.”</p><p id="28">“Đúng thật.”</p><p id="29">“Tiếp đó, nếu cậu thấy 1, 2, 3, 4, 6, 9,... Rồi đoán đây là một dãy tăng thì lại nhầm. Số sau 9 giờ là số 8 đấy. Ban đầu cậu nghĩ các số sẽ theo quy luật mà tăng, và “bùm”, nó giảm. Thế giờ cậu nhìn ra quy luật nào chưa?”</p><p id="30">“Ừ thì, ngoài 1 ra, mấy số khác đều là bội số của 2 hoặc 3. Nhưng cũng chưa đủ để giải thích cái số nhỏ hơn ấy.”</p><p id="31">“Thế cậu nhìn thử lời giải đi.” Vừa nói, cô vừa viết:</p><p id="32"><img src="https://i.ibb.co/c6Qk6bL/1.png" alt=""></p><p id="33">“Chú ý vào lũy thừa của các số 2 và 3, như thế dễ nhận ra hơn đấy!”</p><p id="34">“Các số mũ 0 đều bằng 1, vậy là chỉ cần tính hết chỗ này là được dãy vừa nãy đúng không?” Tôi cũng vừa nói, vừa viết ngay ở dưới.</p><p id="35"><img src="https://i.ibb.co/mvrGLQy/3.png" alt=""></p><p id="36">“Nhưng tôi vẫn chưa hiểu lắm”.</p><p id="37">“Mỗi lũy thừa chưa đủ hở? Thế này thì sao?”</p><p id="38"><img src="https://i.ibb.co/JsXntz7/2.png" alt=""></p><p id="39">“Ra, ra là thế”. Tôi thốt lên.</p><p id="40">“Đấy! Nói về các số bội số chỉ có 2 và 3 thì...”. Miruka đang nói, bỗng một câu gọi lớn từ cửa thư viện ngắt lời cô.</p><p id="41">“Bà có đi không? Hay đang bận gì đấy?”</p><p id="42">“À, đúng rồi, nay có buổi tập”. Miruka chợt nhớ.</p><p id="43">Cô trả lại cây bút chì cho tôi và quay đầu về hướng cô gái đang chờ ở cửa. Trong lúc rời đi, cô có ngoảnh đầu và bảo: “Nhớ nhắc tôi kể cậu nghe về thế giới khi chỉ có hai số nguyên tố nhé”.</p><p id="44">Nói rồi, Miruka rời đi. Để tôi thì lại một mình trong thư viện.</p>
 <h3 align="center">-OoO-</h3>
-<p>Tham gia Hako Discord tại <a href="https://hako.vn/discord">https://hako.vn/discord</a></p>
-<p>Ủng hộ bản dịch tại <a href="https://docln.net">docln.net</a></p>
-<a href="/truyen/3930" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/3930_d.jpg?t=1655559085" class="d-none d-md-block" style="width: 970px; height: auto">
+<p>Tham gia Hako Discord tại <a href="https://hako.vn/discord">hako.vn/discord</a></p>
+<p>Theo dõi Fanpage Hako tại <a href="https://fb.me/hako.page">fb.me/hako.page</a></p>
+<a href="/truyen/10712" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/10712_d.jpg?t=1655556811" class="d-none d-md-block" style="width: 970px; height: auto">
 </a>
-<a href="/truyen/3930" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/3930_m.jpg?t=1655559085" class="d-md-none" style="width: 100%; height: auto">
+<a href="/truyen/10712" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/10712_m.jpg?t=1655556811" class="d-md-none" style="width: 100%; height: auto">
 </a>
 </div>
 <div style="text-align: center; margin: 20px auto 10px auto;">
@@ -184,21 +208,21 @@ Dẫn nhập
 <section class="rd-basic_icon row">
 <a href="/truyen/12078-math-girls/c95267-12-khac-biet" class="col text-center "><i class="fas fa-backward"></i></a>
 <a href="/truyen/12078-math-girls" class="col text-center"><i class="fas fa-home"></i></a>
-<a href="/truyen/12078-math-girls" class="col text-center  disabled "><i class="fas fa-forward"></i></a>
+<a href="/truyen/12078-math-girls/c105351-21-phuong-trinh-va-nhung-la-thu-tinh-hai-cong-mot-bang-ba" class="col text-center "><i class="fas fa-forward"></i></a>
 </section>
 
 </div>
 <div class="col-12 col-lg-10 offset-lg-1">
 <section id="chapter-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(4)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(6)</span></span>
 </header>
 <main id="fbcmt_root" class="sect-body">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3>4 Bình luận </h3>
+<h3>6 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -206,9 +230,72 @@ Dẫn nhập
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1864336" class="ln-comment-item clear" data-comment="1864336" data-parent="1864336">
+<div id="ln-comment-1870765" class="ln-comment-item clear" data-comment="1870765" data-parent="1870765">
 <div class="ln-comment-user_ava">
 <img src="https://docln.net/img/noava.png">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/104985" class="strong">6 Người</a>
+</div>
+<div>
+</div> <div class="ln-comment-content long-text">
+T ko giỏi toán nhưng t mún nói rằng dẩy số 1;2;3;4;10;20;30;40;... hoạt động theo công thức (1^a.x^10)+(2^b.x^10)+(3^c.x^10)+(4^d.x^10) với a+b+c+d=1và a,b,c,d thuộc N. Nếu sai thì mong mn chỉ bảo ;-;
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/12078-math-girls/c99095-13-khoi-dau-cua-nhung-dang-thuc?comment_id=1870765#ln-comment-1870765">
+<time class="timeago" title="09-07-2022 20:06:46" datetime="2022-07-09T20:06:46+07:00">
+09-07-2022 20:06:46
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-1873144" class="ln-comment-item clear" data-comment="1873144" data-parent="1870765">
+<div class="ln-comment-user_ava">
+<img src="https://i.docln.net/lightnovel/users/ua71619-926233ad-0152-42ae-a2bf-51ec3a51f974.jpg">
+</div>
+<div class="ln-comment-info">
+<div class="ln-comment-wrapper">
+<div class="ln-comment-user_name">
+<a href="https://docln.net/thanh-vien/71619" class="strong">Lucyper Regod</a>
+<div class="ln-comment-user_badge comment-owner">
+<i class="fas fa-flag"></i> Chủ post
+</div>
+</div>
+<div>
+<span class="ln-comment-user_badge_icon" title="Dịch giả">
+<img src="/img/badge/trans.png?t=1">
+</span>
+<span class="ln-comment-user_badge_icon" title="Tác giả">
+<img src="/img/badge/ori.png">
+</span>
+</div> <div class="ln-comment-content long-text">
+&lt;(") uầy, đúng rồi này! Hay bạn, mình tưởng nó là ngẫu nhiên cơ =)) lên đến 100 200 300 400 vẫn đúng!
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+</div>
+<div class="visible-toolkit">
+<span class="ln-comment-time"><a href="/truyen/12078-math-girls/c99095-13-khoi-dau-cua-nhung-dang-thuc?comment_id=1870765&amp;reply_id=1873144#ln-comment-1873144">
+<time class="timeago" title="11-07-2022 15:01:48" datetime="2022-07-11T15:01:48+07:00">
+11-07-2022 15:01:48
+</time>
+</a></span>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-1864336" class="ln-comment-item clear" data-comment="1864336" data-parent="1864336">
+<div class="ln-comment-user_ava">
+<img src="https://i.docln.net/lightnovel/users/ua78573-0dac698d-0395-4787-8078-c34c880b34ee.jpg">
 </div>
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
@@ -247,6 +334,9 @@ Thanks transヾ(•ω•`)o
 <div>
 <span class="ln-comment-user_badge_icon" title="Dịch giả">
 <img src="/img/badge/trans.png?t=1">
+</span>
+<span class="ln-comment-user_badge_icon" title="Tác giả">
+<img src="/img/badge/ori.png">
 </span>
 </div> <div class="ln-comment-content long-text">
 (＠＾◡＾) hì, tks
@@ -298,8 +388,8 @@ nocie
 <div class="ln-comment-group">
 <div id="ln-comment-1864196" class="ln-comment-item clear" data-comment="1864196" data-parent="1864196">
 <div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
-</div>
+<img src="https://i.docln.net/lightnovel/users/ua114666-3cb59be1-c203-4c83-a7a8-81a6ad77989d.jpg">
+</div> 
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
 <div class="ln-comment-user_name">
@@ -308,7 +398,7 @@ nocie
 <div>
 </div> <div class="ln-comment-content long-text">
 tem<br>
- </div>
+</div>
 <div class="comment_see_more expand none">Xem thêm</div>
 </div>
 <div class="visible-toolkit">
@@ -325,7 +415,7 @@ tem<br>
 <div class="ln-comment-page">
 </div> </main>
 <script>
-        var token = 'BKszAQ4tlWINw0kax2aTCYydLZup56RSamGNlCZ2';
+        var token = 'OJQjrPJ40tbwuG5wd91XMYki9KAOoW7BHyMW2X6R';
         var comment_type = 'chapter';
         var comment_typeid = '99095';
     </script>
@@ -338,7 +428,7 @@ tem<br>
 </div>
 </main>
 <script>
-    token = 'BKszAQ4tlWINw0kax2aTCYydLZup56RSamGNlCZ2';
+    token = 'OJQjrPJ40tbwuG5wd91XMYki9KAOoW7BHyMW2X6R';
         
     function turnoffall() {
         $(".rdtoggle").removeClass("on");
@@ -510,8 +600,8 @@ tem<br>
     };
 </script>
 <script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'BKszAQ4tlWINw0kax2aTCYydLZup56RSamGNlCZ2';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type='text/javascript' src='//pl16314303.safestcontentgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+<script src="/vendor/livewire/livewire.js?id=de3fca26689cb5a39af4" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'OJQjrPJ40tbwuG5wd91XMYki9KAOoW7BHyMW2X6R';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
 <footer id="footer">
 <div class="container">
 
