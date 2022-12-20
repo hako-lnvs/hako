@@ -16,7 +16,7 @@ const fetch = async (url) => {
 
 const urls = async () => {
   let urls = []
-  for (let index = 1; index <= 56; index++) {
+  for (let index = 1; index <= 57; index++) {
     console.log('🚀 ~ index', index)
     const url = 'https://docln.net/danh-sach?page=' + index
     const html = await fetch(url)
