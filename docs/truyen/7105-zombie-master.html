@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="jVnzQuY4P013ZRKmKSqI2mhlipTqwbqO9rvJryhc">
+<meta name="csrf-token" content="puYFDtyJuFjgKF7rTJRoATyi7IEA180HWUjoYSf0">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/7105-zombie-master">
@@ -22,9 +22,10 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=562275e1b3629395889c">
+<link rel="stylesheet" href="/css/interface.css?id=82e3b85f754712a81d62">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=1f074cf74da21d296ccb"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -44,7 +45,7 @@
 <span class="sidenav-icon_white"></span>
 <span class="sidenav-icon_white"></span>
 </div>
-<ul class="navbar-menu none hidden-block at-mobile unstyle"> 
+<ul class="navbar-menu none hidden-block at-mobile unstyle">
 <div class="navbar-search block none-m in-navbar-menu">
 <form class="" action="/tim-kiem" method="get">
 <input class="search-input" type="text" placeholder="Tối thiểu 2 kí tự" name="keywords" value="">
@@ -54,7 +55,7 @@
 <li><a class="nav-menu_item" href="/sang-tac"><span class="">Sáng tác</span></a></li>
 <li><a class="nav-menu_item" href="/convert"><span class="">Convert</span></a></li>
 <li><a class="nav-menu_item" href="/xuat-ban"><span class="">Xuất bản</span></a></li>
-<li><a class="nav-menu_item" href="/thao-luan"><span class="">Thảo luận</span></a></li>
+ <li><a class="nav-menu_item" href="/thao-luan"><span class="">Thảo luận</span></a></li>
 <li><a class="nav-menu_item" href="/danh-sach"><span class="">Danh sách</span></a></li>
 <li class="nav-has-submenu">
 <a class="nav-menu_item">
@@ -115,7 +116,7 @@
 <i class="fas fa-chevron-down dropdown-icon"></i>
 <i class="fas fa-chevron-right dropdown-icon"></i>
 </a>
-<ul class="nav-submenu hidden-block unstyled none">
+ <ul class="nav-submenu hidden-block unstyled none">
 <li><a href="/thao-luan/368-huong-dan-dang-truyen"><span>Đăng truyện</span></a></li>
 <li><a href="/thao-luan/2-gioi-thieu-cong-light-novel"><span>Giới thiệu</span></a></li>
 <li><a href="/thao-luan/1-mo-trang-thao-luan-gop-y-va-bao-loi"><span>Góp ý - Báo lỗi</span></a></li>
@@ -127,20 +128,21 @@
 
 </div>
 </div>
-<div class="page-top-group">
-<div class="index-background"></div>
+<div class="page-top-group ">
+<a href="/sang-tac/12255-vay-ra-mau-tuoi-cung-chua-huong-vi-tinh-yeu">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/banner1_d.jpg')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/banner1_m.jpg'); background-size: cover"></div>
+</a>
 </div>
 <main id="mainpart" class="project-page">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-9">
+<div class="col-12">
 <div class="page-breadcrumb">
 <span class="breadcrum-level"><a href="https://docln.net"><i class="fas fa-home"></i></a></span>
 <span class="next-icon"><i class="fas fa-chevron-right"></i></span>
 <span class="breadcrum-level"><a href="https://docln.net">Truyện dịch</a></span>
 </div>
-</div>
-<div class="col-12 col-lg-3">
 </div>
 </div>
 </div>
@@ -169,7 +171,7 @@
 </span>
 </div>
 <div class="series-information">
- <div class="info-item"><span class="info-name">Cảnh báo</span><span class="info-value" style="color: red; font-weight: bold;">Truyện 18+</span></div>
+<div class="info-item"><span class="info-name">Cảnh báo</span><span class="info-value" style="color: red; font-weight: bold;">Truyện 18+</span></div>
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/adult">Adult</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/ecchi">Ecchi</a>
@@ -192,7 +194,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 102 </span>
+<span class="block feature-name"> 109 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -206,10 +208,10 @@
 <span class="star-evaluate-item star-5" data-value="5"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-4" data-value="4"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-3" data-value="3"><i class="fas fa-star"></i></span>
- <span class="star-evaluate-item star-2" data-value="2"><i class="fas fa-star"></i></span>
+<span class="star-evaluate-item star-2" data-value="2"><i class="fas fa-star"></i></span>
 <span class="star-evaluate-item star-1" data-value="1"><i class="fas fa-star"></i></span>
 </div>
-</div>
+ </div>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
 <div class="catalog-icon side-feature-button">
@@ -246,19 +248,19 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="20/10/2020 02:32:42" datetime="2020-10-20T02:32:42+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="01/01/2023 16:01:56" datetime="2023-01-01T16:01:56+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">14.237</div>
+<div class="statistic-value">17.764</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
-<div class="statistic-value">10</div>
+ <div class="statistic-value">10</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">16.382</div>
+<div class="statistic-value">18.307</div>
 </div>
 </div>
 </div>
@@ -316,40 +318,40 @@
 <li>
 <div class="others-img no-padding">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s7825-79bbd7f2-7344-4d0a-83ac-fcf6ddcfcee6-m.jpg')">
+<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s13208-a7dc91a7-122d-4f7f-9821-be1a33a43415-m.jpg')">
 </div>
 </div>
 </div>
 <div class="others-info">
-<h5 class="others-name"><a href="/truyen/7825-hina-and-mamas-loving-sx-beauty-salon">Tiệm thẩm mỹ ướt át</a></h5>
-<small class="series-summary">Câu chuyện về chàng sinh viên đại học, Hisama Norito,...</small>
+<h5 class="others-name"><a href="/truyen/13208-reborn-girl-starting-a-new-life-in-another-world-as-a-seventh-daughter">Reborn Girl Starting a New Life In Another World As a Seventh Daughter</a></h5>
+<small class="series-summary">Kanami Miria là một nữ sinh cao trung và đã được chuyể...</small>
 </div>
 </li>
 <li>
 <div class="others-img no-padding">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s3340-cdb1e44b-b3ed-4082-8c2c-8cfb84184580-m.jpg')">
+<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s8962-8910e889-79a8-4332-b688-6462497a162b-m.jpg')">
 </div>
 </div>
 </div>
 <div class="others-info">
-<h5 class="others-name"><a href="/truyen/3340-darenidemo-dekiru-kage-kara-tasukeru-mao-tobatsu">Darenidemo Dekiru Kage Kara Tasukeru Maō Tōbatsu</a></h5>
-<small class="series-summary">Đã 10 năm từ khi Kranos tuyên bố chiến tranh chống lại...</small>
+<h5 class="others-name"><a href="/truyen/8962-nguyen-tac-cua-mot-triet-gia-duoc-viet-boi-ke-ngoc-vinh-cuu-asley">Nguyên tắc của một Triết gia, được viết bởi Kẻ Ngốc Vĩnh Cửu &quot;Asley&quot;</a></h5>
+<small class="series-summary">Khi còn trẻ, cậu đã thi trượt tại Đại học Ma thuật và...</small>
 </div>
 </li>
 <li>
 <div class="others-img no-padding">
 <div class="a6-ratio">
-<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s13089-42f01008-874b-45a9-9c44-fa3a66618576-m.jpg')">
+<div class="content img-in-ratio" style="background-image: url('https://i.docln.net/lightnovel/covers/s11435-06632fc3-aaf6-42d1-9748-aad421fbcdc3-m.jpg')">
 </div>
 </div>
 </div>
 <div class="others-info">
- <h5 class="others-name"><a href="/truyen/13089-con-trai-ut-cua-ba-tuoc-la-mot-warlock">Con trai út nhà Bá tước là một Warlock</a></h5>
-<small class="series-summary">Cậu con trai út nhà Bá tước Cronia quyết định trở thàn...</small>
+<h5 class="others-name"><a href="/truyen/11435-the-wolf-wont-sleep">The Wolf Won&#039;t Sleep</a></h5>
+<small class="series-summary">Lecan &amp;lt;Độc Nhãn Lang&amp;gt; là một mạo hiểm giả hùng m...</small>
 </div>
 </li>
-</ul>
+</ul> 
 </main>
 </section>
 <section class="basic-section gradual-mobile">
@@ -381,7 +383,7 @@
 <header id="volume_11436" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Toàn Tập
+Toàn Tập <span style="color: red">*</span>
 </span>
 </header>
 <main class="d-lg-block">
@@ -404,7 +406,7 @@ Toàn Tập
 </div>
 <div class="chapter-time">09/05/2020</div>
 </li>
-<li class="">
+ <li class="">
 <div class="chapter-name">
 <a href="/truyen/7105-zombie-master/c65507-chuong-02-do" title="Chương 02: Đỏ!">Chương 02: Đỏ!</a>
 </div>
@@ -422,6 +424,15 @@ Toàn Tập
 </div>
 <div class="chapter-time">20/10/2020</div>
 </li>
+<li class="">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/7105-zombie-master/c107185-chuong-05-tu-tin" title="Chương 05: Tự tin">Chương 05: Tự tin</a>
+</div>
+<div class="chapter-time">01/01/2023</div>
+</li>
 </ul>
 </div>
 </div>
@@ -434,7 +445,7 @@ Toàn Tập
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
-<section class="ln-comment">
+ <section class="ln-comment">
 <header>
 <h3>38 Bình luận </h3>
 
@@ -444,7 +455,7 @@ Toàn Tập
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
- <div id="ln-comment-972794" class="ln-comment-item clear" data-comment="972794" data-parent="972794">
+<div id="ln-comment-972794" class="ln-comment-item clear" data-comment="972794" data-parent="972794">
 <div class="ln-comment-user_ava">
 <img src="https://i.docln.net/lightnovel/users/ua25525-c21685e8-4524-4b3e-b198-144eb46fe70d.jpg">
 </div>
@@ -505,7 +516,7 @@ Bộ này phải tên cũ lad zom master ko vậy
 <div class="ln-comment-wrapper">
 <div class="ln-comment-user_name">
 <a href="https://docln.net/thanh-vien/594" class="strong">   </a>
-</div>
+ </div>
 <div>
 </div> <div class="ln-comment-content long-text">
 Đúng rồi, đúng rồi! Trong phần tên khác mình có note đó :3
@@ -579,7 +590,7 @@ Chờ bộ này tụt cak
 Gõ Zombie Master trên thanh tìm kiếm đấy có nhóm dịch bộ này đến chương mười mấy r đấy <br>
 Lên đó đọc đỡ đi
 </div>
-<div class="comment_see_more expand none">Xem thêm</div>
+ <div class="comment_see_more expand none">Xem thêm</div>
 </div>
 <div class="visible-toolkit">
 <span class="ln-comment-time"><a href="/truyen/7105-zombie-master?comment_id=941643&amp;reply_id=1000631#ln-comment-1000631">
@@ -660,7 +671,7 @@ Trước cái này dịch trên wattab mà bị drop r nay làm lại mừng vã
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
 </div>
- <div class="visible-toolkit">
+<div class="visible-toolkit">
 <span class="ln-comment-time"><a href="/truyen/7105-zombie-master?comment_id=824011#ln-comment-824011">
 <time class="timeago" title="17-05-2020 11:51:43" datetime="2020-05-17T11:51:43+07:00">
 17-05-2020 11:51:43
@@ -724,7 +735,7 @@ Giá mà trans bỏ từ "hắn" thay bằng nhân xưng khác thì hay.
 </div>
 </div>
 </div>
-<div class="ln-comment-reply">
+ <div class="ln-comment-reply">
 <div id="ln-comment-815437" class="ln-comment-item clear" data-comment="815437" data-parent="815206">
 <div class="ln-comment-user_ava">
 <img src="https://3.bp.blogspot.com/-CfJPIEENNFo/W35ezCLIJsI/AAAAAAABjuw/lKPHDvBkWioNZwUJ6ruHqUgX5FCJrxBagCHMYCw/w100/default.png">
@@ -733,7 +744,6 @@ Giá mà trans bỏ từ "hắn" thay bằng nhân xưng khác thì hay.
 <div class="ln-comment-wrapper">
 <div class="ln-comment-user_name">
 <a href="https://docln.net/thanh-vien/594" class="strong">   </a>
-
 </div>
 <div>
 </div> <div class="ln-comment-content long-text">
@@ -756,7 +766,7 @@ Có lẽ bạn không quen nhưng mình nghĩ nhân xưng này hợp với MC r�
 <div class="ln-comment-group">
 <div id="ln-comment-813454" class="ln-comment-item clear" data-comment="813454" data-parent="813454">
 <div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua8727-bec4b18e-b324-4feb-bc6a-9e6dc681e741.jpg">
+<img src="https://i.docln.net/lightnovel/users/ua8727-9ddf6741-50d8-456b-8dfc-362a0ed4bda0.jpg">
 </div>
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
@@ -806,7 +816,7 @@ Mình theo raw
 </div>
 </div> <div id="ln-comment-813518" class="ln-comment-item clear" data-comment="813518" data-parent="813454">
 <div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua8727-bec4b18e-b324-4feb-bc6a-9e6dc681e741.jpg">
+<img src="https://i.docln.net/lightnovel/users/ua8727-9ddf6741-50d8-456b-8dfc-362a0ed4bda0.jpg">
 </div>
 <div class="ln-comment-info">
 <div class="ln-comment-wrapper">
@@ -937,7 +947,7 @@ Không hay bằng bộ <a href="1136-zombie-no-afureta-sekai-de-ore-dake-ga-osow
 <time class="timeago" title="09-05-2020 10:05:05" datetime="2020-05-09T10:05:05+07:00">
 09-05-2020 10:05:05
 </time>
-</a></span>
+ </a></span>
 
 </div>
 </div>
@@ -979,7 +989,7 @@ Công nhận đó. Dù sao bộ này tác cũng chỉ là gà mờ, đến plot 
 </div>
 </div> </main>
 <script>
-        var token = 'jVnzQuY4P013ZRKmKSqI2mhlipTqwbqO9rvJryhc';
+        var token = 'puYFDtyJuFjgKF7rTJRoATyi7IEA180HWUjoYSf0';
         var comment_type = 'series';
         var comment_typeid = '7105';
     </script>
@@ -1032,13 +1042,13 @@ Công nhận đó. Dù sao bộ này tác cũng chỉ là gà mờ, đến plot 
 </div>
 </div>
 <script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'jVnzQuY4P013ZRKmKSqI2mhlipTqwbqO9rvJryhc';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/vendor/livewire/livewire.js?id=de3fca26689cb5a39af4" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'puYFDtyJuFjgKF7rTJRoATyi7IEA180HWUjoYSf0';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2022 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
 </div>
 </footer> </body>
 </html>
