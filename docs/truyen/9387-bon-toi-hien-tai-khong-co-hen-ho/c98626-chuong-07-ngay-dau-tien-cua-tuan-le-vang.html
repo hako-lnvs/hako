@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="UqFMuLCokpk1TATNhop4UVR0pgEe7K2pbG7qu2lA">
+<meta name="csrf-token" content="ISVriUGYlJCv32KHth4TOKp0tFUguIGdQh3uubFk">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang">
@@ -25,9 +25,11 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=e40e71494c4ccd5961c5">
+<link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
+<link rel="stylesheet" href="/css/tailwind.css?id=8fff756458c9a1c7b74e">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -36,7 +38,7 @@
       gtag('config', 'UA-34864968-3');
     </script>
 </head>
-<body>
+<body class="lightmode">
 <style>
     body {
         background: inherit;
@@ -54,7 +56,7 @@
 <a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
 <a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
 <a class="rd_sd-button_item rd_top-right" href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c102615-chuong-08-o-canh-ben-mot-cau-trai"><i class="fas fa-forward"></i></a>
- </section>
+</section>
 <section id="chapters" class="rd_sidebar rdtoggle">
 <main class="rdtoggle_body">
 <header class="rd_sidebar-header clear">
@@ -119,6 +121,11 @@ Chương 09 - Ở cạnh bên một cậu trai (2)
 Chương 10 - Ở cạnh bên một cô gái
 </a>
 </li>
+<li>
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c113015-chuong-11-so-thu-1">
+Chương 11 - Sở thú (1)
+</a>
+</li>
 </ul>
 </ul>
 </main>
@@ -166,14 +173,14 @@ Chương 10 - Ở cạnh bên một cô gái
 <div class="set-list set-font clear"><label>Kích cỡ chữ</label>
 <div class="set-slide set-input">
 <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
-<input class="set-slide_input" disabled="" value="16px" type="text">
+<input class="set-slide_input" disabled value="16px" type="text">
 <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
 </div>
 </div>
 <div class="set-list set-margin clear"><label>Bản lề</label>
 <div class="set-slide set-input">
- <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
-<input class="set-slide_input" disabled="" value="20px" type="text">
+<span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
+<input class="set-slide_input" disabled value="20px" type="text">
 <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
 </div>
 </div>
@@ -187,27 +194,23 @@ Chương 10 - Ở cạnh bên một cô gái
 <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
 <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
 <div class="title-top" style="padding-top: 20px">
-<h2 class="title-item" align="center">Tập 1</h2>
-<h4 class="title-item" align="center">Chương 07 - Ngày đầu tiên của tuần lễ vàng</h4>
-<h6 class="title-item" align="center">Độ dài: 1,107 từ - Lần cuối:
-<time class="timeago" title="24/06/2022 08:22:18" datetime="2022-06-24T08:22:18+07:00">
-24/06
-</time>
-- <a href="https://docln.net/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang#chapter-comments" style="text-decoration: underline">Bình luận: 14</a>
-</h6>
+<h2 class="title-item text-xl font-bold" align="center">Tập 1</h2>
+<h4 class="title-item text-base font-bold" align="center">Chương 07 - Ngày đầu tiên của tuần lễ vàng</h4>
+<h6 class="title-item font-bold" align="center">
+<a href="https://docln.net/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang#chapter-comments" style="text-decoration: underline">14 Bình luận</a> -
+Độ dài: 1,107 từ - Đăng lúc:
+<time class="topic-time timeago" title="24-06-2022 08:21:25" datetime="2022-06-24T08:21:25+07:00"></time> </h6>
 </div>
 <div style="text-align: center; margin: 20px auto -20px auto;">
 </div>
 <div id="chapter-content" class="long-text no-select">
 <p id="1">   Trans: Arteria</p><p id="2">   Edit: Dyan</p><p id="3">   Xin chào mn. Cũng đã 1 năm kể từ chap cuối của bộ này được đăng lên vì vài lý do từ trans cũ. Hiện tại thì nó sẽ được mình (Dyan) và ông bạn Arter chạy lại sau khi mình <s>cướp</s> xin được bộ này từ a Leon... tuy là Eng bộ này bủh vcl + thêm tiến độ ra chương bên đó là 1 tháng 1 chap nữa... chỉ là mình thích mấy bộ no illus như này nên quyết định làm nó dù khả năng flop là rất cao, nhưng vẫn mong mn ủng hộ. Thân ái và mời các bạn đọc.</p><p id="4">  __________________________________</p><p id="5">Ngày 1 tháng 5, cũng là ngày đầu tiên của Tuần Lễ Vàng. Tôi không có dự tính sẽ làm gì hôm nay hết, thế nên tôi quyết định sẽ tổ chức một bữa tiệc nhằm chúc mừng Yae vì đã đạt điểm A trong bài kiểm tra thể chất 2 hôm trước. Do nhân vật chính của bữa tiệc đã yêu cầu món bò nướng, cho nên tôi sẽ cố hết sức.</p><p id="6">Thế nên là giờ, tôi phải đi mua nguyên liệu trước đã. Do hôm qua tôi đã mua rau củ và vài thứ khác ở siêu thị rồi, nên giờ tôi chỉ sẽ đi mua thịt cho món chính của ngày hôm nay. Tuy nói là mua, nhưng thực chất tôi chỉ việc đi lấy thôi.</p><p id="7">“Kinuta-san, em đến lấy thịt đây ạ.”</p><p id="8">“Chào ~ em, Kazunari~kyun. Chị đảm bảo với em là miếng thịt đó rất ngon luôn~”</p><p id="9">Người vừa chào đón tôi khi tôi tiến vào tiệm là Kinuta-san. Dù chị ấy đang mặc một bộ trang phục khá là mới và lạ được gọi bằng tên “Gothic lolita” đi cùng với thân hình vạm vỡ và khuôn mặt không cạo râu, thì chị ấy vẫn là một người rất tuyệt vời. [note45398]</p><p id="10">“Đây, phần thịt mà em đã đặt để làm bò nướng đây; hàng thượng phẩm đấy ~. Dù cho đây không phải lần đầu tiên em mua, nhưng chị đã lấy phần ngon nhất của loại thịt này để bán cho em đấy. Nó không đến từ một nơi nào đó quá nổi tiếng, nhưng chị nghĩ nó sẽ rất ngon đấy, vì dù sao cũng là thịt bò Wagyu mà~”</p><p id="11">“Em cảm ơn chị nhé. Hết bao nhiêu thế ạ?”</p><p id="12">“Ừn~ Kazunari-kyun dù sao cũng là khách quen của chị mà~nên 2500 yên là được rồi~”</p><p id="13">“…Thế không phải rẻ quá ạ? Em có thể trả 5000 mà.”</p><p id="14">Tôi không ăn nhiều cho lắm, nhưng Yae thì ăn hơi bị dữ, nên tôi hỏi mua thêm, thế nhưng nó lại rẻ hơn tôi nghĩ. Tôi đã tưởng vì là bò Wagyu nên giá sẽ đắt lắm chứ…</p><p id="15">“Chị có nguồn cung từ người quen với giá rẻ, nên em không cần lo đâu~. Nếu em thấy ngon thì có dịp ghé đây mua thêm nhé. Hơn nữa, hôm nay em định tổ chức một bữa tiệc dành tặng cho Yae-chan mà phải hông ta ~”</p><p id="16">“S-Sao chị biết!?”</p><p id="17">“Bí☆mật”</p><p id="18">Cả đây nữa. Một trong những điều tuyệt vời ở Kinuta-san là về mạng lưới thông tin mà chị ta có. Thực sự là rất lớn, chị ấy biết mọi chuyện từ việc con mèo nhà hàng xóm mới sinh cho đến những vấn đề của thế giới. Chị ấy từng nói mình không có làm gì phạm pháp đâu, nhưng tôi vẫn không biết liệu mình có nên tin những lời đó hay không nữa. Có lẽ tôi nên kiểm tra xem trong nhà có máy nghe lén không mới được...</p><p id="19">“Fufufu, chị sẽ tiết lộ cho em vì có vẻ như em đang có vài nỗi lo không cần thiết thì phải, chỉ là một suy luận đơn giản thôi~. Kazunari-kyun sẽ không nấu một bữa ăn đầy tính cầu kì phức tạp như bò nướng nếu đó không phải là một buổi tiệc ăn mừng việc gì đó đâu, đúng chứ~? Và ngoài Yae-chan ra thì chằng còn ai để mà Kazunari-kyun tổ chức tiệc cho nữa, đúng không~nào.”</p><p id="20">“Em hiểu rồi ạ…”</p><p id="21">Đó là những gì chị ấy nói, nhưng tôi vẫn nghi ngờ không biết là chị ấy nói thật hay nói giả. Cái sự thật về việc tôi đang sống cùng Yae cũng đã bị Kinuta-san lật tẩy ngay từ lần đầu tôi gặp chị ấy mà. Chị ấy đúng thực là một con người đang sợ đến mức bạn phải dè chừng luôn ấy nhỉ.</p><p id="22">“Dù sao thì, em cảm ơn vì chỗ thịt nhé.”</p><p id="23">“Fufu, cảm ơn vì đã mua thịt ở tiệm của chị~. Nếu sau này có cần gì nữa thì cứ tự nhiên mà đặt nhé~”</p><p id="24">“À, vâng ạ.”</p><p id="25">•</p><p id="26">•</p><p id="27">•</p><p id="28">•</p><p id="29">•</p><p id="30">Trên đường về nhà sau khi mua thịt từ chỗ Kinuta-san, tôi tình cờ trông thấy Yae, thế nên tôi đã đuổi theo và gọi tên cổ.</p><p id="31">“Yae~!!”</p><p id="32">“Ah, Kazu-kun. Sao vậy?.”</p><p id="33">“Mình vừa đi mua thịt về. Dùng để làm bò nướng tối nay đấy.”</p><p id="34">“Ừm, mình rất mong chờ đấy.”</p><p id="35">“Mình sẽ cố hết sức.”</p><p id="36">Khóe miệng Yae hơi cong lên. Cô ấy khá mong chờ việc này đấy nhỉ. Nếu vậy thì, tôi sẽ phải chịu áp lực không được thất bại lần này, nhưng khi nghĩ đến thì, điều đó khiến tôi hạnh phúc.</p><p id="37">“Yae vừa đi sinh hoạt CLB về sao?”</p><p id="38">“Ừn. Hôm nay tan sớm vì ngày mai nữa mình còn có việc.”</p><p id="39">“Hiểu rồi. Thế thì, ngày mai có cần mình gọi dậy không?”</p><p id="40">“…Nhờ cậu nhé.”</p><p id="41">Dường như Yae rất yếu thế trước việc phải thức dậy buổi sáng, cho nên tôi sẽ gọi cô dậy ngày nào cần dậy sớm. Cô hình như cũng có đặt cả báo thức nữa, nhưng thường thì cổ sẽ tự tay tắt hết đi trong vô thức. Đối với tôi, một người có thể thức dậy mà chẳng cần báo thức, thì điều đó có hơi khó hiểu.</p><p id="42">“A thì dù sao mình cũng đã lỡ gọi cậu đứng lại đợi mình rồi, nên là giờ vừa về vừa nói chuyện cùng nhau nhé. Dù gì thì làm bò nướng cũng tốn chút thời gian mà.”</p><p id="43">“Ừn. Mình đang rất nóng lòng muốn được thưởng thức nó đây.”</p><p id="44">“Vậy thì đi nào.”</p><p id="45">Tôi đưa tay mình ra, và Yae nắm lấy nó. Hai bọn tôi tay trong tay bước đi có phần hơi chút nhanh hơn bình thường trên đường về nhà. Giờ thì, tôi sẽ cố gắng hết sức mình để làm được món bò nướng ngon nhất!</p>
-<h3 align="center">-OoO-</h3>
-<p>Tham gia Hako Discord tại <a href="https://hako.vn/discord">hako.vn/discord</a></p>
-<p>Theo dõi Fanpage Hako tại <a href="https://fb.me/hako.page">fb.me/hako.page</a></p>
-<a href="/truyen/10712" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/10712_d.jpg?t=1655556811" class="d-none d-md-block" style="width: 970px; height: auto">
+<hr class="w-7 h-7 mx-auto my-6 bg-gray-600 border-0 rounded md:my-12 dark:bg-gray-300">
+<a href="/truyen/12890" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/12890_d.jpg?t=1678123753" class="d-none d-md-block" style="width: 970px; height: auto">
 </a>
-<a href="/truyen/10712" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/10712_m.jpg?t=1655556811" class="d-md-none" style="width: 100%; height: auto">
+<a href="/truyen/12890" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/12890_m.jpg?t=1678123753" class="d-md-none" style="width: 100%; height: auto">
 </a>
 <div class="note-reg">
 <h2 align="center" style="margin-bottom: 40px;">Ghi chú</h2>
@@ -233,7 +236,7 @@ Chương 10 - Ở cạnh bên một cô gái
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3>14 Bình luận </h3>
+<h3 class="text-lg font-bold">14 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -241,325 +244,449 @@ Chương 10 - Ở cạnh bên một cô gái
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1974132" class="ln-comment-item clear" data-comment="1974132" data-parent="1974132">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua93036-7eb5f004-af7f-43e7-a1d0-1b916a301614.jpg">
+<div id="ln-comment-1974132" class="ln-comment-item mt-3 clear" data-comment="1974132" data-parent="1974132">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua93036-7eb5f004-af7f-43e7-a1d0-1b916a301614.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/93036" class="strong">Kurono Karen</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/93036">Kurono Karen</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 chx hẹn hò nhá, xạo vl
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1974132#ln-comment-1974132">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1974132#ln-comment-1974132" class="text-slate-500">
 <time class="timeago" title="16-09-2022 15:00:57" datetime="2022-09-16T15:00:57+07:00">
 16-09-2022 15:00:57
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1879683" class="ln-comment-item clear" data-comment="1879683" data-parent="1879683">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua86281-6a3e107f-e0f4-4485-bd7b-9ea807d0f854.jpg">
+<div id="ln-comment-1879683" class="ln-comment-item mt-3 clear" data-comment="1879683" data-parent="1879683">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86281-6a3e107f-e0f4-4485-bd7b-9ea807d0f854.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/86281" class="strong">Neeesama</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86281">Neeesama</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Tks trans
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1879683#ln-comment-1879683">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1879683#ln-comment-1879683" class="text-slate-500">
 <time class="timeago" title="15-07-2022 23:24:12" datetime="2022-07-15T23:24:12+07:00">
 15-07-2022 23:24:12
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1854709" class="ln-comment-item clear" data-comment="1854709" data-parent="1854709">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua118340-a6dbe2db-6702-46a2-8c3c-d58ba2c07e36.jpg">
+<div id="ln-comment-1854709" class="ln-comment-item mt-3 clear" data-comment="1854709" data-parent="1854709">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua118340-a6dbe2db-6702-46a2-8c3c-d58ba2c07e36.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
- <div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/118340" class="strong">SHIINA_RAZER</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/118340">Razer</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 ừm chưa hẹn hò à
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1854709#ln-comment-1854709">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1854709#ln-comment-1854709" class="text-slate-500">
 <time class="timeago" title="28-06-2022 20:57:01" datetime="2022-06-28T20:57:01+07:00">
 28-06-2022 20:57:01
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1853645" class="ln-comment-item clear" data-comment="1853645" data-parent="1853645">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua117633-bdb142f1-a896-40e3-b51b-4f14befc497d.jpg">
+<div id="ln-comment-1853645" class="ln-comment-item mt-3 clear" data-comment="1853645" data-parent="1853645">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua117633-bdb142f1-a896-40e3-b51b-4f14befc497d.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/117633" class="strong">Davy John</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/117633">Davy John</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 "Bọn tôi ko hẹn hò/yêu" lời nói dối trắng trợn trong romcom
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1853645#ln-comment-1853645">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1853645#ln-comment-1853645" class="text-slate-500">
 <time class="timeago" title="27-06-2022 22:18:32" datetime="2022-06-27T22:18:32+07:00">
 27-06-2022 22:18:32
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1850407" class="ln-comment-item clear" data-comment="1850407" data-parent="1850407">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua65421-aa0d97a0-1da7-44d0-a4ae-cba0dbb36d5f.jpg">
+<div id="ln-comment-1850407" class="ln-comment-item mt-3 clear" data-comment="1850407" data-parent="1850407">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua65421-1674271f-4905-4cb2-ac93-1964f4088c5c.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/65421" class="strong">Alexander Kéo</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65421">Alexander Kéo</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 TFNC
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1850407#ln-comment-1850407">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1850407#ln-comment-1850407" class="text-slate-500">
 <time class="timeago" title="24-06-2022 23:41:02" datetime="2022-06-24T23:41:02+07:00">
 24-06-2022 23:41:02
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1849959" class="ln-comment-item clear" data-comment="1849959" data-parent="1849959">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua114287-1fcb4481-a76c-470c-9da1-d85d969b3c61.jpg">
+<div id="ln-comment-1849959" class="ln-comment-item mt-3 clear" data-comment="1849959" data-parent="1849959">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua114287-1fcb4481-a76c-470c-9da1-d85d969b3c61.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/114287" class="strong">ⓈⓃⒶⒸⓀ</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/114287">ⓈⓃⒶⒸⓀ</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Chưa hẹn hò cơ đấy
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849959#ln-comment-1849959">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849959#ln-comment-1849959" class="text-slate-500">
 <time class="timeago" title="24-06-2022 17:21:34" datetime="2022-06-24T17:21:34+07:00">
 24-06-2022 17:21:34
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1849921" class="ln-comment-item clear" data-comment="1849921" data-parent="1849921">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua28974-8f3a2da7-4373-4caf-b293-5e8700455d2e.jpg">
+<div id="ln-comment-1849921" class="ln-comment-item mt-3 clear" data-comment="1849921" data-parent="1849921">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua28974-8f3a2da7-4373-4caf-b293-5e8700455d2e.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/28974" class="strong">Anata</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/28974">Anata</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Ừ thì chưa hẹn hò ????
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849921#ln-comment-1849921">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849921#ln-comment-1849921" class="text-slate-500">
 <time class="timeago" title="24-06-2022 16:27:44" datetime="2022-06-24T16:27:44+07:00">
 24-06-2022 16:27:44
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1849905" class="ln-comment-item clear" data-comment="1849905" data-parent="1849905">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua93036-7eb5f004-af7f-43e7-a1d0-1b916a301614.jpg">
+<div id="ln-comment-1849905" class="ln-comment-item mt-3 clear" data-comment="1849905" data-parent="1849905">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua93036-7eb5f004-af7f-43e7-a1d0-1b916a301614.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/93036" class="strong">Kurono Karen</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/93036">Kurono Karen</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 "chị ấy" hơi bị căng à nha
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
- <span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849905#ln-comment-1849905">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849905#ln-comment-1849905" class="text-slate-500">
 <time class="timeago" title="24-06-2022 15:56:25" datetime="2022-06-24T15:56:25+07:00">
 24-06-2022 15:56:25
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1849808" class="ln-comment-item clear" data-comment="1849808" data-parent="1849808">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1849808" class="ln-comment-item mt-3 clear" data-comment="1849808" data-parent="1849808">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua106857-91b949fb-e041-400e-bbf5-6b953bd66a68.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/106857" class="strong">Ca(OH)²</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106857">Ca(OH)²</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 "Chị" ấy nhưng lại có "râu" :)?
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808#ln-comment-1849808">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808#ln-comment-1849808" class="text-slate-500">
 <time class="timeago" title="24-06-2022 13:47:46" datetime="2022-06-24T13:47:46+07:00">
 24-06-2022 13:47:46
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1849818" class="ln-comment-item clear" data-comment="1849818" data-parent="1849808">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua86290-fb84ae28-a61e-4e32-87ed-592690f995f2.jpg">
+<div id="ln-comment-1849818" class="ln-comment-item mt-3 clear" data-comment="1849818" data-parent="1849808">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86290-fb84ae28-a61e-4e32-87ed-592690f995f2.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/86290" class="strong">Dyan</a>
 </div>
-<div>
-<span class="ln-comment-user_badge_icon" title="Dịch giả">
-<img src="/img/badge/trans.png?t=1">
-</span>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86290">Dyan</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 ông cứ tưởng tượng hình ảnh 1 chị nhân viên đô con như mấy ông tập thể hình để râu quai nón mặc gothic lolita đang vẫy tay chào hàng ông là đc=)))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808&amp;reply_id=1849818#ln-comment-1849818">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808&amp;reply_id=1849818#ln-comment-1849818" class="text-slate-500">
 <time class="timeago" title="24-06-2022 13:53:56" datetime="2022-06-24T13:53:56+07:00">
 24-06-2022 13:53:56
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
 </div>
 </div>
-</div> <div id="ln-comment-1850473" class="ln-comment-item clear" data-comment="1850473" data-parent="1849808">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/106857" class="strong">Ca(OH)²</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
-<a href="https://docln.net/thanh-vien/86290">@Dyan:</a> lại nhớ tới anh "hầu gái" của mấy bố Nhật Bổn =))
+</div>
+<div id="ln-comment-1850473" class="ln-comment-item mt-3 clear" data-comment="1850473" data-parent="1849808">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua106857-91b949fb-e041-400e-bbf5-6b953bd66a68.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106857">Ca(OH)²</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/86290">@Dyan:</a> lại nhớ tới anh "hầu gái" của mấy bố Nhật Bổn =))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808&amp;reply_id=1850473#ln-comment-1850473">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849808&amp;reply_id=1850473#ln-comment-1850473" class="text-slate-500">
 <time class="timeago" title="25-06-2022 00:49:57" datetime="2022-06-25T00:49:57+07:00">
 25-06-2022 00:49:57
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1849732" class="ln-comment-item clear" data-comment="1849732" data-parent="1849732">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua79085-f58a518c-1e26-425b-8590-3df20348fb9a.jpg">
+<div id="ln-comment-1849732" class="ln-comment-item mt-3 clear" data-comment="1849732" data-parent="1849732">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua79085-f58a518c-1e26-425b-8590-3df20348fb9a.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/79085" class="strong">Độc_Hành</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/79085">Độc_Hành</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 <em>Thanks team!!</em>
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849732#ln-comment-1849732">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?comment_id=1849732#ln-comment-1849732" class="text-slate-500">
 <time class="timeago" title="24-06-2022 12:59:30" datetime="2022-06-24T12:59:30+07:00">
 24-06-2022 12:59:30
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -567,13 +694,13 @@ Chưa hẹn hò cơ đấy
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
-<a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
+<a href class="paging_item paging_prevnext prev  disabled ">Trước</a>
 <a href="https://docln.net/truyen/9387-bon-toi-hien-tai-khong-co-hen-ho/c98626-chuong-07-ngay-dau-tien-cua-tuan-le-vang?page=2" class="paging_item paging_prevnext next">Sau</a>
 </div>
 </div>
 </div> </main>
 <script>
-        var token = 'UqFMuLCokpk1TATNhop4UVR0pgEe7K2pbG7qu2lA';
+        var token = 'ISVriUGYlJCv32KHth4TOKp0tFUguIGdQh3uubFk';
         var comment_type = 'chapter';
         var comment_typeid = '98626';
     </script>
@@ -586,7 +713,7 @@ Chưa hẹn hò cơ đấy
 </div>
 </main>
 <script>
-    token = 'UqFMuLCokpk1TATNhop4UVR0pgEe7K2pbG7qu2lA';
+    token = 'ISVriUGYlJCv32KHth4TOKp0tFUguIGdQh3uubFk';
         
     function turnoffall() {
         $(".rdtoggle").removeClass("on");
@@ -757,14 +884,13 @@ Chưa hẹn hò cơ đấy
         read_time: +new Date() / 1000 | 0,
     };
 </script>
-<script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'UqFMuLCokpk1TATNhop4UVR0pgEe7K2pbG7qu2lA';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+<script src="/scripts/app.js?id=666a549f3d7423291080"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'ISVriUGYlJCv32KHth4TOKp0tFUguIGdQh3uubFk';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2022 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
 </div>
 </footer> </body>
 </html>
