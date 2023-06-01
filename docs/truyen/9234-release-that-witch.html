@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="2VTrGE1p5f0Iaz0UEVkwXey2mtBdQ7yc5XKh2l1R">
+<meta name="csrf-token" content="O25am0C8izZxNvlMod2BQv779QXQNT2kvwsV5SbB">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/9234-release-that-witch">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
-<link rel="stylesheet" href="/css/tailwind.css?id=8fff756458c9a1c7b74e">
+<link rel="stylesheet" href="/css/tailwind.css?id=74231fba1069ef7d47ed">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
@@ -130,9 +130,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
+<a href="/truyen/4638">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/4638_d_l.png')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/4638_m_l.png'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -165,13 +165,14 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-9">
+<div class="col-12 col-md-9 flex flex-col">
+<div class="flex-1">
 <div class="series-name-group">
 <span class="series-name">
 <a href="/truyen/9234-release-that-witch">Release that witch</a>
 </span>
 </div>
-<div class="series-information">
+<div class="series-information mb-0 flex flex-col">
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/action">Action</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/fantasy">Fantasy</a>
@@ -188,13 +189,15 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 9234) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
 </div>
-<div class="side-features">
+</div>
+<div class="side-features flex-none">
 <div class="row">
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 199 </span>
+<span class="block feature-name"> 201 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -242,11 +245,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="22/05/2023 21:40:23" datetime="2023-05-22T21:40:23+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="01/06/2023 20:54:55" datetime="2023-06-01T20:54:55+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">30.713</div>
+<div class="statistic-value">33.527</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -254,7 +257,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">38.062</div>
+<div class="statistic-value">38.602</div>
 </div>
 </div>
 </div>
@@ -425,17 +428,23 @@ Chap 251 trở đi <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/9234-release-that-witch/c113262-chuong-262-cau-redwater" title="Chương 262: Cầu Redwater">Chương 262: Cầu Redwater</a>
 </div>
 <div class="chapter-time">22/05/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/9234-release-that-witch/c113623-chuong-263-lua-my-chin" title="Chương 263: Lúa mỳ chín">Chương 263: Lúa mỳ chín</a>
+</div>
+<div class="chapter-time">01/06/2023</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (7 chương)</span>
+<span>Xem tiếp (8 chương)</span>
 </div>
 </div>
 </ul>
@@ -443,7 +452,7 @@ Chap 251 trở đi <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:id="D8XAX9UK8wm2PZRw08pJ" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;D8XAX9UK8wm2PZRw08pJ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/9234-release-that-witch&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:9234,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;0ca6e0e99f76f7290e6679b5e0b77f275b17cf729f55528ef0b03c0329e58b17&quot;}}" wire:init="loadRelevantSeries">
+<div wire:id="F0TYI6nAZp3n2u63tGRG" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;F0TYI6nAZp3n2u63tGRG&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/9234-release-that-witch&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:9234,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;bc7a7a41eea2ef3f4ce6057ce9fecdcd8a372ebf1c9c74a6740b9505de0c87f8&quot;}}" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -462,14 +471,14 @@ Chap 251 trở đi <span style="color: red">*</span>
 
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(132)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(133)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold">83 Bình luận </h3>
+<h3 class="text-lg font-bold">84 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -555,7 +564,7 @@ vẫn còn sốngggggg
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -670,7 +679,7 @@ Ngon :))
 </div>
 </div>
 <div class="fetch_reply" data-parent="2171921">
-Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
 </div>
 <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
@@ -716,7 +725,7 @@ Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -886,7 +895,7 @@ ko còn ai dịch nữa nhỉ
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -977,7 +986,7 @@ Vẫn sống mà lười quá:))
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1051,7 +1060,7 @@ Mình mà làm thì chỉ cần khẩu 88mm của Đức là hiệu quả rồi,
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1089,7 +1098,7 @@ Mình mà làm thì chỉ cần khẩu 88mm của Đức là hiệu quả rồi,
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1126,7 +1135,7 @@ Mình mà làm thì chỉ cần khẩu 88mm của Đức là hiệu quả rồi,
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1200,7 +1209,7 @@ chap 1498 wtf bro
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1236,7 +1245,7 @@ Sao team vẫn chăm dịch ghê mặc dù nó end lâu lắm rồi
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1283,7 +1292,7 @@ Vậy tức mấy bộ này thôi nên nghỉ hả bạn:)
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+<img src="https://ln.hako.vn/img/noava.png" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -1320,12 +1329,12 @@ Vậy tức mấy bộ này thôi nên nghỉ hả bạn:)
 <div class="pagination-footer">
 <div class="pagination_wrap">
 <a href class="paging_item paging_prevnext prev  disabled ">Trước</a>
-<a href="https://docln.net/truyen/9234-release-that-witch?page=2" class="paging_item paging_prevnext next">Sau</a>
+<a href="https://ln.hako.vn/truyen/9234-release-that-witch?page=2" class="paging_item paging_prevnext next">Sau</a>
 </div>
 </div>
 </div> </main>
 <script>
-        var token = '2VTrGE1p5f0Iaz0UEVkwXey2mtBdQ7yc5XKh2l1R';
+        var token = 'npF2VCwLi3gTSpp6k9cPFwY3xFuqaGqgvnCd7Doq';
         var comment_type = 'series';
         var comment_typeid = '9234';
     </script>
@@ -1363,8 +1372,8 @@ Vậy tức mấy bộ này thôi nên nghỉ hả bạn:)
 
     series_id = parseInt('9234');
 </script>
-<script src="/scripts/app.js?id=666a549f3d7423291080"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '2VTrGE1p5f0Iaz0UEVkwXey2mtBdQ7yc5XKh2l1R';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/scripts/app.js?id=5aef245a4882aba7843f"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'O25am0C8izZxNvlMod2BQv779QXQNT2kvwsV5SbB';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <script type="text/javascript" src="//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
