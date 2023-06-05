@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="r6kB8j4TTTzhAw5p8NkfVoDDcgNf7C2HrGxppqg4">
+<meta name="csrf-token" content="Hyv9myiQrdbEnLD3h2o5LnBc6RKZdZTuYSWtky22">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
-<link rel="stylesheet" href="/css/tailwind.css?id=8fff756458c9a1c7b74e">
+<link rel="stylesheet" href="/css/tailwind.css?id=74231fba1069ef7d47ed">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
@@ -165,13 +165,14 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-9">
+<div class="col-12 col-md-9 flex flex-col">
+<div class="flex-1">
 <div class="series-name-group">
 <span class="series-name">
 <a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu">Itai no wa Iya nanode Bōgyo-Ryoku ni Kyokufuri Shitai to Omoimasu</a>
 </span>
 </div>
-<div class="series-information">
+<div class="series-information mb-0 flex flex-col">
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-anime">Adapted to Anime</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/adapted-to-manga">Adapted to Manga</a>
@@ -200,13 +201,15 @@ Web Novel
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 8472) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
 </div>
-<div class="side-features">
+</div>
+<div class="side-features flex-none">
 <div class="row">
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 1304 </span>
+<span class="block feature-name"> 1307 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -254,11 +257,11 @@ Web Novel
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="12/05/2023 17:43:08" datetime="2023-05-12T17:43:08+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="05/06/2023 15:35:02" datetime="2023-06-05T15:35:02+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">98.639</div>
+<div class="statistic-value">99.889</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -266,7 +269,7 @@ Web Novel
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">465.971</div>
+<div class="statistic-value">473.955</div>
 </div>
 </div>
 </div>
@@ -1110,16 +1113,22 @@ Tập 07 <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu/c112790-chuong-233-chuyen-hoa-phong-ngu-va-thap-tang-bay" title="Chương 233 - Chuyên hóa phòng ngự và Tháp tầng bảy">Chương 233 - Chuyên hóa phòng ngự và Tháp tầng bảy</a>
 </div>
 <div class="chapter-time">12/05/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu/c113786-chuong-234-chuyen-hoa-phong-ngu-va-thap-tang-bay-2" title="Chương 234 - Chuyên hóa phòng ngự và Tháp tầng bảy 2">Chương 234 - Chuyên hóa phòng ngự và Tháp tầng bảy 2</a>
+</div>
+<div class="chapter-time">05/06/2023</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (18 chương)</span>
+<span>Xem tiếp (19 chương)</span>
 </div>
 </div>
 </ul>
@@ -1358,7 +1367,7 @@ Tập 14
 </div>
 </main>
 </section>
-<div wire:id="qvyOkBpq7au96pDW9j6H" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;qvyOkBpq7au96pDW9j6H&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:8472,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;b0f52d6cba140ef5e06b3cbc65201ff450f35f2c7eacd4bc18b8f251deb800ce&quot;}}" wire:init="loadRelevantSeries">
+<div wire:id="u2e1RXm5ya1msgYCq5Kw" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;u2e1RXm5ya1msgYCq5Kw&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/8472-itai-no-wa-iya-nanode-bogyo-ryoku-ni-kyokufuri-shitai-to-omoimasu&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:8472,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;43e2c21e0470fa869584bc0dacd51ae756b983f0cdd9ac0de2669edd2ad1d30f&quot;}}" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -1377,7 +1386,7 @@ Tập 14
 
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1172)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1186)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1542,7 +1551,7 @@ Anime hell rush cộng thêm thằng trans lười dịch nên tiến độ đan
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
+<span class="likecount font-semibold">1</span>
 </a>
 </div>
 </div>
@@ -1623,7 +1632,7 @@ Tại sao mình không thấy chap nào hết vậy ạ?😭😭mình chỉ th�
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
+<span class="likecount font-semibold">1</span>
 </a>
 </div>
 </div>
@@ -1957,7 +1966,7 @@ thật luôn, 3 tập rush 3 vol thì chịu hẳn rồi
 </div>
 </div> </main>
 <script>
-        var token = 'r6kB8j4TTTzhAw5p8NkfVoDDcgNf7C2HrGxppqg4';
+        var token = 'Hyv9myiQrdbEnLD3h2o5LnBc6RKZdZTuYSWtky22';
         var comment_type = 'series';
         var comment_typeid = '8472';
     </script>
@@ -1995,8 +2004,8 @@ thật luôn, 3 tập rush 3 vol thì chịu hẳn rồi
 
     series_id = parseInt('8472');
 </script>
-<script src="/scripts/app.js?id=666a549f3d7423291080"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'r6kB8j4TTTzhAw5p8NkfVoDDcgNf7C2HrGxppqg4';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'Hyv9myiQrdbEnLD3h2o5LnBc6RKZdZTuYSWtky22';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <script type="text/javascript" src="//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
