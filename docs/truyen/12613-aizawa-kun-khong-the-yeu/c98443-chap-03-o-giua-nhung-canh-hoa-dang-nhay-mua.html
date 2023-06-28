@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="HDdtFEu4pGjgkHj0d2dFAsbQMVcJffvQyVgwWEuV">
+<meta name="csrf-token" content="UrhhBBzeVbGOL0SRT1XFt1DddQ19BnKwFPv4xXjZ">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua">
@@ -25,9 +25,11 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=562275e1b3629395889c">
+<link rel="stylesheet" href="/css/interface.css?id=8b9b7ef467abbd485698">
+<link rel="stylesheet" href="/css/tailwind.css?id=ec30c1d899ca7c4251f1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -36,7 +38,7 @@
       gtag('config', 'UA-34864968-3');
     </script>
 </head>
-<body>
+<body class="lightmode">
 <style>
     body {
         background: inherit;
@@ -104,7 +106,7 @@ Chương 05: Tái Ngộ
 Chương 06: Dấu hiệu báo trước của rắc rối.
 </a>
 </li>
- <li>
+<li>
 <a href="/truyen/12613-aizawa-kun-khong-the-yeu/c100388-chuong-7-mot-bau-vat-cho-hai-nguoi">
 Chương 7: Một báu vật cho hai người.
 </a>
@@ -139,6 +141,11 @@ Chương 12: Đi nhé / Itterasshai
 Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 </a>
 </li>
+<li>
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c114925-chuong-14-qua-khu-khong-the-tay-sach">
+Chương 14 : Quá khứ không thể tẩy sạch.
+</a>
+</li>
 </ul>
 </ul>
 </main>
@@ -166,6 +173,7 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 <span data-color="#e6f0e6" data-id="1" style="background-color: #e6f0e6"></span>
 <span data-color="#e3f5fa" data-id="2" style="background-color: #e3f5fa"></span>
 <span data-color="#f6f4ec" data-id="3" style="background-color: #f6f4ec"></span>
+<span data-color="#eae4d3" data-id="6" style="background-color: #eae4d3"></span>
 <span data-color="#f5e9ef" data-id="4" style="background-color: #f5e9ef"></span>
 <span data-color="#222222" data-id="5" style="background-color: #222222"></span>
 </div>
@@ -185,14 +193,14 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 <div class="set-list set-font clear"><label>Kích cỡ chữ</label>
 <div class="set-slide set-input">
 <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
-<input class="set-slide_input" disabled="" value="16px" type="text">
+<input class="set-slide_input" disabled value="16px" type="text">
 <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
 </div>
 </div>
 <div class="set-list set-margin clear"><label>Bản lề</label>
 <div class="set-slide set-input">
 <span class="set-slide_button set-smaller"><i class="fas fa-chevron-left"></i></span>
-<input class="set-slide_input" disabled="" value="20px" type="text">
+<input class="set-slide_input" disabled value="20px" type="text">
 <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
 </div>
 </div>
@@ -206,27 +214,36 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
 <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
 <div class="title-top" style="padding-top: 20px">
-<h2 class="title-item" align="center">Web Novel</h2>
-<h4 class="title-item" align="center">Chap 03: Ở giữa những cánh hoa đang nhảy múa.</h4>
-<h6 class="title-item" align="center">Độ dài: 1,221 từ - Lần cuối:
-<time class="timeago" title="21/06/2022 22:20:00" datetime="2022-06-21T22:20:00+07:00">
-21/06
-</time>
-- <a href="https://docln.net/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua#chapter-comments" style="text-decoration: underline">Bình luận: 34</a>
-</h6>
+<h2 class="title-item text-xl font-bold" align="center">Web Novel</h2>
+<h4 class="title-item text-base font-bold" align="center">Chap 03: Ở giữa những cánh hoa đang nhảy múa.</h4>
+<h6 class="title-item font-bold" align="center">
+<a href="https://docln.net/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua#chapter-comments" style="text-decoration: underline">34 Bình luận</a> -
+Độ dài: 1,221 từ - Cập nhật:
+<time class="topic-time timeago" title="21-06-2022 22:20:00" datetime="2022-06-21T22:20:00+07:00"></time> </h6>
 </div>
 <div style="text-align: center; margin: 20px auto -20px auto;">
 </div>
 <div id="chapter-content" class="long-text no-select">
 <p id="1">Aizawa Shuri là chị gái của tôi.</p><p id="2">Chị được trời ban, tài hoa và học thức. Chị gái dễ dàng chiếm được sự tin tưởng của mọi người xung quanh ngay từ hồi học tiểu học. Sáng nay tôi vừa biết được chị ấy là thành viên của Hội Học Sinh, à nhưng mà, nó không làm tôi thấy bất ngờ đâu.</p><p id="3">Tôi thấy tự hào vì chị là chị gái tôi, nhưng mà tôi vẫn tránh mặt chị ấy.</p><p id="4">Tại sao ư? Vì chị gái không ưa gì tôi. Đó là lý do vì sao, nhằm mục đích để không khiến chị gái khó chịu và chất chứa thêm căm ghét, tôi cố gắng tránh nói chuyện với chị tôi nhiều hơn. Điều đó có chút quá đáng, nhưng nó là giải pháp an toàn nhất có thể làm rồi.</p><p id="5">Ngày xưa, chúng tôi vốn dĩ là bạn tốt của nhau, nhưng rồi mối quan hệ đó sớm suy thoái thành ra như hiện tại. Tất cả đều khởi đầu với cái gì đó vụn vặt, thế nên tôi chỉ không biết được đầu nguồn cơn lũ [note45268] ở đâu.</p><p id="6">Lời xin lỗi của tôi vì tới muộn chỉ làm chị thêm lo nghĩ.</p><p id="7">"A..không phải vậy đâu Tatsumi, chị chỉ lo lắng nhỡ có chuyện gì xảy đến làm em muộn thôi, chị không có giận…"</p><p id="8">"Em chỉ xin lỗi đi muộn thôi mà. Dù sao thì, còn một ít thời gian, chị có định làm gì không?"</p><p id="9">Chị đã chờ em đến khi hai má đỏ bừng lên vì lạnh. Hay là có lẽ chị có việc nên mới đến sớm sao?</p><p id="10">Sau khi chị ấy làm một chút ngẫm nghĩ, chị tôi đã nở nụ cười.</p><p id="11">"Chúng mình không thể đi hết được, nhưng mà chị sẽ cho em một chuyến tham quan quanh trường."</p><p id="12">"Không cần đâu, em sẽ làm chuyện đó khi đi cùng với giáo vụ–"</p><p id="13">"Kh-ông, không, không. Ý kiến của một học sinh đã ở đây lâu rồi là rất quan trọng chứ, phải không em?"</p><p id="14">"...Thì đúng, nhưng mà chẳng phải các giáo vụ đã ở trong trường từ năm này qua năm khác hay sao? Ờ thì, tôi đoán là nhiều thứ chỉ có thể nhìn ra qua góc độ của các học sinh thôi. Chị cũng mất công chờ tôi lâu như vậy rồi, từ chối thì thật sự quá là làm tổn thương tình cảm. Tôi sẽ nghe lời chị chuyện này vậy.</p><p id="15">"Dạ dạ. Vậy chị giúp em chuyến này nhé, Chị!!! [note45269]"</p><p id="16">"--Được luôn!"</p><p id="17">"...Ấy, bây giờ cho em đi tra tên lớp của em nhé."</p><p id="18">"Chị vừa mới tra rồi, đó là lớp 1-B."</p><p id="19">Bảng thông báo ở ngay sau cổng trường. Xếp lớp của tất cả các cấp học đều ở đó, thế nên tôi cũng đã xem nó rồi.</p><p id="20">Lớp 1-B, học viên số 1, Aizawa Tatsumi. Khi mà tên của tôi nằm trên cùng của cột danh sách lớp, nó rất dễ tìm ra.</p><p id="21">Dòng họ trở nên thật sự tiện lợi trong những lúc thế này.</p><p id="22">"Ừm, chị thường xuyên ở vị trí đầu tiên. Mà quan trọng hơn, hãy chắc chắn biết được chỗ ngồi của em ở đâu, nhé. Đã được vài năm kể từ khi bọn họ bắt đầu sắp xếp chỗ ngồi ngẫu nhiên thay vì theo tên họ."</p><p id="23">"Tại sao thế?"</p><p id="24">"Hừ, không phải là như thế kích thích hơn nhiều hay sao ạ?"</p><p id="25">"Ừ thì đúng, em chắc là nó sẽ tạo hồi hộp hơn."</p><p id="26">"Phải, nhìn đi. Thành tích đầu vào của học sinh cũng quan trọng lắm nữa." </p><p id="27">Tôi tuyệt đối là nghĩ khác với vài lý do. Ngoài ra, tôi là một tân sinh, vậy thì sắp xếp ngẫu nhiên có khác biệt gì đâu cơ chứ? Khai thật nhé, sẽ rất rắc rối nếu nói thật, nên tôi im thôi.</p><p id="28">Ai chà, sao cũng được, tôi có chút phấn khích. Người ngồi cạnh tôi sẽ là loại người gì đây? Sẽ là một người thú vị chứ? Tôi tự hỏi xem mình có kết được một vài người bạn hay không.</p><p id="29">…Ờ mà tôi khoái vị trí phía cuối lớp, được sự ưu ái của khung cửa sổ. Như vậy thì có thể xả hơi [note45270] dễ dàng hơn.</p><p id="30">"...Em vừa nghĩ chuyện vẩn vơ gì có phải không?"</p><p id="31">"--Không không đâu, chỉ là chút hoài niệm bình thường thôi, rất là bình thường."</p><p id="32">"Ô-kê, vậy còn được."</p><p id="33">Mặc dù nói như vậy, thì chị tôi vẫn cứ săm soi tôi một cách nghi ngờ. Cứ như thể chị ấy nhìn thấu tôi như nhìn xuyên qua một tấm kính. Bạn biết gì không, tôi sẽ chấm dứt nghĩ đến những thứ không hay trước mặt chị gái.</p><p id="34">Nhưng mà tôi không có nói dối đâu, bất cứ học sinh khỏe mạnh bình thường nào đều sẽ chính xác nghĩ đến những điều như vậy… Ý tôi là không phải học sinh nghiêm túc.</p><p id="35">Mặc dù cuộc đối thoại này vốn có bản chất nhàm chán, thì với chúng tôi nó kỳ diệu lạ thường. Đó có thể là cuộc nói chuyện vụn vặt thường ngày đầu tiên giữa chúng tôi sau rất nhiều năm. Khi chúng tôi đối đáp chị cười tươi rạng rỡ như thể chị quay về thời thơ ấu của chúng tôi, và giọng của chị cũng từ tận đáy lòng.</p><p id="36">Em mừng quá. Có vẻ em nói chuyện bình thường được…</p><p id="37">Sự bình thường [note45271] vốn đã rời khỏi gia đình tôi từ lâu, và tôi đã thực sự nghĩ rằng mình đã chẳng còn có thể nói chuyện với chị như vậy nữa. Tuy vậy, chẳng biết tại sao, chị lại đến với tôi và hai chị em trò chuyện…</p><p id="38">Tôi với chị gái có thể làm hòa không. Và nếu được như thế, thì mối quan hệ của chúng tôi có trở lại như xưa được không.</p><p id="39">"Tatsumi, có chuyện gì sao?"</p><p id="40">"Không có gì, em chỉ đáng ngẫm nghĩ mà thôi, chị biết đấy…"</p><p id="41">"Ừm, ổn mà… Dù sao thì hãy đi thôi. Nếu chị em mình không nhanh lên, chúng ta sẽ không kịp đi một vòng đâu."</p><p id="42">Chị kéo cánh tay tôi, cố thúc giục tôi đi mau. Để làm vậy, chị quay mặt về phía tôi, tuy nhiên, tôi cảm thấy khuôn mặt chị từng rất hạnh phúc trở nên lạnh cóng, và nụ cười của chị hóa thành cau có – Shuri nhìn chằm chằm vào phía sau lưng của tôi.</p><p id="43">…Chuyện gì thế?</p><p id="44">Tôi đã cố quay đầu theo ánh nhìn của chị, nhưng mà–</p><p id="45">"...Đi nào em!" tiếng của chị gái tôi không chút kiên nhẫn.</p><p id="46">"Nè…chờ em đã…"</p><p id="47">—Chị gái tôi kéo cánh tay tôi với lực còn lớn hơn trước, cùng lúc chặn cái đầu của tôi khỏi quay lại.</p><p id="48">'Cái gì vậy. Quan trọng hơn, có phải là "chuyện đó"...'</p><p id="49">Ngoài rìa góc nhìn của mắt tôi, ngay trước khi tôi bị kéo đi, tôi chỉ có thể liếc nhìn thoáng qua một chút xíu. Chỉ một khoảnh khắc đó thôi, nhưng mà tôi thề rằng mình đã nhìn thấy ai đó với mái tóc màu hạt dẻ quen thuộc [note45272], đứng trước cổng trường, giữa những cánh hoa anh đào đang bay múa.</p>
-<h3 align="center">-OoO-</h3>
-<p>Tham gia Hako Discord tại <a href="https://hako.vn/discord">https://hako.vn/discord</a></p>
-<p>Ủng hộ bản dịch tại <a href="https://docln.net">docln.net</a></p>
-<a href="/truyen/4576" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/4576_d.jpg?t=1658938277" class="d-none d-md-block" style="width: 970px; height: auto">
+<div class="flex justify-center mt-10 mb-7 space-x-3">
+<a href="https://hako.vn/discord" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg" style="background-color: #7289da; text-decoration: initial; color: white !important;">
+<svg class="mr-2 h-4 w-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewbox="0 0 24 24">
+<path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+</svg>
+Discord
 </a>
-<a href="/truyen/4576" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/4576_m.jpg?t=1658938277" class="d-md-none" style="width: 100%; height: auto">
+<a href="https://fb.com/hako.page" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg" style="background-color: #1877f2; text-decoration: initial; color: white !important;">
+<svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="currentColor" viewbox="0 0 24 24">
+<path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+</svg>
+Facebook
+</a>
+</div>
+<a href="/truyen/8476" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/8476_d.jpg?t=1675310241" class="d-none d-md-block" style="width: 970px; height: auto">
+</a>
+<a href="/truyen/8476" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/8476_m.jpg?t=1675310241" class="d-md-none" style="width: 100%; height: auto">
 </a>
 <div class="note-reg">
 <h2 align="center" style="margin-bottom: 40px;">Ghi chú</h2>
@@ -240,7 +257,7 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 </div>
 </div>
 <div style="text-align: center; margin: 20px auto 10px auto;">
- </div>
+</div>
 <section class="rd-basic_icon row">
 <a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98410-chuong-02-mot-khoi-dau-moi-tinh-la-mot-buoc-cach-xa-phien-muon" class="col text-center "><i class="fas fa-backward"></i></a>
 <a href="/truyen/12613-aizawa-kun-khong-the-yeu" class="col text-center"><i class="fas fa-home"></i></a>
@@ -258,7 +275,7 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3>34 Bình luận </h3>
+<h3 class="text-lg font-bold">34 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -266,275 +283,395 @@ Chương 13 : Bạn chung phòng lôi thôi lếch thếch
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845006" class="ln-comment-item clear deleted disabled" data-comment="1845006" data-parent="1845006">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg" alt="User's avatar">
+<div id="ln-comment-1845006" class="ln-comment-item mt-3 clear deleted disabled" data-comment="1845006" data-parent="1845006">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/98554" class="strong">Đại Sư ∩∪</a>
-<div class="ln-comment-user_badge comment-owner">
-<i class="fas fa-flag"></i> Chủ post
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ring-2 ring-cyan-500 dark:ring-cyan-900">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98554">Đại Sư ∩∪</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
 </div>
 </div>
 <div class="ln-comment-content long-text">
-<span>Bình luận đã bị xóa bởi Đại Sư ∩∪</span>
+Bình luận đã bị xóa bởi Đại Sư ∩∪
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1950505" class="ln-comment-item clear" data-comment="1950505" data-parent="1950505">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1950505" class="ln-comment-item mt-3 clear" data-comment="1950505" data-parent="1950505">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/109657" class="strong">ttuunngg</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/109657">ttuunngg</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Thằng main này tuổi l vs ĐẤNG
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1950505#ln-comment-1950505">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1950505#ln-comment-1950505" class="text-slate-500">
 <time class="timeago" title="28-08-2022 23:06:36" datetime="2022-08-28T23:06:36+07:00">
 28-08-2022 23:06:36
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1939780" class="ln-comment-item clear" data-comment="1939780" data-parent="1939780">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1939780" class="ln-comment-item mt-3 clear" data-comment="1939780" data-parent="1939780">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/135399" class="strong">alone one</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/135399">alone one</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 main này cx thường thôi<br>
 sao sánh vs ĐẤNG đc💔
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1939780#ln-comment-1939780">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1939780#ln-comment-1939780" class="text-slate-500">
 <time class="timeago" title="21-08-2022 21:25:40" datetime="2022-08-21T21:25:40+07:00">
 21-08-2022 21:25:40
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1941238" class="ln-comment-item clear" data-comment="1941238" data-parent="1939780">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua123179-ec64f16b-6070-4297-af6c-7da33c321a0c.jpg">
+<div id="ln-comment-1941238" class="ln-comment-item mt-3 clear" data-comment="1941238" data-parent="1939780">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua123179-ec64f16b-6070-4297-af6c-7da33c321a0c.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/123179" class="strong">Boy si tình</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123179">Boy si tình</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Đấng là 1 hệ tư tưởng mà bn.
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1939780&amp;reply_id=1941238#ln-comment-1941238">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1939780&amp;reply_id=1941238#ln-comment-1941238" class="text-slate-500">
 <time class="timeago" title="22-08-2022 19:52:32" datetime="2022-08-22T19:52:32+07:00">
 22-08-2022 19:52:32
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1909856" class="ln-comment-item clear" data-comment="1909856" data-parent="1909856">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg">
+<div id="ln-comment-1909856" class="ln-comment-item mt-3 clear" data-comment="1909856" data-parent="1909856">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua38250-558c65fc-1c71-4db1-80e1-a457c7fa50f3.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/38250" class="strong">Chiến công đầu</a>
- </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/38250">Chiến công đầu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Sao lại thấy nó giống giống nhưng đồng thời lại khang khác ta. Có bà chị, nghĩ là bà chị ghét mình, bà chị thì cứ cố gắng làm thân, rồi giờ đến nhỏ nào đó (Có vẻ là bạn thuở nhỏ). Có copy của Chúa Yukito không vậy? Mà cho dù có copy thì cũng không thể nào thay thế được tồn tại thần thánh là Chúa Yukito đâu.
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1909856#ln-comment-1909856">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1909856#ln-comment-1909856" class="text-slate-500">
 <time class="timeago" title="03-08-2022 03:46:39" datetime="2022-08-03T03:46:39+07:00">
 03-08-2022 03:46:39
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1911236" class="ln-comment-item clear" data-comment="1911236" data-parent="1909856">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua109462-c5f5a189-65fa-45ca-8455-3ece1d6a2fb1.jpg">
+<div id="ln-comment-1911236" class="ln-comment-item mt-3 clear" data-comment="1911236" data-parent="1909856">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua109462-e15c0afa-f0e1-4db3-857a-d8925c7f6165.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/109462" class="strong">reviackerman</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/109462">lev0h</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 đi đâu cũng thấy bác thế =)))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1909856&amp;reply_id=1911236#ln-comment-1911236">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1909856&amp;reply_id=1911236#ln-comment-1911236" class="text-slate-500">
 <time class="timeago" title="03-08-2022 23:27:57" datetime="2022-08-03T23:27:57+07:00">
 03-08-2022 23:27:57
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1897745" class="ln-comment-item clear" data-comment="1897745" data-parent="1897745">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua125954-18761916-044c-4d9e-bc02-529189e02e67.jpg">
+<div id="ln-comment-1897745" class="ln-comment-item mt-3 clear" data-comment="1897745" data-parent="1897745">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua125954-18761916-044c-4d9e-bc02-529189e02e67.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/125954" class="strong">Phạm Đức Quý</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/125954">Phạm Đức Quý</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Con bạn thuở nhỏ?
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1897745#ln-comment-1897745">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1897745#ln-comment-1897745" class="text-slate-500">
 <time class="timeago" title="26-07-2022 20:39:24" datetime="2022-07-26T20:39:24+07:00">
 26-07-2022 20:39:24
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845822" class="ln-comment-item clear" data-comment="1845822" data-parent="1845822">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1845822" class="ln-comment-item mt-3 clear" data-comment="1845822" data-parent="1845822">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/90764" class="strong">Pianergy</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/90764">Pianergy</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Đoạn đầu "chị được ban tặng" có lẽ trong bản eng là "she is gifted" . Gifted trong gifted student có nghĩa là học sinh có tài năng, hay học sinh giỏi nhé trans<br>
 Bản dịch còn đôi chỗ có sạn nhưng điểm cộng là chú thích đầy đủ (đôi khi chi tiết quá) và k lỗi vặt.<br>
 Hóng chap mới từ trans
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822#ln-comment-1845822">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822#ln-comment-1845822" class="text-slate-500">
 <time class="timeago" title="21-06-2022 13:03:54" datetime="2022-06-21T13:03:54+07:00">
 21-06-2022 13:03:54
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1846367" class="ln-comment-item clear" data-comment="1846367" data-parent="1845822">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/98554" class="strong">Đại Sư ∩∪</a>
-<div class="ln-comment-user_badge comment-owner">
-<i class="fas fa-flag"></i> Chủ post
+<div id="ln-comment-1846367" class="ln-comment-item mt-3 clear" data-comment="1846367" data-parent="1845822">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg" class="w-full rounded-full" />
 </div>
 </div>
-<div>
-<span class="ln-comment-user_badge_icon" title="Dịch giả">
-<img src="/img/badge/trans.png?t=1">
-</span>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98554">Đại Sư ∩∪</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Cảm ơn, nhưng không có chữ student nào cả.
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822&amp;reply_id=1846367#ln-comment-1846367">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822&amp;reply_id=1846367#ln-comment-1846367" class="text-slate-500">
 <time class="timeago" title="21-06-2022 20:44:36" datetime="2022-06-21T20:44:36+07:00">
 21-06-2022 20:44:36
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
 </div>
 </div>
-</div> <div id="ln-comment-1846395" class="ln-comment-item clear" data-comment="1846395" data-parent="1845822">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/98554" class="strong">Đại Sư ∩∪</a>
-<div class="ln-comment-user_badge comment-owner">
-<i class="fas fa-flag"></i> Chủ post
 </div>
 </div>
-<div>
-<span class="ln-comment-user_badge_icon" title="Dịch giả">
-<img src="/img/badge/trans.png?t=1">
-</span>
-</div> <div class="ln-comment-content long-text">
+</div>
+<div id="ln-comment-1846395" class="ln-comment-item mt-3 clear" data-comment="1846395" data-parent="1845822">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua98554-5dfdfdd2-e097-475d-8bda-f1d66d964595.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98554">Đại Sư ∩∪</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Mình có thể dịch là "Chị được thiên phú (trời ban)...", nhưng mà ở nền tảng mình hơi dị ứng hán việt nên... <br>¯\_(ツ)_/¯
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822&amp;reply_id=1846395#ln-comment-1846395">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845822&amp;reply_id=1846395#ln-comment-1846395" class="text-slate-500">
 <time class="timeago" title="21-06-2022 20:58:43" datetime="2022-06-21T20:58:43+07:00">
 21-06-2022 20:58:43
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -545,213 +682,294 @@ Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845330" class="ln-comment-item clear" data-comment="1845330" data-parent="1845330">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua65421-aa0d97a0-1da7-44d0-a4ae-cba0dbb36d5f.jpg">
+<div id="ln-comment-1845330" class="ln-comment-item mt-3 clear" data-comment="1845330" data-parent="1845330">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua65421-1674271f-4905-4cb2-ac93-1964f4088c5c.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/65421" class="strong">Alexander Kéo</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65421">Alexander Kéo</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 TFNC
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845330#ln-comment-1845330">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845330#ln-comment-1845330" class="text-slate-500">
 <time class="timeago" title="21-06-2022 00:10:33" datetime="2022-06-21T00:10:33+07:00">
 21-06-2022 00:10:33
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845275" class="ln-comment-item clear" data-comment="1845275" data-parent="1845275">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua116042-757655fe-3b63-4678-9bb5-ff582576d94a.jpg">
+<div id="ln-comment-1845275" class="ln-comment-item mt-3 clear" data-comment="1845275" data-parent="1845275">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua116042-757655fe-3b63-4678-9bb5-ff582576d94a.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/116042" class="strong">Kuroi H</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/116042">Kuroi H</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Thanks trans
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845275#ln-comment-1845275">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845275#ln-comment-1845275" class="text-slate-500">
 <time class="timeago" title="20-06-2022 23:26:15" datetime="2022-06-20T23:26:15+07:00">
 20-06-2022 23:26:15
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845213" class="ln-comment-item clear" data-comment="1845213" data-parent="1845213">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua87726-cef67ba8-4ddc-43d3-9525-5cc6ac765a51.jpg">
+<div id="ln-comment-1845213" class="ln-comment-item mt-3 clear" data-comment="1845213" data-parent="1845213">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua87726-50036324-27a5-4a78-901c-c8cdf1b3aacf.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/87726" class="strong">Đấng Yukito muôn năm</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/87726">Haprae</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 dam bạn thuở nhỏ tự hủy đây sao:)
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845213#ln-comment-1845213">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845213#ln-comment-1845213" class="text-slate-500">
 <time class="timeago" title="20-06-2022 22:56:43" datetime="2022-06-20T22:56:43+07:00">
 20-06-2022 22:56:43
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1845793" class="ln-comment-item clear" data-comment="1845793" data-parent="1845213">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua98826-6bae46d7-f429-4317-b6b1-2a86eb630c31.jpg">
+<div id="ln-comment-1845793" class="ln-comment-item mt-3 clear" data-comment="1845793" data-parent="1845213">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua98826-6bae46d7-f429-4317-b6b1-2a86eb630c31.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/98826" class="strong">amane kun</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/98826">amane kun</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 .-. higari k tự hủy tới mức này đâu chỉ tại ngài , mà nó ms lm thế
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845213&amp;reply_id=1845793#ln-comment-1845793">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845213&amp;reply_id=1845793#ln-comment-1845793" class="text-slate-500">
 <time class="timeago" title="21-06-2022 12:36:25" datetime="2022-06-21T12:36:25+07:00">
 21-06-2022 12:36:25
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845194" class="ln-comment-item clear" data-comment="1845194" data-parent="1845194">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua118355-89ed4e4f-6a79-47c2-951a-24312f1f6e44.jpg">
+<div id="ln-comment-1845194" class="ln-comment-item mt-3 clear" data-comment="1845194" data-parent="1845194">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua118355-89ed4e4f-6a79-47c2-951a-24312f1f6e44.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/118355" class="strong">BinkSake_</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/118355">BinkSake_</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 còn ai ngoài bạn thuở nhỏ nữa :))
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845194#ln-comment-1845194">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845194#ln-comment-1845194" class="text-slate-500">
 <time class="timeago" title="20-06-2022 22:49:05" datetime="2022-06-20T22:49:05+07:00">
 20-06-2022 22:49:05
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1845178" class="ln-comment-item clear" data-comment="1845178" data-parent="1845178">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1845178" class="ln-comment-item mt-3 clear" data-comment="1845178" data-parent="1845178">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua123961-7d4b2d4c-6a0d-4726-81e4-4e8cd9bd25c6.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/123961" class="strong">Anti NTR</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/123961">Anti NTR</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Đấng vũ trụ khác à<br>
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178#ln-comment-1845178">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178#ln-comment-1845178" class="text-slate-500">
 <time class="timeago" title="20-06-2022 22:41:09" datetime="2022-06-20T22:41:09+07:00">
 20-06-2022 22:41:09
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="ln-comment-reply">
-<div id="ln-comment-1845737" class="ln-comment-item clear" data-comment="1845737" data-parent="1845178">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
+<div id="ln-comment-1845737" class="ln-comment-item mt-3 clear" data-comment="1845737" data-parent="1845178">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua106857-91b949fb-e041-400e-bbf5-6b953bd66a68.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/106857" class="strong">Ca(OH)²</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106857">Ca(OH)²</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Tk này vẫn nor chán...s đủ tuổi mà đi so vs "Đấng" :v
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178&amp;reply_id=1845737#ln-comment-1845737">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178&amp;reply_id=1845737#ln-comment-1845737" class="text-slate-500">
 <time class="timeago" title="21-06-2022 11:57:21" datetime="2022-06-21T11:57:21+07:00">
 21-06-2022 11:57:21
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
 </div>
 </div>
-</div> <div id="ln-comment-1846933" class="ln-comment-item clear" data-comment="1846933" data-parent="1845178">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/106103" class="strong">DawnLee</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
-<a href="https://docln.net/thanh-vien/106857">@Ca(OH)²:</a> này thì công nhận thật :v
+</div>
+<div id="ln-comment-1846933" class="ln-comment-item mt-3 clear" data-comment="1846933" data-parent="1845178">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106103">DawnLee</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/106857">@Ca(OH)²:</a> này thì công nhận thật :v
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178&amp;reply_id=1846933#ln-comment-1846933">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?comment_id=1845178&amp;reply_id=1846933#ln-comment-1846933" class="text-slate-500">
 <time class="timeago" title="22-06-2022 10:04:54" datetime="2022-06-22T10:04:54+07:00">
 22-06-2022 10:04:54
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -760,13 +978,13 @@ Tk này vẫn nor chán...s đủ tuổi mà đi so vs "Đấng" :v
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
-<a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
+<a href class="paging_item paging_prevnext prev  disabled ">Trước</a>
 <a href="https://docln.net/truyen/12613-aizawa-kun-khong-the-yeu/c98443-chap-03-o-giua-nhung-canh-hoa-dang-nhay-mua?page=2" class="paging_item paging_prevnext next">Sau</a>
 </div>
 </div>
 </div> </main>
 <script>
-        var token = 'HDdtFEu4pGjgkHj0d2dFAsbQMVcJffvQyVgwWEuV';
+        var token = 'UrhhBBzeVbGOL0SRT1XFt1DddQ19BnKwFPv4xXjZ';
         var comment_type = 'chapter';
         var comment_typeid = '98443';
     </script>
@@ -779,7 +997,7 @@ Tk này vẫn nor chán...s đủ tuổi mà đi so vs "Đấng" :v
 </div>
 </main>
 <script>
-    token = 'HDdtFEu4pGjgkHj0d2dFAsbQMVcJffvQyVgwWEuV';
+    token = 'UrhhBBzeVbGOL0SRT1XFt1DddQ19BnKwFPv4xXjZ';
         
     function turnoffall() {
         $(".rdtoggle").removeClass("on");
@@ -950,14 +1168,13 @@ Tk này vẫn nor chán...s đủ tuổi mà đi so vs "Đấng" :v
         read_time: +new Date() / 1000 | 0,
     };
 </script>
-<script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'HDdtFEu4pGjgkHj0d2dFAsbQMVcJffvQyVgwWEuV';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'UrhhBBzeVbGOL0SRT1XFt1DddQ19BnKwFPv4xXjZ';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2022 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
 </div>
 </footer> </body>
 </html>
