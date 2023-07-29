@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="98MejnI0eDzi5HiDKgStcCT5iYlcIcjJEH9Y0HVk">
+<meta name="csrf-token" content="JssNWmgVfTiGAXIbXWoIvSPPaVMOga8SQWg7029n">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/1305-rakuin-no-monshou">
@@ -22,9 +22,11 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=562275e1b3629395889c">
+<link rel="stylesheet" href="/css/interface.css?id=7a219b8d39cd68faef43">
+<link rel="stylesheet" href="/css/tailwind.css?id=35a2a684af509538a68d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=d4e173046ae81fa34b07"></script>
+<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
 <script>
       window.dataLayer = window.dataLayer || [];
@@ -38,7 +40,7 @@
 <div data-scrollto="#page-top" class="backtoTop"><i class="fas fa-angle-double-up"></i></div>
 <div id="navbar" class="headroom">
 <div class="container">
-<div id="sidenav-icon" class="none-xl none-l">
+<div id="sidenav-icon" class="none-xl">
 <div class="sidenav-icon-content">
 <span class="sidenav-icon_white"></span>
 <span class="sidenav-icon_white"></span>
@@ -53,7 +55,7 @@
 </div>
 <li><a class="nav-menu_item" href="/sang-tac"><span class="">Sáng tác</span></a></li>
 <li><a class="nav-menu_item" href="/convert"><span class="">Convert</span></a></li>
-<li><a class="nav-menu_item" href="/xuat-ban"><span class="">Xuất bản</span></a></li>
+ <li><a class="nav-menu_item" href="/xuat-ban"><span class="">Xuất bản</span></a></li>
 <li><a class="nav-menu_item" href="/thao-luan"><span class="">Thảo luận</span></a></li>
 <li><a class="nav-menu_item" href="/danh-sach"><span class="">Danh sách</span></a></li>
 <li class="nav-has-submenu">
@@ -103,7 +105,7 @@
 <button class="search-submit" type="submit" value="Tìm kiếm"><i class="fas fa-search"></i></button>
 </form>
 </div>
-<ul class="navbar-menu at-navbar none d-lg-block unstyled">
+<ul class="navbar-menu at-navbar none d-xl-block unstyled">
 <li><a class="nav-menu_item" href="/sang-tac"><i class="fas fa-pen-nib menu-icon"></i><span class="">Sáng tác</span></a></li>
 <li><a class="nav-menu_item" href="/convert"><i class="fas fa-book menu-icon"></i><span class="">Convert</span></a></li>
 <li><a class="nav-menu_item" href="/xuat-ban"><i class="fas fa-calendar menu-icon"></i><span class="">Xuất bản</span></a></li>
@@ -113,7 +115,7 @@
 <a class="nav-menu_item">
 <i class="fas fa-question menu-icon"></i><span class="">Hướng dẫn</span>
 <i class="fas fa-chevron-down dropdown-icon"></i>
-<i class="fas fa-chevron-right dropdown-icon"></i>
+ <i class="fas fa-chevron-right dropdown-icon"></i>
 </a>
 <ul class="nav-submenu hidden-block unstyled none">
 <li><a href="/thao-luan/368-huong-dan-dang-truyen"><span>Đăng truyện</span></a></li>
@@ -127,20 +129,21 @@
 
 </div>
 </div>
-<div class="page-top-group">
-<div class="index-background"></div>
+<div class="page-top-group ">
+<a href="/truyen/12377">
+<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12377_d_l.png')"></div>
+<div class="index-background d-lg-none" style="background-image: url('/images/banners/12377_m_l.png'); background-size: cover"></div>
+</a>
 </div>
 <main id="mainpart" class="project-page">
 <div class="container">
 <div class="row">
-<div class="col-12 col-lg-9">
+<div class="col-12">
 <div class="page-breadcrumb">
 <span class="breadcrum-level"><a href="https://docln.net"><i class="fas fa-home"></i></a></span>
 <span class="next-icon"><i class="fas fa-chevron-right"></i></span>
 <span class="breadcrum-level"><a href="https://docln.net">Truyện dịch</a></span>
 </div>
-</div>
-<div class="col-12 col-lg-3">
 </div>
 </div>
 </div>
@@ -162,13 +165,14 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-md-9">
+<div class="col-12 col-md-9 flex flex-col">
+<div class="flex-1">
 <div class="series-name-group">
 <span class="series-name">
 <a href="/truyen/1305-rakuin-no-monshou">Rakuin no Monshou</a>
 </span>
 </div>
-<div class="series-information">
+<div class="series-information mb-0 flex flex-col">
 <div class="series-gernes" x-data="{ more: false }">
 <a class="series-gerne-item" href="https://docln.net/the-loai/action">Action</a>
 <a class="series-gerne-item" href="https://docln.net/the-loai/adventure">Adventure</a>
@@ -194,29 +198,25 @@ Seinen
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 1305) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
 </div>
-<div class="side-features">
+</div>
+<div class="side-features flex-none">
 <div class="row">
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 1459 </span>
+<span class="block feature-name"> 1488 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
 <div class="series-rating rated">
+<a href="https://docln.net/truyen/1305/danh-gia">
 <label for="open-rating" class="side-feature-button button-rate">
 <span class="block feature-value"><i class="far fa-star"></i></span>
-<span class="block feature-name">Đánh giá</span>
+ <span class="block feature-name">Đánh giá</span>
 </label>
-<input type="checkbox" id="open-rating" />
-<div class="series-evaluation clear">
-<span class="star-evaluate-item star-5" data-value="5"><i class="fas fa-star"></i></span>
-<span class="star-evaluate-item star-4" data-value="4"><i class="fas fa-star"></i></span>
-<span class="star-evaluate-item star-3" data-value="3"><i class="fas fa-star"></i></span>
-<span class="star-evaluate-item star-2" data-value="2"><i class="fas fa-star"></i></span>
- <span class="star-evaluate-item star-1" data-value="1"><i class="fas fa-star"></i></span>
-</div>
+</a>
 </div>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -254,19 +254,19 @@ Seinen
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="07/02/2022 07:58:51" datetime="2022-02-07T07:58:51+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="29/07/2023 16:22:09" datetime="2023-07-29T16:22:09+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">519.441</div>
-</div>
+<div class="statistic-value">523.021</div>
+ </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
-<div class="statistic-value">209</div>
+<div class="statistic-value">5,00 / <small>1</small></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">607.553</div>
+<div class="statistic-value">703.767</div>
 </div>
 </div>
 </div>
@@ -279,7 +279,7 @@ Seinen
 </div>
 <div class="summary-wrapper col-12">
 <div class="series-summary">
-<h4>Tóm tắt</h4>
+<h4 class="font-bold">Tóm tắt</h4>
 <div class="summary-content">
 <p>Cuộc chiến tranh kéo dài suốt mười năm giữa hai quốc gia Mephius và Garbera sắp đi đến hồi kết bằng một cuộc hôn nhân chính trị giữa hai hoàng tộc. Orba, một người bị mất gia đình trong chiến tranh và bị ép phải làm võ sĩ giác đấu, bị bắt buộc phải làm thế thân cho hoàng thái tử Mephius do có ngoại hình giống nhau. Mặt khác, Vileena - công chúa của Garbera - lại hạ quyết tâm phải chi phối hoàng thái tử vì lợi ích đất nước. </p>
 </div>
@@ -301,7 +301,7 @@ Seinen
 <div class="series-owner group-mem">
 <img width="50px" height="50px" src="https://3.bp.blogspot.com/-Mlgd1-MIkeI/Wu6WqmD2KhI/AAAAAAABLkY/e1gtjN5YZbkvb6W_6qyBdjHsPR6RYoKhwCHMYCw/w100/default.jpg" alt="Poster's avatar">
 <div class="series-owner-title">
-<span class="series-owner_name"><a href="https://docln.net/thanh-vien/5889">GangsterVN</a></span>
+<span class="series-owner_name"><a href="/thanh-vien/5889">GangsterVN</a></span>
 </div>
 </div>
 <div class="fantrans-section">
@@ -348,12 +348,66 @@ Seinen
 <li data-scrollTo="#volume_10525"><span class="list_vol-order">06.</span><span class="list_vol-title">Tập 06</span></li>
 <li data-scrollTo="#volume_12671"><span class="list_vol-order">07.</span><span class="list_vol-title">Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng</span></li>
 </ol>
-</div>
-</section> 
+ </div>
+</section>
 </div>
 <div class="col-12 col-lg-9 float-left">
 <div style="text-align: center; margin: 0 auto 10px auto;">
 </div>
+<section id="series-reviews" class="basic-section">
+<header class="sect-header tab-list">
+<span class="sect-title tab-title" data-tab-index="1">Reviews mới</span></span>
+</header>
+<div class="overflow-hidden shadow">
+<ul role="list" class="">
+<li>
+<a href="https://docln.net/truyen/1305/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
+<div class="px-4 py-4 sm:px-6">
+<div class="flex items-center justify-between">
+<p class="truncate text-sm font-bold text-indigo-600 dark:text-white">-̶P̶h̶á̶t̶ ̶t̶r̶</p>
+<div class="ml-2 flex flex-shrink-0">
+<div class="d-flex justify-content-around">
+<div class="text-base text-yellow-400">
+<i class="fas fa-star"></i>
+</div>
+<div class="text-base text-yellow-400">
+<i class="fas fa-star"></i>
+</div>
+<div class="text-base text-yellow-400">
+<i class="fas fa-star"></i>
+</div>
+<div class="text-base text-yellow-400">
+<i class="fas fa-star"></i>
+</div>
+<div class="text-base text-yellow-400">
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-2 sm:flex sm:justify-between">
+<div class="sm:flex">
+<p class="flex items-center text-sm text-gray-500 dark:text-white">
+<svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+</svg>
+Bộ này khái thác đề tài quân sự, chiến tranh phân...
+</p>
+</div>
+<div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
+<svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+<path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
+</svg>
+<p>
+<time class="topic-time timeago" title="19-04-2023 00:24:57" datetime="2023-04-19T00:24:57+07:00"></time> </p>
+</div>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+</section>
 <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
 <header id="volume_3294" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
@@ -392,12 +446,12 @@ Tập 01
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c22072-chuong-1-sat-va-mau-part-1" title="Chương 1: Sắt và Máu (part 1)">Chương 1: Sắt và Máu (part 1)</a>
- </div>
+</div>
 <div class="chapter-time">01/08/2017</div>
 </li>
 <li class="">
 <div class="chapter-name">
-<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+ <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c22354-chuong-1-sat-va-mau-part-2" title="Chương 1: Sắt và Máu (part 2)">Chương 1: Sắt và Máu (part 2)</a>
 </div>
 <div class="chapter-time">03/08/2017</div>
@@ -425,9 +479,8 @@ Tập 01
 <li class="none">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
-
 <a href="/truyen/1305-rakuin-no-monshou/c22951-chuong-2-hai-chang-trai-part3" title="Chương 2: Hai chàng trai  (part3)">Chương 2: Hai chàng trai (part3)</a>
-</div>
+ </div>
 <div class="chapter-time">20/08/2017</div>
 </li>
 <li class="none">
@@ -457,7 +510,7 @@ Tập 01
 <div class="chapter-time">02/09/2017</div>
 </li>
 <li class="none">
- <div class="chapter-name">
+<div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c23549-chuong-4-tai-thung-lung-seirin-part2" title="Chương 4: Tại thung lũng Seirin( part2)">Chương 4: Tại thung lũng Seirin( part2)</a>
 </div>
 <div class="chapter-time">03/09/2017</div>
@@ -488,7 +541,7 @@ Tập 01
 <div class="chapter-time">18/11/2017</div>
 </li>
 <li class="none">
- <div class="chapter-name">
+<div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c25743-chuong-6-tran-phao-dai-zaim" title="Chương 6: Trận pháo đài Zaim(part 1)">Chương 6: Trận pháo đài Zaim(part 1)</a>
 </div>
@@ -517,11 +570,12 @@ Tập 01
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c26056-chuong-7-vuong-quoc-ao-anh-part-2" title="Chương 7: Vương quốc ảo ảnh( part 2)">Chương 7: Vương quốc ảo ảnh( part 2)</a>
- </div>
+</div>
 <div class="chapter-time">30/11/2017</div>
 </li>
 <li class="none">
 <div class="chapter-name">
+
 <a href="/truyen/1305-rakuin-no-monshou/c26118-chuong-7-vuong-quoc-ao-anh-part-3" title="Chương 7: Vương quốc ảo ảnh( part 3)">Chương 7: Vương quốc ảo ảnh( part 3)</a>
 </div>
 <div class="chapter-time">02/12/2017</div>
@@ -563,13 +617,13 @@ Tập 02
 <div class="a6-ratio">
 <div class="content img-in-ratio" style="background-image: url('https://4.bp.blogspot.com/-8utTRFPEPfU/WiTdy5ZcSGI/AAAAAAAA1EE/TmJttPNxXzUTzHOuLCIe57T88xfCvTawQCHMYCw/w215/default.jpg')">
 </div>
- </div>
+</div>
 </a>
 </div>
 </div>
 <div class="col-12 col-md-10">
 <ul class="list-chapters at-series">
-<li class="">
+ <li class="">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c26192-minh-hoa" title="Minh họa">Minh họa</a>
@@ -598,9 +652,8 @@ Tập 02
 </li>
 <li class="">
 <div class="chapter-name">
-
 <a href="/truyen/1305-rakuin-no-monshou/c27408-chuong-2-nhung-ngay-o-vuong-do-part1" title="Chương 2: Những ngày ở vương đô (part1)">Chương 2: Những ngày ở vương đô (part1)</a>
-</div>
+ </div>
 <div class="chapter-time">07/01/2018</div>
 </li>
 <li class="">
@@ -628,7 +681,7 @@ Tập 02
 <a href="/truyen/1305-rakuin-no-monshou/c28104-chuong-3-dau-si-cua-cong-chua-part-2" title="Chương 3: Đấu sĩ của công chúa (Part 2)">Chương 3: Đấu sĩ của công chúa (Part 2)</a>
 </div>
 <div class="chapter-time">30/01/2018</div>
- </li>
+</li>
 <li class="none">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
@@ -663,7 +716,7 @@ Tập 02
 </li>
 <li class="none">
 <div class="chapter-name">
-<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+ <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c28884-chuong-15" title="Chương 5: Chiến đấu ẩn danh(Part 2)">Chương 5: Chiến đấu ẩn danh(Part 2)</a>
 </div>
 <div class="chapter-time">22/02/2018</div>
@@ -693,7 +746,7 @@ Tập 02
 <a href="/truyen/1305-rakuin-no-monshou/c29385-chuong-19" title="Chương 6:  Những kẻ mang dấu ấn (Part 3)">Chương 6: Những kẻ mang dấu ấn (Part 3)</a>
 </div>
 <div class="chapter-time">08/03/2018</div>
-</li>
+ </li>
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c29638-chuong-7-phan-quyet-trong-rong-part-1" title="Chương 7: Phán quyết trống rỗng (Part 1)">Chương 7: Phán quyết trống rỗng (Part 1)</a>
@@ -743,7 +796,7 @@ Tập 02
 </div>
 <div class="chapter-time">24/05/2018</div>
 </li>
- <div class="mobile-more">
+<div class="mobile-more">
 <div class="see_more">
 <span>Xem tiếp (22 chương)</span>
 </div>
@@ -864,7 +917,7 @@ Tập 03
 </div>
 <div class="chapter-time">30/01/2019</div>
 </li>
-<li class="none">
+ <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c43934-chuong5-hoi-kien" title="Chương5: Hội kiến (part1)">Chương5: Hội kiến (part1)</a>
 </div>
@@ -897,6 +950,7 @@ Tập 03
 </li>
 <li class="none">
 <div class="chapter-name">
+
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c46231-chuong-6-danh-chiem-apta-part3" title="Chương 6: Đánh chiếm Apta (part3)">Chương 6: Đánh chiếm Apta (part3)</a>
 </div>
@@ -916,7 +970,7 @@ Tập 03
 <div class="chapter-time">08/04/2019</div>
 </li>
 <li class="none">
- <div class="chapter-name">
+<div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c47103-chuong-23" title="Chương 7: Bia mộ kiếm (part3)">Chương 7: Bia mộ kiếm (part3)</a>
 </div>
 <div class="chapter-time">12/04/2019</div>
@@ -974,7 +1028,7 @@ Tập 04
 <li class="">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c51215-chuong-1-may-den-tren-bau-troi-apta-part2" title="Chương 1: Mây đen trên bầu trời Apta (part2)">Chương 1: Mây đen trên bầu trời Apta (part2)</a>
-</div>
+ </div>
 <div class="chapter-time">28/06/2019</div>
 </li>
 <li class="">
@@ -993,7 +1047,7 @@ Tập 04
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c52520-chuong-2-tiec-tra-cua-cong-chua-part2" title="Chương 2: Tiệc trà của công chúa (part2)">Chương 2: Tiệc trà của công chúa (part2)</a>
- </div>
+</div>
 <div class="chapter-time">21/07/2019</div>
 </li>
 <li class="none">
@@ -1005,6 +1059,7 @@ Tập 04
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c54165-chuong-3-hai-vi-vuong-tu-xu-ende-part1" title="Chương 3: Hai vị vương tử xứ Ende (Part1)">Chương 3: Hai vị vương tử xứ Ende (Part1)</a>
+
 </div>
 <div class="chapter-time">18/08/2019</div>
 </li>
@@ -1056,7 +1111,6 @@ Tập 04
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c56572-chuong-5-lua-diet-vong" title="Chương 5: Lửa diệt vong (part3)">Chương 5: Lửa diệt vong (part3)</a>
-
 </div>
 <div class="chapter-time">12/10/2019</div>
 </li>
@@ -1088,7 +1142,7 @@ Tập 04
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c57479-chuong-7-vuong-quoc-da-mat-part2" title="Chương 7: Vương quốc đã mất (part2)">Chương 7: Vương quốc đã mất (part2)</a>
- </div>
+</div>
 <div class="chapter-time">09/11/2019</div>
 </li>
 <li class="none">
@@ -1101,6 +1155,7 @@ Tập 04
 <li class="none">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+
 <a href="/truyen/1305-rakuin-no-monshou/c57644-chuong-7-vuong-quoc-da-matpart4" title="Chương 7: Vương quốc đã mất(part4)">Chương 7: Vương quốc đã mất(part4)</a>
 </div>
 <div class="chapter-time">15/11/2019</div>
@@ -1127,7 +1182,7 @@ Tập 04
 </div>
 </main>
 </section>
- <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+<section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
 <header id="volume_10001" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
@@ -1149,7 +1204,7 @@ Tập 05
 <div class="col-12 col-md-10">
 <ul class="list-chapters at-series">
 <li class="">
-<div class="chapter-name">
+ <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c57906-minh-hoa-co-spoil" title="Minh họa (có spoil)">Minh họa (có spoil)</a>
 </div>
@@ -1169,7 +1224,7 @@ Tập 05
 </li>
 <li class="">
 <div class="chapter-name">
- <a href="/truyen/1305-rakuin-no-monshou/c58653-chuong-04" title="Chương 1: Lính đánh thuê xứ Tauran (part2)">Chương 1: Lính đánh thuê xứ Tauran (part2)</a>
+<a href="/truyen/1305-rakuin-no-monshou/c58653-chuong-04" title="Chương 1: Lính đánh thuê xứ Tauran (part2)">Chương 1: Lính đánh thuê xứ Tauran (part2)</a>
 </div>
 <div class="chapter-time">07/12/2019</div>
 </li>
@@ -1181,7 +1236,7 @@ Tập 05
 </li>
 <li class="">
 <div class="chapter-name">
-<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+ <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c59078-chuong-06" title="Chương 2: Hồn ma (part1)">Chương 2: Hồn ma (part1)</a>
 </div>
 <div class="chapter-time">21/12/2019</div>
@@ -1201,7 +1256,7 @@ Tập 05
 </li>
 <li class="none">
 <div class="chapter-name">
- <a href="/truyen/1305-rakuin-no-monshou/c59852-chuong-3-helio-part1" title="Chương 3: Helio (part1)">Chương 3: Helio (part1)</a>
+<a href="/truyen/1305-rakuin-no-monshou/c59852-chuong-3-helio-part1" title="Chương 3: Helio (part1)">Chương 3: Helio (part1)</a>
 </div>
 <div class="chapter-time">12/01/2020</div>
 </li>
@@ -1214,6 +1269,7 @@ Tập 05
 </li>
 <li class="none">
 <div class="chapter-name">
+
 <a href="/truyen/1305-rakuin-no-monshou/c60032-chuong-3-helio-part-3" title="Chương 3: Helio (part 3)">Chương 3: Helio (part 3)</a>
 </div>
 <div class="chapter-time">20/01/2020</div>
@@ -1233,7 +1289,6 @@ Tập 05
 </li>
 <li class="none">
 <div class="chapter-name">
-
 <a href="/truyen/1305-rakuin-no-monshou/c60378-chuong-4-huyet-chien-tren-doi-coldrin-part3" title="Chương 4: Huyết chiến trên đồi Coldrin (part3)">Chương 4: Huyết chiến trên đồi Coldrin (part3)</a>
 </div>
 <div class="chapter-time">27/01/2020</div>
@@ -1245,7 +1300,7 @@ Tập 05
 </div>
 <div class="chapter-time">29/01/2020</div>
 </li>
-<li class="none">
+ <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c60607-chuong-5-doi-quan-lasvius" title="Chương 5: Đội quân Lasvius (part1)">Chương 5: Đội quân Lasvius (part1)</a>
 </div>
@@ -1264,7 +1319,7 @@ Tập 05
 </div>
 <div class="chapter-time">07/02/2020</div>
 </li>
- <li class="none">
+<li class="none">
 <div class="chapter-name">
 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
 <a href="/truyen/1305-rakuin-no-monshou/c60835-chuong-5-doi-quan-lasvius-part4" title="Chương 5: Đội quân Lasvius (part4)">Chương 5: Đội quân Lasvius (part4)</a>
@@ -1309,6 +1364,7 @@ Tập 05
 </li>
 <li class="none">
 <div class="chapter-name">
+
 <a href="/truyen/1305-rakuin-no-monshou/c69054-chuong-26" title="Lời bạt">Lời bạt</a>
 </div>
 <div class="chapter-time">16/08/2020</div>
@@ -1356,7 +1412,7 @@ Tập 06
 <a href="/truyen/1305-rakuin-no-monshou/c69288-phan-mo-dau" title="Phần mở đầu">Phần mở đầu</a>
 </div>
 <div class="chapter-time">23/08/2020</div>
-</li>
+ </li>
 <li class="">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c69847-chuong-1-bao-to-part1" title="Chương 1: Bão tố (part1)">Chương 1: Bão tố (part1)</a>
@@ -1377,7 +1433,7 @@ Tập 06
 </li>
 <li class="">
 <div class="chapter-name">
- <a href="/truyen/1305-rakuin-no-monshou/c70809-chuong-06" title="Chương 2: Tauran phản công (part1)">Chương 2: Tauran phản công (part1)</a>
+<a href="/truyen/1305-rakuin-no-monshou/c70809-chuong-06" title="Chương 2: Tauran phản công (part1)">Chương 2: Tauran phản công (part1)</a>
 </div>
 <div class="chapter-time">04/10/2020</div>
 </li>
@@ -1408,7 +1464,7 @@ Tập 06
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c71712-chuong-11" title="Chương 3: Pháp sư Garda (part3)">Chương 3: Pháp sư Garda (part3)</a>
- </div>
+</div>
 <div class="chapter-time">08/11/2020</div>
 </li>
 <li class="none">
@@ -1421,7 +1477,7 @@ Tập 06
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c72120-chuong-4-canh-quan-suur-part2" title="Chương 4: Cánh quân Suur (part2)">Chương 4: Cánh quân Suur (part2)</a>
 </div>
-<div class="chapter-time">22/11/2020</div>
+ <div class="chapter-time">22/11/2020</div>
 </li>
 <li class="none">
 <div class="chapter-name">
@@ -1452,6 +1508,7 @@ Tập 06
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c73184-chuong-6-tran-quyet-chien-part2" title="Chương 6: trận quyết chiến (part1)">Chương 6: trận quyết chiến (part1)</a>
+
 </div>
 <div class="chapter-time">27/12/2020</div>
 </li>
@@ -1471,7 +1528,6 @@ Tập 06
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c73860-chuong-7-nha-vo-dich-cua-mien-tay-part1" title="Chương 7: Nhà vô địch của miền tây (part1)">Chương 7: Nhà vô địch của miền tây (part1)</a>
-
 </div>
 <div class="chapter-time">17/01/2021</div>
 </li>
@@ -1505,7 +1561,7 @@ Tập 06
 </div>
 <div class="chapter-time">13/02/2021</div>
 </li>
- <div class="mobile-more">
+<div class="mobile-more">
 <div class="see_more">
 <span>Xem tiếp (21 chương)</span>
 </div>
@@ -1519,7 +1575,7 @@ Tập 06
 <header id="volume_12671" class="sect-header">
 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
 <span class="sect-title">
-Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
+Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng <span style="color: red">*</span>
 </span>
 </header>
 <main class="d-lg-block">
@@ -1585,7 +1641,7 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 </div>
 <div class="chapter-time">28/03/2021</div>
 </li>
- <li class="none">
+<li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c77205-chuong-3-nguoi-hung-sau-do-part1" title="Chương 3: Người hùng,  sau đó... (part1)">Chương 3: Người hùng, sau đó... (part1)</a>
 </div>
@@ -1596,7 +1652,7 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 <a href="/truyen/1305-rakuin-no-monshou/c78594-chuong-3-nguoi-anh-hung-sau-dopart2" title="Chương 3: người anh hùng, sau đó...(part2)">Chương 3: người anh hùng, sau đó...(part2)</a>
 </div>
 <div class="chapter-time">20/05/2021</div>
-</li>
+ </li>
 <li class="none">
 <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c92321-chuong-3-nguoi-hung-sau-do-part3" title="Chương 3: Người hùng, sau đó (Part3)">Chương 3: Người hùng, sau đó (Part3)</a>
@@ -1617,7 +1673,6 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 </li>
 <li class="none">
 <div class="chapter-name">
-
 <a href="/truyen/1305-rakuin-no-monshou/c79905-chuong-5-nguoi-anh-hung-sau-do-part2" title="Chương 4: Bí mật của các quý cô (part3)">Chương 4: Bí mật của các quý cô (part3)</a>
 </div>
 <div class="chapter-time">13/06/2021</div>
@@ -1629,7 +1684,7 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 <div class="chapter-time">27/01/2022</div>
 </li>
 <li class="none">
-<div class="chapter-name">
+ <div class="chapter-name">
 <a href="/truyen/1305-rakuin-no-monshou/c93134-chuong-5-quang-quat-trong-gio-part2" title="Chương 5: Quăng quật trong gió (part2)">Chương 5: Quăng quật trong gió (part2)</a>
 </div>
 <div class="chapter-time">02/02/2022</div>
@@ -1640,9 +1695,18 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 </div>
 <div class="chapter-time">07/02/2022</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/1305-rakuin-no-monshou/c116509-chuong-6-la-co-chinh-nghia-cua-ke-phan-boi-part1" title="Chương 6: Lá cờ chính nghĩa của kẻ phản bội (part1)">Chương 6: Lá cờ chính nghĩa của kẻ phản bội (part1)</a>
+</div>
+<div class="chapter-time">29/07/2023</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (12 chương)</span>
+<span>Xem tiếp (13 chương)</span>
 </div>
 </div>
 </ul>
@@ -1650,16 +1714,33 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 </div>
 </main>
 </section>
+<div wire:id="ySWERif4C4OkC0JsgmV3" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;ySWERif4C4OkC0JsgmV3&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;locale&quot;:&quot;vi&quot;,&quot;path&quot;:&quot;truyen\/1305-rakuin-no-monshou&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e7ea00b9&quot;,&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;series&quot;:{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;id&quot;:1305,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;}}},&quot;checksum&quot;:&quot;aea03185d3f056db0f995bfc58a878346531c5dacab22430d60bf621255afd09&quot;}}" wire:init="loadRelevantSeries">
+<section class="basic-section gradual-mobile">
+<header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
+<main class="d-lg-block">
+<ul class="others-list">
+<div class="row">
+</div>
+</ul>
+<div class="mobile-more none">
+<div class="see_more">
+<span>Xem thêm</span>
+</div>
+</div>
+</main>
+</section>
+</div>
+
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1771)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1817)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3>457 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">468 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -1667,329 +1748,502 @@ Tập 07: Đoàn đưa tang ngu xuẩn đánh thức rồng
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1919738" class="ln-comment-item clear" data-comment="1919738" data-parent="1919738">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua100010-aaf26a1e-65a4-476d-b809-b0e5f7349619.jpg">
+<div id="ln-comment-2232708" class="ln-comment-item mt-3 clear" data-comment="2232708" data-parent="2232708">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua129508-8e71c748-55ca-4547-87e3-d2178910b454.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/100010" class="strong">Phú ác quỷ</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/129508">Player 1</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Oh shiet
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2232708#ln-comment-2232708" class="text-slate-500">
+<time class="timeago" title="29-07-2023 16:29:57" datetime="2023-07-29T16:29:57+07:00">
+29-07-2023 16:29:57
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2230451" class="ln-comment-item mt-3 clear" data-comment="2230451" data-parent="2230451">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua43105-376b5c00-6626-4369-9e0f-e1f906e54308.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/43105">Bắp Chiên</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Nhóm nào thầu nốt mấy vol cuối đi ạ
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2230451#ln-comment-2230451" class="text-slate-500">
+<time class="timeago" title="27-07-2023 14:42:37" datetime="2023-07-27T14:42:37+07:00">
+27-07-2023 14:42:37
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">1</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2232702" class="ln-comment-item mt-3 clear" data-comment="2232702" data-parent="2230451">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://3.bp.blogspot.com/-Mlgd1-MIkeI/Wu6WqmD2KhI/AAAAAAABLkY/e1gtjN5YZbkvb6W_6qyBdjHsPR6RYoKhwCHMYCw/w100/default.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/5889">GangsterVN</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+*Gọi hồn trans*<br>
+*Dậy*<br>
+Đấy comeback rồi, sướng chưa
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2230451&amp;reply_id=2232702#ln-comment-2232702" class="text-slate-500">
+<time class="timeago" title="29-07-2023 16:26:35" datetime="2023-07-29T16:26:35+07:00">
+29-07-2023 16:26:35
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">1</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2175161" class="ln-comment-item mt-3 clear" data-comment="2175161" data-parent="2175161">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua12377-9ad49449-37da-4bd6-b86f-1940dadb621c.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/12377">Karlken</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Trans bộ này còn làm tiếp không nhỉ?<br>
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2175161#ln-comment-2175161" class="text-slate-500">
+<time class="timeago" title="27-05-2023 15:05:52" datetime="2023-05-27T15:05:52+07:00">
+27-05-2023 15:05:52
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2228994" class="ln-comment-item mt-3 clear" data-comment="2228994" data-parent="2175161">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua36491-db180085-7f7f-40df-8581-880a1750ff86.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/36491">Berserk_Law</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Khả năng là k bác ạ, nghĩa vụ quân sự xong r k chạy tiếp thì chắc là drop r
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2175161&amp;reply_id=2228994#ln-comment-2228994" class="text-slate-500">
+<time class="timeago" title="26-07-2023 00:36:56" datetime="2023-07-26T00:36:56+07:00">
+26-07-2023 00:36:56
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2139167" class="ln-comment-item mt-3 clear" data-comment="2139167" data-parent="2139167">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua132352-8ed3f613-d84d-4c6f-aeaa-3a4a052499d1.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/132352">Sazemi2510</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+bộ này hay thật sự mà ko nhiều người vào đọc mấy nhỉ,có lẽ 1 phần do illu hơi 'cũ" nên ko hút người tò mò vào đọc lắm,t cx mới vô tình bấm vào đọc thử vì đang hết cái cày và bộ này hay thật sự,mong trans 1 ngày nào đó đội mồ về hoàn thành nốt bộ này mặc dù có bản eng nhưng mà t thích văn phong dịch của trans ...
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2139167#ln-comment-2139167" class="text-slate-500">
+ <time class="timeago" title="06-04-2023 20:39:43" datetime="2023-04-06T20:39:43+07:00">
+06-04-2023 20:39:43
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2094098" class="ln-comment-item mt-3 clear" data-comment="2094098" data-parent="2094098">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua104564-7549c653-c10e-41ed-8ff3-b71da6032237.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/104564">Vip ????</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Trán ơi về chưa
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2094098#ln-comment-2094098" class="text-slate-500">
+<time class="timeago" title="02-02-2023 11:07:37" datetime="2023-02-02T11:07:37+07:00">
+02-02-2023 11:07:37
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2071217" class="ln-comment-item mt-3 clear" data-comment="2071217" data-parent="2071217">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua43105-376b5c00-6626-4369-9e0f-e1f906e54308.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/43105">Bắp Chiên</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Trans đi lính về chưa nhỉ
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2071217#ln-comment-2071217" class="text-slate-500">
+<time class="timeago" title="06-01-2023 15:35:25" datetime="2023-01-06T15:35:25+07:00">
+06-01-2023 15:35:25
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2029363" class="ln-comment-item mt-3 clear" data-comment="2029363" data-parent="2029363">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua129508-8e71c748-55ca-4547-87e3-d2178910b454.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/129508">Player 1</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+ĐàoT.T
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=2029363#ln-comment-2029363" class="text-slate-500">
+<time class="timeago" title="18-11-2022 07:36:02" datetime="2022-11-18T07:36:02+07:00">
+18-11-2022 07:36:02
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-1984679" class="ln-comment-item mt-3 clear" data-comment="1984679" data-parent="1984679">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua21083-f502ac22-efa0-47c2-8cfd-7b7233549380.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/21083">Lieutenant DA</a>
+</div>
+</div>
+ </div>
+<div class="ln-comment-content long-text">
+spoil nhẹ: bộ này kết vẫn đẹp nhưng hơi hướng mở-mọi chuyện có thể coi là êm thấm tới phút cuối nhưng vẫn còn mầm mống hậu hoạ về sau. Theo một cách nhìn nhận nhất định thì giả thành thật, thật cũng thành giả-kẻ thức thời là trang tuấn kiệt, Mọi sự chiến thắng đều che khuất đi mọi sự dối trá và điên loạn phía sau-lịch sử được viết lên bởi kẻ chiến thắng, nhưng "sự thật" lại được viết lên bởi kẻ dối trá.
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=1984679#ln-comment-1984679" class="text-slate-500">
+<time class="timeago" title="26-09-2022 21:03:28" datetime="2022-09-26T21:03:28+07:00">
+26-09-2022 21:03:28
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-1984680" class="ln-comment-item mt-3 clear" data-comment="1984680" data-parent="1984679">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua21083-f502ac22-efa0-47c2-8cfd-7b7233549380.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/21083">Lieutenant DA</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+tương lai câu chuyện sẽ nhiều hơi hướng huyền bí kết hợp với chút khoa học quân sự, mọi người nên ủng hộ trans dịch hết bộ này-trans dịch đến đây cũng là 2/3 chặng đường rồi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=1984679&amp;reply_id=1984680#ln-comment-1984680" class="text-slate-500">
+<time class="timeago" title="26-09-2022 21:04:46" datetime="2022-09-26T21:04:46+07:00">
+26-09-2022 21:04:46
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-1919738" class="ln-comment-item mt-3 clear" data-comment="1919738" data-parent="1919738">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua100010-aaf26a1e-65a4-476d-b809-b0e5f7349619.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/100010">Phú ác quỷ</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Em nhớ trans lắm rầu :3
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1919738#ln-comment-1919738">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=1919738#ln-comment-1919738" class="text-slate-500">
 <time class="timeago" title="09-08-2022 23:21:02" datetime="2022-08-09T23:21:02+07:00">
 09-08-2022 23:21:02
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="ln-comment-group">
-<div id="ln-comment-1818339" class="ln-comment-item clear" data-comment="1818339" data-parent="1818339">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua100010-aaf26a1e-65a4-476d-b809-b0e5f7349619.jpg">
+<div id="ln-comment-1818339" class="ln-comment-item mt-3 clear" data-comment="1818339" data-parent="1818339">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua100010-aaf26a1e-65a4-476d-b809-b0e5f7349619.jpg" class="w-full rounded-full" />
 </div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/100010" class="strong">Phú ác quỷ</a>
 </div>
-<div>
-</div> <div class="ln-comment-content long-text">
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/100010">Phú ác quỷ</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
 Đói quá huhu vẫn đợi trans ????????
 </div>
 <div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1818339#ln-comment-1818339">
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/1305-rakuin-no-monshou?comment_id=1818339#ln-comment-1818339" class="text-slate-500">
 <time class="timeago" title="26-05-2022 23:41:33" datetime="2022-05-26T23:41:33+07:00">
 26-05-2022 23:41:33
 </time>
-</a></span>
-
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
 </div>
 </div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1799646" class="ln-comment-item clear" data-comment="1799646" data-parent="1799646">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua25019-b7f3a6e4-eb71-4fc0-bc2d-636c43080b1b.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
- <div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/25019" class="strong">Khoakkk</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Trans ơi tớ chờ lâu quá huhu đói quá huhu
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1799646#ln-comment-1799646">
-<time class="timeago" title="08-05-2022 19:14:23" datetime="2022-05-08T19:14:23+07:00">
-08-05-2022 19:14:23
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1741981" class="ln-comment-item clear" data-comment="1741981" data-parent="1741981">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua69751-4c632579-fc75-45ff-98dc-31c303c455cb.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/69751" class="strong">-̶P̶h̶á̶t̶ ̶t̶r̶</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Iu trans :))
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1741981#ln-comment-1741981">
-<time class="timeago" title="26-03-2022 22:00:27" datetime="2022-03-26T22:00:27+07:00">
-26-03-2022 22:00:27
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1700450" class="ln-comment-item clear" data-comment="1700450" data-parent="1700450">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/61835" class="strong">Thông Wibu</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Ủa gì vậy trans comback má ơi ???? thanks trans em nhớ lắm :(
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1700450#ln-comment-1700450">
-<time class="timeago" title="03-03-2022 18:48:54" datetime="2022-03-03T18:48:54+07:00">
-03-03-2022 18:48:54
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-1766596" class="ln-comment-item clear" data-comment="1766596" data-parent="1700450">
-<div class="ln-comment-user_ava">
-<img src="https://2.bp.blogspot.com/-VzVXJdWHY-0/W8oMFO4ML2I/AAAAAAABsrE/ljJihAdMol0oc--HKf6lx2RySnr1sjdvQCHMYCw/w100/default.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/9725" class="strong">huyhoang</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-ông trans đi nvqs bạn. Ổng còn dịch là vui lắm rồi ấy
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1700450&amp;reply_id=1766596#ln-comment-1766596">
-<time class="timeago" title="13-04-2022 05:08:17" datetime="2022-04-13T05:08:17+07:00">
-13-04-2022 05:08:17
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1668745" class="ln-comment-item clear deleted disabled" data-comment="1668745" data-parent="1668745">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua67656-6a393284-e4d4-431d-8a13-d595f2997897.jpg" alt="User's avatar">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/67656" class="strong">Đinh Gia Hướng</a>
-</div>
-<div class="ln-comment-content long-text">
-<span>Bình luận đã bị xóa bởi Đinh Gia Hướng</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1666717" class="ln-comment-item clear deleted disabled" data-comment="1666717" data-parent="1666717">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png" alt="User's avatar">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/36000" class="strong">Noname1234</a>
-</div>
-<div class="ln-comment-content long-text">
-<span>Bình luận đã bị xóa bởi Noname1234</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1666511" class="ln-comment-item clear" data-comment="1666511" data-parent="1666511">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua83406-e68f8a9a-180e-403c-98ca-222b1ac5ce2b.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/83406" class="strong">nobitanguyen</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-xin riewview với <br>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1666511#ln-comment-1666511">
- <time class="timeago" title="07-02-2022 21:58:19" datetime="2022-02-07T21:58:19+07:00">
-07-02-2022 21:58:19
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-1669887" class="ln-comment-item clear" data-comment="1669887" data-parent="1666511">
-<div class="ln-comment-user_ava">
-<img src="https://docln.net/img/noava.png">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/76836" class="strong">magthefma4</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Truyện khá tốt, nhưng cốt truyện khá nặng về chính trị và chiến thuật sa trường. Main não to cỡ vừa. Truyện khá thực tế, yếu tố ma thuật ko ảnh hưởng nhiều, ko có những pha combat ảo tung chảo. Nói chung bộ này là seinen
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1666511&amp;reply_id=1669887#ln-comment-1669887">
-<time class="timeago" title="10-02-2022 00:56:53" datetime="2022-02-10T00:56:53+07:00">
-10-02-2022 00:56:53
-</time>
-</a></span>
-
-</div>
-</div>
-</div> <div id="ln-comment-1670535" class="ln-comment-item clear" data-comment="1670535" data-parent="1666511">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua83406-e68f8a9a-180e-403c-98ca-222b1ac5ce2b.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/83406" class="strong">nobitanguyen</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-<a href="https://docln.net/thanh-vien/76836">@magthefma4:</a> cám on <br>
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1666511&amp;reply_id=1670535#ln-comment-1670535">
-<time class="timeago" title="10-02-2022 16:39:46" datetime="2022-02-10T16:39:46+07:00">
-10-02-2022 16:39:46
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1662855" class="ln-comment-item clear" data-comment="1662855" data-parent="1662855">
-<div class="ln-comment-user_ava">
-<img src="https://3.bp.blogspot.com/-mgrNltEL8eE/WE2HJQJybdI/AAAAAAAACCY/OSipBAD2-P4/w100/user-avatar.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/557" class="strong">tqk2811</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Lâu rồi không đọc, chắc phải đọc lại :(
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1662855#ln-comment-1662855">
-<time class="timeago" title="05-02-2022 16:44:07" datetime="2022-02-05T16:44:07+07:00">
-05-02-2022 16:44:07
-</time>
-</a></span>
-
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-group">
-<div id="ln-comment-1649642" class="ln-comment-item clear" data-comment="1649642" data-parent="1649642">
-<div class="ln-comment-user_ava">
-<img src="https://i.docln.net/lightnovel/users/ua73015-a8204000-1e5a-42ba-a4ed-e304c75b015c.jpg">
-</div>
-<div class="ln-comment-info">
-<div class="ln-comment-wrapper">
-<div class="ln-comment-user_name">
-<a href="https://docln.net/thanh-vien/73015" class="strong">NishinoI</a>
-</div>
-<div>
-</div> <div class="ln-comment-content long-text">
-Bộ này có phần sau nữa ko thớt hay chỉ có tổng cộng 12 vol thôi? :v
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-</div>
-<div class="visible-toolkit">
-<span class="ln-comment-time"><a href="/truyen/1305-rakuin-no-monshou?comment_id=1649642#ln-comment-1649642">
-<time class="timeago" title="27-01-2022 18:47:40" datetime="2022-01-27T18:47:40+07:00">
-27-01-2022 18:47:40
-</time>
-</a></span>
-
 </div>
 </div>
 </div>
@@ -1998,12 +2252,12 @@ Bộ này có phần sau nữa ko thớt hay chỉ có tổng cộng 12 vol thô
 <div class="pagination-footer">
 <div class="pagination_wrap">
 <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
-<a href="https://docln.net/truyen/1305-rakuin-no-monshou?page=2" class="paging_item paging_prevnext next">Sau</a>
+<a href="https://ln.hako.vn/truyen/1305-rakuin-no-monshou?page=2" class="paging_item paging_prevnext next">Sau</a>
 </div>
 </div>
 </div> </main>
 <script>
-        var token = '98MejnI0eDzi5HiDKgStcCT5iYlcIcjJEH9Y0HVk';
+        var token = 'S9fmFi7xn3T9ymEZgy33BmfshLmOlxT87u5KTy8L';
         var comment_type = 'series';
         var comment_typeid = '1305';
     </script>
@@ -2041,14 +2295,14 @@ Bộ này có phần sau nữa ko thớt hay chỉ có tổng cộng 12 vol thô
 
     series_id = parseInt('1305');
 </script>
-<script src="/scripts/app.js?id=215293fd4a6a41a04479"></script>
-<script src="/vendor/livewire/livewire.js?id=940557fc56b15ccb9a2d" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = '98MejnI0eDzi5HiDKgStcCT5iYlcIcjJEH9Y0HVk';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
-<script type='text/javascript' src='//atevaccination.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
+<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'JssNWmgVfTiGAXIbXWoIvSPPaVMOga8SQWg7029n';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script type='text/javascript' src='//vulnerableimmigrateaboveaverage.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js'></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2022 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
 </div>
 </footer> </body>
 </html>
