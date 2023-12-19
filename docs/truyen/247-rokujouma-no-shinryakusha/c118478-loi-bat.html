@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="PqWP1nSYUjNVrRCey3k0uICaWXh49LzLAHnU1xOW">
+<meta name="csrf-token" content="H2bFFDWAgsLCyfnUqAmD80ZrHYaNROAoAf764lyf">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat">
@@ -25,8 +25,8 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=7a219b8d39cd68faef43">
-<link rel="stylesheet" href="/css/tailwind.css?id=35a2a684af509538a68d">
+<link rel="stylesheet" href="/css/interface.css?id=26fa77f843ddea418099">
+<link rel="stylesheet" href="/css/tailwind.css?id=6345e2aaec0cb9ac1b40">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
@@ -55,7 +55,7 @@
 <a id="rd-setting_icon" data-affect="#" class="rd_sd-button_item"><i class="fas fa-font"></i></a>
 <a id="rd-info_icon" data-affect="#rd_sidebar.chapters" class="rd_sd-button_item"><i class="fas fa-info"></i></a>
 <a id="rd-bookmark_icon" data-affect="#rd_sidebar.bookmarks" class="rd_sd-button_item"><i class="fas fa-bookmark"></i></a>
-<a class="rd_sd-button_item rd_top-right disabled"><i class="fas fa-forward"></i></a>
+<a class="rd_sd-button_item rd_top-right" href="/truyen/247-rokujouma-no-shinryakusha/c124061-ruth"><i class="fas fa-forward"></i></a>
 </section>
 <section id="chapters" class="rd_sidebar rdtoggle">
 <main class="rdtoggle_body">
@@ -115,7 +115,7 @@
 <li class><a href="/truyen/247-rokujouma-no-shinryakusha/c96481-chuong-1-co-gai-tu-tren-troi-roi-xuong">Tập 38 - Tam tấu Sanae và Trận chiến ngoài quỹ đạo</a></li>
 <li class><a href="/truyen/247-rokujouma-no-shinryakusha/c102074-chuong-1-thu-thach-cua-nalfa">Tập 39 - Thử thách của Nalfa</a></li>
 <li class><a href="/truyen/247-rokujouma-no-shinryakusha/c107890-chuong-1-cap-anh-em-tay-dua-hani-ho-hoa-long-de-gia-dao">Tập 40 - Truyện bên lề IX - Sửa soạn lên đường thôi!</a></li>
-<li class="current"><a href="/truyen/247-rokujouma-no-shinryakusha/t21975-tap-41">Tập 41</a></li>
+<li class="current"><a href="/truyen/247-rokujouma-no-shinryakusha/t21975-tap-41">Tập 41 - Quay lại Forthorthe</a></li>
 <ul class="sub-chap_list unstyled">
 <li>
 <a href="/truyen/247-rokujouma-no-shinryakusha/c118472-chuong-1-toi-forthorthe">
@@ -155,6 +155,21 @@ Chương 6: Cách sử dụng
 <li class="current">
 <a href="/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat">
 Lời bạt
+</a>
+</li>
+<li>
+<a href="/truyen/247-rokujouma-no-shinryakusha/c124061-ruth">
+Ruth
+</a>
+</li>
+<li>
+<a href="/truyen/247-rokujouma-no-shinryakusha/c124062-maki">
+Maki
+</a>
+</li>
+<li>
+<a href="/truyen/247-rokujouma-no-shinryakusha/c124063-nalfa">
+Nalfa
 </a>
 </li>
 </ul>
@@ -218,6 +233,15 @@ Lời bạt
 <span class="set-bigger set-slide_button"><i class="fas fa-chevron-right"></i></span>
 </div>
 </div>
+<div class="set-list set-text-align clear">
+<label class="font-bold">Kiểu căn chỉnh</label>
+<div class="set-input clear justify-center font-medium text-2xl flex flex-row gap-10">
+<span data-align="text-left" class="p-1"><i class="fas fa-align-left"></i></span>
+<span data-align="text-center" class="p-1"><i class="fas fa-align-center"></i></span>
+<span data-align="text-right" class="p-1"><i class="fas fa-align-right"></i></span>
+<span data-align="text-justify" class="p-1"><i class="fas fa-align-justify"></i></span>
+</div>
+</div>
 </main>
 </section>
 <div class="black-click"></div>
@@ -228,16 +252,19 @@ Lời bạt
 <div id="bookmark_top" class="block d-lg-none"><i class="fas fa-bookmark"></i></div>
 <span class="save_bookmark" style="position: absolute; top: 9999px; display: none"><i class="fas fa-bookmark"></i></span>
 <div class="title-top" style="padding-top: 20px">
-<h2 class="title-item text-xl font-bold" align="center">Tập 41</h2>
+<h2 class="title-item text-xl font-bold" align="center">Tập 41 - Quay lại Forthorthe</h2>
 <h4 class="title-item text-base font-bold" align="center">Lời bạt</h4>
 <h6 class="title-item font-bold" align="center">
-<a href="https://docln.net/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat#chapter-comments" style="text-decoration: underline">0 Bình luận</a> -
+<a href="https://docln.net/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat#chapter-comments" style="text-decoration: underline">2 Bình luận</a> -
 Độ dài: 1,796 từ - Cập nhật:
 <time class="topic-time timeago" title="02-09-2023 08:28:30" datetime="2023-09-02T08:28:30+07:00"></time> </h6>
 </div>
 <div style="text-align: center; margin: 20px auto -20px auto;">
+<a href="/thao-luan/2692-poll-bxh-anh-khong-an-mung-light-novel-ua-thich-o-thi-truong-viet-nua-cuoi-nam-2023">
+<img src="https://i.imgur.com/QbS77gJ.jpg" style="width: 700px; height: auto">
+</a>
 </div>
-<div id="chapter-content" class="long-text no-select">
+<div id="chapter-content" class="long-text no-select text-justify">
 <p id="1">Lâu rồi không gặp, Takehaya đây. Đã được tầm 6 tháng kể từ lúc tập 40 lên kệ, một khoảng thời gian dài hơn thường lệ. Xin lỗi vì đã làm mọi người phải lo lắng. Tôi xin phép được giải thích tình hình.</p><p id="2">Sự thật là một điều kỳ lạ đã xảy ra vào cuối năm ngoái. Tầm nhìn của tôi trở nên tệ đi và mọi thứ bắt đầu trông mờ đục. Ban đầu, đó chỉ là vấn đề nhỏ và do vừa mới thay kính nên tôi nghĩ mình đã tưởng tượng, nhưng sau một thời gian, tôi bắt đầu nhận thấy những thay đổi rõ rệt khi lái xe. Tôi khó nhìn thấy các biển báo sáng hơn trong kính chiếu hậu và gương cầu lồi ở các giao lộ. Vì tiềm ẩn rủi ro nên tôi đã ngừng lái xe và đến gặp bác sĩ nhãn khoa. Và bất ngờ thay, tôi bị chẩn đoán là đục thủy tinh thể. Mọi người biết đấy, cái bệnh của người già.</p><p id="3">Đục thủy tinh thể là hiện tượng thủy tinh thể của mắt ta trở nên mờ đục, cản trở ánh sáng chiếu tới võng mạc. Nó giống như đeo kính râm với mắt kính màu trắng. Ban đầu nó chỉ mờ nhạt nhưng dần dần sẽ trở nên tồi tệ hơn, khiến thị lực của ta giảm sút. Khi ánh sáng đi qua thấu kính, các vùng màu trắng đục sẽ khuếch tán, làm cho nó có vẻ rất sáng. Tôi vẫn chỉ mới ngoài bốn mươi, vì vậy chẩn đoán này là một cú sốc. Nhưng theo bác sĩ, ngay cả những người trẻ tuổi cũng có thể bị đục thủy tinh thể. Nó có thể xảy ra như một biến chứng của bệnh tiểu đường, nhưng tôi không gặp vấn đề gì với lượng đường trong máu nên đó không phải là trường hợp của tôi. Một nguyên nhân khác có thể là do thị lực kém. Tôi bị cận thị và phụ thuộc vào kính từ khi học cấp hai, và hiện nay tôi làm việc với máy tính hàng ngày, vì vậy đó có thể là vấn đề của tôi. Ngày nay, cũng có nhiều người dễ bị mắc đục thủy tinh thể. Đó cũng có thể là trường hợp của tôi. Bác sĩ nghi ngờ nguyên nhân là do căng thẳng hoặc cả hai.</p><p id="4">Khi biết bệnh, tôi ngay lập tức quyết định phẫu thuật. Thuốc có thể làm chậm tiến trình xấu đi nhưng không thể chữa khỏi bệnh. Hậu quả cuối cùng là bị mù nên cần phải phẫu thuật. Câu hỏi đặt ra là khi nào là khả dĩ. Các triệu chứng của tôi vẫn ở mức độ nhẹ và không ảnh hưởng đến công việc, nhưng tôi đang cân nhắc ôm thêm việc (không liên quan đến tiểu thuyết) vào đầu năm, vì vậy tôi cảm thấy bị hối thúc vì thường mất khoảng sáu tháng để mắt ta hồi phục. Tình trạng của tôi cũng khiến việc lái xe trở nên nguy hiểm. Do tôi sống ở một khu vực yên tĩnh, cách xa cao tốc và khu vực trung tâm thành phố nên rất khó từ bỏ việc lái xe. Và thế là tôi quyết định phẫu thuật ngay khi hoàn thành tập 40.</p><p id="5">Có một số xét nghiệm tiền phẫu thuật và tôi đã dành một chút thời gian để chuẩn bị, vì vậy cuộc phẫu thuật thực sự sẽ diễn ra vào khoảng thời gian cuốn sách được phát hành. Để tóm tắt quy trình, họ chọc vào mắt ta và loại bỏ thủy tinh thể trước khi thay thế nó. Tuy nhiên, công nghệ này tiên tiến đến mức chỉ mất mười lăm phút cho một bên mắt. Làm cả hai bên cùng một lúc sẽ khiến tôi hoàn toàn không nhìn thấy gì, do đó tôi đã làm mắt phải trước và mắt trái một tuần sau đó. Sau một tuần, ta có thể gỡ miếng dán ra khỏi mắt. May mắn thay, cả hai hoạt động đều diễn ra tốt đẹp, nhưng đó là lúc những khó khăn thực sự bắt đầu.</p><p id="6">Vấn đề đầu tiên là tắm rửa. Dù nhỏ hay không thì cả hai mắt của tôi đều bị đục lỗ nên không thể nhỏ nước vào được. Do đó, tôi không thể tắm trong khoảng một tuần sau khi phẫu thuật. Và vì đã kéo dài cuộc phẫu thuật thêm một tuần, nên chính xác là tôi không thể tắm trong hai tuần. Tôi nhớ mình đã tắm rửa sạch sẽ vào ngày hôm trước và vào buổi sáng ngày phẫu thuật thứ hai. Rồi một lần nữa một tuần sau đó.</p><p id="7">Vấn đề tiếp theo là thuốc men. Tôi được kê thuốc kháng sinh và thuốc giảm đau chỉ cần uống trong vài ngày. Nhưng thuốc nhỏ mắt phải duy trì trong ba tháng cho đến khi vết thương hoàn toàn khép lại. Tôi có ba loại thuốc nhỏ mắt, cả kháng khuẩn và chống viêm, trong đó một loại tôi phải sử dụng hai lần một ngày và hai loại còn lại tôi phải sử dụng ba lần một ngày. Tôi lại có tính đãng trí, việc có tới ba loại thuốc nhỏ mắt càng làm tôi không biết đường nào mà lần. Để tránh khả năng bị viêm nên rốt cuộc tôi đã lập một checklist.</p><p id="8">Vấn đề thứ ba là kính. Vết thương của tôi đã lành khoảng hai tuần sau ca phẫu thuật, và tôi được thông báo rằng tôi có thể làm việc và lái xe trở lại. Tuy nhiên, tầm nhìn của tôi sẽ không ổn định cho đến khoảng một tháng sau đó, và tôi phải chờ kính mới. Vì vậy, câu hỏi đặt ra là làm thế nào để làm việc trong ba tuần mà không cần kính mới. Tôi không có lựa chọn nào khác ngoài việc sử dụng kính lúp để mò mẫn và đối phó. Và đó là lý do tại sao tập 41 bị trì hoãn. May mắn thay, sau khi có kính, tôi đã có thể làm việc trở lại, mặc dù hơi khó nhìn. Tất nhiên, tầm nhìn của tôi vẫn chưa hoàn hảo. Mắt tôi sẽ không hoàn toàn ổn định trong nửa năm sau phẫu thuật, và tôi sẽ lại cần đeo kính mới. Tôi đã bắt đầu quen dần với tình trạng mắt của mình nên khi có kính mới, tôi có thể làm việc bình thường. Thế nên, dù tôi sẽ cố hết sức có thể nhưng có khả năng tập 42 sẽ bị dời lịch.</p><p id="9">Một phần cũng là do tập 41 không được phát hành như kế hoạch. Chúng tôi cần lên lịch trình cẩn thận để tránh tạo thêm gánh nặng không cần thiết cho Poco-san cũng như các biên tập soát lỗi và đánh giá. Chúng tôi vẫn đang làm việc nên tôi không thể nói khi nào tập 42 sẽ lên kệ, nhưng một khi nó được ra mắt, tôi tin nhịp độ sẽ trở lại bình thường. Tôi mong có được sự ủng hộ từ các bạn.</p><p id="10">Tình cơ là tập 40 cũng sẽ bị bán muộn hơn thường lệ một tháng, nhưng đó là vì dây chuyền sản xuất không thể sản xuất kịp phần truyện bổ sung dài nửa tập (hiện đang được bán để nhận đánh giá trên BookWalker) đã được phát hành dưới dạng một phần của lễ kỷ niệm tập 40. Nó không có liên quan tới bệnh đục thủy tinh thể.</p><p id="11">Giờ thì, bỏ chủ đề phức tạp đó sang một bên, chúng ta hãy chuyển sang thảo luận về tập sách. Koutarou và những người khác trở lại Forthorthe với mục tiêu bắt giữ hoặc đánh bại Ralgwin. Nhưng có nhiều sự tình diễn ra khiến cả nước đang náo động. Và giữa lúc đó, xuất hiện một báo cáo về một cứ điểm của Ralgwin. Tâm điểm chú ý lần này là Ruth, người cuối cùng đã nhe nanh múa vuốt. Khi ở Forthorthe, cô đã có thể phát huy tối đa tài xử lý thông tin và điều hành của mình, biến những thứ không tưởng thành hiện thực. Nhưng các bạn phải đọc cuốn sách để biết thêm chi tiết!</p><p id="12">Đối với những bạn đã đọc xong thì các bạn nghĩ sao về Ruth? Nếu tôi là phản diện, chắc chắn tôi sẽ nhắm vào cô ấy trước. Sau đó là Kiriha và Clan. Cả ba người họ đều thiếu năng lực chiến đấu nhưng lại có điểm mạnh mang tính tương thích rộng rãi, biến họ thành cường địch trong mọi tình huống. Đó là lý do tại sao tôi sẽ nhắm vào họ. Và tôi chắc chắn rằng Ralgwin cũng đang nghĩ như vậy, vì vậy cuộc chiến từ đây trở đi có lẽ sẽ là để bảo vệ bộ ba này.</p><p id="13">Yurika thì ngược lại. Cô có thể thiên biến vạn hóa với ma thuật, vâng, nhưng tác động chỉ ở một mức độ hạn chế. Điều đó khiến cô khó có những khoảnh khắc quan trọng trong những trận đánh lớn. Có lẽ tôi nên cho cô ấy một câu ma pháp chiến lược. Nhưng nếu làm vậy, tôi cũng sẽ phải làm điều tương tự với những cô gái khác. Cái này phải căng não rồi... Chờ một chút. Yurika lần này cũng đã tỏa sáng mà nhỉ (lol).</p><p id="14">Để kết thúc, tôi muốn đề cập một chút về tập tiếp theo. Ralgwin đã phải chịu một số tổn thất nghiêm trọng, nhưng hắn không phải kiểu người chùn bước vì điều đó. Bị dồn đến chân tường, hắn quyết định thực hiện các biện pháp quyết liệt chống lại hoàng gia và Thanh Hiệp sĩ. Cấp dưới của Ralgwin là Fasta sau đó đã liên lạc với Koutarou. Âm mưu của Ralgwin là gì? Và hành động của Fasta là sao? Hãy tìm hiểu trong tập tiếp theo, dự kiến ra mắt vào đầu năm 2023. Thông thường sẽ có tập Hercules vào cuối năm, nhưng với lịch trình bị lùi lại do tôi phải phẫu thuật mắt, chúng ta sẽ tiếp tục với tập chính truyện. Xin hãy chờ đón nó.</p><p id="15">Cuối cùng là lời cảm ơn. Xin chân thành cảm ơn ban biên tập của HJ Bunko và các bên liên quan vì đã làm việc chăm chỉ, Poco-san vì những bức tranh minh họa ngay cả khi lịch trình thay đổi, và tất cả các bạn độc giả đã chờ đợi tập này ra mắt. Hẹn gặp lại ở phần lời bạt của tập 42.</p><p id="16">Tháng 8, 2022</p><p id="17">Takehaya</p>
 <div class="flex justify-center mt-10 mb-7 space-x-3">
 <a href="https://hako.vn/discord" target="_blank" type="button" data-te-ripple-init data-te-ripple-color="light" class="flex font-sans rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg" style="background-color: #7289da; text-decoration: initial; color: white !important;">
@@ -253,11 +280,11 @@ Discord
 Facebook
 </a>
 </div>
-<a href="/truyen/11662" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/11662_d.jpg?t=1669120425" class="d-none d-md-block" style="width: 970px; height: auto">
+<a href="/truyen/4576" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/4576_d.jpg?t=1690436612" class="d-none d-md-block" style="width: 970px; height: auto">
 </a>
-<a href="/truyen/11662" target="__blank">
-<img src="https://i.docln.net/lightnovel/banners/chapter/11662_m.jpg?t=1669120425" class="d-md-none" style="width: 100%; height: auto">
+<a href="/truyen/4576" target="__blank">
+<img src="https://i.docln.net/lightnovel/banners/chapter/4576_m.jpg?t=1690436612" class="d-md-none" style="width: 100%; height: auto">
 </a>
 </div>
 <div style="text-align: center; margin: 20px auto 10px auto;">
@@ -265,31 +292,105 @@ Facebook
 <section class="rd-basic_icon row">
 <a href="/truyen/247-rokujouma-no-shinryakusha/c118477-chuong-6-cach-su-dung" class="dark:text-black col text-center "><i class="fas fa-backward"></i></a>
 <a href="/truyen/247-rokujouma-no-shinryakusha" class="dark:text-black col text-center"><i class="fas fa-home"></i></a>
-<a href="/truyen/247-rokujouma-no-shinryakusha" class="dark:text-black col text-center  disabled "><i class="fas fa-forward"></i></a>
+<a href="/truyen/247-rokujouma-no-shinryakusha/c124061-ruth" class="dark:text-black col text-center "><i class="fas fa-forward"></i></a>
 </section>
 
 </div>
 <div class="col-12 col-lg-10 offset-lg-1">
 <section id="chapter-comments" class="basic-section dark:bg-[#1f1f1f] dark:text-white dark:border dark:border-[#1f1f1f]">
 <header class="sect-header tab-list dark:bg-[#2a2a2a] dark:border-[#2a2a2a]">
-<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(0)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Bình luận <span class="comments-count">(2)</span></span>
 </header>
 <main id="fbcmt_root" class="sect-body">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">0 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">2 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
 <div class="ln-comment_sign-in long-text">
 Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo tài khoản</a> để bình luận.
 </div>
+<div class="ln-comment-group">
+<div id="ln-comment-2314793" class="ln-comment-item mt-3 clear" data-comment="2314793" data-parent="2314793">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua144895-251b779a-3579-4c29-a8bf-486153945e4b.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/144895">VicHm</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+thanks team
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat?comment_id=2314793#ln-comment-2314793" class="text-slate-500">
+<time class="timeago" title="24-11-2023 11:17:37" datetime="2023-11-24T11:17:37+07:00">
+24-11-2023 11:17:37
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2293399" class="ln-comment-item mt-3 clear" data-comment="2293399" data-parent="2293399">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua111020-2f9d1c67-6675-47e1-99f9-52fe52c96376.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/111020">Osasama desu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Hừm....ngoài 40,viết truyện harem nhưng theo thiên hướng trong sáng...,cũng hơn đống bộ **** thời nay.
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/247-rokujouma-no-shinryakusha/c118478-loi-bat?comment_id=2293399#ln-comment-2293399" class="text-slate-500">
+<time class="timeago" title="12-10-2023 20:25:59" datetime="2023-10-12T20:25:59+07:00">
+12-10-2023 20:25:59
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="ln-comment-page">
 </div> </main>
 <script>
-        var token = 'PqWP1nSYUjNVrRCey3k0uICaWXh49LzLAHnU1xOW';
+        var token = 'H2bFFDWAgsLCyfnUqAmD80ZrHYaNROAoAf764lyf';
         var comment_type = 'chapter';
         var comment_typeid = '118478';
     </script>
@@ -302,7 +403,7 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 </div>
 </main>
 <script>
-    token = 'PqWP1nSYUjNVrRCey3k0uICaWXh49LzLAHnU1xOW';
+    token = 'H2bFFDWAgsLCyfnUqAmD80ZrHYaNROAoAf764lyf';
         
     function turnoffall() {
         $(".rdtoggle").removeClass("on");
@@ -343,6 +444,7 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
     var fontfamily = Cookies.get('fontfamily') || '';
     var fontsize   = Cookies.get('font') || 18; 
     var margin     = Cookies.get('margin') || 0;
+    var textAlign  = Cookies.get('textAlign') || 'text-justify';
         
     function setcolor(alter = true) {
         var switcher = $(".set-color .set-input span").eq(bgcolor);
@@ -387,11 +489,25 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
             'padding-right': margin + "px"
         });
     }
+
+    function setTextAlign(alter = true) {
+        var switcher = $(".set-text-align .set-input span[data-align='" + textAlign + "']");
+        switcher.addClass("current");
+
+        if (alter) {
+            $(".set-text-align .set-input span").each(function () {
+                $("#chapter-content").removeClass($(this).attr('data-align'));
+            });
+
+            $("#chapter-content").addClass(textAlign);
+        }
+    }
     
     setcolor(false);
     setfontfamily();
     setfontstyle(false);
     setmargin();
+    setTextAlign(true);
     
     //1px = 0.0625rem;
     //16px = 1rem (default);
@@ -436,6 +552,13 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
         setmargin();
         Cookies.set('margin', margin, { expires: 365 });
     }); 
+
+    $(".set-text-align .set-input span").click(function(){
+        textAlign = $(this).data("align");
+        $(".set-text-align .set-input span").removeClass("current");
+        setTextAlign();        
+        Cookies.set('textAlign', textAlign, { expires: 365 });
+    });
         
     $("#bookmarks_list li").each(function(){
         var linepr = $(this).data("line");
@@ -480,7 +603,8 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
     };
 </script>
 <script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'PqWP1nSYUjNVrRCey3k0uICaWXh49LzLAHnU1xOW';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'H2bFFDWAgsLCyfnUqAmD80ZrHYaNROAoAf764lyf';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
