@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="RvivHYRFg2LF1YyoY3XLvZmbwXgKg2zJ47lmacSz">
+<meta name="csrf-token" content="SxZpaQfHa2CUxRUdge6dtt2GDgOhkJA4118hzZ53">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=7bff2a8d9aa608d8a72a">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -191,7 +191,7 @@
 <a href="https://docln.net/truyen-hoan-thanh">Đã hoàn thành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16797) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16797) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -199,7 +199,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 1147 </span>
+<span class="block feature-name"> 1152 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -231,7 +231,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16797')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16797'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Cô bạn thuở nhỏ của tôi hình như là nữ chính.&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -259,7 +259,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">70.898</div>
+<div class="statistic-value">71.191</div>
 </div>
 </div>
 </div>
@@ -624,7 +624,7 @@ Tập 01 <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16797,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Rq9Q8RIY7u3OXqWAI3vy&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;526e59b04e5a4b1bde6c367c6e6352aaf114efc97c3da96ecbdea41d288ace32&quot;}" wire:effects="[]" wire:id="Rq9Q8RIY7u3OXqWAI3vy" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16797,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Sr31yvGLBlF5eL5j3tCB&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;cb52e67d87a581cc7d87b6986d25bcb996d07b11549cc3162284ae45a69a28dc&quot;}" wire:effects="[]" wire:id="Sr31yvGLBlF5eL5j3tCB" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -643,14 +643,14 @@ Tập 01 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(365)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(367)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">129 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">131 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -701,6 +701,80 @@ Không chắc sẽ có tập 2 nên khi nào có sẽ chuyển sang lại "Đang
 <a href="/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh?comment_id=2338377#ln-comment-2338377" class="text-slate-500">
 <time class="timeago" title="07-01-2024 17:03:19" datetime="2024-01-07T17:03:19+07:00">
 07-01-2024 17:03:19
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">1</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2338390" class="ln-comment-item mt-3 clear" data-comment="2338390" data-parent="2338377">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86406-007f3286-9954-450f-bb32-ccf202adff6f.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86406">Ozu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Toẹt vời transs ơi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh?comment_id=2338377&amp;reply_id=2338390#ln-comment-2338390" class="text-slate-500">
+<time class="timeago" title="07-01-2024 17:25:31" datetime="2024-01-07T17:25:31+07:00">
+07-01-2024 17:25:31
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2338388" class="ln-comment-item mt-3 clear" data-comment="2338388" data-parent="2338388">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua86406-007f3286-9954-450f-bb32-ccf202adff6f.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/86406">Ozu</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Aduuu khiếp luôn
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh?comment_id=2338388#ln-comment-2338388" class="text-slate-500">
+<time class="timeago" title="07-01-2024 17:23:11" datetime="2024-01-07T17:23:11+07:00">
+07-01-2024 17:23:11
 </time>
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
@@ -1239,80 +1313,6 @@ Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"
 <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
-<div class="ln-comment-group">
-<div id="ln-comment-2335986" class="ln-comment-item mt-3 clear" data-comment="2335986" data-parent="2335986">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua4875-ca27142b-482f-40ca-ae5b-2e24d9389059.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/4875">Akiso</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Bộ này hình như là bộ đầu tiên mà tạo hình main đúng kiểu nhân vật 'phụ' đúng câu nói chứ ko phải nói quơ quơ như máy bộ khác bảo mình là nv phụ nhưng mặt thì phản bội lại câu nói luôn, nhưng chính điểm tạo hình quá giống 'nv phụ' này nên nhìn ko hợp đôi lắm nhỉ
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh?comment_id=2335986#ln-comment-2335986" class="text-slate-500">
-<time class="timeago" title="03-01-2024 22:33:32" datetime="2024-01-03T22:33:32+07:00">
-03-01-2024 22:33:32
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="ln-comment-reply">
-<div id="ln-comment-2336188" class="ln-comment-item mt-3 clear" data-comment="2336188" data-parent="2335986">
-<div class="flex gap-1 max-w-full">
-<div class="w-[50px]">
-<div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua51835-dbb5437c-0f88-4a88-bcce-0542d046bb4b.jpg" class="w-full rounded-full" />
-</div>
-</div>
-<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-<div class="flex min-w-0 flex-col px-2">
-<div class="flex align-top justify-between">
-<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-<div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/51835">tavu2002</a>
-</div>
-</div>
-</div>
-<div class="ln-comment-content long-text">
-Nhìn hợp hơn cái thằng Haruki kia là cái chắc, bản mặt ko khác gì mấy thằng main romcom bộ khác, nhìn mà phát ngán
-</div>
-<div class="comment_see_more expand none">Xem thêm</div>
-<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-<a href="/truyen/16797-co-ban-thuo-nho-cua-toi-hinh-nhu-la-nu-chinh?comment_id=2335986&amp;reply_id=2336188#ln-comment-2336188" class="text-slate-500">
-<time class="timeago" title="04-01-2024 09:48:17" datetime="2024-01-04T09:48:17+07:00">
-04-01-2024 09:48:17
-</time>
-</a>
-<a class="self-center visible-toolkit-item do-like cursor-pointer">
-<i class="fas fa-thumbs-up me-1"></i>
-<span class="likecount font-semibold"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="ln-comment-page">
 <div class="pagination-footer">
 <div class="pagination_wrap">
@@ -1322,7 +1322,7 @@ Nhìn hợp hơn cái thằng Haruki kia là cái chắc, bản mặt ko khác g
 </div>
 </div> </main>
 <script>
-        var token = 'rIpweM7TGVkLSvgWfkH2qyPkUw9ZvNAdP6KeYWO2';
+        var token = 'i9dHojrd714DjhPXuU8dRpGdSYP4G9Kw3QdeB6Yy';
         var comment_type = 'series';
         var comment_typeid = '16797';
     </script>
@@ -1360,8 +1360,8 @@ Nhìn hợp hơn cái thằng Haruki kia là cái chắc, bản mặt ko khác g
 
     series_id = parseInt('16797');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="RvivHYRFg2LF1YyoY3XLvZmbwXgKg2zJ47lmacSz" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=e18d472aea362140195b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="SxZpaQfHa2CUxRUdge6dtt2GDgOhkJA4118hzZ53" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
@@ -1369,5 +1369,14 @@ Nhìn hợp hơn cái thằng Haruki kia là cái chắc, bản mặt ko khác g
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
