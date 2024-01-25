@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="VqcmWhDCfoq2Stz8MzZ00yOM1TmAGCTrQjz9R2kh">
+<meta name="csrf-token" content="YVy6Tq5alF2D8LCpn71rFOyEOhIeTfC6SFFVtgji">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/14685-tieu-thuyet-kamen-rider-ooo">
@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 <link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=27ad7c5790a7f581687d">
+<link rel="stylesheet" href="/css/tailwind.css?id=de66df19c9f6c325eb24">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 <script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
@@ -129,7 +129,7 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/thao-luan/2591-ra-mat-hako-facebook-group">
+<a href="/thao-luan/2591">
 <div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/fbg_d.jpg')"></div>
 <div class="index-background d-lg-none" style="background-image: url('/images/banners/fbg_m.jpg'); background-size: cover"></div>
 </a>
@@ -186,7 +186,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14685) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 14685) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -194,7 +194,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 49 </span>
+<span class="block feature-name"> 50 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -226,7 +226,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14685')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/14685'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F14685-tieu-thuyet-kamen-rider-ooo" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Tiểu thuyết Kamen Rider OOO&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F14685-tieu-thuyet-kamen-rider-ooo" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -242,11 +242,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="24/12/2023 22:32:30" datetime="2023-12-24T22:32:30+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="25/01/2024 10:47:59" datetime="2024-01-25T10:47:59+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">56.208</div>
+<div class="statistic-value">58.958</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -254,7 +254,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">40.216</div>
+<div class="statistic-value">41.968</div>
 </div>
 </div>
 </div>
@@ -488,16 +488,22 @@ Novel: Kamen Rider OOO <span style="color: red">*</span>
 </li>
 <li class="none">
 <div class="chapter-name">
-<div class="new-status badge">
-<div class="badge-item new">Mới</div>
-</div>
 <a href="/truyen/14685-tieu-thuyet-kamen-rider-ooo/c124381-eiji-phan-4" title="Eiji (Phần 4)">Eiji (Phần 4)</a>
 </div>
 <div class="chapter-time">24/12/2023</div>
 </li>
+<li class="none">
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/14685-tieu-thuyet-kamen-rider-ooo/c125731-eiji-phan-5" title="Eiji (Phần 5)">Eiji (Phần 5)</a>
+</div>
+<div class="chapter-time">25/01/2024</div>
+</li>
 <div class="mobile-more">
 <div class="see_more">
-<span>Xem tiếp (17 chương)</span>
+<span>Xem tiếp (18 chương)</span>
 </div>
 </div>
 </ul>
@@ -505,7 +511,7 @@ Novel: Kamen Rider OOO <span style="color: red">*</span>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14685,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;BeEGYyADDDzDGpMp9CFZ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14685-tieu-thuyet-kamen-rider-ooo&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;5d45b1b236cc9624f183cbef934e86ac00e50d70b00b4916010fed281c668baa&quot;}" wire:effects="[]" wire:id="BeEGYyADDDzDGpMp9CFZ" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:14685,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;h01XeTzpOGSSNH7aTaFl&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/14685-tieu-thuyet-kamen-rider-ooo&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;fedff14cb3c96d38106506f09eb638d0b5aa6639f9ffd9219c434becccaadae9&quot;}" wire:effects="[]" wire:id="h01XeTzpOGSSNH7aTaFl" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -551,7 +557,13 @@ Bạn phải <a href="/login">đăng nhập</a> hoặc <a href="/register">tạo
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Tôi không có tên</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Suzuki Yasuko</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+<img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+<div class="leading-4">AUTHOR</div>
+</div>
 </div>
 </div>
 </div>
@@ -634,7 +646,13 @@ Mỗi chương là một câu chuyện riêng biệt, bạn muốn đọc cái n
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Tôi không có tên</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176634">Suzuki Yasuko</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+<img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+<div class="leading-4">AUTHOR</div>
+</div>
 </div>
 </div>
 </div>
@@ -890,7 +908,7 @@ ai vui tánh cho xin 1 bộ kamen rider hay hay nhe
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua102615-f97dffb4-3240-417c-8434-27c8c2ad0f31.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u102615-57c961fd-e11c-4caa-9e43-c28a3630e97d.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -898,7 +916,7 @@ ai vui tánh cho xin 1 bộ kamen rider hay hay nhe
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/102615">★彡s̾i̾m̾p̾亗kurumi&lt;3彡★</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/102615">The novel reader</a>
 </div>
 </div>
 </div>
@@ -1091,7 +1109,7 @@ Truyện về người âm à🐧
 </div>
 </div> </main>
 <script>
-        var token = 'VqcmWhDCfoq2Stz8MzZ00yOM1TmAGCTrQjz9R2kh';
+        var token = 'YVy6Tq5alF2D8LCpn71rFOyEOhIeTfC6SFFVtgji';
         var comment_type = 'series';
         var comment_typeid = '14685';
     </script>
@@ -1129,14 +1147,23 @@ Truyện về người âm à🐧
 
     series_id = parseInt('14685');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="VqcmWhDCfoq2Stz8MzZ00yOM1TmAGCTrQjz9R2kh" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+<script src="/scripts/app.js?id=b8198cd1707d7a5e169b"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="YVy6Tq5alF2D8LCpn71rFOyEOhIeTfC6SFFVtgji" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 <script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
-<span>© 2016 - 2023 Cổng Light Novel - Đọc Light Novel</span>
+<span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div></body>
 </html>
