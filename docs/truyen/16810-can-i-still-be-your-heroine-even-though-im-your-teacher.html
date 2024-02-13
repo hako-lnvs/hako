@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="csrf-token" content="k0zJ3Odcsx8KqZvndougALPbdVFrcU1gsOPcf28j">
+<meta name="csrf-token" content="qGxqOHQ4fuVscfAUXiD2qfYYhYAruJ9HA0h1Y0Aw">
 <meta name="logged-in" content="0">
 <meta property="fb:app_id" content="1864643850436909">
 <link rel="canonical" href="https://docln.net/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher">
@@ -22,12 +22,12 @@
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon.png?v=3">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
-<link rel="stylesheet" href="/css/interface.css?id=9dd805f5b3fe086964a7">
-<link rel="stylesheet" href="/css/tailwind.css?id=27ad7c5790a7f581687d">
+<link rel="stylesheet" href="/css/interface.css?id=ead911cd7afa37e8c4aa85e2b6ef245b">
+<link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
-<script src="/scripts/plugins.js?id=e21645b96ee550503766"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3"></script>
-<script>
+<script src="/scripts/plugins.js?id=b612d946b32459430eed3066ed15adf2" type="6d6e446d03f8b72b2e99f751-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34864968-3" type="6d6e446d03f8b72b2e99f751-text/javascript"></script>
+<script type="6d6e446d03f8b72b2e99f751-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -129,9 +129,9 @@
 </div>
 </div>
 <div class="page-top-group ">
-<a href="/truyen/12890">
-<div class="index-background d-none d-lg-block" style="background-image: url('/images/banners/12890_d_l.jpg')"></div>
-<div class="index-background d-lg-none" style="background-image: url('/images/banners/12890_m_l.jpg'); background-size: cover"></div>
+<a href="/thao-luan/2695">
+<div class="index-background d-none d-lg-block" style="background-image: url('https://i2.docln.net/ln/banners/2024-01-10/dl.png')"></div>
+<div class="index-background d-lg-none" style="background-image: url('https://i2.docln.net/ln/banners/2024-01-10/ml.png'); background-size: cover"></div>
 </a>
 </div>
 <main id="mainpart" class="project-page">
@@ -190,7 +190,7 @@
 <a href="https://docln.net/truyen-dang-tien-hanh">Đang tiến hành</a>
 </span>
 </div>
-<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16810) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0]['chapter_url']" style="display: none">Đọc tiếp</a>
+<a x-data="{ lastRead: (JSON.parse(localStorage.getItem('reading_series')) || []).filter(x => x['series_id'] == 16810) }" x-show="lastRead.length" class="self-center md:self-start rounded-full bg-[#d9534f] mt-3 mb-3 px-4 py-2 text-sm font-semibold text-white hover:!text-red-400 shadow-sm hover:bg-red-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d43f3a] justify-center" :href="lastRead[0] ? lastRead[0]['chapter_url'] : '#'" style="display: none">Đọc tiếp</a>
 </div>
 </div>
 <div class="side-features flex-none">
@@ -198,7 +198,7 @@
 <div class="col-4 col-md feature-item width-auto-xl">
 <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
 <span class="block feature-value"><i class="far fa-heart"></i></span>
-<span class="block feature-name"> 171 </span>
+<span class="block feature-name"> 293 </span>
 </a>
 </div>
 <div class="col-4 col-md feature-item width-auto-xl">
@@ -230,7 +230,7 @@
 </label>
 <input type="checkbox" id="open-sharing" />
 <div class="sharing-box">
-<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16810')">Link rút gọn</a>
+<a x-data href="#" class="sharing-item" @click.prevent="window.navigator.clipboard.writeText('https://docln.net/truyen/16810'); $store.toast.show('Copy thành công!')">Link rút gọn</a>
 <a class="sharing-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdocln.net%2Ftruyen%2F16810-can-i-still-be-your-heroine-even-though-im-your-teacher" target="_blank"><i class="fab fa-facebook-f"></i></a>
 <a class="sharing-item" href="https://twitter.com/intent/tweet?text=Can I Still Be Your Heroine Even Though I’m Your Teacher?&url=https%3A%2F%2Fdocln.net%2Ftruyen%2F16810-can-i-still-be-your-heroine-even-though-im-your-teacher" target="_blank"><i class="fab fa-twitter"></i></a>
 </div>
@@ -246,11 +246,11 @@
 <div class="row statistic-list">
 <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
 <div class="statistic-name">Lần cuối</div>
-<div class="statistic-value"><time class="timeago" title="31/12/2023 07:37:09" datetime="2023-12-31T07:37:09+07:00">Đang chạy...</time></div>
+<div class="statistic-value"><time class="timeago" title="14/02/2024 00:12:41" datetime="2024-02-14T00:12:41+07:00">Đang chạy...</time></div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Số từ</div>
-<div class="statistic-value">3.809</div>
+<div class="statistic-value">5.323</div>
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Đánh giá</div>
@@ -258,7 +258,7 @@
 </div>
 <div class="col-4 col-md-3 statistic-item">
 <div class="statistic-name">Lượt xem</div>
-<div class="statistic-value">4.052</div>
+<div class="statistic-value">8.909</div>
 </div>
 </div>
 </div>
@@ -381,16 +381,33 @@ Vol 1 <span style="color: red">*</span>
 <div class="new-status badge">
 <div class="badge-item new">Mới</div>
 </div>
-<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher/c124596-chuong-01" title="Chương 01:Mở Đầu">Chương 01:Mở Đầu</a>
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher/c126808-chuong-00-anh-minh-hoa" title="Chương 00: Ảnh Minh Họa">Chương 00: Ảnh Minh Họa</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
+</li>
+<li class>
+<div class="chapter-name">
+<i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher/c124596-chuong-01" title="Chương 1: Mở Đầu - Chia Sẻ">Chương 1: Mở Đầu - Chia Sẻ</a>
 </div>
 <div class="chapter-time">31/12/2023</div>
+</li>
+<li class>
+<div class="chapter-name">
+<div class="new-status badge">
+<div class="badge-item new">Mới</div>
+</div>
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher/c126807-chuong-11-buoi-hen-ho-bat-ngo-tai-gia" title="Chương 1.1: Buổi Hẹn Hò Bất Ngờ Tại Gia">Chương 1.1: Buổi Hẹn Hò Bất Ngờ Tại Gia</a>
+</div>
+<div class="chapter-time">14/02/2024</div>
 </li>
 </ul>
 </div>
 </div>
 </main>
 </section>
-<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16810,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;yT1auU4LcR0TxNEyWBrM&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16810-can-i-still-be-your-heroine-even-though-im-your-teacher&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;9ffa2ccd1c6b1578ebafcd454d7205a51c05de5ebfe8c02a98f4a872558899cf&quot;}" wire:effects="[]" wire:id="yT1auU4LcR0TxNEyWBrM" wire:init="loadRelevantSeries">
+<div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16810,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;ceKDnQSu7NQXA1t6Vrwd&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16810-can-i-still-be-your-heroine-even-though-im-your-teacher&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;e3abe1f10ed80c4fd77bddb6f43a640887524efcbfc9b5833d43b14fc4dd715d&quot;}" wire:effects="[]" wire:id="ceKDnQSu7NQXA1t6Vrwd" wire:init="loadRelevantSeries">
 <section class="basic-section gradual-mobile">
 <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
 <main class="d-lg-block">
@@ -409,14 +426,14 @@ Vol 1 <span style="color: red">*</span>
 </div>
 <section id="series-comments" class="basic-section">
 <header class="sect-header tab-list">
-<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(21)</span></span>
+<span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(42)</span></span>
 </header>
 <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
 <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
 <div id="tab-content-1" class="tab-content clear">
 <section class="ln-comment">
 <header>
-<h3 class="text-lg font-bold dark:text-white">18 Bình luận </h3>
+<h3 class="text-lg font-bold dark:text-white">35 Bình luận </h3>
 
 </header>
 <main class="ln-comment-body">
@@ -464,6 +481,214 @@ Nếu các bạn có bất cứ ý kiến nào veef bản dịch thì hãy nói 
 </a>
 <a class="self-center visible-toolkit-item do-like cursor-pointer">
 <i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">2</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2339354" class="ln-comment-item mt-3 clear" data-comment="2339354" data-parent="2332989">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua129297-994d5db3-9358-488c-a46a-b7fa69040b28.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/129297">dũng tan</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+bao giờ ra chương mới vậy ban<br>
+<br>
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2332989&amp;reply_id=2339354#ln-comment-2339354" class="text-slate-500">
+<time class="timeago" title="08-01-2024 19:38:12" datetime="2024-01-08T19:38:12+07:00">
+08-01-2024 19:38:12
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2339480" class="ln-comment-item mt-3 clear" data-comment="2339480" data-parent="2332989">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua119687-b8d3fd8a-940c-4f00-b794-42a2abcecdb5.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/119687">Meow~Meow~Meow~</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="../thanh-vien/129297">dũng tan:</a> bạn có lòng hỏi thì mình cungx xin được trả lời :))) <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/415751527_350911437882624_699994713006485423_n.png?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=510075&amp;_nc_ohc=fyU1JzBPVVEAX_Vm20J&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AdQhy6dLvKWYSd4w14dQTZoPs31aFkEkfuVt-WJYKo276Q&amp;oe=65C36667" alt="415751527_350911437882624_699994713006485423_n.png?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=510075&amp;_nc_ohc=fyU1JzBPVVEAX_Vm20J&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AdQhy6dLvKWYSd4w14dQTZoPs31aFkEkfuVt-WJYKo276Q&amp;oe=65C36667">
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2332989&amp;reply_id=2339480#ln-comment-2339480" class="text-slate-500">
+<time class="timeago" title="08-01-2024 21:07:22" datetime="2024-01-08T21:07:22+07:00">
+08-01-2024 21:07:22
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold">1</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2360958" class="ln-comment-item mt-3 clear" data-comment="2360958" data-parent="2360958">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/178217">fyli</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+bao h có chap mới
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2360958#ln-comment-2360958" class="text-slate-500">
+<time class="timeago" title="10-02-2024 13:37:37" datetime="2024-02-10T13:37:37+07:00">
+10-02-2024 13:37:37
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2361155" class="ln-comment-item mt-3 clear" data-comment="2361155" data-parent="2360958">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua119687-b8d3fd8a-940c-4f00-b794-42a2abcecdb5.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/119687">Meow~Meow~Meow~</a>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+<img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+<div class="leading-4">CHỦ THỚT</div>
+</div>
+</div>
+<div class="self-center">
+<div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+<img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+<div class="leading-4">TRANS</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Chờ đợi đi?
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2360958&amp;reply_id=2361155#ln-comment-2361155" class="text-slate-500">
+<time class="timeago" title="10-02-2024 20:50:19" datetime="2024-02-10T20:50:19+07:00">
+10-02-2024 20:50:19
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ln-comment-group">
+<div id="ln-comment-2338676" class="ln-comment-item mt-3 clear" data-comment="2338676" data-parent="2338676">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua166278-5e97e824-b3ec-4b03-b701-1c2e3aafe950.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/166278">Độc giả qua đường</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+Tôi không biết các bạn sao chứ ngay khi tôi thấy chữ "teacher" tôi liền click vào ngay 👍
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2338676#ln-comment-2338676" class="text-slate-500">
+<time class="timeago" title="07-01-2024 22:56:21" datetime="2024-01-07T22:56:21+07:00">
+07-01-2024 22:56:21
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
 <span class="likecount font-semibold">1</span>
 </a>
 </div>
@@ -477,7 +702,7 @@ Nếu các bạn có bất cứ ý kiến nào veef bản dịch thì hãy nói 
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua36153-89d0dfae-a2ab-4f3d-98ca-cb021365799b.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u36153-17464c56-5b9e-48b9-9c46-3ee9bf2d1468.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -519,6 +744,83 @@ lmao h romcom nó đến mức này r đó hả
 </div>
 </div>
 </div>
+</div>
+<div class="ln-comment-reply">
+<div id="ln-comment-2334799" class="ln-comment-item mt-3 clear" data-comment="2334799" data-parent="2334390">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua122971-a82e9214-df68-4f8e-841b-488778168aec.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/122971">therumbling</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+ủa bth mà:))??
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2334390&amp;reply_id=2334799#ln-comment-2334799" class="text-slate-500">
+<time class="timeago" title="02-01-2024 13:56:39" datetime="2024-01-02T13:56:39+07:00">
+02-01-2024 13:56:39
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="ln-comment-2334869" class="ln-comment-item mt-3 clear" data-comment="2334869" data-parent="2334390">
+<div class="flex gap-1 max-w-full">
+<div class="w-[50px]">
+<div class="mx-1 my-1">
+<img src="https://i.docln.net/lightnovel/users/ua103314-64384d74-16aa-4ec0-8f79-e6065ab67bff.jpg" class="w-full rounded-full" />
+</div>
+</div>
+<div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+<div class="flex min-w-0 flex-col px-2">
+<div class="flex align-top justify-between">
+<div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+<div class="self-center">
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103314">Mistdo</a>
+</div>
+</div>
+</div>
+<div class="ln-comment-content long-text">
+<a href="/thanh-vien/122971">@therumbling:</a> giáo viên với hs mà bth?<br>
+nếu bạn thấy nó thực sự bth thì nên nhìn nhận lại bản thân mình đi
+</div>
+<div class="comment_see_more expand none">Xem thêm</div>
+<div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+<a href="/truyen/16810-can-i-still-be-your-heroine-even-though-im-your-teacher?comment_id=2334390&amp;reply_id=2334869#ln-comment-2334869" class="text-slate-500">
+<time class="timeago" title="02-01-2024 16:52:11" datetime="2024-01-02T16:52:11+07:00">
+02-01-2024 16:52:11
+</time>
+</a>
+<a class="self-center visible-toolkit-item do-like cursor-pointer">
+<i class="fas fa-thumbs-up me-1"></i>
+<span class="likecount font-semibold"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fetch_reply" data-parent="2334390">
+Xem thêm 10 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+</div>
+<img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
 </div>
 </div>
 <div class="ln-comment-group">
@@ -571,7 +873,7 @@ Ai có vol 1 chap 4.5 trở lên ko bên eng ngta khoá bắt nạp mới đc co
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142791">hhoang122</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142791">m4dness</a>
 </div>
 <div class="self-center">
 <div class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
@@ -646,7 +948,7 @@ raw là v mà?
 <div class="flex gap-1 max-w-full">
 <div class="w-[50px]">
 <div class="mx-1 my-1">
-<img src="https://i.docln.net/lightnovel/users/ua99874-e92e385b-ffb8-4176-a98a-f6aacbbd2059.jpg" class="w-full rounded-full" />
+<img src="https://i2.docln.net/ln/users/avatars/u99874-5f23584e-6003-47ed-9b51-023aec2e603a.jpg" class="w-full rounded-full" />
 </div>
 </div>
 <div class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
@@ -654,7 +956,7 @@ raw là v mà?
 <div class="flex align-top justify-between">
 <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
 <div class="self-center">
-<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/99874">AsyouwishIamquitting</a>
+<a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/99874">Zlim Zlan</a>
 </div>
 <div class="self-center">
 <div class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
@@ -1077,8 +1379,8 @@ Oh :))
 </div>
 <div class="ln-comment-page">
 </div> </main>
-<script>
-        var token = '3RC91rwCqZvJIO6j5ifG9uLWI77TpxFIxTF8cLvR';
+<script type="6d6e446d03f8b72b2e99f751-text/javascript">
+        var token = 't5MbNtWMQvcSTXPLtzBUr5WxLXO32vR3LA45fm2I';
         var comment_type = 'series';
         var comment_typeid = '16810';
     </script>
@@ -1090,7 +1392,7 @@ Oh :))
 </div>
 </div>
 </main>
-<script>
+<script type="6d6e446d03f8b72b2e99f751-text/javascript">
     $(document).ready(function() {
         listab("#series-comments");
         // Switch to FB tab if request fb_comment_id
@@ -1101,14 +1403,14 @@ Oh :))
         $('ol.list-volume li').on('click',function(){
             var vol = $(this);
             var scrollTo = vol.data('scrollto');
-            $('html, body').animate({scrollTop: $(scrollTo).offset().top});   
+            $('html, body').animate({scrollTop: $(scrollTo).offset().top});
         });
-        
+
         $('.catalog-icon').on('click', function(){
             $('#list-vol').toggleClass('animation fade-in-right');
             $('#list-vol').toggle();
         });
-        
+
         $('.list-vol_off').on('click', function(){
             $('#list-vol').hide();
         });
@@ -1116,14 +1418,23 @@ Oh :))
 
     series_id = parseInt('16810');
 </script>
-<script src="/scripts/app.js?id=b35f1788c29ec34a22a5"></script>
-<script src="/livewire/livewire.js?id=f121a5df" data-csrf="k0zJ3Odcsx8KqZvndougALPbdVFrcU1gsOPcf28j" data-update-uri="/livewire/update" data-navigate-once="true"></script>
-<script type="text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+<script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59" type="6d6e446d03f8b72b2e99f751-text/javascript"></script>
+<script src="/livewire/livewire.js?id=f121a5df" data-csrf="qGxqOHQ4fuVscfAUXiD2qfYYhYAruJ9HA0h1Y0Aw" data-update-uri="/livewire/update" data-navigate-once="true" type="6d6e446d03f8b72b2e99f751-text/javascript"></script>
+<script type="6d6e446d03f8b72b2e99f751-text/javascript" src="//absorbedscholarsvolatile.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
 <footer id="footer">
 <div class="container">
 
 <span class="right">Liên hệ: <a href="mailto:contact@hako.vn" target="_blank" style="color: #5fff46">contact@hako.vn</a></span>
 <span>© 2016 - 2024 Cổng Light Novel - Đọc Light Novel</span>
 </div>
-</footer> </body>
+</footer>
+<div x-data x-show="$store.toast.on" @click="$store.toast.hide()" class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md fixed w-3/4 md:w-1/2 z-20 inset-x-0 bottom-10 mx-auto" role="alert" style="display: none">
+<div class="flex">
+<div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" /></svg></div>
+<div>
+<p class="font-bold capitalize">Chú ý</p>
+<p class="text-sm" x-text="$store.toast.message"></p>
+</div>
+</div>
+</div><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6d6e446d03f8b72b2e99f751-|49" defer></script></body>
 </html>
