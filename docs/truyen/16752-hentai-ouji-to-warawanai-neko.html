@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="sWHgc8MQlyhqGBHB9oNVbwymW268BtqUD6mfXxDA">
+    <meta name="csrf-token" content="pQsah7xyl7SWwg4vCnXeEKNe0j0wDusFWvg5WTeD">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể truy cập trang web xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700 " href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -227,7 +256,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 427 </span>
+                                                <span class="block feature-name"> 429 </span>
                                             </a>
                                                                                         </div>
 
@@ -277,11 +306,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="09/02/2025 13:44:33" datetime="2025-02-09T13:44:33+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="13/02/2025 12:42:16" datetime="2025-02-13T12:42:16+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">391.548</div>
+                                            <div class="statistic-value">403.155</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -290,7 +319,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">117.537</div>
+                                            <div class="statistic-value">118.494</div>
                                         </div>
                                     </div>
                                 </div>
@@ -323,7 +352,7 @@
                         <section class="series-users">
                             <main>
                                 <div class="series-owner group-mem">
-                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" alt="Poster's avatar">
+                                    <img width="50px" height="50px" src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" alt="Poster's avatar">
                                     <div class="series-owner-title">
                                         <span class="series-owner_name"><a href="/thanh-vien/158095">Timmie2407</a></span>
                                                                             </div>
@@ -383,6 +412,7 @@
                                                         <li data-scrollTo="#volume_25665"><span class="list_vol-order">05.</span><span class="list_vol-title">Tập 05</span></li>
                                                         <li data-scrollTo="#volume_26584"><span class="list_vol-order">06.</span><span class="list_vol-title">Tập 06</span></li>
                                                         <li data-scrollTo="#volume_27506"><span class="list_vol-order">07.</span><span class="list_vol-title">Tập 07</span></li>
+                                                        <li data-scrollTo="#volume_27991"><span class="list_vol-order">08.</span><span class="list_vol-title">Tập 08</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -1197,6 +1227,88 @@
                                                                                             </div>
                                             <div class="chapter-time">09/02/2025</div>
                                         </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/16752-hentai-ouji-to-warawanai-neko/c157654-chuong-04-tsu-chan-a-chan-yokodera-youto" title="Chương 04: Tsu-chan, A-chan, Yokodera Youto">Chương 04: Tsu-chan, A-chan, Yokodera Youto</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">13/02/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/16752-hentai-ouji-to-warawanai-neko/c157655-chuong-05-hy-vong-ham-muon-tuyet-vong" title="Chương 05: Hy Vọng. Ham Muốn. Tuyệt Vọng.">Chương 05: Hy Vọng. Ham Muốn. Tuyệt Vọng.</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">13/02/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/16752-hentai-ouji-to-warawanai-neko/c157657-loi-bat" title="Lời Bạt">Lời Bạt</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">13/02/2025</div>
+                                        </li>
+                                                                                                            <div class="mobile-more">
+                                        <div class="see_more">
+                                            <span>Xem tiếp (2 chương)</span>
+                                        </div>
+                                    </div>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+                    <header id="volume_27991" class="sect-header">
+                                                <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="sect-title">
+                            Tập 08 <span style="color: red">*</span>
+                        </span>
+                    </header>
+                    <main class="d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <div class="volume-cover">
+                                    <a href="/truyen/16752-hentai-ouji-to-warawanai-neko/t27991-tap-08">
+                                        <div class="a6-ratio">
+                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/books/covers/s27991-2bef5a3e-ff92-46ed-b366-fa223a947264.jpg')">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                                                <ul class="list-chapters at-series">
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/16752-hentai-ouji-to-warawanai-neko/c157658-minh-hoa" title="Minh hoạ">Minh hoạ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">13/02/2025</div>
+                                        </li>
                                                                                                         </ul>
                             </div>
                         </div>
@@ -1205,7 +1317,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16752,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;rDK9GWdDajtQH6K8GUSU&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16752-hentai-ouji-to-warawanai-neko&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;611da39996810772897b0c5ec68a21e721c70373ce16227b1ef34282adea4615&quot;}" wire:effects="[]" wire:id="rDK9GWdDajtQH6K8GUSU" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:16752,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;7HQzBqfXTvHz5QUXQeo9&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/16752-hentai-ouji-to-warawanai-neko&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;3d5171f09816a0357ed91f368cf24fb9b266bf552989899aa21f164e18e10802&quot;}" wire:effects="[]" wire:id="7HQzBqfXTvHz5QUXQeo9" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1224,7 +1336,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(526)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(534)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1404,7 +1516,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1461,7 +1573,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187359-fd706e8b-2a3d-4613-b9d8-41cf705a5b00.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u187359-8d76a619-a320-4f51-a245-5c6ab026dcad.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1509,7 +1621,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1630,7 +1742,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1846,7 +1958,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1949,7 +2061,7 @@ Anh gay co len
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2423,7 +2535,7 @@ Edit thêm là văn phong của truyện khá là hay đấy. Trải nghiệm đ
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-aecbb1b7-b596-4f59-8f2c-173f48bdf34e.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2535,7 +2647,7 @@ Nhưng tôi có cảm giác không ổn về cái lời hứa của bác sau khi
 </div>    </main>
 
     <script>
-        var token = 'sWHgc8MQlyhqGBHB9oNVbwymW268BtqUD6mfXxDA';
+        var token = 'pQsah7xyl7SWwg4vCnXeEKNe0j0wDusFWvg5WTeD';
         var comment_type = 'series';
         var comment_typeid = '16752';
     </script>
@@ -2579,8 +2691,8 @@ Nhưng tôi có cảm giác không ổn về cái lời hứa của bác sau khi
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="sWHgc8MQlyhqGBHB9oNVbwymW268BtqUD6mfXxDA" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="pQsah7xyl7SWwg4vCnXeEKNe0j0wDusFWvg5WTeD" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
