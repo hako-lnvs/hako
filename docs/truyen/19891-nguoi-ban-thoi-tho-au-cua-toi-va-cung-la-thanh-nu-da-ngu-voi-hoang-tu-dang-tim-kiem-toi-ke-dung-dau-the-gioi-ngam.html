@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="2LP3tOBT3rzGWIGYxTOU4NpH4SMRmn0tvBatMLy5">
+    <meta name="csrf-token" content="96TCOXPup9BEhrcZPe0FspxMb2j9TgUzNXOq6Y7z">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -275,11 +304,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="09/02/2025 21:18:09" datetime="2025-02-09T21:18:09+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="14/02/2025 09:18:58" datetime="2025-02-14T09:18:58+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">26.172</div>
+                                            <div class="statistic-value">28.678</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -288,7 +317,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">38.015</div>
+                                            <div class="statistic-value">38.857</div>
                                         </div>
                                     </div>
                                 </div>
@@ -381,7 +410,8 @@
                             <i class="fas fa-times"></i>
                         </span>
                         <ol class="list-volume unstyled no-margin no-padding">
-                                                                                    <li data-scrollTo="#volume_26907"><span class="list_vol-order">01.</span><span class="list_vol-title">Arc 1 (WN)</span></li>
+                                                                                    <li data-scrollTo="#volume_26907"><span class="list_vol-order">01.</span><span class="list_vol-title">Arc 1 (WN) [Hoàn thành]</span></li>
+                                                        <li data-scrollTo="#volume_28002"><span class="list_vol-order">02.</span><span class="list_vol-title">Arc 2 (WN)</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -395,7 +425,7 @@
                     <header id="volume_26907" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Arc 1 (WN) <span style="color: red">*</span>
+                            Arc 1 (WN) [Hoàn thành] <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -580,9 +610,33 @@
                                                                                             </div>
                                             <div class="chapter-time">09/02/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/19891-nguoi-ban-thoi-tho-au-cua-toi-va-cung-la-thanh-nu-da-ngu-voi-hoang-tu-dang-tim-kiem-toi-ke-dung-dau-the-gioi-ngam/c157711-chuong-19-co-ve-nhu-pitt-da-bao-voi-cac-thanh-hiep-si" title="Chương 19: Có vẻ như Pitt đã báo với các thánh hiệp sĩ">Chương 19: Có vẻ như Pitt đã báo với các thánh hiệp sĩ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">14/02/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/19891-nguoi-ban-thoi-tho-au-cua-toi-va-cung-la-thanh-nu-da-ngu-voi-hoang-tu-dang-tim-kiem-toi-ke-dung-dau-the-gioi-ngam/c157712-chuong-20-cap-doi-mac-bay-goc-nhin-cua-cecil" title="Chương 20: Cặp đôi mắc bẫy (Góc nhìn của Cecil)">Chương 20: Cặp đôi mắc bẫy (Góc nhìn của Cecil)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">14/02/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (13 chương)</span>
+                                            <span>Xem tiếp (15 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -590,10 +644,36 @@
                         </div>
                     </main>
                 </section>
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile  disabled">
+                    <header id="volume_28002" class="sect-header">
+                                                <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="sect-title">
+                            Arc 2 (WN)
+                        </span>
+                    </header>
+                    <main class="d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <div class="volume-cover">
+                                    <a href="/truyen/19891-nguoi-ban-thoi-tho-au-cua-toi-va-cung-la-thanh-nu-da-ngu-voi-hoang-tu-dang-tim-kiem-toi-ke-dung-dau-the-gioi-ngam/t28002-arc-2-wn">
+                                        <div class="a6-ratio">
+                                            <div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                                                <ul class="list-chapters at-series">
+                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19891,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;QxPB8NF4ouSs2GvJOCoF&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19891-nguoi-ban-thoi-tho-au-cua-toi-va-cung-la-thanh-nu-da-ngu-voi-hoang-tu-dang-tim-kiem-toi-ke-dung-dau-the-gioi-ngam&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d5243490c791debf889a3b2cde04acccf62dbb602b3a6daaf4af4e3a7b14eddd&quot;}" wire:effects="[]" wire:id="QxPB8NF4ouSs2GvJOCoF" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19891,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;x8SHZG9nasHGhlMVZYan&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19891-nguoi-ban-thoi-tho-au-cua-toi-va-cung-la-thanh-nu-da-ngu-voi-hoang-tu-dang-tim-kiem-toi-ke-dung-dau-the-gioi-ngam&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;243ddce43a77af9db4c2cf0fe01ea33abefdb1b4e1b571c738e8dea60b693d14&quot;}" wire:effects="[]" wire:id="x8SHZG9nasHGhlMVZYan" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1323,7 +1403,7 @@
 </div>    </main>
 
     <script>
-        var token = '2LP3tOBT3rzGWIGYxTOU4NpH4SMRmn0tvBatMLy5';
+        var token = '96TCOXPup9BEhrcZPe0FspxMb2j9TgUzNXOq6Y7z';
         var comment_type = 'series';
         var comment_typeid = '19891';
     </script>
@@ -1367,8 +1447,8 @@
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="2LP3tOBT3rzGWIGYxTOU4NpH4SMRmn0tvBatMLy5" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="96TCOXPup9BEhrcZPe0FspxMb2j9TgUzNXOq6Y7z" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
