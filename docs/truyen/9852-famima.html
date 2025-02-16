@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="LHsL7KCjtdEzGq1o6cocBEkF78lPcIk0Q3JeceGk">
+    <meta name="csrf-token" content="JDmUKAIGkkMKDmxP0cwVgGwT6gnwQWbVH2o4D8Lv">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +156,35 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -229,7 +258,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 123 </span>
+                                                <span class="block feature-name"> 125 </span>
                                             </a>
                                                                                         </div>
 
@@ -279,11 +308,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="31/12/2024 20:04:02" datetime="2024-12-31T20:04:02+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="16/02/2025 16:41:53" datetime="2025-02-16T16:41:53+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">14.405</div>
+                                            <div class="statistic-value">16.940</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -292,7 +321,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">28.179</div>
+                                            <div class="statistic-value">29.851</div>
                                         </div>
                                     </div>
                                 </div>
@@ -487,9 +516,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -498,9 +524,22 @@
                                                                                             </div>
                                             <div class="chapter-time">31/12/2024</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/9852-famima/c157957-chuong-02-mot-cuoc-song-thuong-nhat-voi-day-ray-hiem-nguy-3" title="Chương 02: Một cuộc sống thường nhật với đầy rẫy hiểm nguy! (3)">Chương 02: Một cuộc sống thường nhật với đầy rẫy hiểm nguy! (3)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">16/02/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (3 chương)</span>
+                                            <span>Xem tiếp (4 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -511,7 +550,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:9852,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;9zqKHKm35YwtOb0aPnHt&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/9852-famima&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;73b62a9e94bcde712ac19572cd227f08f7ed7622ce27619fa2aadefe7069d81d&quot;}" wire:effects="[]" wire:id="9zqKHKm35YwtOb0aPnHt" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:9852,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;96SWM3hVcLyXFtHK83P6&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/9852-famima&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;8fbe61dfdcbb61f7fb75ad58397543789fc5b94c8bcbd1010ce3660bf298603f&quot;}" wire:effects="[]" wire:id="96SWM3hVcLyXFtHK83P6" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -615,7 +654,7 @@ Odoru. Just Odoru.
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u172160-c1232a39-f8fd-4ac8-a1c2-0b9c55d3f380.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u172160-464201b8-e32d-4080-aa46-7ac04f1242da.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -713,7 +752,7 @@ Odoru. Just Odoru.
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u172160-c1232a39-f8fd-4ac8-a1c2-0b9c55d3f380.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u172160-464201b8-e32d-4080-aa46-7ac04f1242da.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1585,7 +1624,7 @@ Odoru. Just Odoru.
 </div>    </main>
 
     <script>
-        var token = 'LHsL7KCjtdEzGq1o6cocBEkF78lPcIk0Q3JeceGk';
+        var token = 'JDmUKAIGkkMKDmxP0cwVgGwT6gnwQWbVH2o4D8Lv';
         var comment_type = 'series';
         var comment_typeid = '9852';
     </script>
@@ -1629,8 +1668,8 @@ Odoru. Just Odoru.
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="LHsL7KCjtdEzGq1o6cocBEkF78lPcIk0Q3JeceGk" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="JDmUKAIGkkMKDmxP0cwVgGwT6gnwQWbVH2o4D8Lv" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
