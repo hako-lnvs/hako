@@ -12,7 +12,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="aely7vbUX1sAyMvOJ5dhjFo75FpCKCNX5dc3BbAK">
+    <meta name="csrf-token" content="h6XjxZ8T4XaFMJ2nR0QO5pAUOh0WcknyOUktYVbH">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +28,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=301889c55fda9d6d6f6023b5da5becf2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +150,41 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
+                <a href="/truyen/15047">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+        <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" x-transition style="display: none">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="ml-3 font-bold">
+                    <p class="text-sm text-yellow-700">
+                    Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                    <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                    
+                    </p>
+                </div>
+                <div class="ml-auto pl-3">
+                    <div class="-mx-1.5 -my-1.5">
+                    <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                        <span class="sr-only">Dismiss</span>
+                        <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -224,7 +253,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 282 </span>
+                                                <span class="block feature-name"> 288 </span>
                                             </a>
                                                                                         </div>
 
@@ -274,11 +303,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="07/02/2025 00:48:16" datetime="2025-02-07T00:48:16+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="28/02/2025 19:54:30" datetime="2025-02-28T19:54:30+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">24.964</div>
+                                            <div class="statistic-value">26.182</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -287,7 +316,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">57.353</div>
+                                            <div class="statistic-value">61.117</div>
                                         </div>
                                     </div>
                                 </div>
@@ -600,9 +629,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156481-chuong-15-graffiti" title="Chương 15: Graffiti">Chương 15: Graffiti</a>
@@ -612,9 +638,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156482-chuong-16-vi-cua-ca-phe" title="Chương 16: Hương vị của cà phê?">Chương 16: Hương vị của cà phê?</a>
@@ -624,9 +647,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156483-chuong-17-binh-yen-truoc-con-bao" title="Chương 17: Bình yên trước cơn bão">Chương 17: Bình yên trước cơn bão</a>
@@ -636,9 +656,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156902-chuong-18-tin-don" title="Chương 18: Tin đồn">Chương 18: Tin đồn</a>
@@ -648,12 +665,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156903-chuong-19-nguoi-con-gai-tua-nhu-bong-cam-tu-cau" title="Chương 19: Người con gái tựa như bông cẩm tú cầu">Chương 19: Người con gái tựa như bông cẩm tú cầu</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/02/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156904-chuong-20-quyet-tam" title="Chương 20: Quyết tâm">Chương 20: Quyết tâm</a>
 
                                                                                             </div>
                                             <div class="chapter-time">07/02/2025</div>
@@ -665,14 +688,14 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c156904-chuong-20-quyet-tam" title="Chương 20: Quyết tâm">Chương 20: Quyết tâm</a>
+                                                <a href="/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi/c159433-chuong-21-lay-doc-tri-doc" title="Chương 21: Lấy độc trị độc.">Chương 21: Lấy độc trị độc.</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">07/02/2025</div>
+                                            <div class="chapter-time">28/02/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (16 chương)</span>
+                                            <span>Xem tiếp (17 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -683,7 +706,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19392,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;EsHpIXS8RqkvzWu6eT4j&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;94ab9b686e80bbfbfc534747fc46627c3eafefd2cf93e713ea64009280703caa&quot;}" wire:effects="[]" wire:id="EsHpIXS8RqkvzWu6eT4j" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19392,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;9Swt0gVYZXjcybaXaQqe&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;9f1d6001da92612779527baa69793b8f14e9da7ec8911fc5e1bf573902b1b7ae&quot;}" wire:effects="[]" wire:id="9Swt0gVYZXjcybaXaQqe" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -702,14 +725,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(282)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(290)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">104 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">106 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -889,7 +912,7 @@ Còn hứng = ko drop :&gt;
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -933,7 +956,7 @@ Còn hứng = ko drop :&gt;
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u190398-46e35a72-fa82-45a1-aaa7-f89f5fc90f56.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u190398-17e8c7dc-b666-431e-8c44-9d8f8a39bd53.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1025,7 +1048,7 @@ Mà đối mới tôi thì tragedy=peak🗣️🗣️🗣️<br>
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u190398-46e35a72-fa82-45a1-aaa7-f89f5fc90f56.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u190398-17e8c7dc-b666-431e-8c44-9d8f8a39bd53.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1064,7 +1087,7 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
 </div>
     
                 <div class="fetch_reply" data-parent="2737090">
-            Xem thêm 7 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+            Xem thêm 9 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
         </div>
         <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
                 
@@ -1374,7 +1397,7 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1458,7 +1481,7 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1504,7 +1527,7 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1599,7 +1622,7 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1701,13 +1724,13 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.net/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.sbs/truyen/19392-tin-buon-nguoi-ban-tho-au-ma-toi-nghi-la-stundere-suot-10-nam-lai-thuc-su-ghet-toi?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'z4H2zOKr3XOoWdrKUBMaoy3mvpWJcKZ9MEDYlX8X';
+        var token = 'TfNofHc3zhI7RXS1DCg0xe5FuXwsbGD3AW0wKvYG';
         var comment_type = 'series';
         var comment_typeid = '19392';
     </script>
@@ -1751,8 +1774,8 @@ Khả năng là do bộ novel đầu tiên tôi đọc hết là Re:Yandere
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="aely7vbUX1sAyMvOJ5dhjFo75FpCKCNX5dc3BbAK" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="/scripts/app.js?id=af30fda3c7297a180fe0ecae64a5a5b9"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="h6XjxZ8T4XaFMJ2nR0QO5pAUOh0WcknyOUktYVbH" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
