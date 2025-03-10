@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Cách Phá Hoại Một Bộ Rom-Com - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="h4h4abiShdadj0uYjSSVFkSbLxYk8Bp0Km9m0CvL">
+    <meta name="csrf-token" content="bg8c2yDEgLzAlfVBul8ThJ7M7EoNK2B93DT8UJeO">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=18235c05854744068080fd05ed06fe9f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
+                <a href="/truyen/15047">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -233,7 +287,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 1278 </span>
+                                                <span class="block feature-name"> 1326 </span>
                                             </a>
                                                                                         </div>
 
@@ -283,20 +337,20 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="15/01/2025 22:57:29" datetime="2025-01-15T22:57:29+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="10/03/2025 20:50:11" datetime="2025-03-10T20:50:11+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">224.039</div>
+                                            <div class="statistic-value">226.183</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">4,59 / <small>29</small></div>
+                                            <div class="statistic-value">4,60 / <small>30</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">432.404</div>
+                                            <div class="statistic-value">477.589</div>
                                         </div>
                                     </div>
                                 </div>
@@ -409,7 +463,7 @@
                 <a href="https://docln.net/truyen/19382/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">nakanichi</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">S͏͏</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -421,10 +475,10 @@
             <div class="text-base text-yellow-400">
             <i class="fas fa-star"></i>
         </div>
-            <div class="text-base text-yellow-400">
+            <div class="text-base text-gray-200 dark:text-gray-600">
             <i class="fas fa-star"></i>
         </div>
-            <div class="text-base text-yellow-400">
+            <div class="text-base text-gray-200 dark:text-gray-600">
             <i class="fas fa-star"></i>
         </div>
     </div> 
@@ -436,7 +490,8 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Truyện rất hay. Tks Trans 👍
+                                    Về phần dịch: 3+/5.
+Vài đoạn diễn đạt chưa ổn, thi...
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -444,7 +499,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="15-01-2025 23:21:36" datetime="2025-01-15T23:21:36+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="10-03-2025 21:10:50" datetime="2025-03-10T21:10:50+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -454,7 +509,7 @@
                 <a href="https://docln.net/truyen/19382/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Deptraiso1</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Kuro Kazaki</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -481,7 +536,8 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    oách xà lách vô cùng🫁
+                                    Tuyệt đối điện ảnh
+✋🐳🤚
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -489,7 +545,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="15-01-2025 23:17:11" datetime="2025-01-15T23:17:11+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="03-02-2025 19:03:00" datetime="2025-02-03T19:03:00+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -1336,9 +1392,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19382-how-to-ruin-a-love-comedy/c154770-chuong-88-chinami-giat-minh-1" title="Chương 88: Chinami giật mình (1)">Chương 88: Chinami giật mình (1)</a>
@@ -1346,9 +1399,21 @@
                                                                                             </div>
                                             <div class="chapter-time">15/01/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/19382-how-to-ruin-a-love-comedy/c160737-chuong-89-chinami-giat-minh-2" title="Chương 89: Chinami giật mình (2)">Chương 89: Chinami giật mình (2)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">10/03/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (85 chương)</span>
+                                            <span>Xem tiếp (86 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1359,7 +1424,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19382,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;HPFqQPVPNTlwOelJ4taC&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19382-how-to-ruin-a-love-comedy&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;b3b4bfb85b1a2ed438dad5629da7f6e8f500cb6949dc91f2e5a4a6d98c6fa84b&quot;}" wire:effects="[]" wire:id="HPFqQPVPNTlwOelJ4taC" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19382,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;39sn8BIiQN6TTK1YrXlE&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19382-how-to-ruin-a-love-comedy&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d4b4a566a91d0c16072266e2f1180e8c9f23c6c6047f621cdb1015f1f0bb93de&quot;}" wire:effects="[]" wire:id="39sn8BIiQN6TTK1YrXlE" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1378,14 +1443,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1778)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1844)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">415 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">426 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
     </header>
 
@@ -1397,6 +1462,403 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-2778938"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2778938" data-parent="2778938">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/200071">Pzzzzzz</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Trở lại r :O
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2778938#ln-comment-2778938"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-03-2025 21:12:50"
+                                datetime="2025-03-10T21:12:50+07:00">
+                                10-03-2025 21:12:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2771766"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2771766" data-parent="2771766">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/94482">Hakumo</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Mat tieu~
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2771766#ln-comment-2771766"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-03-2025 18:05:50"
+                                datetime="2025-03-05T18:05:50+07:00">
+                                05-03-2025 18:05:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2744660"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2744660" data-parent="2744660">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u146625-4026d39c-cc40-4451-955d-92a627d65bc7.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/146625">Npnhoang</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Ad ơi, ra chap đi mà
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2744660#ln-comment-2744660"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-02-2025 22:04:37"
+                                datetime="2025-02-10T22:04:37+07:00">
+                                10-02-2025 22:04:37
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2741572"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2741572" data-parent="2741572">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua117212-d40f94e3-4100-4969-8078-503733d530c0.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/117212">Duy~</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        ad dau rui
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2741572#ln-comment-2741572"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-02-2025 23:03:17"
+                                datetime="2025-02-07T23:03:17+07:00">
+                                07-02-2025 23:03:17
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2739311"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2739311" data-parent="2739311">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/63471">wutanh911</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        eng ra đến c100 rồi kìa dịch tiếp đi ad ơii, hóng lắm rồiiiii
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2739311#ln-comment-2739311"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-02-2025 20:08:52"
+                                datetime="2025-02-05T20:08:52+07:00">
+                                05-02-2025 20:08:52
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2739227"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2739227" data-parent="2739227">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua34696-a248e4b3-6457-40c5-82db-c226bbdbf5ea.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/34696">ngocsoni805</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Lần đầu tiên có bộ WN mà khiến tôi phải donate
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2739227#ln-comment-2739227"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-02-2025 18:24:12"
+                                datetime="2025-02-05T18:24:12+07:00">
+                                05-02-2025 18:24:12
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2734488"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2734488" data-parent="2734488">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u146625-4026d39c-cc40-4451-955d-92a627d65bc7.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/146625">Npnhoang</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Lại phải đợi chờ ư
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2734488#ln-comment-2734488"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-02-2025 11:10:10"
+                                datetime="2025-02-01T11:10:10+07:00">
+                                01-02-2025 11:10:10
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2728958"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2728958" data-parent="2728958">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u189853-b620322d-7cca-4e53-9159-26146d4e8036.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189853">Nghiện romcon</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        I need pills
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2728958#ln-comment-2728958"
+                            class="text-slate-500">
+                            <time class="timeago" title="26-01-2025 22:09:34"
+                                datetime="2025-01-26T22:09:34+07:00">
+                                26-01-2025 22:09:34
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2722148"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2722148" data-parent="2722148">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/208809">SEnding</a>
+    </div>
+                                    </div>
+                                    </div>
+                                    <div class="ln-comment-content long-text">
+                        Đã có nhóm dịch chất lương tiếp quản eng này trans<br>
+<a href="https://arcanetranslations.com/series/how-to-ruin-a-love-comedy/" rel="nofollow noreferrer noopener" target="_blank">https://arcanetranslations.com/series/how-to-ruin-a-love-comedy/</a>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2722148#ln-comment-2722148"
+                            class="text-slate-500">
+                            <time class="timeago" title="19-01-2025 09:45:22"
+                                datetime="2025-01-19T09:45:22+07:00">
+                                19-01-2025 09:45:22
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2719600"
     class="ln-comment-item mt-3 clear"
     data-comment="2719600" data-parent="2719600">
@@ -1431,7 +1893,7 @@
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
+                            <span class="likecount font-semibold">1</span>
                         </a>
                                             </div>
                             </div>
@@ -1439,15 +1901,14 @@
     </div>
 </div>
 
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2719514"
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2722149"
     class="ln-comment-item mt-3 clear"
-    data-comment="2719514" data-parent="2719514">
+    data-comment="2722149" data-parent="2719600">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u59827-8c8fd10b-f36b-4f7f-b125-7441a41f8bb0.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1456,212 +1917,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/99970">nakanichi</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Mấy bộ phá cách cốt truyện truyền thống kiểu này hay thật. Như bộ truyện tranh "Na kang Lim" của Hàn, tác giả giúp người đọc thỏa mãn, giải tỏa cảm giác cay cú vì hành động rất đụt của main mấy bộ tình cảm truyền thống.
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2719514#ln-comment-2719514"
-                            class="text-slate-500">
-                            <time class="timeago" title="15-01-2025 23:25:36"
-                                datetime="2025-01-15T23:25:36+07:00">
-                                15-01-2025 23:25:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2714037"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2714037" data-parent="2714037">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua117212-d40f94e3-4100-4969-8078-503733d530c0.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/117212">Duy~</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Cuoi cung thi da co chap moi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2714037#ln-comment-2714037"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-01-2025 15:59:53"
-                                datetime="2025-01-09T15:59:53+07:00">
-                                09-01-2025 15:59:53
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2713988"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2713988" data-parent="2713988">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u142622-bada06c4-d0bf-42a8-a14a-a0678ef119ba.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142622">༺Ble༒ach༻</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Cuối cùng cx có chap yay
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2713988#ln-comment-2713988"
-                            class="text-slate-500">
-                            <time class="timeago" title="09-01-2025 14:21:36"
-                                datetime="2025-01-09T14:21:36+07:00">
-                                09-01-2025 14:21:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2713866"
-    class="ln-comment-item mt-3 clear deleted disabled"
-    data-comment="2713866" data-parent="2713866">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua47028-3c833102-2267-41de-bf8a-ee4c292649b9.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/47028">JKR</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Bình luận đã bị xóa bởi JKR
-                    </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2711347"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2711347" data-parent="2711347">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/201253">Ouvn</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Đợi thôi 😓
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2711347#ln-comment-2711347"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-01-2025 10:36:51"
-                                datetime="2025-01-06T10:36:51+07:00">
-                                06-01-2025 10:36:51
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2709888"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2709888" data-parent="2709888">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187792-b085dc97-59e4-4b3a-9585-b7942206f35b.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/187792">HirotoKuze5566</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/59827">UNIVERSE</a>
     </div>
                                         <div class="self-center">
             <div
@@ -1670,163 +1926,25 @@
                 <div class="leading-4">TRANS</div>
             </div>
         </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Khi nào có chap mới đây
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2709888#ln-comment-2709888"
-                            class="text-slate-500">
-                            <time class="timeago" title="04-01-2025 19:54:05"
-                                datetime="2025-01-04T19:54:05+07:00">
-                                04-01-2025 19:54:05
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2709189"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2709189" data-parent="2709189">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua117212-d40f94e3-4100-4969-8078-503733d530c0.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/117212">Duy~</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        ngày nào cũng vào check chap mới 😞
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2709189#ln-comment-2709189"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-01-2025 22:54:26"
-                                datetime="2025-01-03T22:54:26+07:00">
-                                03-01-2025 22:54:26
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2706027"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2706027" data-parent="2706027">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u148121-72b693f5-0ece-4303-976f-6983ffd1f13f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/148121">xanhsusgus</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        nammoivuive
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2706027#ln-comment-2706027"
-                            class="text-slate-500">
-                            <time class="timeago" title="01-01-2025 01:03:24"
-                                datetime="2025-01-01T01:03:24+07:00">
-                                01-01-2025 01:03:24
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2706683"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2706683" data-parent="2706027">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u91299-6c056014-a83d-4fb0-a694-c5ca33f2e33e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/91299">Saltia</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
+                <div class="self-center">
             <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
             </div>
         </div>
-        </div>
+    </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
-                        Happy new year
+                        Bộ này mấy ông bên Eng cũng kêu là seg nhiều quá mà
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2706027&amp;reply_id=2706683#ln-comment-2706683"
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2719600&amp;reply_id=2722149#ln-comment-2722149"
                             class="text-slate-500">
-                            <time class="timeago" title="01-01-2025 16:11:50"
-                                datetime="2025-01-01T16:11:50+07:00">
-                                01-01-2025 16:11:50
+                            <time class="timeago" title="19-01-2025 09:47:33"
+                                datetime="2025-01-19T09:47:33+07:00">
+                                19-01-2025 09:47:33
                             </time>
                         </a>
                         <a
@@ -1839,18 +1957,13 @@
         </div>
     </div>
 </div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2704978"
+            <div id="ln-comment-2722523"
     class="ln-comment-item mt-3 clear"
-    data-comment="2704978" data-parent="2704978">
+    data-comment="2722523" data-parent="2719600">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua131566-a295d565-0328-4864-9dc0-a4b283b4d50d.jpg" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1859,77 +1972,20 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/131566">Hailong2007</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/191032">ich1ka</a>
     </div>
                                     </div>
                                     </div>
                                     <div class="ln-comment-content long-text">
-                        Eng thấy gần 600 chương r mà ad
+                        <a href="/thanh-vien/59827">@UNIVERSE:</a> kiểu segg thì ok đấy, nhưng mà cảm giác bị lạm dụng vì bí ý tưởng (viết roman khó hơn)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2704978#ln-comment-2704978"
+                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2719600&amp;reply_id=2722523#ln-comment-2722523"
                             class="text-slate-500">
-                            <time class="timeago" title="30-12-2024 23:45:25"
-                                datetime="2024-12-30T23:45:25+07:00">
-                                30-12-2024 23:45:25
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2705111"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2705111" data-parent="2704978">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u91299-6c056014-a83d-4fb0-a694-c5ca33f2e33e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/91299">Saltia</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        MTL quá thì mình chịu thôi
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19382-how-to-ruin-a-love-comedy?comment_id=2704978&amp;reply_id=2705111#ln-comment-2705111"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-12-2024 06:37:27"
-                                datetime="2024-12-31T06:37:27+07:00">
-                                31-12-2024 06:37:27
+                            <time class="timeago" title="19-01-2025 19:33:59"
+                                datetime="2025-01-19T19:33:59+07:00">
+                                19-01-2025 19:33:59
                             </time>
                         </a>
                         <a
@@ -1958,7 +2014,7 @@
 </div>    </main>
 
     <script>
-        var token = 'h4h4abiShdadj0uYjSSVFkSbLxYk8Bp0Km9m0CvL';
+        var token = 'bg8c2yDEgLzAlfVBul8ThJ7M7EoNK2B93DT8UJeO';
         var comment_type = 'series';
         var comment_typeid = '19382';
     </script>
@@ -2015,8 +2071,11 @@
     </div>
 </div>
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="h4h4abiShdadj0uYjSSVFkSbLxYk8Bp0Km9m0CvL" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=2"></script>
+
+    <script src="/scripts/app.js?id=665844ddd7d0c161950aa3503fe99328"></script>
+    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="bg8c2yDEgLzAlfVBul8ThJ7M7EoNK2B93DT8UJeO" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
