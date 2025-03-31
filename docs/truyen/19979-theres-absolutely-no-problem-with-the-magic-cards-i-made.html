@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>There’s Absolutely No Problem With The Magic Cards I Made! - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="IHzWauxUoJRQHCqn1YHRJr3qs0NczWfJ4UlFy0zu">
+    <meta name="csrf-token" content="Iy8bOwEFjghGO2Mz6BgaalUmeaqpREvas71Pdx4J">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d330f8eb21c3461ece4ec2ca09a990da">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +155,61 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -265,7 +319,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 342 </span>
+                                                <span class="block feature-name"> 354 </span>
                                             </a>
                                                                                         </div>
 
@@ -315,11 +369,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="03/02/2025 19:40:25" datetime="2025-02-03T19:40:25+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="31/03/2025 21:17:49" datetime="2025-03-31T21:17:49+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">70.415</div>
+                                            <div class="statistic-value">71.933</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -328,7 +382,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">48.857</div>
+                                            <div class="statistic-value">58.878</div>
                                         </div>
                                     </div>
                                 </div>
@@ -386,21 +440,6 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
-                    <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
-                    <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
-                        <p>Ông nào tài sản thừa mứa và muốn <s>rửa tiền</s> thì có thể donate cho trans tại: </p>
-<p> </p>
-<p>Vietcombank: 1040533269 - Tên tk: BUI QUANG DUONG</p>
-<p> </p>
-<p><img src="https://i.imgur.com/8ZdkOST.png" alt="8ZdkOST.png"></p>
-<p> </p>
-<p>Lưu ý là mọi người cảm thấy vui thì hẳng donate nhé, ngoài ra donate cũng không làm cho truyện ra nhanh hơn đâu :D</p>
-<p><s>Chắc chẳng ai donate đâu nhưng nếu có thì ghi chú cho tôi chữ Hako nhé, chứ sợ người lạ lắm</s></p>
-                        </div>
-                    </main>
-                </section>
                 
                 
 
@@ -423,6 +462,7 @@
                         </span>
                         <ol class="list-volume unstyled no-margin no-padding">
                                                                                     <li data-scrollTo="#volume_27048"><span class="list_vol-order">01.</span><span class="list_vol-title">ARC 1: Những Câu Chuyện Huyền Bí Về Quỷ Viện [END]</span></li>
+                                                        <li data-scrollTo="#volume_28667"><span class="list_vol-order">02.</span><span class="list_vol-title">ARC 2: Dinh Thự Hoang Trên Núi Tuyết</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -441,7 +481,7 @@
                 <a href="https://docln.net/truyen/19979/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">ko bt tên gì</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">TĐD</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -535,7 +575,7 @@
                     <header id="volume_27048" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            ARC 1: Những Câu Chuyện Huyền Bí Về Quỷ Viện [END] <span style="color: red">*</span>
+                            ARC 1: Những Câu Chuyện Huyền Bí Về Quỷ Viện [END]
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -564,9 +604,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -764,9 +801,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156304-chuong-21-dekan-tien-hanh-tay-nao-theo-phong-cach-dekan" title="Chương 21: Dekan tiến hành tẩy não theo phong cách Dekan">Chương 21: Dekan tiến hành tẩy não theo phong cách Dekan</a>
@@ -776,9 +810,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156305-chuong-22-dekan-tien-hanh-giao-huan-theo-kieu-quan-doi" title="Chương 22: Dekan tiến hành giáo huấn theo kiểu quân đội">Chương 22: Dekan tiến hành giáo huấn theo kiểu quân đội</a>
@@ -788,9 +819,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156306-chuong-23-cornelia-hoc-duoc-phep-xoa-tri-nho" title="Chương 23: Cornelia học được phép xóa trí nhớ">Chương 23: Cornelia học được phép xóa trí nhớ</a>
@@ -800,9 +828,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156307-chuong-24-dekan-bat-dau-noi-nham" title="Chương 24: Dekan bắt đầu nói nhảm">Chương 24: Dekan bắt đầu nói nhảm</a>
@@ -812,9 +837,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156308-chuong-25-nuoc-di-tao-bao-cua-dekan" title="Chương 25: Nước đi táo bạo của Dekan">Chương 25: Nước đi táo bạo của Dekan</a>
@@ -824,9 +846,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -837,9 +856,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156333-chuong-27-ke-hoach-cai-to-chuong-trinh-giang-day-cua-dekan" title="Chương 27: Kế hoạch cải tổ chương trình giảng dạy của Dekan">Chương 27: Kế hoạch cải tổ chương trình giảng dạy của Dekan</a>
@@ -849,9 +865,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156334-chuong-28-dekan-thong-bao-nghi-hoc-toan-truong" title="Chương 28: Dekan thông báo nghỉ học toàn trường">Chương 28: Dekan thông báo nghỉ học toàn trường</a>
@@ -861,9 +874,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156335-chuong-29-dekan-hoc-duoc-nghe-thuat-khiem-nhuong" title="Chương 29: Dekan học được nghệ thuật khiêm nhường">Chương 29: Dekan học được nghệ thuật khiêm nhường</a>
@@ -873,9 +883,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156336-chuong-30-man-trinh-dien-dau-tien-cua-dekan" title="Chương 30: Màn trình diễn đầu tiên của Dekan">Chương 30: Màn trình diễn đầu tiên của Dekan</a>
@@ -885,9 +892,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156432-chuong-31-thuc-luc-cua-cao-gia-dekan" title="Chương 31: Thực lực của cáo già Dekan">Chương 31: Thực lực của cáo già Dekan</a>
@@ -897,9 +901,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156433-chuong-32-cai-bay-cua-dekan" title="Chương 32: Cái bẫy của Dekan">Chương 32: Cái bẫy của Dekan</a>
@@ -909,9 +910,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156435-chuong-34-dekan-dua-voi-lua" title="Chương 33: Dekan đùa với lửa">Chương 33: Dekan đùa với lửa</a>
@@ -921,9 +919,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -934,9 +929,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156437-chuong-35-cornelia-muon-nghi-viec" title="Chương 35: Cornelia muốn nghỉ việc">Chương 35: Cornelia muốn nghỉ việc</a>
@@ -946,9 +938,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -959,9 +948,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -972,9 +958,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156440-chuong-38-noi-dau-an-giau-cua-dekan" title="Chương 38: Nỗi đau ẩn giấu của Dekan">Chương 38: Nỗi đau ẩn giấu của Dekan</a>
@@ -984,9 +967,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156441-chuong-39-bua-tiec-ho-boi-cua-dekan-va-cornelia" title="Chương 39: Bữa tiệc hồ bơi của Dekan và Cornelia">Chương 39: Bữa tiệc hồ bơi của Dekan và Cornelia</a>
@@ -996,9 +976,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -1009,9 +986,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c156443-chuong-41-tuyet-tac-cua-cornelia" title="Chương 41: Tuyệt tác của Cornelia">Chương 41: Tuyệt tác của Cornelia</a>
@@ -1029,16 +1003,54 @@
                         </div>
                     </main>
                 </section>
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+                    <header id="volume_28667" class="sect-header">
+                                                <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="sect-title">
+                            ARC 2: Dinh Thự Hoang Trên Núi Tuyết <span style="color: red">*</span>
+                        </span>
+                    </header>
+                    <main class="d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <div class="volume-cover">
+                                    <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/t28667-arc-2-dinh-thu-hoang-tren-nui-tuyet">
+                                        <div class="a6-ratio">
+                                            <div class="content img-in-ratio" style="background-image: url('https://docln.net/img/nocover.jpg')">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                                                <ul class="list-chapters at-series">
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made/c163342-chuong-42-chung-nhan-nha-che-tao-the-cua-dekan" title="Chương 42: Chứng nhận nhà chế tạo thẻ của Dekan">Chương 42: Chứng nhận nhà chế tạo thẻ của Dekan</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">31/03/2025</div>
+                                        </li>
+                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19979,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;XXW8r9eDbKBsKMF7LtsK&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;4ac3d542fcb6d5e6ef98151bce713c8e79474d65f2a20340b049a693f2f12699&quot;}" wire:effects="[]" wire:id="XXW8r9eDbKBsKMF7LtsK" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:19979,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Qnk3ZJF8D6pX8kMvhixr&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;9c3d26a769270fc423408d85147e9d6ec7df1099b2adaaf2b8ae45ed1b4540e8&quot;}" wire:effects="[]" wire:id="Qnk3ZJF8D6pX8kMvhixr" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -1051,16 +1063,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(311)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(337)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">131 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">142 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -1068,9 +1080,12 @@
             </div>
                 
                     <div class="ln-comment-group">
-    <div id="ln-comment-2736441"
+    <div id="ln-comment-2804222"
     class="ln-comment-item mt-3 clear"
-    data-comment="2736441" data-parent="2736441">
+    data-comment="2804222" 
+    data-parent="2804222" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1107,26 +1122,25 @@
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Well, ACT 1 chính thức kết thúc, cũng khá là mệt đấy nhỉ. Dù sao thì cảm ơn mọi người đã ủng hộ và mong được đồng hành cùng mọi người trong chặng đường tiếp theo.<br>
-Tiện đây thông báo luôn là tôi cũng sang kỳ 2 rồi, check thời khóa biểu thì thấy toàn mấy môn không được ra gì và này nọ lắm. Nên là tiến độ của cả 2 pj do tôi đảm đương sẽ bị delay vô thời hạn, tức là vẫn ra chương nhưng không biết khi nào ra......<br>
- <br>
-Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tuổi nhận lì xì nhé, nên là nếu ai muốn thì xin mời...... 🐧🐧🐧
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Tình hình là đang dần mất hứng thú với bộ này rồi. Với lại trường học thì chẳng lúc nào là rảnh.<br>
+Nên là nếu ai có hứng thú thì có thể tự động tạo pj mới dịch nối tiếp, chứ giờ tôi dịch cầm chừng thôi. Đang tính đem con bỏ chợ nhưng không nỡ.
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2736441#ln-comment-2736441"
+                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2804222#ln-comment-2804222"
                             class="text-slate-500">
-                            <time class="timeago" title="02-02-2025 22:35:58"
-                                datetime="2025-02-02T22:35:58+07:00">
-                                02-02-2025 22:35:58
+                            <time class="timeago" title="31-03-2025 21:19:38"
+                                datetime="2025-03-31T21:19:38+07:00">
+                                31-03-2025 21:19:38
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">9</span>
+                            <span class="likecount font-semibold"></span>
                         </a>
                                             </div>
                             </div>
@@ -1134,109 +1148,19 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
     </div>
 </div>
 
-        <div class="ln-comment-reply">
-                <div id="ln-comment-2736446"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2736446" data-parent="2736441">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u168685-a2012dbd-a366-4d04-8ffc-b0ffcbcce704.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/168685">Cá bé</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Mong trans sớm trở lại
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2736441&amp;reply_id=2736446#ln-comment-2736446"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-02-2025 22:38:37"
-                                datetime="2025-02-02T22:38:37+07:00">
-                                02-02-2025 22:38:37
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2736713"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2736713" data-parent="2736441">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u64359-3d514629-3571-41a8-8314-3630676b4f8d.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Kuroi_Solar</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        cũng muốn lì xì lắm nhưng tôi cũng = tuổi ông nên là 🐧🐧🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2736441&amp;reply_id=2736713#ln-comment-2736713"
-                            class="text-slate-500">
-                            <time class="timeago" title="03-02-2025 07:43:46"
-                                datetime="2025-02-03T07:43:46+07:00">
-                                03-02-2025 07:43:46
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
     </div>        
         
         <div class="ln-comment-group">
     <div id="ln-comment-2737017"
     class="ln-comment-item mt-3 clear"
-    data-comment="2737017" data-parent="2737017">
+    data-comment="2737017" 
+    data-parent="2737017" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u142163-f1f20249-d874-415d-978b-8e8c51bbe359.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u142163-e3b310ed-238d-4af1-ad30-4fdadacbd94c.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1245,11 +1169,12 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Miễn Khống</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Cloaf</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         còn bộ nào có thg main giống như bộ này k ae
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1275,7 +1200,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <div class="ln-comment-reply">
             <div id="ln-comment-2737321"
     class="ln-comment-item mt-3 clear"
-    data-comment="2737321" data-parent="2737017">
+    data-comment="2737321" 
+    data-parent="2737017" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1291,8 +1219,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/203194">haimeln</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         đọc bộ hội chứng muốn sống bình an tại dị giới, main cũng yếu nhưng đc cái não to v
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1316,11 +1245,14 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 </div>
             <div id="ln-comment-2737508"
     class="ln-comment-item mt-3 clear"
-    data-comment="2737508" data-parent="2737017">
+    data-comment="2737508" 
+    data-parent="2737017" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u142163-f1f20249-d874-415d-978b-8e8c51bbe359.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u142163-e3b310ed-238d-4af1-ad30-4fdadacbd94c.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1329,11 +1261,12 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Miễn Khống</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142163">Cloaf</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         <a href="/thanh-vien/203194">@haimeln:</a> chắc chưa ra full đâu og nhỉ bộ này hinh như 1k chap lận
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1357,7 +1290,7 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 </div>
     
                 <div class="fetch_reply" data-parent="2737017">
-            Xem thêm 4 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+            Xem thêm 13 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
         </div>
         <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
                 
@@ -1366,11 +1299,14 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 <div class="ln-comment-group">
     <div id="ln-comment-2736483"
     class="ln-comment-item mt-3 clear"
-    data-comment="2736483" data-parent="2736483">
+    data-comment="2736483" 
+    data-parent="2736483" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189230-86a52741-52bf-4e80-b624-3cb4f66f70aa.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-5cdb98f1-2064-4258-a710-58c8bc35bf2d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1379,7 +1315,7 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">ko bt tên gì</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">TĐD</a>
     </div>
                                         <div class="self-center">
             <div
@@ -1396,8 +1332,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         wwow, đêm nay mất ngủ rồi, với cả nhớ sửa lỗi chap 39
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1422,66 +1359,12 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2735257"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2735257" data-parent="2735257">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189230-86a52741-52bf-4e80-b624-3cb4f66f70aa.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">ko bt tên gì</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-                <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
-                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
-                <div class="leading-4">AI MASTER</div>
-            </div>
-        </div>
-    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Ủa cho hỏi chút là trans ngoài dịch ra thì có đọc truyện trên đây không nhỉ?
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2735257#ln-comment-2735257"
-                            class="text-slate-500">
-                            <time class="timeago" title="01-02-2025 22:13:25"
-                                datetime="2025-02-01T22:13:25+07:00">
-                                01-02-2025 22:13:25
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2735605"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2735605" data-parent="2735257">
+    <div id="ln-comment-2736441"
+    class="ln-comment-item mt-3 clear deleted disabled"
+    data-comment="2736441" 
+    data-parent="2736441" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1518,8 +1401,229 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Bình luận đã bị xóa bởi UNIVERSE
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2736446"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2736446" 
+    data-parent="2736441" 
+    data-type="series" 
+    data-typeid="19979">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u168685-a2012dbd-a366-4d04-8ffc-b0ffcbcce704.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/168685">Cá bé</a>
+    </div>
                                     </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Mong trans sớm trở lại
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2736441&amp;reply_id=2736446#ln-comment-2736446"
+                            class="text-slate-500">
+                            <time class="timeago" title="02-02-2025 22:38:37"
+                                datetime="2025-02-02T22:38:37+07:00">
+                                02-02-2025 22:38:37
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-2736713"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2736713" 
+    data-parent="2736441" 
+    data-type="series" 
+    data-typeid="19979">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u64359-f7063e44-9101-494c-b652-12f7bc5f2be0.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Kuroi_Solar</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        cũng muốn lì xì lắm nhưng tôi cũng = tuổi ông nên là 🐧🐧🐧
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2736441&amp;reply_id=2736713#ln-comment-2736713"
+                            class="text-slate-500">
+                            <time class="timeago" title="03-02-2025 07:43:46"
+                                datetime="2025-02-03T07:43:46+07:00">
+                                03-02-2025 07:43:46
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="2736441">
+            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2735257"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2735257" 
+    data-parent="2735257" 
+    data-type="series" 
+    data-typeid="19979">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-5cdb98f1-2064-4258-a710-58c8bc35bf2d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">TĐD</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Ủa cho hỏi chút là trans ngoài dịch ra thì có đọc truyện trên đây không nhỉ?
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2735257#ln-comment-2735257"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-02-2025 22:13:25"
+                                datetime="2025-02-01T22:13:25+07:00">
+                                01-02-2025 22:13:25
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-2735605"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2735605" 
+    data-parent="2735257" 
+    data-type="series" 
+    data-typeid="19979">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u59827-8c8fd10b-f36b-4f7f-b125-7441a41f8bb0.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/59827">UNIVERSE</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Có nhưng mà lâu r không đọc một cách nghiêm túc, cùng lắm thỉnh thoảng lôi 1 2 chap của truyện nào đó ra đọc thôi. Cũng tại cuộc sống bận rộn và nhiều cái ưu tiên khác mà =))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1543,11 +1647,14 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 </div>
             <div id="ln-comment-2735681"
     class="ln-comment-item mt-3 clear"
-    data-comment="2735681" data-parent="2735257">
+    data-comment="2735681" 
+    data-parent="2735257" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189230-86a52741-52bf-4e80-b624-3cb4f66f70aa.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-5cdb98f1-2064-4258-a710-58c8bc35bf2d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1556,7 +1663,7 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">ko bt tên gì</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">TĐD</a>
     </div>
                                         <div class="self-center">
             <div
@@ -1573,8 +1680,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         <a href="/thanh-vien/59827">@UNIVERSE:</a> Vẫn hóng bom';)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1603,7 +1711,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 <div class="ln-comment-group">
     <div id="ln-comment-2735186"
     class="ln-comment-item mt-3 clear"
-    data-comment="2735186" data-parent="2735186">
+    data-comment="2735186" 
+    data-parent="2735186" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1640,8 +1751,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Mai vẫn còn nhé👍
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1667,11 +1779,14 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <div class="ln-comment-reply">
             <div id="ln-comment-2735256"
     class="ln-comment-item mt-3 clear"
-    data-comment="2735256" data-parent="2735186">
+    data-comment="2735256" 
+    data-parent="2735186" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u189230-86a52741-52bf-4e80-b624-3cb4f66f70aa.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-5cdb98f1-2064-4258-a710-58c8bc35bf2d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1680,7 +1795,7 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">ko bt tên gì</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">TĐD</a>
     </div>
                                         <div class="self-center">
             <div
@@ -1697,8 +1812,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         adiiii bá!!!
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1722,7 +1838,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 </div>
             <div id="ln-comment-2735432"
     class="ln-comment-item mt-3 clear"
-    data-comment="2735432" data-parent="2735186">
+    data-comment="2735432" 
+    data-parent="2735186" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1738,8 +1857,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/122533">minhzill39</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         ngài bá quá ngài ơi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1768,7 +1888,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 <div class="ln-comment-group">
     <div id="ln-comment-2734717"
     class="ln-comment-item mt-3 clear"
-    data-comment="2734717" data-parent="2734717">
+    data-comment="2734717" 
+    data-parent="2734717" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1784,8 +1907,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/52611">◤BVfighting0202◢</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Wow 5 chap liền, trans lixi quá đã
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1811,7 +1935,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
         <div class="ln-comment-reply">
             <div id="ln-comment-2734723"
     class="ln-comment-item mt-3 clear"
-    data-comment="2734723" data-parent="2734717">
+    data-comment="2734723" 
+    data-parent="2734717" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1848,8 +1975,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Thực ra vẫn còn, nhưng mà tối đăng nốt....
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1878,7 +2006,10 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
 <div class="ln-comment-group">
     <div id="ln-comment-2725424"
     class="ln-comment-item mt-3 clear"
-    data-comment="2725424" data-parent="2725424">
+    data-comment="2725424" 
+    data-parent="2725424" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1915,8 +2046,9 @@ Ngoài ra thì một thông tin không liên quan khác là tôi vẫn đủ tu�
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Tết về quê không mang được lap theo nên chắc hôm nào ra mới xả bom được.<br>
 Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
                     </div>
@@ -1944,7 +2076,10 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
 <div class="ln-comment-group">
     <div id="ln-comment-2715294"
     class="ln-comment-item mt-3 clear"
-    data-comment="2715294" data-parent="2715294">
+    data-comment="2715294" 
+    data-parent="2715294" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1960,8 +2095,9 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/112121">Z3ddster</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Truyện hay ác
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -1988,11 +2124,14 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
 <div class="ln-comment-group">
     <div id="ln-comment-2715002"
     class="ln-comment-item mt-3 clear"
-    data-comment="2715002" data-parent="2715002">
+    data-comment="2715002" 
+    data-parent="2715002" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u158095-dafc9636-ddfc-47af-ad0d-f69877842021.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u158095-5f0f2af6-5f88-42dc-b0c4-8e560db20de1.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2010,9 +2149,17 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
                 <div class="leading-4">TRANS</div>
             </div>
         </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Lọt top kìa
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2038,7 +2185,10 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
         <div class="ln-comment-reply">
             <div id="ln-comment-2715020"
     class="ln-comment-item mt-3 clear"
-    data-comment="2715020" data-parent="2715002">
+    data-comment="2715020" 
+    data-parent="2715002" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2075,8 +2225,9 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
             </div>
         </div>
     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Lọt top vì ít đầu truyện trong ngày, mà lại còn vị trí cuối nữa chứ 😞
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2100,11 +2251,14 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
 </div>
             <div id="ln-comment-2715025"
     class="ln-comment-item mt-3 clear"
-    data-comment="2715025" data-parent="2715002">
+    data-comment="2715025" 
+    data-parent="2715002" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u187359-fd706e8b-2a3d-4613-b9d8-41cf705a5b00.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u187359-eedceb74-f0ad-4f0b-a181-341c9dab6ca3.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2123,8 +2277,9 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         <a href="/thanh-vien/59827">@UNIVERSE:</a> dội bom đi, t buff bẩn top 1 cho &lt;(°°
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2157,7 +2312,10 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
 <div class="ln-comment-group">
     <div id="ln-comment-2713625"
     class="ln-comment-item mt-3 clear"
-    data-comment="2713625" data-parent="2713625">
+    data-comment="2713625" 
+    data-parent="2713625" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2173,8 +2331,9 @@ Coi như đây là chương cuối cùng của 2024. Khép lại 1 năm cũ.
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/53223">LNguyenLmao</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         mới cày bên cn và chỉ biết nói rằng<br>
  <br>
  <br>
@@ -2212,7 +2371,10 @@ quá ngọt, quá peak, tôi đã bắn<br>
         <div class="ln-comment-reply">
             <div id="ln-comment-2719438"
     class="ln-comment-item mt-3 clear"
-    data-comment="2719438" data-parent="2713625">
+    data-comment="2719438" 
+    data-parent="2713625" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2228,8 +2390,9 @@ quá ngọt, quá peak, tôi đã bắn<br>
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/187555">北瑶月</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         bro cho tui xin link
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2253,7 +2416,10 @@ quá ngọt, quá peak, tôi đã bắn<br>
 </div>
             <div id="ln-comment-2719463"
     class="ln-comment-item mt-3 clear"
-    data-comment="2719463" data-parent="2713625">
+    data-comment="2719463" 
+    data-parent="2713625" 
+    data-type="series" 
+    data-typeid="19979">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2269,8 +2435,9 @@ quá ngọt, quá peak, tôi đã bắn<br>
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/53223">LNguyenLmao</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         @北瑶月: <a href="https://www.novel543.com/1010319149/8001_428.html" rel="nofollow noreferrer noopener" target="_blank">https://www.novel543.com/1010319149/8001_428.html</a><br>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2296,57 +2463,6 @@ quá ngọt, quá peak, tôi đã bắn<br>
                 
     </div>
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2708005"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2708005" data-parent="2708005">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua119687-b8d3fd8a-940c-4f00-b794-42a2abcecdb5.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/119687">Meow~Meow~Meow~</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Hý
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/19979-theres-absolutely-no-problem-with-the-magic-cards-i-made?comment_id=2708005#ln-comment-2708005"
-                            class="text-slate-500">
-                            <time class="timeago" title="02-01-2025 20:23:42"
-                                datetime="2025-01-02T20:23:42+07:00">
-                                02-01-2025 20:23:42
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -2359,7 +2475,7 @@ quá ngọt, quá peak, tôi đã bắn<br>
 </div>    </main>
 
     <script>
-        var token = 'IHzWauxUoJRQHCqn1YHRJr3qs0NczWfJ4UlFy0zu';
+        var token = 'Iy8bOwEFjghGO2Mz6BgaalUmeaqpREvas71Pdx4J';
         var comment_type = 'series';
         var comment_typeid = '19979';
     </script>
@@ -2403,8 +2519,11 @@ quá ngọt, quá peak, tôi đã bắn<br>
 
 
 
-    <script src="/scripts/app.js?id=a59b8f6c564ceee2abe3c77efa6155e6"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="IHzWauxUoJRQHCqn1YHRJr3qs0NczWfJ4UlFy0zu" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="Iy8bOwEFjghGO2Mz6BgaalUmeaqpREvas71Pdx4J" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
