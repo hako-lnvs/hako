@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Ta Ở Đại Lý Tự Làm Sủng Vật - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="nwXdz2aNl0vBYUjwdLXUrU2iFYYazJLYBoU0t32q">
+    <meta name="csrf-token" content="1fnBZ66AYsipLQ8ykNdlhZ6CXD5WP8WbAjTpzQPM">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d330f8eb21c3461ece4ec2ca09a990da">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -156,6 +155,61 @@
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -239,7 +293,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 44 </span>
+                                                <span class="block feature-name"> 43 </span>
                                             </a>
                                                                                         </div>
 
@@ -289,11 +343,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="28/01/2025 23:23:25" datetime="2025-01-28T23:23:25+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="07/04/2025 07:55:27" datetime="2025-04-07T07:55:27+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">282.072</div>
+                                            <div class="statistic-value">300.219</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -302,7 +356,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">51.323</div>
+                                            <div class="statistic-value">63.029</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1928,9 +1982,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155985-chuong-161-thieu-khanh-nem-ngon-ngot-co-mo-khien-nguoi-ta-quen-thuoc" title="Chương 161: Thiếu Khanh nếm ngon ngọt, cổ mộ khiến người ta quen thuộc">Chương 161: Thiếu Khanh nếm ngon ngọt, cổ mộ khiến người ta quen thuộc</a>
@@ -1940,9 +1991,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155986-chuong-162-quy-thao-den-tay-phap-tran-cua-co-mo" title="Chương 162: Quỷ thảo đến tay, pháp trận của cổ mộ">Chương 162: Quỷ thảo đến tay, pháp trận của cổ mộ</a>
@@ -1952,9 +2000,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155987-chuong-163-noi-ro-ngon-nganh-voi-thieu-khanh-nang-luc-dac-thu-cua-doc-phu-nhan" title="Chương 163: Nói rõ ngọn ngành với Thiếu Khanh, năng lực đặc thù của Độc phu nhân">Chương 163: Nói rõ ngọn ngành với Thiếu Khanh, năng lực đặc thù của Độc phu nhân</a>
@@ -1964,9 +2009,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155988-chuong-164-song-phuong-xe-rach-mat-nhau-binh-luan-vien-hien-truong" title="Chương 164: Song phương xé rách mặt nhau, bình luận viên hiện trường">Chương 164: Song phương xé rách mặt nhau, bình luận viên hiện trường</a>
@@ -1976,9 +2018,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155989-chuong-165-binh-luan-hien-truong-dai-phap-nhap-nguoi-cua-doc-phu-nhan" title="Chương 165: Bình luận hiện trường, đại pháp nhập người của Độc phu nhân">Chương 165: Bình luận hiện trường, đại pháp nhập người của Độc phu nhân</a>
@@ -1988,9 +2027,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155990-chuong-166-ket-cuc-khien-nguoi-ta-bat-ngo-dung-khong-ha-huyen-ngoc" title="Chương 166: Kết cục khiến người ta bất ngờ, đúng không hả Huyền Ngọc?">Chương 166: Kết cục khiến người ta bất ngờ, đúng không hả Huyền Ngọc?</a>
@@ -2000,9 +2036,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155991-chuong-167-ket-thuc-cong-viec-o-thach-phuong-tran-su-dai-thien-gia-tang-uy-luc" title="Chương 167: Kết thúc công việc ở Thạch Phường Trấn, Sử Đại Thiên gia tăng uy lực">Chương 167: Kết thúc công việc ở Thạch Phường Trấn, Sử Đại Thiên gia tăng uy lực</a>
@@ -2012,9 +2045,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155992-chuong-168-khong-phai-chi-la-song-lon-cuon-trao-manh-liet-sao-ta-cung-co" title="Chương 168: Không phải chỉ là sóng lớn cuộn trào mãnh liệt sao, ta cũng có!">Chương 168: Không phải chỉ là sóng lớn cuộn trào mãnh liệt sao, ta cũng có!</a>
@@ -2024,12 +2054,18 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155993-chuong-169-thieu-khanh-phuc-hac-va-thung-com-nho-vo-tam" title="Chương 169: Thiếu Khanh &#039;phúc hắc&#039; và thùng cơm nhỏ vô tâm">Chương 169: Thiếu Khanh &#039;phúc hắc&#039; và thùng cơm nhỏ vô tâm</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/01/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155994-chuong-170-cuoc-song-o-hau-phu-sap-khong-co-gi-de-an" title="Chương 170: Cuộc sống ở Hầu phủ sắp không có gì để ăn?">Chương 170: Cuộc sống ở Hầu phủ sắp không có gì để ăn?</a>
 
                                                                                             </div>
                                             <div class="chapter-time">28/01/2025</div>
@@ -2041,14 +2077,122 @@
                                                 </div>
                                                 
                                                 
-                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c155994-chuong-170-cuoc-song-o-hau-phu-sap-khong-co-gi-de-an" title="Chương 170: Cuộc sống ở Hầu phủ sắp không có gì để ăn?">Chương 170: Cuộc sống ở Hầu phủ sắp không có gì để ăn?</a>
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164110-chuong-171-dap-ung-ba-dieu-kien-cua-ta-bon-ho-khong-dang-de-ta-thuong-tam" title="Chương 171: Đáp ứng ba điều kiện của ta, bọn họ không đáng để ta thương tâm">Chương 171: Đáp ứng ba điều kiện của ta, bọn họ không đáng để ta thương tâm</a>
 
                                                                                             </div>
-                                            <div class="chapter-time">28/01/2025</div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164111-chuong-172-cuoi-cung-thi-nha-dau-nay-cung-thong-suot-tim-kiem-huyet-mo-cua-sinh-mau" title="Chương 172: Cuối cùng thì nha đầu này cũng thông suốt, tìm kiếm huyệt mộ của sinh mẫu">Chương 172: Cuối cùng thì nha đầu này cũng thông suốt, tìm kiếm huyệt mộ của sinh mẫu</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164112-chuong-173-phan-mo-trong-khong-nguoi-thich-om-ta-sao" title="Chương 173: Phần mộ trống không, ngươi thích ôm ta sao?">Chương 173: Phần mộ trống không, ngươi thích ôm ta sao?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164113-chuong-174-dua-su-dai-thien-den-noi-xa-hoa-truy-lac-kinh-khung-mo-mang-kien-thuc-nhi-thieu-gia-lam-viec" title="Chương 174: Đưa Sử Đại Thiên đến nơi xa hoa trụy lạc kinh khủng mở mang kiến thức, Nhị thiếu gia làm việc">Chương 174: Đưa Sử Đại Thiên đến nơi xa hoa trụy lạc kinh khủng mở mang kiến thức, Nhị thiếu gia làm việc</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164114-chuong-175-thieu-khanh-tham-tra-pham-nhan-doa-cho-nhi-thieu-gia-khiep-dam" title="Chương 175: Thiếu Khanh thẩm tra phạm nhân, dọa cho Nhị thiếu gia khiếp đảm">Chương 175: Thiếu Khanh thẩm tra phạm nhân, dọa cho Nhị thiếu gia khiếp đảm</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164115-chuong-176-y-phuc-chat-khien-nguc-dau-ho-gia-co-cong" title="Chương 176: Y phục chật khiến ngực đau, hộ giá có công">Chương 176: Y phục chật khiến ngực đau, hộ giá có công</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164116-chuong-177-tieu-lam-muon-di-hoc" title="Chương 177: Tiểu Lam muốn đi học">Chương 177: Tiểu Lam muốn đi học</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164117-chuong-178-theo-duoi-ngoi-sao-hoc-vien-lang-tinh-tieu-nguoi-cong-ta-co-duoc-hay-khong" title="Chương 178: Theo đuổi ngôi sao học viện, Lăng Tĩnh Tiêu ngươi cõng ta có được hay không?">Chương 178: Theo đuổi ngôi sao học viện, Lăng Tĩnh Tiêu ngươi cõng ta có được hay không?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164118-chuong-179-tieu-vuong-gia-chung-ta-la-oan-gia-troi-sinh-sao" title="Chương 179: Tiểu Vương Gia, chúng ta là oan gia trời sinh sao?">Chương 179: Tiểu Vương Gia, chúng ta là oan gia trời sinh sao?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
+                                        </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/17168-ta-o-dai-ly-tu-lam-sung-vat/c164119-chuong-180-tieu-tien-sinh-cua-bach-hac-hoc-vien-goi-la-gi" title="Chương 180: Tiêu tiên sinh của Bạch Hạc Học Viện, gọi là gì?">Chương 180: Tiêu tiên sinh của Bạch Hạc Học Viện, gọi là gì?</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">07/04/2025</div>
                                         </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (15 chương)</span>
+                                            <span>Xem tiếp (25 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -2163,13 +2307,13 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17168,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;KwOVamo6nwW3A7NpIgKE&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17168-ta-o-dai-ly-tu-lam-sung-vat&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;7f3b1152160d45ace92f4d0fea258f4ffbde2abe2068ede6b870cb8f582101b9&quot;}" wire:effects="[]" wire:id="KwOVamo6nwW3A7NpIgKE" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:17168,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;je227XDfgpTYPyf6nqnp&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/17168-ta-o-dai-ly-tu-lam-sung-vat&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;1f7d29e915f72fdac615df2e5d4c04e61ae5f625db3f16cb7ff7491ac1bccb4a&quot;}" wire:effects="[]" wire:id="je227XDfgpTYPyf6nqnp" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -2191,7 +2335,7 @@
     <header>
         <h3 class="text-lg font-bold dark:text-white">11 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -2203,11 +2347,14 @@
         <div class="ln-comment-group">
     <div id="ln-comment-2650475"
     class="ln-comment-item mt-3 clear"
-    data-comment="2650475" data-parent="2650475">
+    data-comment="2650475" 
+    data-parent="2650475" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua153281-754ca3b3-40d9-4389-a82f-f545218f521a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u153281-4c9e3e32-ddd0-44c5-b31f-2bfa70dbebd1.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2216,11 +2363,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Reiiiii</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Yonagi</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         có luôn chướng mới, trans đỉnh vch
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2247,11 +2395,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2649916"
     class="ln-comment-item mt-3 clear"
-    data-comment="2649916" data-parent="2649916">
+    data-comment="2649916" 
+    data-parent="2649916" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua153281-754ca3b3-40d9-4389-a82f-f545218f521a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u153281-4c9e3e32-ddd0-44c5-b31f-2bfa70dbebd1.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2260,11 +2411,12 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Reiiiii</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Yonagi</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         có chương mới chưa trans ơi
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2291,11 +2443,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2612806"
     class="ln-comment-item mt-3 clear"
-    data-comment="2612806" data-parent="2612806">
+    data-comment="2612806" 
+    data-parent="2612806" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u70943-a3639a83-5504-4efe-b37a-143683e50af7.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u70943-1ec39541-4fe6-44d4-a9e1-4f22c91fd158.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2307,8 +2462,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/70943">ak-47fake</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Truyện hay
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2335,11 +2491,14 @@
 <div class="ln-comment-group">
     <div id="ln-comment-2612141"
     class="ln-comment-item mt-3 clear"
-    data-comment="2612141" data-parent="2612141">
+    data-comment="2612141" 
+    data-parent="2612141" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u70943-a3639a83-5504-4efe-b37a-143683e50af7.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u70943-1ec39541-4fe6-44d4-a9e1-4f22c91fd158.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2351,8 +2510,9 @@
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/70943">ak-47fake</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         truyen chim the<br>
 hay phet
                     </div>
@@ -2380,11 +2540,14 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2600198"
     class="ln-comment-item mt-3 clear"
-    data-comment="2600198" data-parent="2600198">
+    data-comment="2600198" 
+    data-parent="2600198" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua153281-754ca3b3-40d9-4389-a82f-f545218f521a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u153281-4c9e3e32-ddd0-44c5-b31f-2bfa70dbebd1.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2393,11 +2556,12 @@ hay phet
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Reiiiii</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153281">Yonagi</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         sao truyện tả tiểu lam tóc đen với dài đến tận mắt cá chân mà sao ảnh bìa lại tóc hồng với ngắn nhỉ:vv
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2424,7 +2588,10 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2600173"
     class="ln-comment-item mt-3 clear"
-    data-comment="2600173" data-parent="2600173">
+    data-comment="2600173" 
+    data-parent="2600173" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2440,8 +2607,9 @@ hay phet
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/179394">Minh Thích Truyện</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Truyện lolicon audam và treem của anh ấy 💀(máy ko có emote nên dùng tạm của hako)
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2467,11 +2635,14 @@ hay phet
         <div class="ln-comment-reply">
             <div id="ln-comment-2600969"
     class="ln-comment-item mt-3 clear"
-    data-comment="2600969" data-parent="2600173">
+    data-comment="2600969" 
+    data-parent="2600173" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u176255-bbfe7ab4-9c0c-4d2d-bef9-1a685799e2aa.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u176255-fa9f52db-4394-4391-863b-a1decb4ae2e6.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2480,11 +2651,19 @@ hay phet
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">_proslimevn</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/176255">S͏͏</a>
     </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         💀.........
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2513,11 +2692,14 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2576465"
     class="ln-comment-item mt-3 clear"
-    data-comment="2576465" data-parent="2576465">
+    data-comment="2576465" 
+    data-parent="2576465" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u182870-7ef96b55-2d5c-4633-95e1-ba9f2d0d4f12.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u182870-efb4e18f-0b4d-4deb-809a-b84e7f6834eb.gif" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2529,8 +2711,9 @@ hay phet
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/182870">Light Key</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Vl
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2557,7 +2740,10 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2474047"
     class="ln-comment-item mt-3 clear"
-    data-comment="2474047" data-parent="2474047">
+    data-comment="2474047" 
+    data-parent="2474047" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2573,8 +2759,9 @@ hay phet
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/71556">kidtri099</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         Lần đầu thấy bộ nhiều chap mà flop như này
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2601,7 +2788,10 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2419991"
     class="ln-comment-item mt-3 clear"
-    data-comment="2419991" data-parent="2419991">
+    data-comment="2419991" 
+    data-parent="2419991" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2617,8 +2807,9 @@ hay phet
         <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/48598">huytiendp</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         bộ này ít tt nhỉ
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2645,7 +2836,10 @@ hay phet
 <div class="ln-comment-group">
     <div id="ln-comment-2372659"
     class="ln-comment-item mt-3 clear"
-    data-comment="2372659" data-parent="2372659">
+    data-comment="2372659" 
+    data-parent="2372659" 
+    data-type="series" 
+    data-typeid="17168">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2668,8 +2862,9 @@ hay phet
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
                         hóng đấy chứ, có lolo :))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
@@ -2698,7 +2893,7 @@ hay phet
 </div>    </main>
 
     <script>
-        var token = 'nwXdz2aNl0vBYUjwdLXUrU2iFYYazJLYBoU0t32q';
+        var token = '1fnBZ66AYsipLQ8ykNdlhZ6CXD5WP8WbAjTpzQPM';
         var comment_type = 'series';
         var comment_typeid = '17168';
     </script>
@@ -2742,8 +2937,11 @@ hay phet
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="nwXdz2aNl0vBYUjwdLXUrU2iFYYazJLYBoU0t32q" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="1fnBZ66AYsipLQ8ykNdlhZ6CXD5WP8WbAjTpzQPM" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
