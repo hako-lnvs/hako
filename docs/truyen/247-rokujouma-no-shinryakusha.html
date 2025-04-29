@@ -2,7 +2,6 @@
 <html lang="vi" class="light">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
     <title>Rokujouma no Shinryakusha!? - Cổng Light Novel - Đọc Light Novel</title>
 
@@ -12,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="6PctQiUCDndQNrMu3rw2FcfOKSKcbYEtw9VQe9jO">
+    <meta name="csrf-token" content="9OuZw67cJ236cERyK7AeF4B4bbyOuD7dZUcRlL7J">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -28,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=85e6e1b5c9bf084ce2b36f5f4018375b">
-    <link rel="stylesheet" href="/css/tailwind.css?id=efb929a134ced6dfa20cb65d538b590d">
+    <link rel="stylesheet" href="/css/tailwind.css?id=d23edfb40f27a5000062b44d4c632ea5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -150,12 +149,67 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/15047">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_d.png')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i.hako.vn/ln/banners/2024-11-25/15047_m.png'); background-size: cover"></div>
+                <a href="/truyen/14280">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-03-17/14289-d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-03-17/14280-m.png'); background-size: cover"></div>
                     </a>
             </div>
         
+    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <p class="text-sm text-yellow-700">
+                Nếu không thể <a class="font-medium text-blue-700" href="/thao-luan/2898-ten-mien-da-bi-chan">truy cập trang web</a> xin vui lòng sử dụng DNS 
+                <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
+                
+                </p>
+            </div>
+            <div class="ml-auto pl-3">
+                <div class="-mx-1.5 -my-1.5">
+                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
+    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
+        <div class="flex">
+            <div class="shrink-0">
+                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="ml-3 font-bold">
+                <template x-if="domain !== null">
+                    <p class="text-sm text-red-700">
+                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
+                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
+                    
+                    </p>
+                </template>
+                <template x-if="domain === null">
+                    <p class="text-sm text-red-700">
+                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
+                    </p>
+                </template>
+            </div>
+        </div>
+    </div>
+</div>
+
 	
 <main id="mainpart" class="project-page">
     <div class="container">
@@ -263,7 +317,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 3884 </span>
+                                                <span class="block feature-name"> 3918 </span>
                                             </a>
                                                                                         </div>
 
@@ -313,11 +367,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="23/01/2025 04:38:10" datetime="2025-01-23T04:38:10+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="30/04/2025 01:36:12" datetime="2025-04-30T01:36:12+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">2.765.036</div>
+                                            <div class="statistic-value">2.816.106</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -326,7 +380,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">3.625.552</div>
+                                            <div class="statistic-value">3.785.614</div>
                                         </div>
                                     </div>
                                 </div>
@@ -495,7 +549,8 @@
                                                         <li data-scrollTo="#volume_21975"><span class="list_vol-order">48.</span><span class="list_vol-title">Tập 41 - Quay lại Forthorthe</span></li>
                                                         <li data-scrollTo="#volume_23345"><span class="list_vol-order">49.</span><span class="list_vol-title">Tập 42 - Sự nóng vội của Ralgwin</span></li>
                                                         <li data-scrollTo="#volume_25944"><span class="list_vol-order">50.</span><span class="list_vol-title">Tập 43 - Trận chiến giành Ralgwin</span></li>
-                                                        <li data-scrollTo="#volume_27727"><span class="list_vol-order">51.</span><span class="list_vol-title">Tập 44</span></li>
+                                                        <li data-scrollTo="#volume_27727"><span class="list_vol-order">51.</span><span class="list_vol-title">Tập 44 - Truyện bên lề X</span></li>
+                                                        <li data-scrollTo="#volume_29199"><span class="list_vol-order">52.</span><span class="list_vol-title">Tập 45</span></li>
                                                     </ol>
                     </div>
                 </section>
@@ -5828,7 +5883,7 @@
                     <header id="volume_27727" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 44 <span style="color: red">*</span>
+                            Tập 44 - Truyện bên lề X
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -5847,9 +5902,6 @@
                                                                 <ul class="list-chapters at-series">
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -5860,9 +5912,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -5873,9 +5922,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -5886,9 +5932,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -5899,9 +5942,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/247-rokujouma-no-shinryakusha/c155419-loi-bat" title="Lời bạt">Lời bạt</a>
@@ -5911,9 +5951,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -5927,16 +5964,118 @@
                         </div>
                     </main>
                 </section>
+                                                <section class="volume-list at-series basic-section volume-mobile gradual-mobile ">
+                    <header id="volume_29199" class="sect-header">
+                                                <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="sect-title">
+                            Tập 45 <span style="color: red">*</span>
+                        </span>
+                    </header>
+                    <main class="d-lg-block">
+                        <div class="row">
+                            <div class="col-12 col-md-2">
+                                <div class="volume-cover">
+                                    <a href="/truyen/247-rokujouma-no-shinryakusha/t29199-tap-45">
+                                        <div class="a6-ratio">
+                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/books/covers/s29199-1418474d-8318-419e-94a1-40538355c5ca.jpg')">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                                                <ul class="list-chapters at-series">
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167741-chuong-01" title="Chương 1: Tuyên bố chiến tranh và Bạn thanh mai trúc mã">Chương 1: Tuyên bố chiến tranh và Bạn thanh mai trúc mã</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167742-chuong-2-phien-quan-chong-chinh-phu" title="Chương 2: Phiến quân chống chính phủ">Chương 2: Phiến quân chống chính phủ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167743-chuong-3-xam-nhap" title="Chương 3: Xâm nhập">Chương 3: Xâm nhập</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167744-chuong-4-kho-khan-ve-ky-thuat" title="Chương 4: Khó khăn về kỹ thuật">Chương 4: Khó khăn về kỹ thuật</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167745-chuong-5-hanh-dong-cua-elfaria" title="Chương 5: Hành động của Elfaria">Chương 5: Hành động của Elfaria</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/247-rokujouma-no-shinryakusha/c167746-loi-bat" title="Lời bạt">Lời bạt</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">30/04/2025</div>
+                                        </li>
+                                                                                                        </ul>
+                            </div>
+                        </div>
+                    </main>
+                </section>
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:247,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;mLl7ywDCoa1CSMhjX66o&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/247-rokujouma-no-shinryakusha&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;8996a712ea7abd72fe86d7e603c9fc3f333689f202ca686fac2fb2f13e51be93&quot;}" wire:effects="[]" wire:id="mLl7ywDCoa1CSMhjX66o" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:247,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;tQbWGzJzvk6luGh6uzwW&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/247-rokujouma-no-shinryakusha&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;797a176a9ba655bcd7a913800d5076623270159bc09c447a93a243007e594c43&quot;}" wire:effects="[]" wire:id="tQbWGzJzvk6luGh6uzwW" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
             <ul class="others-list">
                 <div class="row">
-                    <!--[if BLOCK]><![endif]--> <!--[if ENDBLOCK]><![endif]-->
+                    <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
                 </div>
             </ul>
             <div class="mobile-more none">
@@ -5949,16 +6088,16 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(5544)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(5615)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">1707 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">1720 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
-    </header>
+            </header>
 
     <main class="ln-comment-body">
                     <div class="ln-comment_sign-in long-text">
@@ -5968,13 +6107,16 @@
         
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2727047"
+    <div id="ln-comment-2839315"
     class="ln-comment-item mt-3 clear"
-    data-comment="2727047" data-parent="2727047">
+    data-comment="2839315" 
+    data-parent="2839315" 
+    data-type="series" 
+    data-typeid="247">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua22940-ddeb3b08-e73c-4e77-81ac-ac3309bc94d3.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua16799-6693af97-1a8d-4073-8f16-2c887c50a11c.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -5983,183 +6125,7 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/22940">Itsuwari Sora</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        chính thức dc một lần top 1 hako về số từ \ :v /
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2727047#ln-comment-2727047"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-01-2025 17:55:40"
-                                datetime="2025-01-24T17:55:40+07:00">
-                                24-01-2025 17:55:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2726815"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2726815" data-parent="2726815">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua70928-b3bcd113-5aaf-49c8-bedd-c350abf62313.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/70928">Tú Quang Phùng</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trans bom vol nữa hôm giao thừa là đẹp 🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726815#ln-comment-2726815"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-01-2025 12:05:23"
-                                datetime="2025-01-24T12:05:23+07:00">
-                                24-01-2025 12:05:23
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2726599"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2726599" data-parent="2726599">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u56464-0d081fbb-0d72-48cf-964e-a3a81d42a046.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56464">TheSand</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Vl bộ này bao giờ mới end
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726599#ln-comment-2726599"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-01-2025 02:33:55"
-                                datetime="2025-01-24T02:33:55+07:00">
-                                24-01-2025 02:33:55
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2726464"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2726464" data-parent="2726464">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua154519-a2dea527-8832-4109-9e0f-c4f97f0c73f2.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/154519">Hanashiraki raki</a>
-    </div>
-                                    </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Trồi lên r let go
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726464#ln-comment-2726464"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 23:20:33"
-                                datetime="2025-01-23T23:20:33+07:00">
-                                23-01-2025 23:20:33
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2726394"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2726394" data-parent="2726394">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u33638-12a5e188-7af3-46d6-bd0f-17175ded4544.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/33638">Xã hội này tàn rồi</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/16799">SCKurumi</a>
     </div>
                                         <div class="self-center">
             <div
@@ -6169,18 +6135,18 @@
             </div>
         </div>
         </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Vẫn là 6 chiếu và sức mạnh hủy diệt hako<br>thở cái là lên top<br>
-waba
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Hả?
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726394#ln-comment-2726394"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2839315#ln-comment-2839315"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 22:39:07"
-                                datetime="2025-01-23T22:39:07+07:00">
-                                23-01-2025 22:39:07
+                            <time class="timeago" title="30-04-2025 01:28:37"
+                                datetime="2025-04-30T01:28:37+07:00">
+                                30-04-2025 01:28:37
                             </time>
                         </a>
                         <a
@@ -6196,13 +6162,16 @@ waba
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2726385"
+    <div id="ln-comment-2839298"
     class="ln-comment-item mt-3 clear"
-    data-comment="2726385" data-parent="2726385">
+    data-comment="2839298" 
+    data-parent="2839298" 
+    data-type="chapter" 
+    data-typeid="10130">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua65692-6ffe6f59-81df-46aa-81f6-92ec41b2bffc.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -6211,20 +6180,23 @@ waba
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65692">Hưngcucsuc</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        vc manh ac
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10130-chuong-2-tinh-trangphan-socola-cua-moi-nguoi"
+                        class="text-slate-500 inline-block">Chương 2: Tình trạng socola của mỗi người</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Top  những thứ 1 bộ harem không bao giờ thiếu, top 1:  cướp dâu :)))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726385#ln-comment-2726385"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2839298#ln-comment-2839298"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 22:32:49"
-                                datetime="2025-01-23T22:32:49+07:00">
-                                23-01-2025 22:32:49
+                            <time class="timeago" title="30-04-2025 01:06:46"
+                                datetime="2025-04-30T01:06:46+07:00">
+                                30-04-2025 01:06:46
                             </time>
                         </a>
                         <a
@@ -6240,13 +6212,16 @@ waba
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2726095"
+    <div id="ln-comment-2839269"
     class="ln-comment-item mt-3 clear"
-    data-comment="2726095" data-parent="2726095">
+    data-comment="2839269" 
+    data-parent="2839269" 
+    data-type="chapter" 
+    data-typeid="10126">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u103357-b008d1bd-bc14-4996-ae2a-b7c8d863c018.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -6255,20 +6230,23 @@ waba
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/103357">diddy</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        kiệt tác,đặc biệt là kiriha
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10126-chuong-7-thu-ben-trong-chiec-tui"
+                        class="text-slate-500 inline-block">Chương 7: Thứ bên trong  chiếc túi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        H đọc lại thấy đoạn này hơi rush, biết và vì signaltin nó *spoil* kou vs Maki với cả 2 ku cậu hợp nhau từ trc r nhưng tính cách, hành xử vs lối suy nghĩ xoay một phát như char mới luôn thế này thì hơi khó chấp nhận thật
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2726095#ln-comment-2726095"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2839269#ln-comment-2839269"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 17:00:21"
-                                datetime="2025-01-23T17:00:21+07:00">
-                                23-01-2025 17:00:21
+                            <time class="timeago" title="30-04-2025 00:37:11"
+                                datetime="2025-04-30T00:37:11+07:00">
+                                30-04-2025 00:37:11
                             </time>
                         </a>
                         <a
@@ -6284,13 +6262,16 @@ waba
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2725986"
+    <div id="ln-comment-2839226"
     class="ln-comment-item mt-3 clear"
-    data-comment="2725986" data-parent="2725986">
+    data-comment="2839226" 
+    data-parent="2839226" 
+    data-type="chapter" 
+    data-typeid="10124">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u77815-7ebef5c1-e5ad-4d3a-b8da-c5927604e6df.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -6299,20 +6280,23 @@ waba
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/77815">Sakatan2ko</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        vc đọc từ năm c2 giờ lên đh rồi nó vẫn tiếp<br>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10124-chuong-5-truy-lung-va-dieu-kien-cho-mot-cap-doi"
+                        class="text-slate-500 inline-block">Chương 5: Truy lùng và Điều kiện cho một cặp đôi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        :))) cho đếch gì a tôi đi truyền ADN nguyên 1 cái làng ở forthothe mà có sao đâu, ai kia tính hết r
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2725986#ln-comment-2725986"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2839226#ln-comment-2839226"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 14:18:46"
-                                datetime="2025-01-23T14:18:46+07:00">
-                                23-01-2025 14:18:46
+                            <time class="timeago" title="29-04-2025 23:57:07"
+                                datetime="2025-04-29T23:57:07+07:00">
+                                29-04-2025 23:57:07
                             </time>
                         </a>
                         <a
@@ -6328,13 +6312,16 @@ waba
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2725853"
+    <div id="ln-comment-2838793"
     class="ln-comment-item mt-3 clear"
-    data-comment="2725853" data-parent="2725853">
+    data-comment="2838793" 
+    data-parent="2838793" 
+    data-type="chapter" 
+    data-typeid="10123">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u120716-79dc91d6-19c6-441f-b12a-56b26c987977.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -6343,20 +6330,23 @@ waba
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/120716">Abalatrap</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        đối thủ xứng tầm của toaru
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10123-chuong-4-khu-truot-tuyet-va-doc-ky"
+                        class="text-slate-500 inline-block">Chương 4: Khu trượt tuyết và Độc kỹ</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Vũ khí hoá học di động của phòng 106 :)))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2725853#ln-comment-2725853"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838793#ln-comment-2838793"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 09:56:21"
-                                datetime="2025-01-23T09:56:21+07:00">
-                                23-01-2025 09:56:21
+                            <time class="timeago" title="29-04-2025 16:51:52"
+                                datetime="2025-04-29T16:51:52+07:00">
+                                29-04-2025 16:51:52
                             </time>
                         </a>
                         <a
@@ -6372,13 +6362,16 @@ waba
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2725847"
+    <div id="ln-comment-2838737"
     class="ln-comment-item mt-3 clear"
-    data-comment="2725847" data-parent="2725847">
+    data-comment="2838737" 
+    data-parent="2838737" 
+    data-type="chapter" 
+    data-typeid="10121">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u42828-45a53da3-ae80-4be6-82d5-7d3c161af33a.jpg" class="w-full rounded-full" />
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -6387,20 +6380,223 @@ waba
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/42828">Pemaloe</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
     </div>
                                     </div>
-                                    </div>
-                                    <div class="ln-comment-content long-text">
-                        Nó đã đến
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10121-chuong-2-cuoc-song-hoc-duong-cua-blue-knight"
+                        class="text-slate-500 inline-block">Chương 2: Cuộc sống học đường của Thanh kỵ sĩ</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Bro *ucktimeline tận 4 lần :)))
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2725847#ln-comment-2725847"
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838737#ln-comment-2838737"
                             class="text-slate-500">
-                            <time class="timeago" title="23-01-2025 09:36:16"
-                                datetime="2025-01-23T09:36:16+07:00">
-                                23-01-2025 09:36:16
+                            <time class="timeago" title="29-04-2025 14:55:15"
+                                datetime="2025-04-29T14:55:15+07:00">
+                                29-04-2025 14:55:15
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2838724"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2838724" 
+    data-parent="2838724" 
+    data-type="chapter" 
+    data-typeid="10111">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10111-chuong-6-kim-ha-va-ngan-tuyet-bien-vang-va-tuyet-bac"
+                        class="text-slate-500 inline-block">Chương 6: Kim hà và Ngân tuyết / Biển vàng và tuyết bạc</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        ...t thực sự ko còn lời gì để nữa, vốn liếng từ vựng nghèo nàn của t là ko đủ để nói lên đó peak của arc này 😭🙌
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838724#ln-comment-2838724"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-04-2025 14:31:30"
+                                datetime="2025-04-29T14:31:30+07:00">
+                                29-04-2025 14:31:30
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2838716"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2838716" 
+    data-parent="2838716" 
+    data-type="chapter" 
+    data-typeid="10110">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10110-chuong-5-ngan-sac-cong-chua-va-thanh-lam-ki-si"
+                        class="text-slate-500 inline-block">Chương 5: Ngân sắc công chúa và Thanh lam kị sĩ</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Chiến thần ks, kẻ hủy diệt bảng xếp hạng, vua bú liếm, ông liêm :)))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838716#ln-comment-2838716"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-04-2025 14:19:33"
+                                datetime="2025-04-29T14:19:33+07:00">
+                                29-04-2025 14:19:33
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2838588"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2838588" 
+    data-parent="2838588" 
+    data-type="chapter" 
+    data-typeid="10107">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10107-chuong-2-loi-the-va-huan-chuong"
+                        class="text-slate-500 inline-block">Chương 2: Lời thề và Huân chương</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Dí tới kiếp sau :))
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838588#ln-comment-2838588"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-04-2025 11:41:14"
+                                datetime="2025-04-29T11:41:14+07:00">
+                                29-04-2025 11:41:14
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2838320"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2838320" 
+    data-parent="2838320" 
+    data-type="chapter" 
+    data-typeid="10101">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua95227-34e7516f-e81b-4495-8218-65644d079b8d.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/95227">Frans</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/247-rokujouma-no-shinryakusha/c10101-chuong-4-ngan-sac-cong-chua"
+                        class="text-slate-500 inline-block">Chương 4: Ngân sắc Công chúa</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        3 cô công chúa thì a tán mịa nó cả 3 rồi :)) sao ko tán luôn nữ hoàng cho nhan-....à phải r
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/247-rokujouma-no-shinryakusha?comment_id=2838320#ln-comment-2838320"
+                            class="text-slate-500">
+                            <time class="timeago" title="29-04-2025 03:17:23"
+                                datetime="2025-04-29T03:17:23+07:00">
+                                29-04-2025 03:17:23
                             </time>
                         </a>
                         <a
@@ -6427,7 +6623,7 @@ waba
 </div>    </main>
 
     <script>
-        var token = '6PctQiUCDndQNrMu3rw2FcfOKSKcbYEtw9VQe9jO';
+        var token = '9OuZw67cJ236cERyK7AeF4B4bbyOuD7dZUcRlL7J';
         var comment_type = 'series';
         var comment_typeid = '247';
     </script>
@@ -6471,8 +6667,11 @@ waba
 
 
 
-    <script src="/scripts/app.js?id=e6bfa8f47769659b2c4d6e4752cc0d59"></script>
-    <script src="/livewire/livewire.js?id=f121a5df"   data-csrf="6PctQiUCDndQNrMu3rw2FcfOKSKcbYEtw9VQe9jO" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    
+    <script src="/scripts/service-manager.js?r=3"></script>
+
+    <script src="/scripts/app.js?id=f15e5859fa2f9f276ce829e8bb44f25a"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=fcf8c2ad"   data-csrf="9OuZw67cJ236cERyK7AeF4B4bbyOuD7dZUcRlL7J" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script type='text/javascript' src='//steamabundanceslope.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
