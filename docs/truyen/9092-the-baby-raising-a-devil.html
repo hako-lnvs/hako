@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="Yo7SBdbi1prqQY2EqSDgNpROoFJa1F8mi092KQR8">
+    <meta name="csrf-token" content="R9C120PJR8qA0MqhSBnZLNxMIwmqQa4xJINRNkLk">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -184,31 +184,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -232,7 +208,7 @@
                         <div class="top-part">
                             <div class="row">
                                 <div class="left-column col-12 col-md-3">
-                                    <div class="series-cover">
+                                    <div class="series-cover" data-nosnippet>
                                         <div class="series-type">
                                                                                         <span>Truyện dịch</span>
                                                                                     </div>
@@ -302,7 +278,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 389 </span>
+                                                <span class="block feature-name"> 387 </span>
                                             </a>
                                                                                         </div>
 
@@ -352,11 +328,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="20/08/2025 14:12:55" datetime="2025-08-20T14:12:55+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="27/09/2025 23:19:05" datetime="2025-09-27T23:19:05+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">145.835</div>
+                                            <div class="statistic-value">147.976</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -365,16 +341,17 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">241.720</div>
+                                            <div class="statistic-value">248.528</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">아기는 악당을 키운다</div>
-                                                                                <div class="block pad-bottom-5">The baby raises a devil</div>
-                                        </div>
+                                        <div class="fact-value" data-nosnippet>
+                                                                                            <div class="block pad-bottom-5">아기는 악당을 키운다</div>
+                                                                                            <div class="block pad-bottom-5">The baby raises a devil</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -442,10 +419,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p>Raw Hàn (đã full): <a href="https://page.kakao.com/content/53811972/viewer/53813125" rel="nofollow noreferrer noopener" target="_blank">https://page.kakao.com/content/53811972/viewer/53813125</a></p>
 <p>Raw Anh: (đã full): <a href="https://woopread.com/series/the-baby-raising-a-devil-novels/" rel="nofollow noreferrer noopener" target="_blank">https://woopread.com/series/the-baby-raising-a-devil-novels/</a></p>
 <p>Twitter artist: <a href="https://x.com/moran_oxo" rel="nofollow noreferrer noopener" target="_blank">https://x.com/moran_oxo</a></p>
@@ -1216,9 +1193,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/9092-the-baby-raising-a-devil/c215348-chuong-67" title="Chương 67">Chương 67</a>
@@ -1228,9 +1202,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/9092-the-baby-raising-a-devil/c217006-chuong-68" title="Chương 68">Chương 68</a>
@@ -1238,9 +1209,21 @@
                                                                                             </div>
                                             <div class="chapter-time">20/08/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/9092-the-baby-raising-a-devil/c236242-chuong-69" title="Chương 69">Chương 69</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">27/09/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (63 chương)</span>
+                                            <span>Xem tiếp (64 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1303,7 +1286,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:9092,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;kisFefELvQ7pyERP3o1t&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/9092-the-baby-raising-a-devil&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;134ba32f8497f4be0bcf87f89455a90fe92d03bc243fe2406a8ff934ee762ebb&quot;}" wire:effects="[]" wire:id="kisFefELvQ7pyERP3o1t" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:9092,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;pxB1QVid5E4CGGUwksi8&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/9092-the-baby-raising-a-devil&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;53d021b6e48a2d74606703f2fc762ca9c210e0d3a1ac4d68514212b950d92713&quot;}" wire:effects="[]" wire:id="pxB1QVid5E4CGGUwksi8" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1322,7 +1305,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(460)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(462)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1341,6 +1324,120 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3039468"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3039468" 
+    data-parent="3039468" 
+    data-type="chapter" 
+    data-typeid="236242">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua56282-706838fc-2db0-4630-a810-6a2b07078fe8.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56282">Nuinaninu</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/9092-the-baby-raising-a-devil/c236242-chuong-69"
+                        class="text-slate-500 inline-block">Chương 69</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Các con vk thông cảm tân sv nên hơi bận bịu xíu nên trễ một tháng liền T_T Tui sẽ cố gắng ra chương sớm nhất có thể <s>Thật ra là do cuutruyen sập nên hết truyện để đọc đâm ra rảnh rỗi đi dịch truyện</s>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=3039468#ln-comment-3039468"
+                            class="text-slate-500">
+                            <time class="timeago" title="27-09-2025 23:21:50"
+                                datetime="2025-09-27T23:21:50+07:00">
+                                27-09-2025 23:21:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2992248"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2992248" 
+    data-parent="2992248" 
+    data-type="chapter" 
+    data-typeid="217006">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua106864-1cfaddf9-65c7-44ad-9dfc-4ea9e999e0d0.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106864">Seiryu~</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/9092-the-baby-raising-a-devil/c217006-chuong-68"
+                        class="text-slate-500 inline-block">Chương 68</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        TFNC🌹✨
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=2992248#ln-comment-2992248"
+                            class="text-slate-500">
+                            <time class="timeago" title="22-08-2025 15:00:00"
+                                datetime="2025-08-22T15:00:00+07:00">
+                                22-08-2025 15:00:00
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-2989074"
     class="ln-comment-item mt-3 clear"
     data-comment="2989074" 
@@ -1985,253 +2082,6 @@ Vl hỏa thiêu 💀
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2950714"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2950714" 
-    data-parent="2950714" 
-    data-type="chapter" 
-    data-typeid="203935">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua56282-706838fc-2db0-4630-a810-6a2b07078fe8.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56282">Nuinaninu</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/9092-the-baby-raising-a-devil/c203935-chuong-63"
-                        class="text-slate-500 inline-block">Chương 63</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Bé đang đi chơi thì bị thồn cơm chó của phụ thân đại nhân =)))) Dạo này tui hơi mỏi mắt nên cách một ngày một chương nhóe.
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=2950714#ln-comment-2950714"
-                            class="text-slate-500">
-                            <time class="timeago" title="25-07-2025 20:46:40"
-                                datetime="2025-07-25T20:46:40+07:00">
-                                25-07-2025 20:46:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2950719"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2950719" 
-    data-parent="2950714" 
-    data-type="chapter" 
-    data-typeid="203935">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua56282-706838fc-2db0-4630-a810-6a2b07078fe8.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56282">Nuinaninu</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/9092-the-baby-raising-a-devil/c203935-chuong-63"
-                        class="text-slate-500 inline-block">Chương 63</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Có thể bạn chưa quên: Risette là vợ của công tước aka papa đại nhân.
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=2950714&amp;reply_id=2950719#ln-comment-2950719"
-                            class="text-slate-500">
-                            <time class="timeago" title="25-07-2025 20:48:18"
-                                datetime="2025-07-25T20:48:18+07:00">
-                                25-07-2025 20:48:18
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2947832"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2947832" 
-    data-parent="2947832" 
-    data-type="series" 
-    data-typeid="9092">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u208656-4c6d99ef-fc3d-42ee-8e79-7d79a7c5c954.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/208656">Veil</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Bộ này cũng sống lại rồi, cố lên trans:3
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=2947832#ln-comment-2947832"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-07-2025 18:23:00"
-                                datetime="2025-07-23T18:23:00+07:00">
-                                23-07-2025 18:23:00
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2947852"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2947852" 
-    data-parent="2947832" 
-    data-type="series" 
-    data-typeid="9092">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua56282-706838fc-2db0-4630-a810-6a2b07078fe8.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/56282">Nuinaninu</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Cảm ơn bro nhoe
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/9092-the-baby-raising-a-devil?comment_id=2947832&amp;reply_id=2947852#ln-comment-2947852"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-07-2025 18:47:29"
-                                datetime="2025-07-23T18:47:29+07:00">
-                                23-07-2025 18:47:29
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -2244,7 +2094,7 @@ Vl hỏa thiêu 💀
 </div>    </main>
 
     <script>
-        var token = 'Yo7SBdbi1prqQY2EqSDgNpROoFJa1F8mi092KQR8';
+        var token = 'R9C120PJR8qA0MqhSBnZLNxMIwmqQa4xJINRNkLk';
         var comment_type = 'series';
         var comment_typeid = '9092';
     </script>
@@ -2289,13 +2139,13 @@ Vl hỏa thiêu 💀
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="Yo7SBdbi1prqQY2EqSDgNpROoFJa1F8mi092KQR8" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="R9C120PJR8qA0MqhSBnZLNxMIwmqQa4xJINRNkLk" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//bugscrawled.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
