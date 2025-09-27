@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="ejOF6Tqb5HOLxq1GBLjB01lM3rKhHBvvpOWPAAJL">
+    <meta name="csrf-token" content="FiqFUuSsWI5mqwYLQ8mlA4rc85Bea24MrwGDx0fs">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=cf28c88adfbd0c7673a7244a32e9f917">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,9 +149,9 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/truyen/21354">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_d.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-06-16/21354_m.jpg'); background-size: cover"></div>
+                <a href="/">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
                     </a>
             </div>
         
@@ -184,31 +184,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -301,7 +277,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 1224 </span>
+                                                <span class="block feature-name"> 1226 </span>
                                             </a>
                                                                                         </div>
 
@@ -351,30 +327,31 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="11/08/2025 11:28:54" datetime="2025-08-11T11:28:54+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="28/09/2025 03:52:12" datetime="2025-09-28T03:52:12+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">247.901</div>
+                                            <div class="statistic-value">250.703</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">4,90 / <small>10</small></div>
+                                            <div class="statistic-value">4,92 / <small>12</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">641.702</div>
+                                            <div class="statistic-value">665.442</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">恶役少爷不想要破灭结局</div>
-                                                                                <div class="block pad-bottom-5">Ác Dịch Thiếu Gia Không Muốn Phá Diệt Kết Cục</div>
-                                                                                <div class="block pad-bottom-5">Little Tyrant Doesn&#039;t Want To End In Shambles</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">恶役少爷不想要破灭结局</div>
+                                                                                            <div class="block pad-bottom-5">Ác Dịch Thiếu Gia Không Muốn Phá Diệt Kết Cục</div>
+                                                                                            <div class="block pad-bottom-5">Little Tyrant Doesn&#039;t Want To End In Shambles</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -431,10 +408,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p><a href="https://hostednovel.com/8/novel/little-tyrant-doesnt-want-to-meet-with-a-bad-end#chapters" rel="nofollow noreferrer noopener" target="_blank">Link eng</a></p>
 <p><a href="https://www.xklxsw.com/book/214067/" rel="nofollow noreferrer noopener" target="_blank">Link raw</a></p>
 <p>==============================<br>Vào server discord để *thúc đít bọn mình tại<a href="https://discord.gg/8shcY2CWvS" rel="nofollow noreferrer noopener" target="_blank"> đây</a></p>
@@ -493,7 +470,7 @@
                 <a href="https://docln.net/truyen/11085/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Mrtoss</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Phat bad zed</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -520,7 +497,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Cuốn vãi đáng đọc cực kì nhá :)
+                                    để mà phải nói thì tôi đã đọc hết bộ này, phần đầu...
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -528,7 +505,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="30-09-2024 17:59:19" datetime="2024-09-30T17:59:19+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="10-09-2025 22:20:57" datetime="2025-09-10T22:20:57+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -538,7 +515,7 @@
                 <a href="https://docln.net/truyen/11085/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">normalguy</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Heslschwein</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -565,7 +542,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Truyện hay nha, vào đọc đi mn
+                                    Truyện hay vãi, dịch ngon mà trans rặn chap lâu vc
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -573,7 +550,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="15-08-2024 12:48:58" datetime="2024-08-15T12:48:58+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="12-08-2025 22:10:35" datetime="2025-08-12T22:10:35+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -1560,9 +1537,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c213367-chuong-117-bo-qua-di-alicia" title="Chương 117: Bỏ qua đi, Alicia.">Chương 117: Bỏ qua đi, Alicia.</a>
@@ -1570,9 +1544,21 @@
                                                                                             </div>
                                             <div class="chapter-time">11/08/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c236287-chuong-118-su-kien-bat-ngo" title="Chương 118: Sự kiện bất ngờ">Chương 118: Sự kiện bất ngờ</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">28/09/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (102 chương)</span>
+                                            <span>Xem tiếp (103 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1583,7 +1569,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:11085,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;Iptis73eObJXZS5lNsDg&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;58212c8d0683bbf80f808f5b361c7efdfc00c690a45f41a3dd630f971b7028de&quot;}" wire:effects="[]" wire:id="Iptis73eObJXZS5lNsDg" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:11085,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;UHFe1Mbvjh6viFoeTp76&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;7d0cbfd0b01b45f1ac939cb8ec3754b359d392b34996dca1f19cf9ce783199ee&quot;}" wire:effects="[]" wire:id="UHFe1Mbvjh6viFoeTp76" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1602,7 +1588,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1704)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1776)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1794,527 +1780,12 @@
     </div>        
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2977078"
+    <div id="ln-comment-2983881"
     class="ln-comment-item mt-3 clear"
-    data-comment="2977078" 
-    data-parent="2977078" 
+    data-comment="2983881" 
+    data-parent="2983881" 
     data-type="chapter" 
-    data-typeid="213367">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua125675-7a6b91e0-fd09-4778-ba7a-d5221c2dcebd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/125675">gangpa</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c213367-chuong-117-bo-qua-di-alicia"
-                        class="text-slate-500 inline-block">Chương 117: Bỏ qua đi, Alicia.</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        tfnc
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2977078#ln-comment-2977078"
-                            class="text-slate-500">
-                            <time class="timeago" title="12-08-2025 12:56:33"
-                                datetime="2025-08-12T12:56:33+07:00">
-                                12-08-2025 12:56:33
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2976431"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2976431" 
-    data-parent="2976431" 
-    data-type="chapter" 
-    data-typeid="99416">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua74647-cb0b31a2-a848-473b-a173-a9451c5b7288.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/74647">Tín đồ Đức Mẹ Tha Hóa</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c99416-chuong-28-de-xem-minh-nen-tran-lot-ai-day"
-                        class="text-slate-500 inline-block">Chương 28: Để Xem Mình Nên Trấn Lột Ai Đây</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Anh bạn cắn hơi sâu r đấy:)
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2976431#ln-comment-2976431"
-                            class="text-slate-500">
-                            <time class="timeago" title="11-08-2025 23:08:33"
-                                datetime="2025-08-11T23:08:33+07:00">
-                                11-08-2025 23:08:33
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2976293"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2976293" 
-    data-parent="2976293" 
-    data-type="chapter" 
-    data-typeid="213367">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u26821-5dbd722d-b0f8-43be-bf7d-9b7fc68925f5.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/26821">Memes</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c213367-chuong-117-bo-qua-di-alicia"
-                        class="text-slate-500 inline-block">Chương 117: Bỏ qua đi, Alicia.</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Mai sau còn thêm đối thủ nữa
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2976293#ln-comment-2976293"
-                            class="text-slate-500">
-                            <time class="timeago" title="11-08-2025 22:04:31"
-                                datetime="2025-08-11T22:04:31+07:00">
-                                11-08-2025 22:04:31
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2975624"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2975624" 
-    data-parent="2975624" 
-    data-type="chapter" 
-    data-typeid="213367">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua106089-1a27cab7-b092-437a-9ca6-9cb1ce6ba2f0.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106089">hikigayakunnn</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c213367-chuong-117-bo-qua-di-alicia"
-                        class="text-slate-500 inline-block">Chương 117: Bỏ qua đi, Alicia.</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        quào, quá mạnh rồi<br>
-để coi Alicia làm thế nào để cân bằng thế cờ đây:))<br>
-TFNC
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2975624#ln-comment-2975624"
-                            class="text-slate-500">
-                            <time class="timeago" title="11-08-2025 14:12:47"
-                                datetime="2025-08-11T14:12:47+07:00">
-                                11-08-2025 14:12:47
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2976805"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2976805" 
-    data-parent="2975624" 
-    data-type="chapter" 
-    data-typeid="213367">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua51835-dbb5437c-0f88-4a88-bcce-0542d046bb4b.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/51835">tavu2002</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c213367-chuong-117-bo-qua-di-alicia"
-                        class="text-slate-500 inline-block">Chương 117: Bỏ qua đi, Alicia.</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        thêm 2 đối thủ nhé, mà có khi còn thêm 3 ấy
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2975624&amp;reply_id=2976805#ln-comment-2976805"
-                            class="text-slate-500">
-                            <time class="timeago" title="12-08-2025 08:22:29"
-                                datetime="2025-08-12T08:22:29+07:00">
-                                12-08-2025 08:22:29
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2968440"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2968440" 
-    data-parent="2968440" 
-    data-type="chapter" 
-    data-typeid="146835">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u65254-5b987255-1ae2-4a2f-8afe-14f7e95777dd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65254">000000000000000000</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c146835-chuong-105-ta-xi-cau-ay-roi"
-                        class="text-slate-500 inline-block">Chương 105: Ta xí cậu ấy rồi</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Sắp thêm 1 vợ cũng chả kém phần gì với 2 vợ này đâu 🤣
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2968440#ln-comment-2968440"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-08-2025 00:41:56"
-                                datetime="2025-08-07T00:41:56+07:00">
-                                07-08-2025 00:41:56
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2968016"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2968016" 
-    data-parent="2968016" 
-    data-type="chapter" 
-    data-typeid="140442">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u65254-5b987255-1ae2-4a2f-8afe-14f7e95777dd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65254">000000000000000000</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c140442-chuong-95-chung-van-binh-an-vo-su"
-                        class="text-slate-500 inline-block">Chương 95: Chúng Vẫn Bình An Vô Sự</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Tôi khá chắc là không 🤣
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2968016#ln-comment-2968016"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-08-2025 21:51:02"
-                                datetime="2025-08-06T21:51:02+07:00">
-                                06-08-2025 21:51:02
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2967982"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2967982" 
-    data-parent="2967982" 
-    data-type="chapter" 
-    data-typeid="140261">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u65254-5b987255-1ae2-4a2f-8afe-14f7e95777dd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65254">000000000000000000</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c140261-chapter-94-em-chac-chan-chon-cau-ay-chu"
-                        class="text-slate-500 inline-block">Chương 94: Em Chắc Chắn Chọn Cậu Ấy Chứ?</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Thôi thì chịu trách nhiêm đi main à anh thoát quái nào được với cái định mệnh harem này 🤣
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2967982#ln-comment-2967982"
-                            class="text-slate-500">
-                            <time class="timeago" title="06-08-2025 21:34:59"
-                                datetime="2025-08-06T21:34:59+07:00">
-                                06-08-2025 21:34:59
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2965834"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2965834" 
-    data-parent="2965834" 
-    data-type="chapter" 
-    data-typeid="174855">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua106089-1a27cab7-b092-437a-9ca6-9cb1ce6ba2f0.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/106089">hikigayakunnn</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c174855-chuong-114-cha-so-thay-cho-con"
-                        class="text-slate-500 inline-block">Chương 114: Cha sợ thay cho con</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        ông bố kiểu "gòi gòi, m xong rồi" :))<br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2965834#ln-comment-2965834"
-                            class="text-slate-500">
-                            <time class="timeago" title="05-08-2025 10:41:29"
-                                datetime="2025-08-05T10:41:29+07:00">
-                                05-08-2025 10:41:29
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2957375"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2957375" 
-    data-parent="2957375" 
-    data-type="series" 
-    data-typeid="11085">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u65254-5b987255-1ae2-4a2f-8afe-14f7e95777dd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/65254">000000000000000000</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Hummm drop rồi ư ? 🤔
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2957375#ln-comment-2957375"
-                            class="text-slate-500">
-                            <time class="timeago" title="30-07-2025 09:42:26"
-                                datetime="2025-07-30T09:42:26+07:00">
-                                30-07-2025 09:42:26
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2935894"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2935894" 
-    data-parent="2935894" 
-    data-type="series" 
-    data-typeid="11085">
+    data-typeid="136770">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2327,21 +1798,473 @@ TFNC
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/92803">Kagami Maizel</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/164609">Jube</a>
     </div>
                                     </div>
                                         
                 </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c136770-chuong-86-co-gi-do-o-nguoi"
+                        class="text-slate-500 inline-block">Chương 86: Có Gì Đó Ở Ngươi!</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Vừa xem xong eng bộ này. Phải nói là rất hay nhé ae. Ban đầu thấy kiểu hệ thống lại còn truyện trung thì cứ nghĩ sẽ không hay lắm. Nhưng thấy ae khen nhiều nên cố theo thì bộ này thực sự rất hay. Các phe phái, hội nhóm đều có vai trò và rất rõ ràng. Đọc siêu cuốn luôn. End cũng hay
+                        Kèo lệch vãi😳
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2935894#ln-comment-2935894"
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2983881#ln-comment-2983881"
                             class="text-slate-500">
-                            <time class="timeago" title="15-07-2025 16:39:09"
-                                datetime="2025-07-15T16:39:09+07:00">
-                                15-07-2025 16:39:09
+                            <time class="timeago" title="16-08-2025 22:47:50"
+                                datetime="2025-08-16T22:47:50+07:00">
+                                16-08-2025 22:47:50
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979104"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979104" 
+    data-parent="2979104" 
+    data-type="chapter" 
+    data-typeid="161415">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c161415-chuong-113-mot-muc-tieu-nho-nho"
+                        class="text-slate-500 inline-block">Chương 113: Một mục tiêu nho nhỏ</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979104#ln-comment-2979104"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 18:14:12"
+                                datetime="2025-08-13T18:14:12+07:00">
+                                13-08-2025 18:14:12
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979096"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979096" 
+    data-parent="2979096" 
+    data-type="chapter" 
+    data-typeid="161118">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c161118-chuong-112-nhung-diem-tuong-dong-ky-la"
+                        class="text-slate-500 inline-block">Chương 112: Những điểm tương đồng kỳ lạ</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979096#ln-comment-2979096"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 18:10:07"
+                                datetime="2025-08-13T18:10:07+07:00">
+                                13-08-2025 18:10:07
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979083"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979083" 
+    data-parent="2979083" 
+    data-type="chapter" 
+    data-typeid="155962">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c155962-chuong-111-do-la-so-phan-ma-cau-da-hoi"
+                        class="text-slate-500 inline-block">Chương 111: Đó là số phận mà cậu đã hỏi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979083#ln-comment-2979083"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 18:03:47"
+                                datetime="2025-08-13T18:03:47+07:00">
+                                13-08-2025 18:03:47
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979079"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979079" 
+    data-parent="2979079" 
+    data-type="chapter" 
+    data-typeid="154768">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c154768-chuong-110-qua-la-tham-hoa"
+                        class="text-slate-500 inline-block">Chương 110: Quá là thảm họa</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnv
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979079#ln-comment-2979079"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 18:00:17"
+                                datetime="2025-08-13T18:00:17+07:00">
+                                13-08-2025 18:00:17
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979071"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979071" 
+    data-parent="2979071" 
+    data-type="chapter" 
+    data-typeid="154656">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c154656-chuong-109-ngai-dang-o-dau"
+                        class="text-slate-500 inline-block">Chương 109: Ngài đang ở đâu?</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979071#ln-comment-2979071"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 17:56:57"
+                                datetime="2025-08-13T17:56:57+07:00">
+                                13-08-2025 17:56:57
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979067"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979067" 
+    data-parent="2979067" 
+    data-type="chapter" 
+    data-typeid="149157">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c149157-chuong-107-ngai-ay-da-tro-lai"
+                        class="text-slate-500 inline-block">Chương 108: Ngài ấy đã trở lại</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979067#ln-comment-2979067"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 17:54:35"
+                                datetime="2025-08-13T17:54:35+07:00">
+                                13-08-2025 17:54:35
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979062"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979062" 
+    data-parent="2979062" 
+    data-type="chapter" 
+    data-typeid="147201">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c147201-chuong-107-may-quyen-sach-do-van-phai-bi-xe-thanh-tung-manh"
+                        class="text-slate-500 inline-block">Chương 107: Mấy quyển sách đó vẫn phải bị xé thành từng mảnh</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979062#ln-comment-2979062"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 17:52:10"
+                                datetime="2025-08-13T17:52:10+07:00">
+                                13-08-2025 17:52:10
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2979057"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2979057" 
+    data-parent="2979057" 
+    data-type="chapter" 
+    data-typeid="146966">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c146966-chuong-106-chon-ai-day"
+                        class="text-slate-500 inline-block">Chương 106: Chọn ai đây?</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2979057#ln-comment-2979057"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 17:48:17"
+                                datetime="2025-08-13T17:48:17+07:00">
+                                13-08-2025 17:48:17
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-2978998"
+    class="ln-comment-item mt-3 clear"
+    data-comment="2978998" 
+    data-parent="2978998" 
+    data-type="chapter" 
+    data-typeid="146835">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u206472-08da9d6f-09f5-4a3b-abcf-a8e86b027afd.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/206472">Heslschwein</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end/c146835-chuong-105-ta-xi-cau-ay-roi"
+                        class="text-slate-500 inline-block">Chương 105: Ta xí cậu ấy rồi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/11085-little-tyrant-doesnt-want-to-meet-with-a-bad-end?comment_id=2978998#ln-comment-2978998"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-08-2025 17:37:44"
+                                datetime="2025-08-13T17:37:44+07:00">
+                                13-08-2025 17:37:44
                             </time>
                         </a>
                         <a
@@ -2368,7 +2291,7 @@ TFNC
 </div>    </main>
 
     <script>
-        var token = 'ejOF6Tqb5HOLxq1GBLjB01lM3rKhHBvvpOWPAAJL';
+        var token = 'FiqFUuSsWI5mqwYLQ8mlA4rc85Bea24MrwGDx0fs';
         var comment_type = 'series';
         var comment_typeid = '11085';
     </script>
@@ -2413,13 +2336,13 @@ TFNC
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="ejOF6Tqb5HOLxq1GBLjB01lM3rKhHBvvpOWPAAJL" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="FiqFUuSsWI5mqwYLQ8mlA4rc85Bea24MrwGDx0fs" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//bugscrawled.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
