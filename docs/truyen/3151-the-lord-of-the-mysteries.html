@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="n4oUb97ryeIN0GSUQr0vOPEZ6Icc44rj9lE9lOsS">
+    <meta name="csrf-token" content="2Rru0dKF6wWFaCNVTf1AIenPHYyxKOAz24WY5GbN">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
     <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=e11c2dec1d097163c80575fd4ca84bd0">
+    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -149,13 +149,13 @@
         </div>
     </div>
         <div class="page-top-group ">
-                <a href="/">
-                        <div class="index-background d-none d-lg-block" style="background-image: url('/images/megumi-bg.jpg')"></div>
-            <div class="index-background d-lg-none" style="background-image: url('/images/megumi-bg.jpg'); background-size: cover"></div>
+                <a href="/truyen/16221">
+                        <div class="index-background d-none d-lg-block" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_d.png')"></div>
+            <div class="index-background d-lg-none" style="background-image: url('https://i2.hako.vip/ln/banners/2025-09-19/16221_m.png'); background-size: cover"></div>
                     </a>
             </div>
         
-    <div x-data="{ open: Cookies.get('globalwarning') === undefined ? true : false }">
+    <div x-data="{ open: Cookies.get('globalwarning2') === undefined ? true : false }">
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
@@ -169,10 +169,13 @@
                 <a class="font-medium text-blue-700" href="https://www.google.com/search?q=c%C3%A1ch+c%C3%A0i+dns+1.1.1.1" target="_blank">1.1.1.1</a> hoặc <a class="font-medium text-blue-700" href="https://docln.sbs" target="_blank">docln.sbs</a>
                 
                 </p>
+                <p>
+                    <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
+                </p>
             </div>
             <div class="ml-auto pl-3">
                 <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
                     <span class="sr-only">Dismiss</span>
                     <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                     <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
@@ -184,31 +187,7 @@
     </div>
 </div>
 
-<div x-data="{ domain: false, open: false }" x-init="domain = await checkDomain(); open = domain !== false;">
-    <div class="border-l-4 border-red-400 bg-red-50 p-4" x-show="open" style="display: none">
-        <div class="flex">
-            <div class="shrink-0">
-                <svg class="size-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="ml-3 font-bold">
-                <template x-if="domain !== null">
-                    <p class="text-sm text-red-700">
-                    Tên miền này đã bị chặn, xin hãy sử dụng tên miền <a class="font-medium text-blue-700" x-bind:href="'https://' + domain" x-text="domain"></a>.<br>
-                    Thông tin thêm xin liên hệ Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord</a>.
-                    
-                    </p>
-                </template>
-                <template x-if="domain === null">
-                    <p class="text-sm text-red-700">
-                    Không thể kết nối đến bất kỳ tên miền nào. Xin vui lòng kiểm sử dụng DNS 1.1.1.1 hoặc liên hệ với Admin tại <a class="font-medium text-blue-700" href="https://www.facebook.com/groups/hako.group" target="_blank">Facebook</a> và <a class="font-medium text-blue-700" href="https://discord.gg/sX9KxjRRaH" target="_blank">Discord.
-                    </p>
-                </template>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 	
 <main id="mainpart" class="project-page">
@@ -301,7 +280,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 2093 </span>
+                                                <span class="block feature-name"> 2185 </span>
                                             </a>
                                                                                         </div>
 
@@ -351,34 +330,35 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="15/08/2025 22:29:32" datetime="2025-08-15T22:29:32+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="25/11/2025 11:15:35" datetime="2025-11-25T11:15:35+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">550.107</div>
+                                            <div class="statistic-value">561.931</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Đánh giá</div>
-                                            <div class="statistic-value">5,00 / <small>28</small></div>
+                                            <div class="statistic-value">5,00 / <small>34</small></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">1.370.330</div>
+                                            <div class="statistic-value">1.488.986</div>
                                         </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper other-facts col-12">
                                     <div class="fact-item">
                                         <div class="fact-name">Tên khác:</div>
-                                        <div class="fact-value">                                        <div class="block pad-bottom-5">诡秘之主</div>
-                                                                                <div class="block pad-bottom-5">序列的戰爭</div>
-                                                                                <div class="block pad-bottom-5">ราชันโลกพิศวง เล่ม</div>
-                                                                                <div class="block pad-bottom-5">Повелитель тайн</div>
-                                                                                <div class="block pad-bottom-5">Quỷ Bí Chi Chủ</div>
-                                                                                <div class="block pad-bottom-5">Chúa Tể Huyền Bí</div>
-                                                                                <div class="block pad-bottom-5">Lord of Mysteries</div>
-                                        </div>
+                                        <div class="fact-value">
+                                                                                            <div class="block pad-bottom-5">诡秘之主</div>
+                                                                                            <div class="block pad-bottom-5">序列的戰爭</div>
+                                                                                            <div class="block pad-bottom-5">ราชันโลกพิศวง เล่ม</div>
+                                                                                            <div class="block pad-bottom-5">Повелитель тайн</div>
+                                                                                            <div class="block pad-bottom-5">Quỷ Bí Chi Chủ</div>
+                                                                                            <div class="block pad-bottom-5">Chúa Tể Huyền Bí</div>
+                                                                                            <div class="block pad-bottom-5">Lord of Mysteries</div>
+                                                                                    </div>
                                     </div>
                                 </div>
                                                                 <div class="summary-wrapper col-12">
@@ -424,7 +404,8 @@
                                                                         <a class="ln_info-name" href="/thanh-vien/59378" style="padding-left: 5px;">Set</a>,
                                                                         <a class="ln_info-name" href="/thanh-vien/81032" style="padding-left: 5px;">Zen Ava</a>,
                                                                         <a class="ln_info-name" href="/thanh-vien/220250" style="padding-left: 5px;">Tsukiyomi Rei</a>,
-                                                                        <a class="ln_info-name" href="/thanh-vien/220395" style="padding-left: 5px;">QiaoYing</a>
+                                                                        <a class="ln_info-name" href="/thanh-vien/220395" style="padding-left: 5px;">QiaoYing</a>,
+                                                                        <a class="ln_info-name" href="/thanh-vien/224353" style="padding-left: 5px;">Q_Nhất Thanh</a>
                                                                     </div>
                                                                 <div class="owner-donate" style="padding: 0">
                                     <!-- <span class="donate-intro">Bạn muốn tiến độ đều hơn ?</span>
@@ -437,10 +418,10 @@
 
                 
 
-                                <section class="series-note basic-section gradual-mobile">
+                                <section class="series-note basic-section gradual-mobile" data-nosnippet>
                     <header class="sect-header"><span class="sect-title">Chú thích thêm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
                     <main class="d-lg-block">
-                        <div class="long-text" style='word-wrap: break-word;'>
+                        <div class="long-text" style="word-wrap: break-word;" data-nosnippet>
                         <p><strong><em><img src="https://media1.giphy.com/media/f551pndytEkNFPkbsK/giphy.gif" alt="" width="363" height="205"></em></strong></p>
 <p><strong><em>-Great One Old Court-</em></strong></p>
 <p><u><em>✤ Nhân sự hiện tại:</em></u><br>+ Dịch: Kouji </p>
@@ -492,9 +473,9 @@
                         </span>
                         <ol class="list-volume unstyled no-margin no-padding">
                                                                                     <li data-scrollTo="#volume_14048"><span class="list_vol-order">01.</span><span class="list_vol-title">Tập 01 - Tên Hề (1)《Đang Sửa》</span></li>
-                                                        <li data-scrollTo="#volume_12904"><span class="list_vol-order">02.</span><span class="list_vol-title">Tập 02 - Tên Hề</span></li>
-                                                        <li data-scrollTo="#volume_12945"><span class="list_vol-order">03.</span><span class="list_vol-title">Tập 03 - Tên Hề</span></li>
-                                                        <li data-scrollTo="#volume_14049"><span class="list_vol-order">04.</span><span class="list_vol-title">Tập 04 - Người Không Mặt</span></li>
+                                                        <li data-scrollTo="#volume_12904"><span class="list_vol-order">02.</span><span class="list_vol-title">Tập 02 - Tên Hề (2)《Quảng Đông》</span></li>
+                                                        <li data-scrollTo="#volume_12945"><span class="list_vol-order">03.</span><span class="list_vol-title">Tập 03 - Tên Hề (3)《Quảng Đông》</span></li>
+                                                        <li data-scrollTo="#volume_14049"><span class="list_vol-order">04.</span><span class="list_vol-title">Tập 04 - Người Không Mặt (1)《Kadokawa》</span></li>
                                                         <li data-scrollTo="#volume_14056"><span class="list_vol-order">05.</span><span class="list_vol-title">Tập 05 - Người Không Mặt (2)</span></li>
                                                         <li data-scrollTo="#volume_16847"><span class="list_vol-order">06.</span><span class="list_vol-title">Tập 06 - Người Không Mặt (3)</span></li>
                                                         <li data-scrollTo="#volume_16985"><span class="list_vol-order">07.</span><span class="list_vol-title">Tập 07 - Lữ Khách (1)</span></li>
@@ -518,7 +499,7 @@
                 <a href="https://docln.net/truyen/3151/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Redfire12</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Vô Không</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -545,7 +526,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Ca Ngợi Kẻ Khờ - Praise The Fool
+                                    Cuốn qué đi hóng thêm...
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -553,7 +534,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="09-08-2025 11:46:06" datetime="2025-08-09T11:46:06+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="31-10-2025 11:33:04" datetime="2025-10-31T11:33:04+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -563,7 +544,7 @@
                 <a href="https://docln.net/truyen/3151/danh-gia" class="block hover:bg-gray-50 dark:hover:!bg-zinc-700">
                     <div class="px-4 py-4 sm:px-6">
                         <div class="flex items-center justify-between">
-                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Coffe Latte</p>
+                            <p class="truncate text-sm font-bold text-indigo-600 dark:text-white">Xue Lian</p>
                             <div class="ml-2 flex flex-shrink-0">
                                 <div class="d-flex justify-content-around">
             <div class="text-base text-yellow-400">
@@ -590,7 +571,7 @@
                                     <svg class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                                     </svg>
-                                    Truyện cuốn cực luôn, mong trans dịch đến cuối tru...
+                                    yêu ad, đọc siêu hay siêu cuốn, trc đã nghe danh t...
                                 </p>
                             </div>
                             <div class="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 dark:text-white">
@@ -598,7 +579,7 @@
                                     <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
                                 </svg>
                                 <p>
-                                    <time class="topic-time timeago" title="28-07-2025 17:52:02" datetime="2025-07-28T17:52:02+07:00"></time>                                </p>
+                                    <time class="topic-time timeago" title="27-09-2025 22:27:38" datetime="2025-09-27T22:27:38+07:00"></time>                                </p>
                             </div>
                         </div>
                     </div>
@@ -726,17 +707,16 @@
                                                 
                                                 <a href="/truyen/3151-the-lord-of-the-mysteries/c79318-chuong-15-khoa-trinh-than-bi-hoc" title="Chương 10: Vị Trí Cuốn Sổ">Chương 10: Vị Trí Cuốn Sổ</a>
 
-                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
                                                                                             </div>
                                             <div class="chapter-time">01/06/2021</div>
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
                                                 
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
                                                 <a href="/truyen/3151-the-lord-of-the-mysteries/c79319-chuong-16-nhiem-vu" title="Chương 11: Ca Ngợi Nữ Thần">Chương 11: Ca Ngợi Nữ Thần</a>
 
-                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
                                                                                             </div>
                                             <div class="chapter-time">01/06/2021</div>
                                         </li>
@@ -746,13 +726,13 @@
                                                 
                                                 <a href="/truyen/3151-the-lord-of-the-mysteries/c79320-chuong-17-chan-dung-ray-bieber" title="Chương 12: Không Thuộc Về Thời Đại Này…">Chương 12: Không Thuộc Về Thời Đại Này…</a>
 
-                                                                                                <small class="unfinished-status">Chưa hoàn thành</small>
                                                                                             </div>
                                             <div class="chapter-time">01/06/2021</div>
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
                                                 
+                                                                                                <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
                                                 <a href="/truyen/3151-the-lord-of-the-mysteries/c79321-chuong-18-nghi-le-ma-thuat-dac-biet" title="Chương 13: Chân Tướng Trên Tàu Alfalfa">Chương 13: Chân Tướng Trên Tàu Alfalfa</a>
 
@@ -794,7 +774,7 @@
                     <header id="volume_12904" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 02 - Tên Hề
+                            Tập 02 - Tên Hề (2)《Quảng Đông》
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -803,7 +783,7 @@
                                 <div class="volume-cover">
                                     <a href="/truyen/3151-the-lord-of-the-mysteries/t12904-thong-tin-chung-ve-tlomqbcc">
                                         <div class="a6-ratio">
-                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/books/covers/s12904-4c007d2e-2d26-476b-bfd9-37fd934c5f55.jpg')">
+                                            <div class="content img-in-ratio" style="background-image: url('https://i.hako.vn/ln/books/covers/s12904-f4dba720-a1aa-449b-bd0f-24344bb24f2b.jpg')">
                                             </div>
                                         </div>
                                     </a>
@@ -987,7 +967,7 @@
                     <header id="volume_12945" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 03 - Tên Hề
+                            Tập 03 - Tên Hề (3)《Quảng Đông》
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1198,7 +1178,7 @@
                     <header id="volume_14049" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 04 - Người Không Mặt
+                            Tập 04 - Người Không Mặt (1)《Kadokawa》 <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1251,6 +1231,18 @@
 
                                                                                             </div>
                                             <div class="chapter-time">16/05/2025</div>
+                                        </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/3151-the-lord-of-the-mysteries/c264666-chuong-04" title="Chương 04: Xâm Nhập">Chương 04: Xâm Nhập</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">25/11/2025</div>
                                         </li>
                                                                                                         </ul>
                             </div>
@@ -1339,7 +1331,7 @@
                     <header id="volume_27411" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Ngoại Truyện <span style="color: red">*</span>
+                            Ngoại Truyện
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1367,9 +1359,6 @@
                                         </li>
                                                                             <li class="">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/3151-the-lord-of-the-mysteries/c214879-thieu-nien-noi-loan" title="Thiếu Niên Nổi Loạn">Thiếu Niên Nổi Loạn</a>
@@ -1395,7 +1384,7 @@
                     <header id="volume_30782" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Minh Họa <span style="color: red">*</span>
+                            Minh Họa
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1474,9 +1463,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                                                                 <i class="fas fa-image" aria-hidden="true" title="Có chứa ảnh"></i>
                                                 
@@ -1498,7 +1484,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:3151,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;BABS83OG6umsQFA8X96l&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/3151-the-lord-of-the-mysteries&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d123c62f4e8e2a9fdae56608edfc831218ab8f814c932c79dbd03037c5aa1fd2&quot;}" wire:effects="[]" wire:id="BABS83OG6umsQFA8X96l" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:3151,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;tlZcBiQusAxxAuDKmlhh&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/3151-the-lord-of-the-mysteries&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;c2fdb7085c073336b849450e7f0bc5cd3b003a9055e71a3b4eae836fdeae9cc1&quot;}" wire:effects="[]" wire:id="tlZcBiQusAxxAuDKmlhh" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1517,14 +1503,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(2434)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(2549)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">1383 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">1417 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -1732,16 +1718,16 @@
     </div>        
         
         <div class="ln-comment-group">
-    <div id="ln-comment-2982795"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2982795" 
-    data-parent="2982795" 
-    data-type="chapter" 
-    data-typeid="214912">
+    <div id="ln-comment-3101548"
+    class="ln-comment-item mt-3 clear deleted disabled"
+    data-comment="3101548" 
+    data-parent="3101548" 
+    data-type="series" 
+    data-typeid="3151">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u180462-7cb82cd0-97dc-4243-9009-634ef6a60c7e.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u172035-628afd36-33ce-440f-901d-7e6c600bc216.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1750,23 +1736,74 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180462">Cáo phù thủy</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/172035">yuiebg</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c214912-ho-so-chua-sang-the-dich-thuc-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Chúa Sáng Tạo Đích Thực (bản khiếm khuyết)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Medici có đáng tin không trời?
+                        Bình luận đã bị xóa bởi Hắc Nhật Thiên Chương
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3102056"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3102056" 
+    data-parent="3101548" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://1.bp.blogspot.com/-HzA_o1W0Hwc/XBkbuhZ1ZsI/AAAAAAAB71k/y-W50yNuHkU-HL9oQqNbMWvbXXH7i37NwCHMYCw/w100/default.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/17587">Langtudien13</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner2.png" />
+                    <div class="leading-4">PHÓ THỚT</div>
+                </div>
+            </div>
+                                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#1aadf9]/50 dark:bg-[#0d5980]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#0d5980] dark:text-[#8ac4e0]">
+                <img class="my-auto h-[14px]" src="/img/badge/author3.png" />
+                <div class="leading-4">AUTHOR</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+        </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Cái bản đó thì tham khảo được gì vậy? @@?!
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2982795#ln-comment-2982795"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3101548&amp;reply_id=3102056#ln-comment-3102056"
                             class="text-slate-500">
-                            <time class="timeago" title="16-08-2025 05:52:32"
-                                datetime="2025-08-16T05:52:32+07:00">
-                                16-08-2025 05:52:32
+                            <time class="timeago" title="25-11-2025 10:46:43"
+                                datetime="2025-11-25T10:46:43+07:00">
+                                25-11-2025 10:46:43
                             </time>
                         </a>
                         <a
@@ -1779,14 +1816,12 @@
         </div>
     </div>
 </div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2983185"
+            <div id="ln-comment-3102070"
     class="ln-comment-item mt-3 clear"
-    data-comment="2983185" 
-    data-parent="2982795" 
-    data-type="chapter" 
-    data-typeid="214912">
+    data-comment="3102070" 
+    data-parent="3101548" 
+    data-type="series" 
+    data-typeid="3151">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -1825,65 +1860,16 @@
     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c214912-ho-so-chua-sang-the-dich-thuc-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Chúa Sáng Tạo Đích Thực (bản khiếm khuyết)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Giấu tên tuồn tin thì độ đáng tin cao đấy :))
+                        Tôi có phải thiểu năng trí tuệ đâu mà đi tham khảo từ một cái bản có thể xem là "trộm cắp" (tự ý tổng hợp thành tập hợp mà không xin pre cre của bns, daoquan...) và rất nhiều chương có thể nói thẳng ra là "edit từ convert", "edit từ google dịch", chưa kể đến xưng hô loạn xạ ngầu hở bạn? Dịch tốt hơn? Ha!
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2982795&amp;reply_id=2983185#ln-comment-2983185"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3101548&amp;reply_id=3102070#ln-comment-3102070"
                             class="text-slate-500">
-                            <time class="timeago" title="16-08-2025 14:25:36"
-                                datetime="2025-08-16T14:25:36+07:00">
-                                16-08-2025 14:25:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold">1</span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2983196"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2983196" 
-    data-parent="2982795" 
-    data-type="chapter" 
-    data-typeid="214912">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u180462-7cb82cd0-97dc-4243-9009-634ef6a60c7e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/180462">Cáo phù thủy</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c214912-ho-so-chua-sang-the-dich-thuc-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Chúa Sáng Tạo Đích Thực (bản khiếm khuyết)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/3415">@Hắc Nhật Thiên Chương:</a> vầy là mình có thể cúng thuốc lá thay máu thịt được ko?
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2982795&amp;reply_id=2983196#ln-comment-2983196"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-08-2025 14:32:46"
-                                datetime="2025-08-16T14:32:46+07:00">
-                                16-08-2025 14:32:46
+                            <time class="timeago" title="25-11-2025 11:06:22"
+                                datetime="2025-11-25T11:06:22+07:00">
+                                25-11-2025 11:06:22
                             </time>
                         </a>
                         <a
@@ -1897,24 +1883,20 @@
     </div>
 </div>
     
-                <div class="fetch_reply" data-parent="2982795">
-            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
-        </div>
-        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
                 
     </div>
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2978380"
+    <div id="ln-comment-3100200"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978380" 
-    data-parent="2978380" 
+    data-comment="3100200" 
+    data-parent="3100200" 
     data-type="chapter" 
-    data-typeid="198131">
+    data-typeid="190457">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u228395-79afd667-4e3f-41c8-9bd9-4a014629b8f9.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1923,23 +1905,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/228395">SirMomoki</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c198131-ho-so-bernadette-gustav-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Bernadette Gustav (bản khiếm khuyết)</a></span>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c190457-ho-so-klein-moretti-ban-khiem-khuyet"
+                        class="text-slate-500 inline-block">Hồ Sơ: Klein Moretti (bản khiếm khuyết)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Con gái đại đế đây hả
+                        trông Klein minh họa khác hơn hẳn bản donghua, Ca ngợi Kẻ Khờ! 🙌
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978380#ln-comment-2978380"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3100200#ln-comment-3100200"
                             class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:50:12"
-                                datetime="2025-08-13T10:50:12+07:00">
-                                13-08-2025 10:50:12
+                            <time class="timeago" title="23-11-2025 17:37:23"
+                                datetime="2025-11-23T17:37:23+07:00">
+                                23-11-2025 17:37:23
                             </time>
                         </a>
                         <a
@@ -1955,179 +1937,12 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2978378"
+    <div id="ln-comment-3083828"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978378" 
-    data-parent="2978378" 
-    data-type="chapter" 
-    data-typeid="195192">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c195192-ho-so-azik-eggers-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Azik Eggers (bản khiếm khuyết)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Tem
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978378#ln-comment-2978378"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:49:19"
-                                datetime="2025-08-13T10:49:19+07:00">
-                                13-08-2025 10:49:19
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2978375"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2978375" 
-    data-parent="2978375" 
-    data-type="chapter" 
-    data-typeid="193744">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c193744-ho-so-amon-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Amon (bản khiếm khuyết)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Cái <s><strong>thiên sứ mang thai</strong></s> là sao zậy
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978375#ln-comment-2978375"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:48:57"
-                                datetime="2025-08-13T10:48:57+07:00">
-                                13-08-2025 10:48:57
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-2978416"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2978416" 
-    data-parent="2978375" 
-    data-type="chapter" 
-    data-typeid="193744">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u3415-5552281e-9f0f-49ac-9289-3fc66f4197fd.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/3415">Hắc Nhật Thiên Chương</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-                <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
-                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
-                <div class="leading-4">AI MASTER</div>
-            </div>
-        </div>
-    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c193744-ho-so-amon-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Amon (bản khiếm khuyết)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Là vị thiên sứ từng thực sự mang thai (canon trong truyện).
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978375&amp;reply_id=2978416#ln-comment-2978416"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 11:18:16"
-                                datetime="2025-08-13T11:18:16+07:00">
-                                13-08-2025 11:18:16
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-            <div id="ln-comment-2982796"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2982796" 
-    data-parent="2978375" 
-    data-type="chapter" 
-    data-typeid="193744">
+    data-comment="3083828" 
+    data-parent="3083828" 
+    data-type="series" 
+    data-typeid="3151">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
@@ -2140,23 +1955,595 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149726">Thích đế vô tình</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205957">Một con cua bự</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c193744-ho-so-amon-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Amon (bản khiếm khuyết)</a></span>
                                                     <div class="ln-comment-content long-text">
-                        <a href="/thanh-vien/3415">@Hắc Nhật Thiên Chương:</a> vẫn chưa có chính truyện sao, chủ thớt
+                        Ngày nào cũng vào check xem có chương mới chưa 😿
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978375&amp;reply_id=2982796#ln-comment-2982796"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3083828#ln-comment-3083828"
                             class="text-slate-500">
-                            <time class="timeago" title="16-08-2025 05:55:26"
-                                datetime="2025-08-16T05:55:26+07:00">
-                                16-08-2025 05:55:26
+                            <time class="timeago" title="09-11-2025 00:13:49"
+                                datetime="2025-11-09T00:13:49+07:00">
+                                09-11-2025 00:13:49
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3072047"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3072047" 
+    data-parent="3072047" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/227432">tuananh2che</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        bộ này k dịch nữa à ad ?
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3072047#ln-comment-3072047"
+                            class="text-slate-500">
+                            <time class="timeago" title="28-10-2025 23:38:23"
+                                datetime="2025-10-28T23:38:23+07:00">
+                                28-10-2025 23:38:23
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3076023"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3076023" 
+    data-parent="3072047" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Trans chắc đi nghĩ dưỡng với chuẩn bị một tâm hồn đẹp để chuẩn bị đánh úp đấy, chứ k phải drop đâu :&gt;
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3072047&amp;reply_id=3076023#ln-comment-3076023"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-11-2025 20:55:45"
+                                datetime="2025-11-01T20:55:45+07:00">
+                                01-11-2025 20:55:45
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-3090948"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3090948" 
+    data-parent="3072047" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/18589">AKLong</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Có nhà sách mua bản quyền và phát hành tại VN rồi, dịch nữa có khả năng là bị dính các vấn đề pháp lý..mình nghĩ vậy, dịch giả đính comment lên đầu bài rồi đó. Tự hiểu hè
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3072047&amp;reply_id=3090948#ln-comment-3090948"
+                            class="text-slate-500">
+                            <time class="timeago" title="15-11-2025 09:02:19"
+                                datetime="2025-11-15T09:02:19+07:00">
+                                15-11-2025 09:02:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="3072047">
+            Xem thêm 1 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3050834"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3050834" 
+    data-parent="3050834" 
+    data-type="chapter" 
+    data-typeid="97079">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c97079-chuong-06-cong-thuc-ke-doc-tam"
+                        class="text-slate-500 inline-block">Chương 06, Công Thức &quot;Kẻ Đọc Tâm&quot;</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Đoạn 219, mình không nghĩ là linh mục có thể được gọi là "đức cha". Đức cha thường được sử dụng để gọi giám mục. Linh mục thì chỉ được gọi là "cha xứ" hay đơn giản là "cha" mà thôi.
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3050834#ln-comment-3050834"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-10-2025 19:44:32"
+                                datetime="2025-10-08T19:44:32+07:00">
+                                08-10-2025 19:44:32
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3050070"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3050070" 
+    data-parent="3050070" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u221765-c779dd54-e1fe-4603-a75e-e43cfda1db0e.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/221765">NDK260410</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Kèo này là sửa hết từ đầu đến tập 4 rồi dịch tiếp đk ad?
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3050070#ln-comment-3050070"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-10-2025 22:48:51"
+                                datetime="2025-10-07T22:48:51+07:00">
+                                07-10-2025 22:48:51
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3051785"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3051785" 
+    data-parent="3050070" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u3415-5552281e-9f0f-49ac-9289-3fc66f4197fd.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/3415">Hắc Nhật Thiên Chương</a>
+    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Tớ hiện còn lưu đến chương 9 quyển 4, đang giao chương 10 đến chương 15 quyển 4 cho bạn <a href="../thanh-vien/220395">QiaoYing</a> thực hiện. Trong thời gian không có máy này thì tớ sẽ mài lại chương 12 đến 15 quyển 1 nhé.
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3050070&amp;reply_id=3051785#ln-comment-3051785"
+                            class="text-slate-500">
+                            <time class="timeago" title="09-10-2025 18:11:47"
+                                datetime="2025-10-09T18:11:47+07:00">
+                                09-10-2025 18:11:47
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold">3</span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3049597"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3049597" 
+    data-parent="3049597" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua77233-c9ddf2b1-068e-4135-87f2-caef6fba3caa.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/77233">Lưu Nhật Tiến</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        Ad dịch sắp xong chưa ad iu
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3049597#ln-comment-3049597"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-10-2025 16:08:13"
+                                datetime="2025-10-07T16:08:13+07:00">
+                                07-10-2025 16:08:13
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3049611"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3049611" 
+    data-parent="3049597" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u189230-8fe2ef95-5537-441c-8335-f8bd310c8d05.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/189230">Mr.Σrr0r</a>
+    </div>
+                                        <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="14989-nguoi-choi-ai-cung-tuong-toi-la-ta-than?comment_id=3037919#ln-comment-3037919">/truyen/14989-nguoi-choi-ai-cung-tuong-toi-la-ta-than?comment_id=3037919#ln-comment-3037919</a><br>
+chắc kèo là đang méo ổn r... tội trans vl
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3049597&amp;reply_id=3049611#ln-comment-3049611"
+                            class="text-slate-500">
+                            <time class="timeago" title="07-10-2025 16:29:39"
+                                datetime="2025-10-07T16:29:39+07:00">
+                                07-10-2025 16:29:39
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div id="ln-comment-3050181"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3050181" 
+    data-parent="3049597" 
+    data-type="series" 
+    data-typeid="3151">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.docln.net/lightnovel/users/ua77233-c9ddf2b1-068e-4135-87f2-caef6fba3caa.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/77233">Lưu Nhật Tiến</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        <a href="/thanh-vien/189230">@everyone's Amon:</a> máy của ống bị hư bộ phận j v ;-;<br>
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3049597&amp;reply_id=3050181#ln-comment-3050181"
+                            class="text-slate-500">
+                            <time class="timeago" title="08-10-2025 00:23:10"
+                                datetime="2025-10-08T00:23:10+07:00">
+                                08-10-2025 00:23:10
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+                <div class="fetch_reply" data-parent="3049597">
+            Xem thêm 3 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3046752"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3046752" 
+    data-parent="3046752" 
+    data-type="chapter" 
+    data-typeid="95992">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c95992-chuong-02-tin-tuc-va-cong-thuc"
+                        class="text-slate-500 inline-block">Chương 02, Tin Tức Và Công Thức</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Đoạn 217, đúng ra phải là lời thoại của Alger:<br>「“Không có câu trả lời nào tốt hơn câu trả lời này đâu. Cho dù cô thành công hay không, chỉ cần thử tìm kiếm thì tôi sẽ thanh toán cho cô một khoản thù lao nhất định, chẳng hạn như một số tri thức hoặc thông tin bí ẩn. Nếu cô thành công, có lẽ tôi sẽ trực tiếp cung cấp cho cô nguyên liệu chính của ‘Kẻ Đọc Tâm’. Tất nhiên, tiền đề là chúng ta biết về nó.” Audrey hứa hẹn với sự hào phóng hiếm thấy.」<br><br>Đoạn 220. Qi Langos mắt xanh lục nhưng qua chương 4 lại thành xanh lam.
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3046752#ln-comment-3046752"
+                            class="text-slate-500">
+                            <time class="timeago" title="04-10-2025 22:25:22"
+                                datetime="2025-10-04T22:25:22+07:00">
+                                04-10-2025 22:25:22
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3055875"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3055875" 
+    data-parent="3046752" 
+    data-type="chapter" 
+    data-typeid="95992">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/223742">scooby scooby doo</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c95992-chuong-02-tin-tuc-va-cong-thuc"
+                        class="text-slate-500 inline-block">Chương 02, Tin Tức Và Công Thức</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        8 ngày r mà ad còn ch fix nx😭
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3046752&amp;reply_id=3055875#ln-comment-3055875"
+                            class="text-slate-500">
+                            <time class="timeago" title="13-10-2025 00:06:00"
+                                datetime="2025-10-13T00:06:00+07:00">
+                                13-10-2025 00:06:00
                             </time>
                         </a>
                         <a
@@ -2174,16 +2561,16 @@
     </div>
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2978372"
+    <div id="ln-comment-3046047"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978372" 
-    data-parent="2978372" 
+    data-comment="3046047" 
+    data-parent="3046047" 
     data-type="chapter" 
-    data-typeid="190457">
+    data-typeid="96304">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2192,23 +2579,24 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c190457-ho-so-klein-moretti-ban-khiem-khuyet"
-                        class="text-slate-500 inline-block">Hồ Sơ: Klein Moretti (bản khiếm khuyết)</a></span>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c96304-chuong-04-chuyen-tham-hiem-lau-dai-co-lan-hai"
+                        class="text-slate-500 inline-block">Chương 04, Chuyến Thám Hiểm Lâu Đài Cổ Lần Hai</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Sú phết
+                        Đoạn 224: 「“Tóc nâu, mắt xanh lam đậm. Bức chân dung chỉ mang tính chất tham khảo vì mục tiêu có khả năng biến thành người khác. Thời gian duy trì biến hình không xác định.」<br><br>Mắt Qi Langos màu xanh lục chứ nhỉ:<br>「“棕发，墨绿色眼眸。”<br>
+“肖像画只做参考，因为目标拥有变形成他人模样的能力，持续时间未知。”」<br><br>
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978372#ln-comment-2978372"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3046047#ln-comment-3046047"
                             class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:47:23"
-                                datetime="2025-08-13T10:47:23+07:00">
-                                13-08-2025 10:47:23
+                            <time class="timeago" title="04-10-2025 10:40:57"
+                                datetime="2025-10-04T10:40:57+07:00">
+                                04-10-2025 10:40:57
                             </time>
                         </a>
                         <a
@@ -2222,18 +2610,17 @@
     </div>
 </div>
 
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2978371"
+        <div class="ln-comment-reply">
+            <div id="ln-comment-3046726"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978371" 
-    data-parent="2978371" 
+    data-comment="3046726" 
+    data-parent="3046047" 
     data-type="chapter" 
-    data-typeid="152873">
+    data-typeid="96304">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u3415-5552281e-9f0f-49ac-9289-3fc66f4197fd.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2242,23 +2629,44 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/3415">Hắc Nhật Thiên Chương</a>
     </div>
-                                    </div>
+                        <div class="self-center">
+                <div
+                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
+                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
+                    <div class="leading-4">CHỦ THỚT</div>
+                </div>
+            </div>
+                                    <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
+                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
+                <div class="leading-4">TRANS</div>
+            </div>
+        </div>
+                <div class="self-center">
+            <div
+                class="flex gap-1 rounded-sm bg-[#e3953e]/50 dark:bg-[#9c662a]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#9c662a] dark:text-[#ecd8c2]">
+                <img class="my-auto h-[14px]" src="/img/badge/cvter2.png" />
+                <div class="leading-4">AI MASTER</div>
+            </div>
+        </div>
+    </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c152873-ngoai-truyen-2-mot-ngay-trong-nam-1349"
-                        class="text-slate-500 inline-block">Một Ngày Trong Năm 1349</a></span>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c96304-chuong-04-chuyen-tham-hiem-lau-dai-co-lan-hai"
+                        class="text-slate-500 inline-block">Chương 04, Chuyến Thám Hiểm Lâu Đài Cổ Lần Hai</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tks
+                        Trong bản Quảng Đông thì chỗ này là: 深蓝色眼眸.
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978371#ln-comment-2978371"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3046047&amp;reply_id=3046726#ln-comment-3046726"
                             class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:46:18"
-                                datetime="2025-08-13T10:46:18+07:00">
-                                13-08-2025 10:46:18
+                            <time class="timeago" title="04-10-2025 22:05:27"
+                                datetime="2025-10-04T22:05:27+07:00">
+                                04-10-2025 22:05:27
                             </time>
                         </a>
                         <a
@@ -2271,19 +2679,16 @@
         </div>
     </div>
 </div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2978368"
+            <div id="ln-comment-3046744"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978368" 
-    data-parent="2978368" 
+    data-comment="3046744" 
+    data-parent="3046047" 
     data-type="chapter" 
-    data-typeid="152873">
+    data-typeid="96304">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2292,23 +2697,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c152873-ngoai-truyen-2-mot-ngay-trong-nam-1349"
-                        class="text-slate-500 inline-block">Một Ngày Trong Năm 1349</a></span>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c96304-chuong-04-chuyen-tham-hiem-lau-dai-co-lan-hai"
+                        class="text-slate-500 inline-block">Chương 04, Chuyến Thám Hiểm Lâu Đài Cổ Lần Hai</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tks
+                        khả năng rất cao là gõ sai. Chương này hoặc ở <a href="c95992-chuong-02-tin-tuc-va-cong-thuc">Chương 02, Tin Tức Và Công Thức</a> đoạn 220:<br>「Qi Langos, một trong bảy tướng quân hải tặc có một chiếc cằm rộng đặc biệt, mái tóc nâu được buộc thành búi như võ sĩ cổ đại, đôi mắt xanh lục biết cười dường như lạnh lùng một cách bất thường.」<br>1 chỗ mắt lục, 1 chỗ mắt lam
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978368#ln-comment-2978368"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3046047&amp;reply_id=3046744#ln-comment-3046744"
                             class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:46:05"
-                                datetime="2025-08-13T10:46:05+07:00">
-                                13-08-2025 10:46:05
+                            <time class="timeago" title="04-10-2025 22:19:59"
+                                datetime="2025-10-04T22:19:59+07:00">
+                                04-10-2025 22:19:59
                             </time>
                         </a>
                         <a
@@ -2321,19 +2726,25 @@
         </div>
     </div>
 </div>
-
+    
+                <div class="fetch_reply" data-parent="3046047">
+            Xem thêm 2 trả lời <i class="fas fa-chevron-down" style="margin-left: 4px;"></i>
+        </div>
+        <img class="loading" src="/img/loading.svg" style="width: auto; height: 15px; margin-left: 10px; display: none">
+                
+    </div>
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-2978362"
+    <div id="ln-comment-3045969"
     class="ln-comment-item mt-3 clear"
-    data-comment="2978362" 
-    data-parent="2978362" 
+    data-comment="3045969" 
+    data-parent="3045969" 
     data-type="chapter" 
-    data-typeid="170651">
+    data-typeid="96304">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u224146-1e71a14a-b036-471b-8ab8-c9f082008042.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2342,123 +2753,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/224146">Thiên Ngự Nguyên</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c170651-chuong-03-ke-chu-muu"
-                        class="text-slate-500 inline-block">Chương 03: Kẻ Chủ Mưu</a></span>
+                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c96304-chuong-04-chuyen-tham-hiem-lau-dai-co-lan-hai"
+                        class="text-slate-500 inline-block">Chương 04, Chuyến Thám Hiểm Lâu Đài Cổ Lần Hai</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tks
+                        Có Spoil!<br><em>  <br> <br>  <br>  <br>  <br>  <br>  <br>   <br> </em><br><br>Ở đoạn 165, miêu tả biểu tượng của Quỷ Bí Chi Chủ: 「Chúng đến từ những biểu tượng kỳ lạ đằng sau ghế — “con mắt không tròng" tượng trưng cho bí ẩn và “sợi dây vặn vẹo” mang ý nghĩa về sự biến hóa.」<br>Nguyên văn: 「这来自于对应高背椅后的古怪符号——由象征隐秘的部分“无瞳之眼”和象征变化的部分“扭曲之线”构成的古怪符号。」<br>Mình nghĩ nên dịch là "sợi dây vặn xoắn" thay vì "vặn vẹo" vì theo ảnh minh hoạ thì nó đan xen theo đường thẳng chứ không rẽ ngang rẽ dọc.
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978362#ln-comment-2978362"
+                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=3045969#ln-comment-3045969"
                             class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:43:55"
-                                datetime="2025-08-13T10:43:55+07:00">
-                                13-08-2025 10:43:55
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2978347"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2978347" 
-    data-parent="2978347" 
-    data-type="chapter" 
-    data-typeid="168221">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c168221-chuong-02-tham-tu-huyen-hoc"
-                        class="text-slate-500 inline-block">Chương 02: Thám Tử Huyền Học</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Tks
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978347#ln-comment-2978347"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:29:42"
-                                datetime="2025-08-13T10:29:42+07:00">
-                                13-08-2025 10:29:42
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-2978339"
-    class="ln-comment-item mt-3 clear"
-    data-comment="2978339" 
-    data-parent="2978339" 
-    data-type="chapter" 
-    data-typeid="164701">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u175847-63c0b2c1-6473-4477-a24b-857e01e17710.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/175847">warpugis</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/3151-the-lord-of-the-mysteries/c164701-chuong-01-vung-dat-hy-vong"
-                        class="text-slate-500 inline-block">Chương 01: Vùng Đất Hy Vọng</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Tem
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/3151-the-lord-of-the-mysteries?comment_id=2978339#ln-comment-2978339"
-                            class="text-slate-500">
-                            <time class="timeago" title="13-08-2025 10:17:06"
-                                datetime="2025-08-13T10:17:06+07:00">
-                                13-08-2025 10:17:06
+                            <time class="timeago" title="04-10-2025 08:40:01"
+                                datetime="2025-10-04T08:40:01+07:00">
+                                04-10-2025 08:40:01
                             </time>
                         </a>
                         <a
@@ -2485,7 +2796,7 @@
 </div>    </main>
 
     <script>
-        var token = 'tedauwpPeKYItvIDXA27ZAgMqX9Z9UZw4URUTQ7i';
+        var token = '2Rru0dKF6wWFaCNVTf1AIenPHYyxKOAz24WY5GbN';
         var comment_type = 'series';
         var comment_typeid = '3151';
     </script>
@@ -2530,13 +2841,13 @@
 
 
     
-    <script src="/scripts/service-manager.js?r=3"></script>
+    <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="n4oUb97ryeIN0GSUQr0vOPEZ6Icc44rj9lE9lOsS" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="2Rru0dKF6wWFaCNVTf1AIenPHYyxKOAz24WY5GbN" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//expensiveadoptionevent.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
 
         
             <footer id="footer">
