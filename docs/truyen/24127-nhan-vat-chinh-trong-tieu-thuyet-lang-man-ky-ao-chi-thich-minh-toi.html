@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="aMao1yuF67Du6aV1T1ss85PjdkQWaaX3fLP71VqP">
+    <meta name="csrf-token" content="tpyA8jzqpw5TquJDecsSrqeIf6CSLg2Q9eQsZHkP">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -159,9 +159,12 @@
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -173,16 +176,7 @@
                     <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
                 </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -321,11 +315,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="10/12/2025 05:34:04" datetime="2025-12-10T05:34:04+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="10/12/2025 20:06:23" datetime="2025-12-10T20:06:23+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">272.811</div>
+                                            <div class="statistic-value">275.874</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -334,7 +328,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">111.198</div>
+                                            <div class="statistic-value">111.402</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1788,7 +1782,7 @@
                     <header id="volume_34777" class="sect-header">
                                                 <span class="mobile-icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="sect-title">
-                            Tập 3
+                            Tập 3 <span style="color: red">*</span>
                         </span>
                     </header>
                     <main class="d-lg-block">
@@ -1823,6 +1817,18 @@
                                                                                             </div>
                                             <div class="chapter-time">01/12/2025</div>
                                         </li>
+                                                                            <li class="">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi/c271874-107-thien-kim-marigold-3" title="107. Thiên kim Marigold. (3)">107. Thiên kim Marigold. (3)</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">10/12/2025</div>
+                                        </li>
                                                                                                         </ul>
                             </div>
                         </div>
@@ -1831,7 +1837,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:24127,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;cZHjswZNQxVxwpOc6JFJ&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;9f29971dc2131626d842d9b0fd8fbacc357d172711af9c560a47a530033e3379&quot;}" wire:effects="[]" wire:id="cZHjswZNQxVxwpOc6JFJ" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:24127,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;rUlvzGXlW4c4P7UhGdJP&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;6b8a5ad1f9ce91ae527e284c605123ad8d4e1047abf3e2dad25b823597d308d7&quot;}" wire:effects="[]" wire:id="rUlvzGXlW4c4P7UhGdJP" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1850,7 +1856,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(726)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(727)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1869,6 +1875,56 @@
         
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3120424"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3120424" 
+    data-parent="3120424" 
+    data-type="chapter" 
+    data-typeid="271874">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u141741-e85c05be-9167-45aa-a009-5b621746dd3f.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/141741">Thuonglabi</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi/c271874-107-thien-kim-marigold-3"
+                        class="text-slate-500 inline-block">107. Thiên kim Marigold. (3)</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tfnc
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi?comment_id=3120424#ln-comment-3120424"
+                            class="text-slate-500">
+                            <time class="timeago" title="10-12-2025 20:21:19"
+                                datetime="2025-12-10T20:21:19+07:00">
+                                10-12-2025 20:21:19
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-3120282"
     class="ln-comment-item mt-3 clear"
     data-comment="3120282" 
@@ -2130,7 +2186,7 @@ Mấy vòng lặp gần đây happy ending mà vẫn k phá đảo dc
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2180,7 +2236,7 @@ Mấy vòng lặp gần đây happy ending mà vẫn k phá đảo dc
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -2370,69 +2426,19 @@ Mấy vòng lặp gần đây happy ending mà vẫn k phá đảo dc
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3119938"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3119938" 
-    data-parent="3119938" 
-    data-type="chapter" 
-    data-typeid="271567">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u79041-f155c8f9-baa6-4612-a4fb-565f388bba31.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/79041">minhnhatlun2</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi/c271567-104-dao-tac-marigold-13"
-                        class="text-slate-500 inline-block">104. Đạo tặc Marigold. (13)</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Lần này ko báo to à ;))) ảo thật đấy
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi?comment_id=3119938#ln-comment-3119938"
-                            class="text-slate-500">
-                            <time class="timeago" title="10-12-2025 11:46:52"
-                                datetime="2025-12-10T11:46:52+07:00">
-                                10-12-2025 11:46:52
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
         <div class="pagination_wrap">
             <a href="" class="paging_item paging_prevnext prev  disabled ">Trước</a>
 
-                            <a href="https://docln.sbs/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi?page=2" class="paging_item paging_prevnext next">Sau</a>
+                            <a href="https://docln.net/truyen/24127-nhan-vat-chinh-trong-tieu-thuyet-lang-man-ky-ao-chi-thich-minh-toi?page=2" class="paging_item paging_prevnext next">Sau</a>
                     </div>
     </div>
 </div>    </main>
 
     <script>
-        var token = 'bVBbEH5RP8F3Alppc2z3xMVEArl6l9d2a5LhR8JH';
+        var token = '0F9zv239gKzMPXSn4iNrtZNKzw5DYdElUF6j2Dtt';
         var comment_type = 'series';
         var comment_typeid = '24127';
     </script>
@@ -2480,7 +2486,7 @@ Mấy vòng lặp gần đây happy ending mà vẫn k phá đảo dc
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="aMao1yuF67Du6aV1T1ss85PjdkQWaaX3fLP71VqP" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="tpyA8jzqpw5TquJDecsSrqeIf6CSLg2Q9eQsZHkP" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
     <script
