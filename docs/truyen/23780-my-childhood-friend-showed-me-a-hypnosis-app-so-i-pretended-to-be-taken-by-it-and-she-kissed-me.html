@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="AJvDnG6DA8d4MWjGLGRaa8YR3p3Y7KSUxLRh3V5y">
+    <meta name="csrf-token" content="mmipWAhx1Eim9kBMzAGJiHHph7wLjvcLqmjV4BV9">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=9128bdee617e5eb876ffd418ed3597bf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -84,7 +84,7 @@
             </div>
 
             <div class="navbar-logo-wrapper">
-                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-9.png')" title="Trang chủ"></a>
+                <a href="/" class="navbar-logo" style="background-image: url('/img/logo-xmas-2025.png')" title="Trang chủ"></a>
             </div>
              
             <div id="navbar-user" class="guest">						
@@ -159,9 +159,12 @@
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -173,16 +176,7 @@
                     <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
                 </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -258,7 +252,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 205 </span>
+                                                <span class="block feature-name"> 212 </span>
                                             </a>
                                                                                         </div>
 
@@ -308,11 +302,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="07/11/2025 15:07:54" datetime="2025-11-07T15:07:54+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="13/12/2025 16:23:23" datetime="2025-12-13T16:23:23+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">18.056</div>
+                                            <div class="statistic-value">18.919</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -321,7 +315,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">28.765</div>
+                                            <div class="statistic-value">32.733</div>
                                         </div>
                                     </div>
                                 </div>
@@ -602,9 +596,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c255293-chuong-19-cai-viec-nay-lai-viec-no" title="Chương 19 Cái việc này lại việc nọ">Chương 19 Cái việc này lại việc nọ</a>
@@ -612,9 +603,21 @@
                                                                                             </div>
                                             <div class="chapter-time">07/11/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c273002-chuong-20-quai-vat-khong-dung-lai" title="Chương 20 Quái vật không dừng lại">Chương 20 Quái vật không dừng lại</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">13/12/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (14 chương)</span>
+                                            <span>Xem tiếp (15 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -625,7 +628,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:23780,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;vd7AL2TA5MMNPSdY3GUY&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;f518578dbb978ac6051ae9454044efe0cbf9005078ba595bad6a5f5e63949e27&quot;}" wire:effects="[]" wire:id="vd7AL2TA5MMNPSdY3GUY" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:23780,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;vG11TxHE2YlsoUDNjKpH&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;cd6801ab59db1c63911ed7bae4dcf3b52737ec5045d88ae6214a52662ac47971&quot;}" wire:effects="[]" wire:id="vG11TxHE2YlsoUDNjKpH" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -644,14 +647,14 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(173)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(183)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
                         <div id="tab-content-1" class="tab-content clear">
                             <section class="ln-comment">
     <header>
-        <h3 class="text-lg font-bold dark:text-white">31 Bình luận </h3>
+        <h3 class="text-lg font-bold dark:text-white">33 Bình luận </h3>
         <!-- <i id="refresh_comment" class="fas fa-refresh" aria-hidden="true" style="margin-left: 10px; font-size: 18px"></i></h3> -->
             </header>
 
@@ -773,6 +776,454 @@
     </div>        
         
         <div class="ln-comment-group">
+    <div id="ln-comment-3114682"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3114682" 
+    data-parent="3114682" 
+    data-type="chapter" 
+    data-typeid="246945">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246945-chuong-07-tay-nao-bang-nguc"
+                        class="text-slate-500 inline-block">Chương 07 Tẩy não bằng ngực</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Tà đạo quá
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3114682#ln-comment-3114682"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-12-2025 23:18:40"
+                                datetime="2025-12-05T23:18:40+07:00">
+                                05-12-2025 23:18:40
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3114666"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3114666" 
+    data-parent="3114666" 
+    data-type="chapter" 
+    data-typeid="246862">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/186846">Boy#</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246862-chuong-03-qua-quat"
+                        class="text-slate-500 inline-block">Chương 03 Quá quắt</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Baotandu
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3114666#ln-comment-3114666"
+                            class="text-slate-500">
+                            <time class="timeago" title="05-12-2025 23:10:43"
+                                datetime="2025-12-05T23:10:43+07:00">
+                                05-12-2025 23:10:43
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3110071"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3110071" 
+    data-parent="3110071" 
+    data-type="chapter" 
+    data-typeid="250055">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u126662-ad5d3ff0-1cc2-4469-9429-e5c7fcb4ff7c.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/126662">Cày bừa</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c250055-chuong-18-thuc-tinh"
+                        class="text-slate-500 inline-block">Chương 18 Thức tỉnh</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        vc tà đạo dị giáo
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3110071#ln-comment-3110071"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-12-2025 21:08:52"
+                                datetime="2025-12-01T21:08:52+07:00">
+                                01-12-2025 21:08:52
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3110011"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3110011" 
+    data-parent="3110011" 
+    data-type="chapter" 
+    data-typeid="246882">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u126662-ad5d3ff0-1cc2-4469-9429-e5c7fcb4ff7c.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/126662">Cày bừa</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246882-chuong-06-chi-ghen-day-a"
+                        class="text-slate-500 inline-block">Chương 06 Chị ghen đấy à?</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        thg main này đã v
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3110011#ln-comment-3110011"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-12-2025 20:27:51"
+                                datetime="2025-12-01T20:27:51+07:00">
+                                01-12-2025 20:27:51
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3109989"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3109989" 
+    data-parent="3109989" 
+    data-type="chapter" 
+    data-typeid="246868">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u126662-ad5d3ff0-1cc2-4469-9429-e5c7fcb4ff7c.gif" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/126662">Cày bừa</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246868-chuong-04-bop"
+                        class="text-slate-500 inline-block">Chương 04 Bóp</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        v ms là đàn ông chứ
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3109989#ln-comment-3109989"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-12-2025 20:09:12"
+                                datetime="2025-12-01T20:09:12+07:00">
+                                01-12-2025 20:09:12
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3109934"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3109934" 
+    data-parent="3109934" 
+    data-type="series" 
+    data-typeid="23780">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u203194-06bf8aef-53c6-436b-85fc-996f962ea1ce.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/203194">justaclone</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                                    <div class="ln-comment-content long-text">
+                        sống lại đi ní
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3109934#ln-comment-3109934"
+                            class="text-slate-500">
+                            <time class="timeago" title="01-12-2025 19:35:13"
+                                datetime="2025-12-01T19:35:13+07:00">
+                                01-12-2025 19:35:13
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3088562"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3088562" 
+    data-parent="3088562" 
+    data-type="chapter" 
+    data-typeid="246877">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u173503-adee22a2-de6c-47a9-a658-1e5f2345de6c.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173503">Kien-__-</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246877-chuong-05-em-gai"
+                        class="text-slate-500 inline-block">Chương 05 Em gái</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        🐧😮!?
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3088562#ln-comment-3088562"
+                            class="text-slate-500">
+                            <time class="timeago" title="12-11-2025 20:32:03"
+                                datetime="2025-11-12T20:32:03+07:00">
+                                12-11-2025 20:32:03
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3088555"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3088555" 
+    data-parent="3088555" 
+    data-type="chapter" 
+    data-typeid="246868">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u173503-adee22a2-de6c-47a9-a658-1e5f2345de6c.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/173503">Kien-__-</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246868-chuong-04-bop"
+                        class="text-slate-500 inline-block">Chương 04 Bóp</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        đoạn "có có có" hài vcd 🤣
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3088555#ln-comment-3088555"
+                            class="text-slate-500">
+                            <time class="timeago" title="12-11-2025 20:24:38"
+                                datetime="2025-11-12T20:24:38+07:00">
+                                12-11-2025 20:24:38
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3083883"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3083883" 
+    data-parent="3083883" 
+    data-type="chapter" 
+    data-typeid="246877">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u218680-142bb7f1-040b-412c-bb38-0c064b6a4206.png" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/218680">Mariana23</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246877-chuong-05-em-gai"
+                        class="text-slate-500 inline-block">Chương 05 Em gái</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        😺⁉
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3083883#ln-comment-3083883"
+                            class="text-slate-500">
+                            <time class="timeago" title="09-11-2025 00:41:54"
+                                datetime="2025-11-09T00:41:54+07:00">
+                                09-11-2025 00:41:54
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
     <div id="ln-comment-3082630"
     class="ln-comment-item mt-3 clear"
     data-comment="3082630" 
@@ -822,522 +1273,6 @@
 </div>
 
     </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3082605"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3082605" 
-    data-parent="3082605" 
-    data-type="chapter" 
-    data-typeid="255293">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u63918-b6a20586-4487-4922-8011-25be86d09ffb.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/63918">ShiroNeko96</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c255293-chuong-19-cai-viec-nay-lai-viec-no"
-                        class="text-slate-500 inline-block">Chương 19 Cái việc này lại việc nọ</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Lổ :v
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3082605#ln-comment-3082605"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-11-2025 22:34:07"
-                                datetime="2025-11-07T22:34:07+07:00">
-                                07-11-2025 22:34:07
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3082598"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3082598" 
-    data-parent="3082598" 
-    data-type="chapter" 
-    data-typeid="250040">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u84582-528a5923-fcc4-4e4a-ae42-dc535f24bc0f.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/84582">ShinoIyuki</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c250040-chuong-17-nhu-moi-khi"
-                        class="text-slate-500 inline-block">Chương 17 Như mọi khi</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        đi đái gặp âm binh.😭😭😭🔥🔥🙏
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3082598#ln-comment-3082598"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-11-2025 22:30:31"
-                                datetime="2025-11-07T22:30:31+07:00">
-                                07-11-2025 22:30:31
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3082596"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3082596" 
-    data-parent="3082596" 
-    data-type="chapter" 
-    data-typeid="255293">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u164982-9bc39b4a-5d54-4d66-9ad8-76c654613e4f.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/164982">Chilamotreaderquaduong</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c255293-chuong-19-cai-viec-nay-lai-viec-no"
-                        class="text-slate-500 inline-block">Chương 19 Cái việc này lại việc nọ</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Khô cong luôn
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3082596#ln-comment-3082596"
-                            class="text-slate-500">
-                            <time class="timeago" title="07-11-2025 22:25:46"
-                                datetime="2025-11-07T22:25:46+07:00">
-                                07-11-2025 22:25:46
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3074510"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3074510" 
-    data-parent="3074510" 
-    data-type="chapter" 
-    data-typeid="250055">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/138054">Leuy</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c250055-chuong-18-thuc-tinh"
-                        class="text-slate-500 inline-block">Chương 18 Thức tỉnh</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Phải hút mấy cân đá mới nghĩ ra cốt truyện như này 🥀
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3074510#ln-comment-3074510"
-                            class="text-slate-500">
-                            <time class="timeago" title="31-10-2025 11:22:48"
-                                datetime="2025-10-31T11:22:48+07:00">
-                                31-10-2025 11:22:48
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3071806"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3071806" 
-    data-parent="3071806" 
-    data-type="chapter" 
-    data-typeid="246877">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u223170-420c8128-bb26-4742-b30d-f2e465cd2142.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/223170">Trung Hưng</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c246877-chuong-05-em-gai"
-                        class="text-slate-500 inline-block">Chương 05 Em gái</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Cac😡😡
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3071806#ln-comment-3071806"
-                            class="text-slate-500">
-                            <time class="timeago" title="28-10-2025 20:46:36"
-                                datetime="2025-10-28T20:46:36+07:00">
-                                28-10-2025 20:46:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3071483"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3071483" 
-    data-parent="3071483" 
-    data-type="chapter" 
-    data-typeid="247149">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/138054">Leuy</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c247149-chuong-09-ca-em-nua-sao"
-                        class="text-slate-500 inline-block">Chương 09 Cả em nữa sao</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Hoang dã quá ae ơi 😢
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3071483#ln-comment-3071483"
-                            class="text-slate-500">
-                            <time class="timeago" title="28-10-2025 14:31:09"
-                                datetime="2025-10-28T14:31:09+07:00">
-                                28-10-2025 14:31:09
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3071431"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3071431" 
-    data-parent="3071431" 
-    data-type="series" 
-    data-typeid="23780">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/138054">Leuy</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Đọc tóm tắt mà truyện có tag harem thấy hơi sai sai
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3071431#ln-comment-3071431"
-                            class="text-slate-500">
-                            <time class="timeago" title="28-10-2025 13:24:47"
-                                datetime="2025-10-28T13:24:47+07:00">
-                                28-10-2025 13:24:47
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3069878"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3069878" 
-    data-parent="3069878" 
-    data-type="chapter" 
-    data-typeid="250055">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u205336-8a877e24-4656-45b1-a0cc-78e3d303bb2e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/205336">anskadt</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me/c250055-chuong-18-thuc-tinh"
-                        class="text-slate-500 inline-block">Chương 18 Thức tỉnh</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Truyện thiếu tag ko vậy 😅
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3069878#ln-comment-3069878"
-                            class="text-slate-500">
-                            <time class="timeago" title="27-10-2025 05:41:52"
-                                datetime="2025-10-27T05:41:52+07:00">
-                                27-10-2025 05:41:52
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3069279"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3069279" 
-    data-parent="3069279" 
-    data-type="series" 
-    data-typeid="23780">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.sbs/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/219912">Pixthe7th</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Main sau nó chơi cả em nó lẫn mẹ của cả 2 đứa kia đấy ae 💀, càng đọc càng thấy hại não
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3069279#ln-comment-3069279"
-                            class="text-slate-500">
-                            <time class="timeago" title="26-10-2025 20:21:46"
-                                datetime="2025-10-26T20:21:46+07:00">
-                                26-10-2025 20:21:46
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="ln-comment-reply">
-            <div id="ln-comment-3069343"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3069343" 
-    data-parent="3069279" 
-    data-type="series" 
-    data-typeid="23780">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u135492-49a4fd55-3709-45cd-b822-a2a56e92d7b7.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/135492">Shibanui</a>
-    </div>
-                        <div class="self-center">
-                <div
-                    class="flex gap-1 rounded-sm shadow-[inset_0px_0px_0px_2px_#E63950] dark:bg-[#E63950]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#E63950] dark:text-[#FDCB02]">
-                    <img class="my-auto h-[14px]" src="/img/badge/owner.png" />
-                    <div class="leading-4">CHỦ THỚT</div>
-                </div>
-            </div>
-                                    <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        Suỵt, milf mới là nhất
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/23780-my-childhood-friend-showed-me-a-hypnosis-app-so-i-pretended-to-be-taken-by-it-and-she-kissed-me?comment_id=3069279&amp;reply_id=3069343#ln-comment-3069343"
-                            class="text-slate-500">
-                            <time class="timeago" title="26-10-2025 21:02:40"
-                                datetime="2025-10-26T21:02:40+07:00">
-                                26-10-2025 21:02:40
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-    
-                
-    </div>
-    </div>
 
 <div class="ln-comment-page">
 <div class="pagination-footer">
@@ -1350,7 +1285,7 @@
 </div>    </main>
 
     <script>
-        var token = 'kgQ1ryWLGFafmw7wriUXazEfHty1Vyjbo687KXtk';
+        var token = 'WSQH0tYGO2vWR9rUbruXIa1qPMESYHxU72oivLJy';
         var comment_type = 'series';
         var comment_typeid = '23780';
     </script>
@@ -1398,10 +1333,14 @@
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="AJvDnG6DA8d4MWjGLGRaa8YR3p3Y7KSUxLRh3V5y" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="mmipWAhx1Eim9kBMzAGJiHHph7wLjvcLqmjV4BV9" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script
+  type="text/javascript"
+  src="//spicewaxworks.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"
+  async
+></script>
 
         
             <footer id="footer">
