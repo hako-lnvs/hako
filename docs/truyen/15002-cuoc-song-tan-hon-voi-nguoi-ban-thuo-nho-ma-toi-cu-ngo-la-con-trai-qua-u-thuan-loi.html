@@ -11,7 +11,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="8lWYAGcW5Li5FcSTkgVZ12g7sQ0hwILTD1K47ovp">
+    <meta name="csrf-token" content="dGha51D2yxr8tKBzAKNR7vJ0jxgYt0BgVTp9swW0">
     <meta name="logged-in" content="0">
     <meta property="fb:app_id" content="1864643850436909">
 
@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png?v=3">
     <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png?v=3">
 
-    <link rel="stylesheet" href="/css/interface.css?id=79c79d86227d208a76333fbc02ff973e">
-    <link rel="stylesheet" href="/css/tailwind.css?id=8bc23c5ec573475855e1dd1689fb5bfb">
+    <link rel="stylesheet" href="/css/interface.css?id=300c3109a58d319c9bb94c8585835c77">
+    <link rel="stylesheet" href="/css/tailwind.css?id=9128bdee617e5eb876ffd418ed3597bf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
             
     
@@ -159,9 +159,12 @@
     <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4" x-show="open" style="display: none">
         <div class="flex">
             <div class="shrink-0">
-                <svg class="size-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" />
-                </svg>
+                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
+                    <span class="sr-only">Dismiss</span>
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                    </svg>
+                </button>
             </div>
             <div class="ml-3 font-bold">
                 <p class="text-sm text-yellow-700">
@@ -173,16 +176,7 @@
                     <p class="text-sm text-orange-700">Hiện đang đứt cáp Internet APG, kết nối có thể chậm hoặc rất chậm. Dùng VPN không chắc có hiệu quả.</p>
                 </p>
             </div>
-            <div class="ml-auto pl-3">
-                <div class="-mx-1.5 -my-1.5">
-                <button x-on:click="open = false; Cookies.set('globalwarning2', false, { expires: 0.5 })" type="button" class="inline-flex rounded-md bg-yellow-50 p-1.5 text-yellow-500 hover:bg-yellow-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 focus:ring-offset-yellow-50">
-                    <span class="sr-only">Dismiss</span>
-                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                    <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-                    </svg>
-                </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -260,7 +254,7 @@
                                             <div class="col-4 col-md feature-item width-auto-xl">
                                                                                         <a id="collect" class="side-feature-button button-follow follow" href="https://docln.net/login">
                                                 <span class="block feature-value"><i class="far fa-heart"></i></span>
-                                                <span class="block feature-name"> 3372 </span>
+                                                <span class="block feature-name"> 3375 </span>
                                             </a>
                                                                                         </div>
 
@@ -310,11 +304,11 @@
                                     <div class="row statistic-list">
                                         <div class="col-12 col-md-3 statistic-item block-wide at-mobile">
                                             <div class="statistic-name">Lần cuối</div>
-                                            <div class="statistic-value"><time class="timeago" title="04/12/2025 21:00:38" datetime="2025-12-04T21:00:38+07:00">Đang chạy...</time></div>
+                                            <div class="statistic-value"><time class="timeago" title="20/12/2025 22:32:23" datetime="2025-12-20T22:32:23+07:00">Đang chạy...</time></div>
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Số từ</div>
-                                            <div class="statistic-value">70.409</div>
+                                            <div class="statistic-value">71.958</div>
                                         </div>
                                         
                                         <div class="col-4 col-md-3 statistic-item">
@@ -323,7 +317,7 @@
                                         </div>
                                         <div class="col-4 col-md-3 statistic-item">
                                             <div class="statistic-name">Lượt xem</div>
-                                            <div class="statistic-value">722.903</div>
+                                            <div class="statistic-value">727.701</div>
                                         </div>
                                     </div>
                                 </div>
@@ -1068,9 +1062,6 @@
                                         </li>
                                                                             <li class="none">
                                             <div class="chapter-name">
-                                                                                                <div class="new-status badge">
-                                                    <div class="badge-item new">Mới</div>
-                                                </div>
                                                 
                                                 
                                                 <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c269370-chuong-ss7-buoi-tu-hoi-otaku" title="Chương SS7 - Buổi Tụ Hội Otaku">Chương SS7 - Buổi Tụ Hội Otaku</a>
@@ -1078,9 +1069,21 @@
                                                                                             </div>
                                             <div class="chapter-time">04/12/2025</div>
                                         </li>
+                                                                            <li class="none">
+                                            <div class="chapter-name">
+                                                                                                <div class="new-status badge">
+                                                    <div class="badge-item new">Mới</div>
+                                                </div>
+                                                
+                                                
+                                                <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c276154-chuong-ss8-anh-yeu-em" title="CHƯƠNG SS8 - Anh Yêu Em">CHƯƠNG SS8 - Anh Yêu Em</a>
+
+                                                                                            </div>
+                                            <div class="chapter-time">20/12/2025</div>
+                                        </li>
                                                                                                             <div class="mobile-more">
                                         <div class="see_more">
-                                            <span>Xem tiếp (2 chương)</span>
+                                            <span>Xem tiếp (3 chương)</span>
                                         </div>
                                     </div>
                                                                     </ul>
@@ -1137,7 +1140,7 @@
                 
                 
 
-                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:15002,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;296wuCSIwCNzwQeoxqQ3&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;d0c62d6f017a6dce8d07b70e960ffb3ade620b988d451fc216c6717fd338309e&quot;}" wire:effects="[]" wire:id="296wuCSIwCNzwQeoxqQ3" wire:init="loadRelevantSeries">
+                <div wire:snapshot="{&quot;data&quot;:{&quot;readyToLoad&quot;:false,&quot;series&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Series&quot;,&quot;key&quot;:15002,&quot;s&quot;:&quot;mdl&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;ZV3y6UqqRUeU5yhyAU11&quot;,&quot;name&quot;:&quot;pub.series.view.components.relevance&quot;,&quot;path&quot;:&quot;truyen\/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;vi&quot;},&quot;checksum&quot;:&quot;8248eb7693bece1cf77d86a16abd3b302cb89b250ef499cfbc1008a6d7526a13&quot;}" wire:effects="[]" wire:id="ZV3y6UqqRUeU5yhyAU11" wire:init="loadRelevantSeries">
     <section class="basic-section gradual-mobile">
         <header class="sect-header"><span class="sect-title">Có thể bạn quan tâm</span><span class="mobile-icon"><i class="fas fa-chevron-down"></i></span></header>
         <main class="d-lg-block">                            
@@ -1156,7 +1159,7 @@
 </div>
                 <section id="series-comments" class="basic-section">
                     <header class="sect-header tab-list">
-                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1830)</span></span>
+                        <span class="sect-title tab-title" data-tab-index="1">Tổng bình luận <span class="comments-count">(1842)</span></span>
                     </header>
                     <main id="fbcmt_root" class="comment-wrapper d-lg-block clear">
                         <span style="padding: 10px; display: inline-block;">Báo cáo bình luận không phù hợp ở <a href="/thao-luan/619-bao-cao-binh-luan" style="color: blue">đây</a></span>
@@ -1334,16 +1337,16 @@
     </div>        
         
         <div class="ln-comment-group">
-    <div id="ln-comment-3114534"
+    <div id="ln-comment-3121365"
     class="ln-comment-item mt-3 clear"
-    data-comment="3114534" 
-    data-parent="3114534" 
+    data-comment="3121365" 
+    data-parent="3121365" 
     data-type="chapter" 
-    data-typeid="269370">
+    data-typeid="133347">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u201442-7fdac41a-1d98-4f38-a45f-83491248db80.gif" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1352,7 +1355,207 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/201442">VNE86</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c133347-chuong-44-happy-birthday-va"
+                        class="text-slate-500 inline-block">Chương 44 - Happy Birthday Và...</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Chị nhà mạnh quá 😳
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3121365#ln-comment-3121365"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-12-2025 12:47:35"
+                                datetime="2025-12-11T12:47:35+07:00">
+                                11-12-2025 12:47:35
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3120972"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3120972" 
+    data-parent="3120972" 
+    data-type="chapter" 
+    data-typeid="128369">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c128369-chuong-38-voi-ba-voi-toi"
+                        class="text-slate-500 inline-block">Chương 38 - Với Bà, Với Tôi</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Main cháy hơn cả free fire 🔥🔥🔥
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120972#ln-comment-3120972"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-12-2025 05:59:45"
+                                datetime="2025-12-11T05:59:45+07:00">
+                                11-12-2025 05:59:45
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3120971"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3120971" 
+    data-parent="3120971" 
+    data-type="chapter" 
+    data-typeid="127153">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c127153-chuong-36-ly-do"
+                        class="text-slate-500 inline-block">Chương 36 - Lý Do</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Main đã căng 💀
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120971#ln-comment-3120971"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-12-2025 05:52:47"
+                                datetime="2025-12-11T05:52:47+07:00">
+                                11-12-2025 05:52:47
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3120968"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3120968" 
+    data-parent="3120968" 
+    data-type="chapter" 
+    data-typeid="125537">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
+    </div>
+                                    </div>
+                                        
+                </div>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c125537-chuong-35-chuyen-hom-do"
+                        class="text-slate-500 inline-block">Chương 35 - Chuyện Hôm Đó</a></span>
+                                                    <div class="ln-comment-content long-text">
+                        Drama đến :((
+                    </div>
+                    <div class="comment_see_more expand none">Xem thêm</div>
+                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120968#ln-comment-3120968"
+                            class="text-slate-500">
+                            <time class="timeago" title="11-12-2025 05:49:15"
+                                datetime="2025-12-11T05:49:15+07:00">
+                                11-12-2025 05:49:15
+                            </time>
+                        </a>
+                        <a
+                            class="self-center visible-toolkit-item do-like cursor-pointer">
+                            <i class="fas fa-thumbs-up me-1"></i>
+                            <span class="likecount font-semibold"></span>
+                        </a>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<div class="ln-comment-group">
+    <div id="ln-comment-3120676"
+    class="ln-comment-item mt-3 clear"
+    data-comment="3120676" 
+    data-parent="3120676" 
+    data-type="chapter" 
+    data-typeid="269370">
+    <div class="flex gap-1 max-w-full">
+        <div class="w-[50px]">
+            <div class="mx-1 my-1">
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
+            </div>
+        </div>
+        <div
+            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
+            <div class="flex min-w-0 flex-col px-2">
+                <div class="flex align-top justify-between">
+                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
+    <div class="self-center">
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
@@ -1364,11 +1567,11 @@
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3114534#ln-comment-3114534"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120676#ln-comment-3120676"
                             class="text-slate-500">
-                            <time class="timeago" title="05-12-2025 21:32:23"
-                                datetime="2025-12-05T21:32:23+07:00">
-                                05-12-2025 21:32:23
+                            <time class="timeago" title="10-12-2025 22:57:05"
+                                datetime="2025-12-10T22:57:05+07:00">
+                                10-12-2025 22:57:05
                             </time>
                         </a>
                         <a
@@ -1384,16 +1587,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3113347"
+    <div id="ln-comment-3120661"
     class="ln-comment-item mt-3 clear"
-    data-comment="3113347" 
-    data-parent="3113347" 
+    data-comment="3120661" 
+    data-parent="3120661" 
     data-type="chapter" 
-    data-typeid="269370">
+    data-typeid="121148">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u150487-897b6998-5f0a-4ded-a9bc-2481369bcc6a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1402,23 +1605,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150487">nghiện đọc light novel</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c269370-chuong-ss7-buoi-tu-hoi-otaku"
-                        class="text-slate-500 inline-block">Chương SS7 - Buổi Tụ Hội Otaku</a></span>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c121148-chuong-27-cam-xuc-cua-em-gai"
+                        class="text-slate-500 inline-block">Chương 27 - Cảm xúc của em gái</a></span>
                                                     <div class="ln-comment-content long-text">
-                        TFNC<br>
+                        Quá sốc 😆
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3113347#ln-comment-3113347"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120661#ln-comment-3120661"
                             class="text-slate-500">
-                            <time class="timeago" title="04-12-2025 22:02:58"
-                                datetime="2025-12-04T22:02:58+07:00">
-                                04-12-2025 22:02:58
+                            <time class="timeago" title="10-12-2025 22:47:10"
+                                datetime="2025-12-10T22:47:10+07:00">
+                                10-12-2025 22:47:10
                             </time>
                         </a>
                         <a
@@ -1434,16 +1637,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3113310"
+    <div id="ln-comment-3120330"
     class="ln-comment-item mt-3 clear"
-    data-comment="3113310" 
-    data-parent="3113310" 
+    data-comment="3120330" 
+    data-parent="3120330" 
     data-type="chapter" 
-    data-typeid="269370">
+    data-typeid="117260">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1452,29 +1655,29 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/153884">Uuuuuuuu</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c269370-chuong-ss7-buoi-tu-hoi-otaku"
-                        class="text-slate-500 inline-block">Chương SS7 - Buổi Tụ Hội Otaku</a></span>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c117260-chuong-17-ly-do-de-no-luc"
+                        class="text-slate-500 inline-block">Chương 17 - Lý Do Để Nỗ Lực</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Hay vậy
+                        Tuy muộn 2 năm nhưng vẫn chúc trans trăm năm hạnh phúc nha 🎉🎉🎉
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3113310#ln-comment-3113310"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3120330#ln-comment-3120330"
                             class="text-slate-500">
-                            <time class="timeago" title="04-12-2025 21:41:17"
-                                datetime="2025-12-04T21:41:17+07:00">
-                                04-12-2025 21:41:17
+                            <time class="timeago" title="10-12-2025 19:05:11"
+                                datetime="2025-12-10T19:05:11+07:00">
+                                10-12-2025 19:05:11
                             </time>
                         </a>
                         <a
                             class="self-center visible-toolkit-item do-like cursor-pointer">
                             <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
+                            <span class="likecount font-semibold">1</span>
                         </a>
                                             </div>
                             </div>
@@ -1484,16 +1687,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3111157"
+    <div id="ln-comment-3119735"
     class="ln-comment-item mt-3 clear"
-    data-comment="3111157" 
-    data-parent="3111157" 
+    data-comment="3119735" 
+    data-parent="3119735" 
     data-type="chapter" 
-    data-typeid="263975">
+    data-typeid="115919">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u214358-2b45cc37-a2c2-49c5-be55-9a237f90d3ae.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1502,23 +1705,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/214358">Lễ đường</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c115919-chuong-13-ngay-hoc-nhom"
+                        class="text-slate-500 inline-block">Chương 13 - Ngày Học Nhóm</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Đợi 5 ngày nx :))
+                        Gánh gãy lưng 🤣
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3111157#ln-comment-3111157"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3119735#ln-comment-3119735"
                             class="text-slate-500">
-                            <time class="timeago" title="02-12-2025 20:01:19"
-                                datetime="2025-12-02T20:01:19+07:00">
-                                02-12-2025 20:01:19
+                            <time class="timeago" title="10-12-2025 06:31:25"
+                                datetime="2025-12-10T06:31:25+07:00">
+                                10-12-2025 06:31:25
                             </time>
                         </a>
                         <a
@@ -1534,16 +1737,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3101829"
+    <div id="ln-comment-3119727"
     class="ln-comment-item mt-3 clear"
-    data-comment="3101829" 
-    data-parent="3101829" 
+    data-comment="3119727" 
+    data-parent="3119727" 
     data-type="chapter" 
-    data-typeid="263975">
+    data-typeid="114031">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u150487-897b6998-5f0a-4ded-a9bc-2481369bcc6a.jpg" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1552,23 +1755,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/150487">nghiện đọc light novel</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c114031-chuong-0-sau-ky-nghi-xuan"
+                        class="text-slate-500 inline-block">Chương 08 - Sau Kỳ Nghỉ Xuân</a></span>
                                                     <div class="ln-comment-content long-text">
-                        TFNC
+                        Chuyện j v gái 🤔
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3101829#ln-comment-3101829"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3119727#ln-comment-3119727"
                             class="text-slate-500">
-                            <time class="timeago" title="25-11-2025 01:02:32"
-                                datetime="2025-11-25T01:02:32+07:00">
-                                25-11-2025 01:02:32
+                            <time class="timeago" title="10-12-2025 05:53:36"
+                                datetime="2025-12-10T05:53:36+07:00">
+                                10-12-2025 05:53:36
                             </time>
                         </a>
                         <a
@@ -1584,16 +1787,16 @@
 
     </div>
 <div class="ln-comment-group">
-    <div id="ln-comment-3101290"
+    <div id="ln-comment-3119726"
     class="ln-comment-item mt-3 clear"
-    data-comment="3101290" 
-    data-parent="3101290" 
+    data-comment="3119726" 
+    data-parent="3119726" 
     data-type="chapter" 
-    data-typeid="263975">
+    data-typeid="113647">
     <div class="flex gap-1 max-w-full">
         <div class="w-[50px]">
             <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u201442-7fdac41a-1d98-4f38-a45f-83491248db80.gif" class="w-full rounded-full" />
+                <img src="https://i.hako.vn/ln/users/avatars/u225189-c2635325-9101-4497-9bb1-792f784baea5.jpg" class="w-full rounded-full" />
             </div>
         </div>
         <div
@@ -1602,230 +1805,23 @@
                 <div class="flex align-top justify-between">
                     <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
     <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/201442">VNE86</a>
+        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/225189">Đức nghiện romcom</a>
     </div>
                                     </div>
                                         
                 </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
+                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c113647-chuong-07-trinh-nau-an-nhu-the-nao"
+                        class="text-slate-500 inline-block">Chương 07 - Trình Nấu Ăn Như Thế Nào?</a></span>
                                                     <div class="ln-comment-content long-text">
-                        Tfnc
+                        Khả lăng là yan rồi nghi lắm 🙃
                     </div>
                     <div class="comment_see_more expand none">Xem thêm</div>
                     <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3101290#ln-comment-3101290"
+                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3119726#ln-comment-3119726"
                             class="text-slate-500">
-                            <time class="timeago" title="24-11-2025 18:13:36"
-                                datetime="2025-11-24T18:13:36+07:00">
-                                24-11-2025 18:13:36
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3100923"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3100923" 
-    data-parent="3100923" 
-    data-type="chapter" 
-    data-typeid="263975">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u149620-39835157-c0bc-4f4e-acb8-c9623465e98e.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/149620">minhhy..</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        TFNC
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3100923#ln-comment-3100923"
-                            class="text-slate-500">
-                            <time class="timeago" title="24-11-2025 08:32:58"
-                                datetime="2025-11-24T08:32:58+07:00">
-                                24-11-2025 08:32:58
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3100525"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3100525" 
-    data-parent="3100525" 
-    data-type="chapter" 
-    data-typeid="263975">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.docln.net/lightnovel/users/ua142956-0a4021c4-663b-4b26-a96a-4905f499c4f5.jpg" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/142956">Road</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        vẫn quá ngol<br>
- <br>
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3100525#ln-comment-3100525"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-11-2025 21:44:06"
-                                datetime="2025-11-23T21:44:06+07:00">
-                                23-11-2025 21:44:06
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3100511"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3100511" 
-    data-parent="3100511" 
-    data-type="chapter" 
-    data-typeid="263975">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://docln.net/img/noava.png" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/195530">Tokugawa Kazuya</a>
-    </div>
-                                    </div>
-                                        
-                </div>
-                                    <span class="text-sm"><a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi/c263975-chuong-ss6-lam-cho-giat-minh"
-                        class="text-slate-500 inline-block">Chương SS6 - Làm Cho Giật Mình</a></span>
-                                                    <div class="ln-comment-content long-text">
-                        Hức hức 🐧
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3100511#ln-comment-3100511"
-                            class="text-slate-500">
-                            <time class="timeago" title="23-11-2025 21:37:22"
-                                datetime="2025-11-23T21:37:22+07:00">
-                                23-11-2025 21:37:22
-                            </time>
-                        </a>
-                        <a
-                            class="self-center visible-toolkit-item do-like cursor-pointer">
-                            <i class="fas fa-thumbs-up me-1"></i>
-                            <span class="likecount font-semibold"></span>
-                        </a>
-                                            </div>
-                            </div>
-        </div>
-    </div>
-</div>
-
-    </div>
-<div class="ln-comment-group">
-    <div id="ln-comment-3092705"
-    class="ln-comment-item mt-3 clear"
-    data-comment="3092705" 
-    data-parent="3092705" 
-    data-type="series" 
-    data-typeid="15002">
-    <div class="flex gap-1 max-w-full">
-        <div class="w-[50px]">
-            <div class="mx-1 my-1">
-                <img src="https://i.hako.vn/ln/users/avatars/u64359-84ed1d8b-e6aa-4334-923d-3ca317664bb7.gif" class="w-full rounded-full" />
-            </div>
-        </div>
-        <div
-            class="w-full min-w-0 rounded-md bg-gray-100 ps-1 pe-0 pb-1 pt-0 dark:!bg-zinc-800 ">
-            <div class="flex min-w-0 flex-col px-2">
-                <div class="flex align-top justify-between">
-                    <div class="flex flex-wrap gap-x-2 gap-y-1 align-middle pt-1">
-    <div class="self-center">
-        <a class="font-bold leading-6 md:leading-7 ln-username " href="/thanh-vien/64359">Akarui_Taiyo</a>
-    </div>
-                                        <div class="self-center">
-            <div
-                class="flex gap-1 rounded-sm bg-[#49d0b2]/50 dark:bg-[#36a189]/50 px-1.5 py-0.5 align-middle text-[10px] font-bold text-[#36a189] dark:text-[#eaeaea]">
-                <img class="my-auto h-[14px]" src="/img/badge/trans5.png" />
-                <div class="leading-4">TRANS</div>
-            </div>
-        </div>
-        </div>
-                                        
-                </div>
-                                                    <div class="ln-comment-content long-text">
-                        vl 67k từ mà 700k view<br>
-mạnh v
-                    </div>
-                    <div class="comment_see_more expand none">Xem thêm</div>
-                    <div class="flex gap-2 align-bottom text-[13px] visible-toolkit">
-                        <a href="/truyen/15002-cuoc-song-tan-hon-voi-nguoi-ban-thuo-nho-ma-toi-cu-ngo-la-con-trai-qua-u-thuan-loi?comment_id=3092705#ln-comment-3092705"
-                            class="text-slate-500">
-                            <time class="timeago" title="16-11-2025 18:43:00"
-                                datetime="2025-11-16T18:43:00+07:00">
-                                16-11-2025 18:43:00
+                            <time class="timeago" title="10-12-2025 05:50:59"
+                                datetime="2025-12-10T05:50:59+07:00">
+                                10-12-2025 05:50:59
                             </time>
                         </a>
                         <a
@@ -1852,7 +1848,7 @@ mạnh v
 </div>    </main>
 
     <script>
-        var token = '8lWYAGcW5Li5FcSTkgVZ12g7sQ0hwILTD1K47ovp';
+        var token = 'dGha51D2yxr8tKBzAKNR7vJ0jxgYt0BgVTp9swW0';
         var comment_type = 'series';
         var comment_typeid = '15002';
     </script>
@@ -1900,10 +1896,14 @@ mạnh v
     <script src="/scripts/service-manager.js?r=4"></script>
 
     <script src="/scripts/app.js?id=a5a24eca66adcfc75cc0b2f62e2611db"></script>
-    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="8lWYAGcW5Li5FcSTkgVZ12g7sQ0hwILTD1K47ovp" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+    <script src="https://docln.net/vendor/livewire/livewire.min.js?id=df3a17f2"   data-csrf="dGha51D2yxr8tKBzAKNR7vJ0jxgYt0BgVTp9swW0" data-update-uri="/livewire/update" data-navigate-once="true"></script>
 
     
-    <script type='text/javascript' src='//workplacecakefaculty.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js' async></script>
+    <script
+  type="text/javascript"
+  src="https://disinheritguilewallow.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"
+  async
+></script>
 
         
             <footer id="footer">
